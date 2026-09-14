@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MjQNCnNob3VsZCBub3QgYmUgcmVhY2hhYmxlIG9uY2UgZXhwaXJlZA0KMA0KeC1hbXotY2hlY2tz
+        dW0tY3JjMzI6UjVqbGZ3PT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MzY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZGZhMmQ5YmItNWJmNS00YTEwLWJiYmMtOTU3ODQ4MDhkMmU1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/presign/expired.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 00:54:48 GMT
+      ETag:
+      - '"ced174c54e7e72c6441066a40de10039"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - R5jlfw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - DBh1nMZMUFLu01aC8LlsRk3QbF8HSaRkHozVeZ+qzwTUmI+/WBM043l96QirHJrr0Moxt/zyYQIb8XQxfIVcJ0kkSoKJMTqK
+      x-amz-request-id:
+      - QEHGZ22SJ4EMW2HF
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - OG51Hyn56QCmiAZdMx4wC_cwnhvQYlhj
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.amazonaws.com/conformance-test/presign/expired.txt?X-Amz-Algorithm=FILTERED&X-Amz-Credential=FILTERED&X-Amz-Date=FILTERED&X-Amz-Expires=FILTERED&X-Amz-SignedHeaders=FILTERED&X-Amz-Security-Token=FILTERED&X-Amz-Signature=FILTERED
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>AccessDenied</Code><Message>Request has expired</Message><X-Amz-Expires>1</X-Amz-Expires><Expires>2026-08-07T00:54:48Z</Expires><ServerTime>2026-08-07T00:54:49Z</ServerTime><RequestId>W36RYPSNHQ5XV2HR</RequestId><HostId>lepLJd54DKyNYPXHC92UMhoJRAB7N+8pm71UgyCTvoZGeJIBbUg4fQA/iWB7pFdIqFdJX5JFBN/1AUZQZcXo+3hVnAhc2bOb</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 00:54:49 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - lepLJd54DKyNYPXHC92UMhoJRAB7N+8pm71UgyCTvoZGeJIBbUg4fQA/iWB7pFdIqFdJX5JFBN/1AUZQZcXo+3hVnAhc2bOb
+      x-amz-request-id:
+      - W36RYPSNHQ5XV2HR
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        YjYyNmUyYjMtOTMxNi00MGZiLTk4ZmYtYzJmNzU2OWJkMDZi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/presign/expired.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Fri, 07 Aug 2026 00:54:50 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - bFRVf9I2cJ+TLl5eZJAZQdliPgoQhLUSyz8FRQYcwRwqjIMwAnyhFMfxHKChw2MzCWQOAAXio2/FuE6YOjkchvcxQabAUMmh
+      x-amz-request-id:
+      - W36KTDTHNEEW3Q8B
+      x-amz-version-id:
+      - u1KybC767T11UsObb72USbucBNdYy54Y
+    status:
+      code: 204
+      message: No Content
+version: 1

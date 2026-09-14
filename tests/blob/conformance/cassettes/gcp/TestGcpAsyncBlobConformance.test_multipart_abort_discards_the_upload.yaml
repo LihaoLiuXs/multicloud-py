@@ -1,0 +1,270 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        PHZjci10cnVuY2F0ZWQgNTI0Mjg4MCBieXRlcz4=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '5242880'
+      Content-Type:
+      - ''
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?name=conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1/1786557426727947\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin__multipart__00000000000000000000000000000002__1?generation=1786557426727947&alt=media\",\n
+        \ \"name\": \"conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \ \"bucket\": \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786557426727947\",\n
+        \ \"metageneration\": \"1\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"5242880\",\n  \"md5Hash\": \"nKZVFYygJaoAqBi2uB+eSA==\",\n  \"crc32c\":
+        \"suOKiw==\",\n  \"etag\": \"CIv4qYbVm5YDEAE=\",\n  \"timeCreated\": \"2026-08-12T17:57:06.799Z\",\n
+        \ \"updated\": \"2026-08-12T17:57:06.799Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-08-12T17:57:06.799Z\",\n  \"timeFinalized\": \"2026-08-12T17:57:06.799Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1130'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 17:57:06 GMT
+      Etag:
+      - CIv4qYbVm5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LeBshOKxbAoUqgz2d8clh-itzv0sHVMtHCIeiH8EOQH6SbBgjSoNd3EMm2cPZQnS3-
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?prefix=conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__&maxResults=1000
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\",\n  \"items\": [\n    {\n      \"kind\":
+        \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1/1786557426727947\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin__multipart__00000000000000000000000000000002__1?generation=1786557426727947&alt=media\",\n
+        \     \"name\": \"conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1786557426727947\",\n
+        \     \"metageneration\": \"1\",\n      \"storageClass\": \"STANDARD\",\n
+        \     \"size\": \"5242880\",\n      \"md5Hash\": \"nKZVFYygJaoAqBi2uB+eSA==\",\n
+        \     \"crc32c\": \"suOKiw==\",\n      \"etag\": \"CIv4qYbVm5YDEAE=\",\n      \"timeCreated\":
+        \"2026-08-12T17:57:06.799Z\",\n      \"updated\": \"2026-08-12T17:57:06.799Z\",\n
+        \     \"timeStorageClassUpdated\": \"2026-08-12T17:57:06.799Z\",\n      \"timeFinalized\":
+        \"2026-08-12T17:57:06.799Z\"\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1256'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 17:57:06 GMT
+      Expires:
+      - Wed, 12 Aug 2026 17:57:06 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KQT6-3eibP0M1iCrMZE1PF1GlpIeuD8Z31EjJT3o1rc8rp61_UycFZ6DNql_WOzN0l
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin__multipart__00000000000000000000000000000002__1
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JXzFZp7WpLLdV24VQUU-d5sXxGHolq_TgSD4zQhDOsjENmO8qtds-nVgT2kMZ9-ul1
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: '{"sourceObjects": [{"name": "conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1"}]}'
+    headers:
+      Content-Length:
+      - '125'
+      Content-Type:
+      - application/json; charset=UTF-8
+    method: POST
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin/compose
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        testcloud-python-sdk-bucket/conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: testcloud-python-sdk-bucket/conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '443'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IoGvEXeijLX-l8Od65mE7Dj4WSH7Wsc0k7fWFfMHTDc9yJsj9j0R7sPPwaOpq6xZNN
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fmultipart-aborted.bin__multipart__00000000000000000000000000000002__1
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        testcloud-python-sdk-bucket/conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: testcloud-python-sdk-bucket/conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__1\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '443'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I8T4w6TN7VWI-OBj5JohxYOoq3BRQ_WFZ0ZCgegPK7elKY4P3_r-Yx7QXV3i_4j7Ty
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?prefix=conformance-test-async/multipart-aborted.bin__multipart__00000000000000000000000000000002__&maxResults=1000
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Expires:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7J4fsRD6lxggZFxZKGFAaUyywjxYL-go690pSDfaL5jOozIcY14AGWsLLqK1bwzjWoD
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?maxResults=1000&prefix=conformance-test-async/multipart-aborted.bin
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '32'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Expires:
+      - Wed, 12 Aug 2026 17:57:07 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LHEniX9Cw34Oo_fBPIk0dV_hF8zDvxQrsB8xV_bQMrNml9bZxXsg6vNukU7ediFPfi
+    status:
+      code: 200
+      message: OK
+version: 1

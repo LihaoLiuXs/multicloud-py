@@ -1,0 +1,206 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fbatch-missing-only-a.txt
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/delete/batch-missing-only-a.txt\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/delete/batch-missing-only-a.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '365'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:37 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Y-LG6l1t4MXrfjt1OmCozboTqjSIS-Xp6G-Ui76a6O4yf04K7xjIjBQIqReLIkcIZc6ltQIPo
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fbatch-missing-only-b.txt
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/delete/batch-missing-only-b.txt\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/delete/batch-missing-only-b.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '365'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:37 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ati40G4TH4ys6wNiO_ndLa-3gzJraFoXOHfr9oZu3MWZx1LNtum6J2g2veQmSRLqt_TDOFrxE
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fbatch-missing-only-c.txt
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/delete/batch-missing-only-c.txt\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/delete/batch-missing-only-c.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '365'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:37 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YmJnwhJQTSLFF81PqOGxZXfenItFPZCvxYvvpvyVdaWA8W3SGtVavPgjuU1N_LwKqU4MlFbqc
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fbatch-missing-only-a.txt?alt=media
+  response:
+    body:
+      string: 'No such object: python-async-test-bucket/async-conformance-test/delete/batch-missing-only-a.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '95'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:38 GMT
+      Expires:
+      - Thu, 20 Aug 2026 16:05:38 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aRMh7dq3LvkDRcXZIHwKr33gD5oPDRyLqghDGRMpoUadYrfgbN2MGmdkLlGJ31ylKixkv5Nwk
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fbatch-missing-only-b.txt?alt=media
+  response:
+    body:
+      string: 'No such object: python-async-test-bucket/async-conformance-test/delete/batch-missing-only-b.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '95'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:38 GMT
+      Expires:
+      - Thu, 20 Aug 2026 16:05:38 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YQJQLmou5HA3_N6xp6veXA8iesf-wqZOK6wYHLFSQ4T_X2PnP6Kq3-DCLi91Uoos6D1-nh8so
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fbatch-missing-only-c.txt?alt=media
+  response:
+    body:
+      string: 'No such object: python-async-test-bucket/async-conformance-test/delete/batch-missing-only-c.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '95'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:38 GMT
+      Expires:
+      - Thu, 20 Aug 2026 16:05:38 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9arz9fWZuL7S9KT1Nl2J8ZrgQL8gEM5rsNDfz1o6R2Z-sENwWoOZjDUx2WjrZBhF5IzS_TXm9o
+    status:
+      code: 404
+      message: Not Found
+version: 1

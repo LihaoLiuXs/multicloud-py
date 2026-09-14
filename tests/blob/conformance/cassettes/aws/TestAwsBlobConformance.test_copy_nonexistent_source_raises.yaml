@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDM1NjZkMjUtN2VhMC00ZGZiLWFlNGYtM2Y1NDBlODE2Yjhk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-copy-source:
+      - !!binary |
+        ZXhhbXBsZS10ZXN0LWJ1Y2tldC1iYXJyeS9jb25mb3JtYW5jZS10ZXN0L2NvcHkvZG9lcy1ub3Qt
+        ZXhpc3QtYWJjMTIzLnR4dA==
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/copy/dest-missing-src.txt
+  response:
+    body:
+      string: <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>conformance-test/copy/does-not-exist-abc123.txt</Key><RequestId>AJARTXJZWWAEBEW2</RequestId><HostId>N+ehSp4cajJqAYnCF2Zlwky9NEkxcMous9zhHRtYgYTKUtGfCT9z493R2mMSoJe0g2hwafjPMjpCVR6wDOCCHz7uuFNs4C7l</HostId></Error>
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 07 Jul 2026 08:42:18 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - N+ehSp4cajJqAYnCF2Zlwky9NEkxcMous9zhHRtYgYTKUtGfCT9z493R2mMSoJe0g2hwafjPMjpCVR6wDOCCHz7uuFNs4C7l
+      x-amz-request-id:
+      - AJARTXJZWWAEBEW2
+    status:
+      code: 404
+      message: Not Found
+version: 1

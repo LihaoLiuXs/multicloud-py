@@ -1,0 +1,88 @@
+interactions:
+- request:
+    body: '{"delegates": [], "scope": ["https://www.googleapis.com/auth/iam"], "lifetime":
+      "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '88'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/test-service-account@example-project.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_accessToken","expireTime":"2026-07-17T12:51:18Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 11:51:18 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"delegates": null, "scope": ["https://www.googleapis.com/auth/cloud-platform"],
+      "lifetime": "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '101'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/test-service-account@example-project.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_accessToken","expireTime":"2026-07-17T12:51:18Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 11:51:18 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+version: 1

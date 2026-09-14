@@ -1,0 +1,192 @@
+interactions:
+- request:
+    body: '{"QueueName": "test-sqs-testGetAttributes"}'
+    headers:
+      Content-Length:
+      - '43'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MTFUMjExNzQ5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkNyZWF0ZVF1ZXVl
+      amz-sdk-invocation-id:
+      - !!binary |
+        NTNlODJmZDAtMGM5ZC00NGJiLTlhZTUtNGY4NzU0ZTU4Y2M4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testGetAttributes"}'
+    headers:
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Sat, 11 Jul 2026 21:17:50 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - d3dc99ac-bc30-5bcf-8627-fb60090e9c01
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueName": "test-sqs-testGetAttributes"}'
+    headers:
+      Content-Length:
+      - '43'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixnLEQs
+        WiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS40My4w
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MTFUMjExNzUwWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkdldFF1ZXVlVXJs
+      amz-sdk-invocation-id:
+      - !!binary |
+        YThmZjIyOTAtMjMxYy00NjdjLTg1NWItYzgyNjg0OWIzYzQ4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testGetAttributes"}'
+    headers:
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Sat, 11 Jul 2026 21:17:51 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 365ddfad-06dd-5b30-b095-bd61b3e2f2e3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testGetAttributes",
+      "AttributeNames": ["QueueArn"]}'
+    headers:
+      Content-Length:
+      - '123'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixnLEQs
+        WiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS40My4w
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MTFUMjExNzUxWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkdldFF1ZXVlQXR0cmlidXRlcw==
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZGUyNDQyMzYtZDk0OS00ZGJiLTk1NzEtZjZkODY4Y2U4Njdh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Attributes":{"QueueArn":"arn:aws:sqs:us-west-2:123456789012:test-sqs-testGetAttributes"}}'
+    headers:
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Sat, 11 Jul 2026 21:17:52 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 536cc8c5-4012-59a6-bfa3-aa09f552de14
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testGetAttributes",
+      "AttributeNames": ["QueueArn"]}'
+    headers:
+      Content-Length:
+      - '123'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixnLEQs
+        WiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS40My4w
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MTFUMjExNzUyWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkdldFF1ZXVlQXR0cmlidXRlcw==
+      amz-sdk-invocation-id:
+      - !!binary |
+        MzJlZGZiNGUtMDQ2NC00YmI1LWJlNGMtN2Y3NjgzN2VlNjcz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Attributes":{"QueueArn":"arn:aws:sqs:us-west-2:123456789012:test-sqs-testGetAttributes"}}'
+    headers:
+      Content-Length:
+      - '91'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Sat, 11 Jul 2026 21:17:52 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - c2695ddf-f5f9-5b9f-947b-3f1340b9b992
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - c68ff27b-6696-4bc2-bb7b-124cedb604ed
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/never-existed-xyz789.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:24 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 2Zr/T01Dqs6Afokqe1BwEfxFZOZGKzGgO3zFwcp7DfZUqSFpgInZTyYPfLf4B0UMq8WZzO5w2Tg=
+      x-amz-request-id:
+      - T027D7XJK90Z0Y29
+      x-amz-version-id:
+      - LBo0i8YVYvrspvsc4yty_tnfWHB5cXjt
+    status:
+      code: 204
+      message: No Content
+version: 1

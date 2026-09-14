@@ -1,0 +1,271 @@
+interactions:
+- request:
+    body: "--===============0410073635673351106==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__1\",
+      \"crc32c\": \"MlYlAA==\"}\r\n--===============0410073635673351106==\r\ncontent-type:
+      application/octet-stream\r\n\r\nreal part\r\n--===============0410073635673351106==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '354'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0wNDEwMDczNjM1Njcz
+        MzUxMTA2PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__1/1784743557404444\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__1\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__1?generation=1784743557404444&alt=media\",\n
+        \ \"name\": \"conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__1\",\n
+        \ \"bucket\": \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1784743557404444\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"9\",\n  \"md5Hash\": \"1AnIY1i0na1L5rj0YoRqjw==\",\n
+        \ \"crc32c\": \"MlYlAA==\",\n  \"etag\": \"CJyuhO7v5pUDEAE=\",\n  \"timeCreated\":
+        \"2026-07-22T18:05:57.450Z\",\n  \"updated\": \"2026-07-22T18:05:57.450Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-22T18:05:57.450Z\",\n  \"timeFinalized\":
+        \"2026-07-22T18:05:57.450Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1193'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:57 GMT
+      ETag:
+      - CJyuhO7v5pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LZQbER_yfwHC6s6Mm8Q3cGjsWHwPQbRbpTVlXlfa4QcEpWf7z5SJ3XalVoC4m594Unlmyli-M
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"sourceObjects": [{"name": "conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__99",
+      "generation": null}], "destination": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '169'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: POST
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin/compose?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__99","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__99","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:57 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JVLnEWCJJJp34VyDlQ9KBsj8Y45eN9rCK0xDpjcP1EvLDKrO50JePmZ_iidmwM-UvA1f3f5eBMNmTp
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__99?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__99","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__99","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:57 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7L7PBye8BnvdbHXuvpCqBxZtYUGrmHZE0IGQ-Ef19SQfsUQlXAjNjB4HfxDnO1ohC1P3MrLnTXQKNR0
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?projection=noAcl&prefix=conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#objects","items":[{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__1/1784743557404444","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__1","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__1?generation=1784743557404444&alt=media","name":"conformance-test/multipart/nonexistent-parts.bin__multipart__00000000000000000000000000000001__1","bucket":"testcloud-python-sdk-bucket","generation":"1784743557404444","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"9","md5Hash":"1AnIY1i0na1L5rj0YoRqjw==","crc32c":"MlYlAA==","etag":"CJyuhO7v5pUDEAE=","timeCreated":"2026-07-22T18:05:57.450Z","updated":"2026-07-22T18:05:57.450Z","timeStorageClassUpdated":"2026-07-22T18:05:57.450Z","timeFinalized":"2026-07-22T18:05:57.450Z"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1156'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:58 GMT
+      Expires:
+      - Wed, 22 Jul 2026 18:05:58 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KRhu0WnuzvZs2Ex1iyxIoKgnr8NX_fCqvYpW6UBgN4h_tH4IkATsbspIh8mFuDR_LOmqhVXw6RfVBq
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin__multipart__00000000000000000000000000000001__1?generation=1784743557404444&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 22 Jul 2026 18:05:58 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Llg5aSqpfw-ZhIDvFFnBLgwLMQfB7CBkr462Qx5Ai0VeUf2epb2s5CVdDAAefkv9OPmbnx5fg
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fnonexistent-parts.bin?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/multipart/nonexistent-parts.bin","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '279'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:58 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LhIgJ8ecOtNu84R4dDkX5ZpsoWRAH9NwB_bxvVPySc_CIFtTp6C1VaumEY-fExmlrGJa0CjV-uaqPQ
+    status:
+      code: 404
+      message: Not Found
+version: 1

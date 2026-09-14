@@ -1,0 +1,128 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '12800'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 1e6df172-dc3f-4300-be4a-a42762916bbe
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/iter.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 16:41:15 GMT
+      Etag:
+      - '"46b9a2230db63f880c25602d6de90991"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - zUI0YQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - WZXKPcllyR2OGtwJnXFZj8KQOUomcorWssJMvvTlMF+pHmgww9b1HtxeT+5VN+s2ssiNeuq1gTo=
+      x-amz-request-id:
+      - 3ZH2QRRZ4PSYN5W8
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - wQDH8ApYzUs8XcDAveCszBFsrKZEG3C6
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 5cad2b34-516d-404a-980f-3c1397d91d12
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/iter.bin
+  response:
+    body:
+      string: stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '12800'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Tue, 25 Aug 2026 16:41:15 GMT
+      Etag:
+      - '"46b9a2230db63f880c25602d6de90991"'
+      Last-Modified:
+      - Tue, 25 Aug 2026 16:41:15 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - zUI0YQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - Sad1BbUP3NTtPJ3aRj5n+tSmZO22Gcz/u71blELmuwpajWutY3yeM+9ArGmwB//IJ1CtRQVsBuE=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-23T16:41:14.260Z'
+      x-amz-request-id:
+      - 3ZH8EJQMA7GWXSW7
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - wQDH8ApYzUs8XcDAveCszBFsrKZEG3C6
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - fef88dd1-a186-4e91-8311-3320074498ae
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/iter.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 16:41:15 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - w9td5b4Y26vm5z+aAIXgKZjVdUe2/QX/KsgmZb538CYvFVQqTbc7QoK2VmdoUWyrUNnhndDuO8k=
+      x-amz-request-id:
+      - 3ZH9DXYY898RMXJK
+      x-amz-version-id:
+      - tYY7LXkVZZ5_Q6BZMVY12sqdIwOH8Pfx
+    status:
+      code: 204
+      message: No Content
+version: 1

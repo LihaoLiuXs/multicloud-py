@@ -1,0 +1,148 @@
+interactions:
+- request:
+    body: Action=CreateRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-lifecycle&AssumeRolePolicyDocument=%7B%22Version%22%3A+%222012-10-17%22%2C+%22Statement%22%3A+%5B%7B%22Effect%22%3A+%22Allow%22%2C+%22Action%22%3A+%22sts%3AAssumeRole%22%2C+%22Principal%22%3A+%7B%22AWS%22%3A+%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%5D%7D%7D%5D%7D&Description=Test+identity+for+lifecycle+test
+    headers:
+      Content-Length:
+      - '383'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<CreateRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <CreateRoleResult>\n    <Role>\n      <Path>/</Path>\n      <AssumeRolePolicyDocument>%7B%22Version%22%3A%20%222012-10-17%22%2C%20%22Statement%22%3A%20%5B%7B%22Effect%22%3A%20%22Allow%22%2C%20%22Action%22%3A%20%22sts%3AAssumeRole%22%2C%20%22Principal%22%3A%20%7B%22AWS%22%3A%20%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%5D%7D%7D%5D%7D</AssumeRolePolicyDocument>\n
+        \     <RoleId>AROAEXAMPLE0000000000E</RoleId>\n      <RoleName>MultiCloudPyTestRole-lifecycle</RoleName>\n
+        \     <Arn>arn:aws:iam::123456789012:role/MultiCloudPyTestRole-lifecycle</Arn>\n
+        \     <CreateDate>2026-07-17T08:17:11Z</CreateDate>\n    </Role>\n  </CreateRoleResult>\n
+        \ <ResponseMetadata>\n    <RequestId>93b97c44-7231-4fef-994c-fa28dd5289ec</RequestId>\n
+        \ </ResponseMetadata>\n</CreateRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '834'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:11 GMT
+      x-amzn-RequestId:
+      - 93b97c44-7231-4fef-994c-fa28dd5289ec
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=GetRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-lifecycle
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<GetRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <GetRoleResult>\n    <Role>\n      <Path>/</Path>\n      <AssumeRolePolicyDocument>%7B%22Version%22%3A%222012-10-17%22%2C%22Statement%22%3A%5B%7B%22Effect%22%3A%22Allow%22%2C%22Principal%22%3A%7B%22AWS%22%3A%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%7D%2C%22Action%22%3A%22sts%3AAssumeRole%22%7D%5D%7D</AssumeRolePolicyDocument>\n
+        \     <MaxSessionDuration>3600</MaxSessionDuration>\n      <RoleId>AROAEXAMPLE0000000000E</RoleId>\n
+        \     <RoleLastUsed/>\n      <RoleName>MultiCloudPyTestRole-lifecycle</RoleName>\n
+        \     <Description>Test identity for lifecycle test</Description>\n      <Arn>arn:aws:iam::123456789012:role/MultiCloudPyTestRole-lifecycle</Arn>\n
+        \     <CreateDate>2026-07-17T08:17:11Z</CreateDate>\n    </Role>\n  </GetRoleResult>\n
+        \ <ResponseMetadata>\n    <RequestId>5b4120fe-5c6a-4231-af58-a2563a0aa62d</RequestId>\n
+        \ </ResponseMetadata>\n</GetRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '929'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:12 GMT
+      x-amzn-RequestId:
+      - 5b4120fe-5c6a-4231-af58-a2563a0aa62d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=DeleteRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-lifecycle
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<DeleteRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <ResponseMetadata>\n    <RequestId>f1e05723-bfda-4a08-a498-72e8a2c25433</RequestId>\n
+        \ </ResponseMetadata>\n</DeleteRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '200'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:13 GMT
+      x-amzn-RequestId:
+      - f1e05723-bfda-4a08-a498-72e8a2c25433
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=GetRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-lifecycle
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<ErrorResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <Error>\n    <Type>Sender</Type>\n    <Code>NoSuchEntity</Code>\n    <Message>The
+        role with name MultiCloudPyTestRole-lifecycle cannot be found.</Message>\n
+        \ </Error>\n  <RequestId>9332fd88-145a-42b6-a0ca-ec7857bf528a</RequestId>\n</ErrorResponse>\n"
+    headers:
+      Content-Length:
+      - '309'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:14 GMT
+      x-amzn-RequestId:
+      - 9332fd88-145a-42b6-a0ca-ec7857bf528a
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: Action=DeleteRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-lifecycle
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<ErrorResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <Error>\n    <Type>Sender</Type>\n    <Code>NoSuchEntity</Code>\n    <Message>The
+        role with name MultiCloudPyTestRole-lifecycle cannot be found.</Message>\n
+        \ </Error>\n  <RequestId>08a59920-9a7d-4310-beed-aa705cb9c62f</RequestId>\n</ErrorResponse>\n"
+    headers:
+      Content-Length:
+      - '309'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:15 GMT
+      x-amzn-RequestId:
+      - 08a59920-9a7d-4310-beed-aa705cb9c62f
+    status:
+      code: 404
+      message: Not Found
+version: 1

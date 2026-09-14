@@ -1,0 +1,23 @@
+# Pre-commit hooks for multicloud-py.
+#
+# One-time setup (per clone):
+#   pip install pre-commit   # or: pip install -e ".[dev]" && pre-commit
+#   pre-commit install
+#
+# Hooks then run automatically on `git commit`. Run on the whole tree with:
+#   pre-commit run --all-files
+#
+# Versions are pinned to match the [tool.black]/[tool.isort] config in
+# pyproject.toml and the versions enforced by the CI lint job.
+repos:
+  - repo: https://github.com/psf/black
+    rev: "26.5.1"
+    hooks:
+      - id: black
+
+  - repo: https://github.com/PyCQA/isort
+    rev: "8.0.1"
+    hooks:
+      - id: isort
+        # Keep isort in agreement with black even if pyproject is edited.
+        args: ["--profile", "black", "--line-length", "88"]

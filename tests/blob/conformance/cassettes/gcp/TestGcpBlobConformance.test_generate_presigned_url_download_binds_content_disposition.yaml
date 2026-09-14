@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: '{"payload": "R09PRzQtUlNBLVNIQTI1NgoyMDI2MDgyMFQwMzUyNDhaCjIwMjYwODIwL2F1dG8vc3RvcmFnZS9nb29nNF9yZXF1ZXN0CjQzZjgwMTg2ZWYwNmEwYmFjMjM3NWExZWJkZDlmMGY0MWNlMzc1MDU3OGQ3MGI4NDg1ZWJiYjYzY2Y2MDIxYzI="}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '195'
+      Content-type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:signBlob?alt=json
+  response:
+    body:
+      string: "{\n  \"keyId\": \"d87a7273c398f4c611c9222170a58bf656402e5a\",\n  \"signedBlob\":
+        \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 03:52:48 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '422'
+    status:
+      code: 200
+      message: OK
+version: 1

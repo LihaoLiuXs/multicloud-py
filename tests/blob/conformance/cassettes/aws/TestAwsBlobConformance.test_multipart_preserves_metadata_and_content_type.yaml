@@ -1,0 +1,224 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      Content-Type:
+      - !!binary |
+        dGV4dC9wbGFpbg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-meta-team:
+      - !!binary |
+        Y29uZm9ybWFuY2U=
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/metadata.txt?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test/multipart/metadata.txt</Key><UploadId>TGV04Ym29huy0WObunWhMermvZR_x4lzNF2tXb3XfzcVqv4NLziQR5Qhu1Jw_EpWlnZIxIUX6rRFq8wMVQ4fFhTjgjFb.K6Mw0gHlTAHSPK8OfZOEL.b58lnoUdSLylUJQaB1pc_eRuFcbLe_5llNbruulFXXH_.HPOJr2kwnpKHyh7O9BqOFsGukjrqR.sp</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:26 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - RgdrRekVxZJZ3qR0c6ZTLq0+/+n4w6tOxZbvD7C8of3UUOD5gg2Lf7lq5TjF2Eca9/1aZcePISA=
+      x-amz-request-id:
+      - ZG109VGWK9BZR7KS
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTANCm1ldGFkYXRhIHBheWxvYWQNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOnBTMDUwUT09DQoN
+        Cg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/metadata.txt?uploadId=TGV04Ym29huy0WObunWhMermvZR_x4lzNF2tXb3XfzcVqv4NLziQR5Qhu1Jw_EpWlnZIxIUX6rRFq8wMVQ4fFhTjgjFb.K6Mw0gHlTAHSPK8OfZOEL.b58lnoUdSLylUJQaB1pc_eRuFcbLe_5llNbruulFXXH_.HPOJr2kwnpKHyh7O9BqOFsGukjrqR.sp&partNumber=1
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 22 Jul 2026 18:10:27 GMT
+      ETag:
+      - '"debd089a9651afd1099db0e081792ef4"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - pS050Q==
+      x-amz-id-2:
+      - 091a3YTAHQGB08SHg3SxciuOvF0vy+SRJc69QGTeBOEkhuphYAkX5XuQd2kE/nSTdQNL7xa387w=
+      x-amz-request-id:
+      - 36AKQ5NWA6DV5CEZ
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><PartNumber>1</PartNumber><ETag>debd089a9651afd1099db0e081792ef4</ETag></Part></CompleteMultipartUpload>
+    headers:
+      Content-Length:
+      - '183'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/metadata.txt?uploadId=TGV04Ym29huy0WObunWhMermvZR_x4lzNF2tXb3XfzcVqv4NLziQR5Qhu1Jw_EpWlnZIxIUX6rRFq8wMVQ4fFhTjgjFb.K6Mw0gHlTAHSPK8OfZOEL.b58lnoUdSLylUJQaB1pc_eRuFcbLe_5llNbruulFXXH_.HPOJr2kwnpKHyh7O9BqOFsGukjrqR.sp
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+
+        <CompleteMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Location>https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test%2Fmultipart%2Fmetadata.txt</Location><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test/multipart/metadata.txt</Key><ETag>"75deb5bbc2e2891da6a13bbdd5be8807-1"</ETag><ChecksumCRC64NVME>agB0NeCbMGc=</ChecksumCRC64NVME><ChecksumType>FULL_OBJECT</ChecksumType></CompleteMultipartUploadResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 22 Jul 2026 18:10:27 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - AuTVJNjG/thJ9TTtP8rr1ojwq10wWZqYvA3A3joGACqIl+OPqdUWJcKSl1IGc4poBCE3G4u1X3M=
+      x-amz-request-id:
+      - 36AVQR18D2KXB56V
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Bv4HmhyNvhRpYeBmzha_PD9yPW39iZd8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/metadata.txt
+  response:
+    body:
+      string: metadata payload
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '16'
+      Content-Type:
+      - text/plain
+      Date:
+      - Wed, 22 Jul 2026 18:10:28 GMT
+      ETag:
+      - '"75deb5bbc2e2891da6a13bbdd5be8807-1"'
+      Last-Modified:
+      - Wed, 22 Jul 2026 18:10:26 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc64nvme:
+      - agB0NeCbMGc=
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - l5M8Dq5AayM4LzHLEh6pX5EfOrWOnuDBHkbMk0eAkY44gdNXaaI5FPHW+Lt6yVJH7ktavam4EVs=
+      x-amz-meta-team:
+      - conformance
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-20T18:10:25.706Z'
+      x-amz-request-id:
+      - F7HDMAC7QV35D6ED
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Bv4HmhyNvhRpYeBmzha_PD9yPW39iZd8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/metadata.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:28 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 4+GGh5n2Q46J4F1pLHkkC45Aj3N2+1r+DUklHJb+37+ZdiyM+Cfcb38kmIR/F66vGYgEYYp1WiU=
+      x-amz-request-id:
+      - F7H5YM6F9YY8R7D7
+      x-amz-version-id:
+      - AgT4TRZKQNoV1upIkLJsLEr_djqaSqTz
+    status:
+      code: 204
+      message: No Content
+version: 1

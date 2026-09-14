@@ -1,0 +1,133 @@
+site_name: Python Multi-Cloud SDK
+site_description: >-
+  Cloud-agnostic Python SDK providing unified interfaces for object storage,
+  identity, pub/sub, and IAM across AWS and GCP.
+site_url: https://salesforce.github.io/multicloud-py/
+repo_url: https://github.com/salesforce/multicloud-py
+repo_name: salesforce/multicloud-py
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/git-alt
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths:
+            - packages/common/multicloud-common
+            - packages/common/multicloud-aws-common
+            - packages/common/multicloud-gcp-common
+            - packages/blob/multicloud-blob
+            - packages/blob/multicloud-blob-aws
+            - packages/blob/multicloud-blob-gcp
+            - packages/blob/multicloud-blob-alibaba
+            - packages/sts/multicloud-sts
+            - packages/sts/multicloud-sts-aws
+            - packages/sts/multicloud-sts-gcp
+            - packages/sts/multicloud-sts-alibaba
+            - packages/iam/multicloud-iam
+            - packages/iam/multicloud-iam-aws
+            - packages/iam/multicloud-iam-gcp
+            - packages/pubsub/multicloud-pubsub
+            - packages/pubsub/multicloud-pubsub-aws
+            - packages/pubsub/multicloud-pubsub-gcp
+            - packages/pubsub/multicloud-pubsub-alibaba
+          options:
+            docstring_style: google
+            show_root_heading: true
+            show_root_full_path: false
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            show_signature_annotations: true
+            separate_signature: true
+            merge_init_into_class: true
+            docstring_section_style: table
+            members_order: source
+            group_by_category: true
+            heading_level: 2
+            filters:
+              - "!^_"
+
+nav:
+  - Home: index.md
+  - Roadmap: roadmap.md
+  - Guides:
+      - guides/index.md
+      - Blob Storage: guides/blobstore-guide.md
+      - STS: guides/sts-guide.md
+      - Pub/Sub: guides/pubsub-guide.md
+  - Design:
+      - design/index.md
+      - Layers: design/layers.md
+      - Errors: design/errors.md
+  - API Reference:
+      - api/index.md
+      - multicloud.blob: api/blob.md
+      - multicloud.sts: api/sts.md
+      - multicloud.iam: api/iam.md
+      - multicloud.pubsub: api/pubsub.md
+      - multicloud.common: api/common.md
+
+extra:
+  generator: false

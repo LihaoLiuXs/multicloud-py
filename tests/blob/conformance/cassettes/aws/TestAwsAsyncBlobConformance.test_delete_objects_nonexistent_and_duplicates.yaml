@@ -1,0 +1,154 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '7'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - c2b1c141-5299-4d5c-8712-45167dd329fb
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-existing.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:07:28 GMT
+      Etag:
+      - '"47ed49958e2500d72e305f85ed316c91"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - /byuFw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - RW0LGEK6pS0TtJutKaIiMJZHHB1OnP5+ytx+g7TPpYOw+u7LwVChoLnRES4UDeOHcjbFTFHxAa8=
+      x-amz-request-id:
+      - TQHXB6ZSS59GYNCZ
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - BqKAvCHnGzjZDDwAPwFsrCXEr2IQr.gF
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>async-conformance-test/delete/batch-existing.txt</Key></Object><Object><Key>async-conformance-test/delete/batch-existing.txt</Key></Object><Object><Key>async-conformance-test/delete/batch-missing-abc.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '296'
+      amz-sdk-invocation-id:
+      - cbc6c0aa-52e7-465f-85c6-dca910187b98
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - mquxtg==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>async-conformance-test/delete/batch-existing.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>_F2VMmDKnJC8LIIPqOWo5inwqfO2uxg5</DeleteMarkerVersionId></Deleted><Deleted><Key>async-conformance-test/delete/batch-missing-abc.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>6g2_JCNIG9dVuVgZs7PZoYeLyw1lkhw0</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:29 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - GW586Hd/dxLTx9qiqNFOryNS/+lsleaWr7fKyqcrtOZlCWh5fU9zQIIUE4lr0QWohN6dwYtits0=
+      x-amz-request-id:
+      - R31H6C4YCS3M796M
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - dc8645d2-443a-4b21-97ee-73b9e21fd2eb
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-existing.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/delete/batch-existing.txt</Key><RequestId>R31ZEWBK96FQ1CT5</RequestId><HostId>0lj8UVA/eWPnyidZ9M81iTjRkN9mjpwEBD2kovo/gaWtRo/FXLfznIAUYFzbac6N0xZ71r5YwJo=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:27 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 0lj8UVA/eWPnyidZ9M81iTjRkN9mjpwEBD2kovo/gaWtRo/FXLfznIAUYFzbac6N0xZ71r5YwJo=
+      x-amz-request-id:
+      - R31ZEWBK96FQ1CT5
+      x-amz-version-id:
+      - _F2VMmDKnJC8LIIPqOWo5inwqfO2uxg5
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 14d50f34-9195-4385-b162-0d3c119a4db4
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-existing.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:29 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - xAh54+OIeaOMksNWDmPzOm9+vimRYoDD9OdesBPxwM6fqDbBUXmIZ4hUxkIJhdsgPof+Bmz30XU=
+      x-amz-request-id:
+      - R31PEK4C1DPMV24V
+      x-amz-version-id:
+      - 3YaCAxA9PZQMhEdo6S.UlnFn7qRfDZfj
+    status:
+      code: 204
+      message: No Content
+version: 1

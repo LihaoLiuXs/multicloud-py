@@ -1,0 +1,145 @@
+interactions:
+- request:
+    body: "--===============6284932439384408553==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/delete/single.txt\", \"crc32c\":
+      \"N2P7zQ==\"}\r\n--===============6284932439384408553==\r\ncontent-type: text/plain\r\n\r\ndelete
+      me\r\n--===============6284932439384408553==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '278'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT02Mjg0OTMyNDM5Mzg0
+        NDA4NTUzPT0i
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - text/plain
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/delete/single.txt/1782997662264936\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fsingle.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fsingle.txt?generation=1782997662264936&alt=media\",\n
+        \ \"name\": \"conformance-test/delete/single.txt\",\n  \"bucket\": \"testcloud-python-sdk-bucket\",\n
+        \ \"generation\": \"1782997662264936\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"text/plain\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"9\",\n  \"md5Hash\":
+        \"OQTdem9pMzCa+N957vxoNQ==\",\n  \"crc32c\": \"N2P7zQ==\",\n  \"etag\": \"COjcrfKHtJUDEAE=\",\n
+        \ \"timeCreated\": \"2026-07-02T13:07:42.338Z\",\n  \"updated\": \"2026-07-02T13:07:42.338Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-02T13:07:42.338Z\",\n  \"timeFinalized\":
+        \"2026-07-02T13:07:42.338Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '923'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Jul 2026 13:07:42 GMT
+      ETag:
+      - COjcrfKHtJUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhHT2IGMSUvB61_Z4jrWhlU0GR9Vj61di9Fm2cSAu5qK9C2OGMzJ5jq9Wrb3Myilsem_
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fsingle.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 02 Jul 2026 13:07:42 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEht6Olx47YfnbhQ8uYhMrgEM8PaPBRxvBZ5p8TE-V6_3LN-H7sU_GWql2JuC7_4opM8VkDrGA
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fsingle.txt?alt=media
+  response:
+    body:
+      string: 'No such object: testcloud-python-sdk-bucket/conformance-test/delete/single.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '74'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 02 Jul 2026 13:07:43 GMT
+      Expires:
+      - Thu, 02 Jul 2026 13:07:43 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhFu4g5MnoLjePQKgjApjWHW8XXRFGDIePspSChKcqpV1rpLxaw3yvUJMPtFZMBJOygX
+    status:
+      code: 404
+      message: Not Found
+version: 1

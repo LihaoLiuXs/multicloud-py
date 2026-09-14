@@ -1,0 +1,187 @@
+interactions:
+- request:
+    body: "--===============6986527936601685622==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/delete/idempotent.txt\",
+      \"crc32c\": \"9C1ieQ==\"}\r\n--===============6986527936601685622==\r\ncontent-type:
+      application/octet-stream\r\n\r\nonce\r\n--===============6986527936601685622==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '291'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT02OTg2NTI3OTM2NjAx
+        Njg1NjIyPT0i
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/delete/idempotent.txt/1782997696251256\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fidempotent.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fidempotent.txt?generation=1782997696251256&alt=media\",\n
+        \ \"name\": \"conformance-test/delete/idempotent.txt\",\n  \"bucket\": \"testcloud-python-sdk-bucket\",\n
+        \ \"generation\": \"1782997696251256\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"application/octet-stream\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"4\",\n  \"md5Hash\": \"4u/2wtr9kJ34UI+JGzhdiA==\",\n  \"crc32c\": \"9C1ieQ==\",\n
+        \ \"etag\": \"CPiKyIKItJUDEAE=\",\n  \"timeCreated\": \"2026-07-02T13:08:16.327Z\",\n
+        \ \"updated\": \"2026-07-02T13:08:16.327Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-07-02T13:08:16.327Z\",\n  \"timeFinalized\": \"2026-07-02T13:08:16.327Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '953'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Jul 2026 13:08:16 GMT
+      ETag:
+      - CPiKyIKItJUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhHiQxESAi-QRlkyDhKmun9S0oT7l-oZ11ZnX3CqVHWb-xxiiSXNfYmNnyYvCudmXnii
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fidempotent.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 02 Jul 2026 13:08:16 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhFgO57Rg0EkcIospgRcHMvgB__n5CoKHSLDuFyO3IDJEqVI8LHmiHbFTv6pcu_8bH2b
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fidempotent.txt?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/delete/idempotent.txt","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/delete/idempotent.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '255'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 02 Jul 2026 13:08:17 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhFPC72L_YIIfoXZWMv1mybqGaKkNGMuGqBsKUvNNLflnNRz_kQcSkgHoVhraN6kw1ji6Nk4eKg
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fidempotent.txt?alt=media
+  response:
+    body:
+      string: 'No such object: testcloud-python-sdk-bucket/conformance-test/delete/idempotent.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '78'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 02 Jul 2026 13:08:17 GMT
+      Expires:
+      - Thu, 02 Jul 2026 13:08:17 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhHyQr2S4xHx9kM8s1EeYIXgEdODk8Yx4cYQx8S8kDc0zS4uG185Bpn4PvhQUe8qlys5ffo1FRk
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,0 +1,241 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTMNCmNvbXBsaWFuY2UtcmV0YWluZWQNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOlVuTUVHQT09
+        DQoNCg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTk=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YmQ4YWM4OWItZGZmNi00Y2M0LTg3NDQtYmYxYTkwZjc5NTEz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-object-lock-mode:
+      - !!binary |
+        Q09NUExJQU5DRQ==
+      x-amz-object-lock-retain-until-date:
+      - !!binary |
+        MjAyNi0wOC0zMFQwMDowMDowMFo=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/retention-compliance-20260830.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 20:05:26 GMT
+      ETag:
+      - '"3b8983bb89b74b9e0161242fd1613040"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - UnMEGA==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 6CLGpWxEu7Gyrla7H1odxuTZs7PyJrrR9tO/YFK794Tg8ofqxlWN9wVgDPh1BXvFUENXgj2VSKwQnO3VKsztD5JWE/yghh+E
+      x-amz-request-id:
+      - CX3QS8HPHKZ3S9BP
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 8e5vHJCSI6Rs0hC5kG0ZwsS.O8IE5b_I
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZWIzMzlmYjEtNjdkOS00MzM2LWJkMWEtNjYwNzI4NGM4ZjU5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/retention-compliance-20260830.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>COMPLIANCE</Mode><RetainUntilDate>2026-08-30T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Fri, 07 Aug 2026 20:05:26 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - ec4iRq4QTvDPuYzpibLe36wKjgdfV/cqFJWSrwZm7WojzqvT8QirmO8FPjyb3JGW+3OzSJ15jyHxdMT/4OXDplR0/iOm886O
+      x-amz-request-id:
+      - CX3NPBH960D60G6J
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ODUxNTJmMjQtM2Y0Mi00ZGUzLTlmMWQtZjg4NDhkYjNiNWIz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/retention-compliance-20260830.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>CX3V64XD7CTQB6FC</RequestId><HostId>hJ50QcEHg00Z3S6NdF4SbDDcrsCUe5VSaBr8jqqvRii1R1rjGwYbq2oVJvN/s3PJNboGlORv0H/kd4npuC8jeqNCs+e0oJDL</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:05:25 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - hJ50QcEHg00Z3S6NdF4SbDDcrsCUe5VSaBr8jqqvRii1R1rjGwYbq2oVJvN/s3PJNboGlORv0H/kd4npuC8jeqNCs+e0oJDL
+      x-amz-request-id:
+      - CX3V64XD7CTQB6FC
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '91'
+      amz-sdk-invocation-id:
+      - !!binary |
+        N2I1M2VkNTMtMWVhMy00ZGFlLTllYTMtZmFjMDA3ZmM2MmMz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        U1dxNnpnPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/retention-compliance-20260830.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 20:05:27 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - +bz/SgMmcOpMnQ82gszlJwMGZeTICvGc1PN5B8UrJ8ffov+7IeHvIkxOpxC61On3qsyHKZg9k3noNwRinroumFg2rNS3/tls
+      x-amz-request-id:
+      - WFR8X4JWMXY7CNT8
+      x-amz-version-id:
+      - 8e5vHJCSI6Rs0hC5kG0ZwsS.O8IE5b_I
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZmNhMTM3ZWMtMjUwOS00ZmRmLWJmOGMtN2NkOTUzMzI3MWMz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Fobject-lock%2Fretention-compliance-20260830.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>conformance-test/object-lock/retention-compliance-20260830.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/object-lock/retention-compliance-20260830.txt</Key><VersionId>8e5vHJCSI6Rs0hC5kG0ZwsS.O8IE5b_I</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-07T20:05:26.000Z</LastModified><ETag>&quot;3b8983bb89b74b9e0161242fd1613040&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:05:27 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - QkEypUvCulvW7usII/z2335xvAMY20zjkHgpysCpfkuMz3s0m9DTjOUpv4Yq+v/dhJ07PK+dO5CSsYi4eOdGJC3dyLDg6uNd
+      x-amz-request-id:
+      - WFR30J2H4A8CRXZ7
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWMwZmIzOTItOGExOS00Y2MyLTgzYTQtMDMzZTA5ZGZhM2My
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/retention-compliance-20260830.txt?versionId=8e5vHJCSI6Rs0hC5kG0ZwsS.O8IE5b_I
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>AccessDenied</Code><Message>Access Denied because object protected
+        by object lock.</Message><RequestId>6EW3J39X22EBQTK6</RequestId><HostId>R7/JaCGff5D+Exr++qpAE97P1Bf1ST2feBs+GxgHK3SZeJg40N4YZSv6XrgNZBEd7GxvCzxsKCrw6KECkT1FzI2tyoNKVUJa</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:05:26 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - R7/JaCGff5D+Exr++qpAE97P1Bf1ST2feBs+GxgHK3SZeJg40N4YZSv6XrgNZBEd7GxvCzxsKCrw6KECkT1FzI2tyoNKVUJa
+      x-amz-request-id:
+      - 6EW3J39X22EBQTK6
+    status:
+      code: 403
+      message: Forbidden
+version: 1

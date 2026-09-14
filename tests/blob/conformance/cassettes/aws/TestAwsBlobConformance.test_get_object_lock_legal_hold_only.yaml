@@ -1,0 +1,267 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        Yw0KbGVnYWxseS1oZWxkDQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjo0aG9rWmc9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTI=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        M2Y1MTliOTktY2JkMC00MGFmLWI5ODgtMzYxMjA2MWMwMThm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/legal-hold-only.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 20:05:28 GMT
+      ETag:
+      - '"d343b3695142349c7f013be82b2958d0"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 4hokZg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - I4TYVQSz69IFRerkI4y2ujtdphRfAHlb7qSSVvs1euK8NS3xYNgsR4BbrdlxdtDd3CIXdxYvFVqf5TPeJY3u1lqXz2rnTP+i
+      x-amz-request-id:
+      - 6EW7A4SV5DNFFYRF
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 9OlRWT8IGhbwytxR6NeoxDF02axC.lt3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '90'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NzRjNGVmOWItYmY5My00ZjI1LWJlNjctYjNkNDg1NGZhMjI2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        NlhXeGx3PT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/legal-hold-only.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 20:05:28 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - gdLO6+N/ZfePtOTEO7p9QyejFeA1qD4OwPZKAQ9rrr9I8b0Tc1oOywlZmze0NQI1qXctJO+RMFgSOZzmMwuXUZ8yjmCuD8SQ
+      x-amz-request-id:
+      - 6EWCMKEWCR5AQ320
+      x-amz-version-id:
+      - 9OlRWT8IGhbwytxR6NeoxDF02axC.lt3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        OTAyZjU3YjUtYTM4OS00Zjg3LWFjODItMzg5N2RjNmQ2MDFh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/legal-hold-only.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>JBHX8BM53GSEMSR0</RequestId><HostId>0l4aq4cHU56vZr+4oidZCVhIIaoBxaq2Uu+buvyYXK9IGnq0v2Caea22jfs8v2qY4Y+BkJWUBmf+LbaMaSFTloxyMqO9TN69</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:05:27 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 0l4aq4cHU56vZr+4oidZCVhIIaoBxaq2Uu+buvyYXK9IGnq0v2Caea22jfs8v2qY4Y+BkJWUBmf+LbaMaSFTloxyMqO9TN69
+      x-amz-request-id:
+      - JBHX8BM53GSEMSR0
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NjdjN2E4YjUtNDYyYS00NzA3LTlmMDAtMzczMmE0ODEyODVi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/legal-hold-only.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>'
+    headers:
+      Date:
+      - Fri, 07 Aug 2026 20:05:29 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - GN+0+ir6mfrr0OSikKz8fnJG0YJ0CqRQGeVTD2XyGJD3f2nyJXja1Jv3k+cE6GpTK1d7TYQV8k12o9Wik6S+lo28PVL6fGDS
+      x-amz-request-id:
+      - JBHSGSAX9BTQME2P
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '91'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NjQ5MzI5MjMtMDI0Ny00YjE3LTlkOTEtM2M1MDdiYmMwYzM3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        U1dxNnpnPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/legal-hold-only.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 20:05:30 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - B2NB2iCgVfizqYv4CLC6/pZTsmKCI4KT7VuMuem6kWuJELK7aE4h+TSG0y5yiJurG2FypcGfOy0ku0OZ0qzGyXKnn0JSeRKE
+      x-amz-request-id:
+      - AP8EWYKBAN5JPRWT
+      x-amz-version-id:
+      - 9OlRWT8IGhbwytxR6NeoxDF02axC.lt3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NjUwN2JjMjgtNzY0OC00NzIxLWE2MTQtYzExMmUzYjk0MzM3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Fobject-lock%2Flegal-hold-only.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>conformance-test/object-lock/legal-hold-only.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/object-lock/legal-hold-only.txt</Key><VersionId>9OlRWT8IGhbwytxR6NeoxDF02axC.lt3</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-07T20:05:28.000Z</LastModified><ETag>&quot;d343b3695142349c7f013be82b2958d0&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>12</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:05:30 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - AfJ7AgF8G536TVGcfw2Wk8v4XuDHnMlE2YnzkxOCpGy2FQDJW0D+GprsgR2A8gCkQn4Sz8TsYwWd92FEjdctOq5tdwQqJOH+
+      x-amz-request-id:
+      - AP80651HZEYSGWTD
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NmEzNTA3NDEtNzIxOS00Mzc3LThlMmMtNjQ2YmY5MTUxZjcz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/object-lock/legal-hold-only.txt?versionId=9OlRWT8IGhbwytxR6NeoxDF02axC.lt3
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Fri, 07 Aug 2026 20:05:31 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - ADSQxZ6Iq5a73DJchJWZGD4NvzMKq494kUS+dd/HDRs6ZnuAl284gUAqh4mK1EuZqMKFWt3jed8Dk6lCBTv4Wf84cszhbhgO
+      x-amz-request-id:
+      - TC41RBQTDFGNG86Z
+      x-amz-version-id:
+      - 9OlRWT8IGhbwytxR6NeoxDF02axC.lt3
+    status:
+      code: 204
+      message: No Content
+version: 1

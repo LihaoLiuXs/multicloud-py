@@ -1,0 +1,88 @@
+interactions:
+- request:
+    body: '{"delegates": [], "scope": ["https://www.googleapis.com/auth/cloud-platform"],
+      "lifetime": "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_ACCESSTOKEN","expireTime":"2026-08-07T02:18:00Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:18:00 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"payload": "R09PRzQtUlNBLVNIQTI1NgoyMDI2MDgwN1QwMTE4MDBaCjIwMjYwODA3L2F1dG8vc3RvcmFnZS9nb29nNF9yZXF1ZXN0CjA2MDExOTdlM2QzODkzMzk0ZDAwODE4MWZhYWNiMWFiZGUzM2IxMjI0MDEzZDI1MGM0NjM5MjFlYmU4YmM5MDE="}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '195'
+      Content-type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:signBlob?alt=json
+  response:
+    body:
+      string: "{\n  \"keyId\": \"77981b5f69cbdf78032905e17dde4d8e3cd7f2c3\",\n  \"signedBlob\":
+        \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:18:01 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '422'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,37 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MTA2MTRiYzEtZTJmYy00MzdlLTkzYmQtYjk2NWZkNmUwMDg0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://multicloud-conformance-nonexistent-bucket-aws-9f8e7d.s3.us-west-2.amazonaws.com/conformance-test/nonexistent-bucket-probe.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>multicloud-conformance-nonexistent-bucket-aws-9f8e7d</BucketName><RequestId>1VDTYX7W1HMA8WJ6</RequestId><HostId>VgTroZ6UCvrk0lA/uqCnyJ4x6lD2zp02RrSkTkY+1J9zuyLjrRg3Q0FFvnkkkE8O2RcInboI0hPiuawReOT6Ex6iRnqDqQn7</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 01:40:39 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - VgTroZ6UCvrk0lA/uqCnyJ4x6lD2zp02RrSkTkY+1J9zuyLjrRg3Q0FFvnkkkE8O2RcInboI0hPiuawReOT6Ex6iRnqDqQn7
+      x-amz-request-id:
+      - 1VDTYX7W1HMA8WJ6
+    status:
+      code: 404
+      message: Not Found
+version: 1

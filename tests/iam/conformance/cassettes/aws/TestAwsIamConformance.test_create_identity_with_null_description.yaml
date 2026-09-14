@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: Action=CreateRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-nodesc&AssumeRolePolicyDocument=%7B%22Version%22%3A+%222012-10-17%22%2C+%22Statement%22%3A+%5B%7B%22Effect%22%3A+%22Allow%22%2C+%22Action%22%3A+%22sts%3AAssumeRole%22%2C+%22Principal%22%3A+%7B%22AWS%22%3A+%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%5D%7D%7D%5D%7D&Description=
+    headers:
+      Content-Length:
+      - '348'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<CreateRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <CreateRoleResult>\n    <Role>\n      <Path>/</Path>\n      <AssumeRolePolicyDocument>%7B%22Version%22%3A%20%222012-10-17%22%2C%20%22Statement%22%3A%20%5B%7B%22Effect%22%3A%20%22Allow%22%2C%20%22Action%22%3A%20%22sts%3AAssumeRole%22%2C%20%22Principal%22%3A%20%7B%22AWS%22%3A%20%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%5D%7D%7D%5D%7D</AssumeRolePolicyDocument>\n
+        \     <RoleId>AROAEXAMPLE0000000000Z</RoleId>\n      <RoleName>MultiCloudPyTestRole-nodesc</RoleName>\n
+        \     <Arn>arn:aws:iam::123456789012:role/MultiCloudPyTestRole-nodesc</Arn>\n
+        \     <CreateDate>2026-07-17T08:17:02Z</CreateDate>\n    </Role>\n  </CreateRoleResult>\n
+        \ <ResponseMetadata>\n    <RequestId>778356c4-5ede-4d6a-b33f-f57ff9873cf1</RequestId>\n
+        \ </ResponseMetadata>\n</CreateRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '828'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:02 GMT
+      x-amzn-RequestId:
+      - 778356c4-5ede-4d6a-b33f-f57ff9873cf1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=DeleteRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-nodesc
+    headers:
+      Content-Length:
+      - '72'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<DeleteRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <ResponseMetadata>\n    <RequestId>275bec15-58f9-421b-9078-4022b3874308</RequestId>\n
+        \ </ResponseMetadata>\n</DeleteRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '200'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:17:03 GMT
+      x-amzn-RequestId:
+      - 275bec15-58f9-421b-9078-4022b3874308
+    status:
+      code: 200
+      message: OK
+version: 1

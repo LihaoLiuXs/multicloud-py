@@ -1,0 +1,216 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4
+        OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWltcXV5fYGFiY2RlZmdoaWprbG1ub3Bx
+        cnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmq
+        q6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj
+        5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+/wABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhsc
+        HR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RV
+        VldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2O
+        j5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbH
+        yMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8A
+        AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5
+        Ojs8PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZ2hpamtsbW5vcHFy
+        c3R1dnd4eXp7fH1+f4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6Slpqeoqaqr
+        rK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1tfY2drb3N3e3+Dh4uPk
+        5ebn6Onq6+zt7u/w8fLz9PX29/j5+vv8/f7/AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwd
+        Hh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVW
+        V1hZWltcXV5fYGFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6P
+        kJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmqq6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfI
+        ycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+/w==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '1024'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/upload/binary.bin&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/upload/binary.bin/1787242187813175\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin?generation=1787242187813175&alt=media\",\n
+        \ \"name\": \"async-conformance-test/upload/binary.bin\",\n  \"bucket\": \"python-async-test-bucket\",\n
+        \ \"generation\": \"1787242187813175\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"application/octet-stream\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"1024\",\n  \"md5Hash\": \"suqff86oMaSmOyE/QaiFWw==\",\n  \"crc32c\": \"LN9ujw==\",\n
+        \ \"etag\": \"CLfi7f3Lr5YDEAE=\",\n  \"timeCreated\": \"2026-08-20T16:09:47.882Z\",\n
+        \ \"updated\": \"2026-08-20T16:09:47.882Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-08-20T16:09:47.882Z\",\n  \"timeFinalized\": \"2026-08-20T16:09:47.882Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '964'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:09:47 GMT
+      Etag:
+      - CLfi7f3Lr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZL0YWfI-7t0SvFlx6UyXDuaVIn3rOMktYWXkp-qnen-RzNU1cE0ImXSuYZIkYKUCdf5qNo7co
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin?alt=media
+  response:
+    body:
+      string: !!binary |
+        AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4
+        OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWltcXV5fYGFiY2RlZmdoaWprbG1ub3Bx
+        cnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmq
+        q6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj
+        5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+/wABAgMEBQYHCAkKCwwNDg8QERITFBUWFxgZGhsc
+        HR4fICEiIyQlJicoKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj9AQUJDREVGR0hJSktMTU5PUFFSU1RV
+        VldYWVpbXF1eX2BhYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5ent8fX5/gIGCg4SFhoeIiYqLjI2O
+        j5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbH
+        yMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8A
+        AQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5
+        Ojs8PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZ2hpamtsbW5vcHFy
+        c3R1dnd4eXp7fH1+f4CBgoOEhYaHiImKi4yNjo+QkZKTlJWWl5iZmpucnZ6foKGio6Slpqeoqaqr
+        rK2ur7CxsrO0tba3uLm6u7y9vr/AwcLDxMXGx8jJysvMzc7P0NHS09TV1tfY2drb3N3e3+Dh4uPk
+        5ebn6Onq6+zt7u/w8fLz9PX29/j5+vv8/f7/AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwd
+        Hh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+P0BBQkNERUZHSElKS0xNTk9QUVJTVFVW
+        V1hZWltcXV5fYGFiY2RlZmdoaWprbG1ub3BxcnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6P
+        kJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmqq6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfI
+        ycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+/w==
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '1024'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 20 Aug 2026 16:09:47 GMT
+      Etag:
+      - CLfi7f3Lr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Thu, 20 Aug 2026 16:09:47 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bBHFnSro6LQn5qfrC1yf6nIKm8aQljtg-plYikqEcVj7BNhFmsyBO3cZdEh1m-c0BcNfu9uh8
+      X-Goog-Generation:
+      - '1787242187813175'
+      X-Goog-Hash:
+      - crc32c=LN9ujw==,md5=suqff86oMaSmOyE/QaiFWw==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '1024'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/upload/binary.bin/1787242187813175\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin?generation=1787242187813175&alt=media\",\n
+        \ \"name\": \"async-conformance-test/upload/binary.bin\",\n  \"bucket\": \"python-async-test-bucket\",\n
+        \ \"generation\": \"1787242187813175\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"application/octet-stream\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"1024\",\n  \"md5Hash\": \"suqff86oMaSmOyE/QaiFWw==\",\n  \"crc32c\": \"LN9ujw==\",\n
+        \ \"etag\": \"CLfi7f3Lr5YDEAE=\",\n  \"timeCreated\": \"2026-08-20T16:09:47.882Z\",\n
+        \ \"updated\": \"2026-08-20T16:09:47.882Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-08-20T16:09:47.882Z\",\n  \"timeFinalized\": \"2026-08-20T16:09:47.882Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '964'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:09:48 GMT
+      Etag:
+      - CLfi7f3Lr5YDEAE=
+      Expires:
+      - Thu, 20 Aug 2026 16:09:48 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9adTJy9deJXYxLBHv-snl59Dl9MdkrNiAC-PlHbrmIlXyHyh6IU3ho_RulOFzjlzffQt_12TEA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fupload%2Fbinary.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 16:09:48 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aeVVb3a0_AGOvBjdVuOj49rGGPOAOcbr51dV2jt2cnowpmaO3rfyneAbpMPbsDqkgfhZiAUZ0
+    status:
+      code: 204
+      message: No Content
+version: 1

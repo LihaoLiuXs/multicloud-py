@@ -1,0 +1,187 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/complete-after-abort.bin?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test/multipart/complete-after-abort.bin</Key><UploadId>ekn3clHbC5b_2hC3wJ3ZBBbZPKBPC9svTzNb4G5D_VvLzvSZAuzX11m6X9IfqhbTx9lnm_v1FfR5qWvGSBBuhX4lrWihWri2WoeUsO64aZ9u.l3Wg28yDsKUWBNmLroKw.7b2x34eRoYtpB1wOtQQrtODvyuTntLp0WbM0ZolPWoV8OvBDZY0pElLbJNpk4Z</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:34 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - J82mH3yOwloS44xka80ah4Ph+3iULlEJ4vdSxhNBh5iuqA3DDkW2Onq4onM1Zixa0HzJEvAvXiM=
+      x-amz-request-id:
+      - PKW9CR8G41J0H3NQ
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        OQ0KZ29uZSBzb29uDQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjo1OTkwMlE9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        OQ==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/complete-after-abort.bin?uploadId=ekn3clHbC5b_2hC3wJ3ZBBbZPKBPC9svTzNb4G5D_VvLzvSZAuzX11m6X9IfqhbTx9lnm_v1FfR5qWvGSBBuhX4lrWihWri2WoeUsO64aZ9u.l3Wg28yDsKUWBNmLroKw.7b2x34eRoYtpB1wOtQQrtODvyuTntLp0WbM0ZolPWoV8OvBDZY0pElLbJNpk4Z&partNumber=1
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 22 Jul 2026 18:10:35 GMT
+      ETag:
+      - '"a5f228035886273da74bfa420c4b245c"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 59902Q==
+      x-amz-id-2:
+      - axS6CW2feksr2qsQo9KtbnhmxhK8vaT3BHBt5qx527WrIQbnpmSJUNlpAW65an7ZDbGiovs8OTA=
+      x-amz-request-id:
+      - K4ZBKND9QVMG843K
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/complete-after-abort.bin?uploadId=ekn3clHbC5b_2hC3wJ3ZBBbZPKBPC9svTzNb4G5D_VvLzvSZAuzX11m6X9IfqhbTx9lnm_v1FfR5qWvGSBBuhX4lrWihWri2WoeUsO64aZ9u.l3Wg28yDsKUWBNmLroKw.7b2x34eRoYtpB1wOtQQrtODvyuTntLp0WbM0ZolPWoV8OvBDZY0pElLbJNpk4Z
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:35 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - S2lcSv9KT42zbARqmkfq4TKw/aKQNK1vweTmYk7hJ53PkvGwXUfDspQlOBR2gAO5NVynw6f8kPU=
+      x-amz-request-id:
+      - K4Z5MMX1K392CZXT
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: <CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><PartNumber>1</PartNumber><ETag>a5f228035886273da74bfa420c4b245c</ETag></Part></CompleteMultipartUpload>
+    headers:
+      Content-Length:
+      - '183'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/complete-after-abort.bin?uploadId=ekn3clHbC5b_2hC3wJ3ZBBbZPKBPC9svTzNb4G5D_VvLzvSZAuzX11m6X9IfqhbTx9lnm_v1FfR5qWvGSBBuhX4lrWihWri2WoeUsO64aZ9u.l3Wg28yDsKUWBNmLroKw.7b2x34eRoYtpB1wOtQQrtODvyuTntLp0WbM0ZolPWoV8OvBDZY0pElLbJNpk4Z
+  response:
+    body:
+      string: <Error><Code>NoSuchUpload</Code><Message>The specified upload does not
+        exist. The upload ID may be invalid, or the upload may have been aborted or
+        completed.</Message><UploadId>ekn3clHbC5b_2hC3wJ3ZBBbZPKBPC9svTzNb4G5D_VvLzvSZAuzX11m6X9IfqhbTx9lnm_v1FfR5qWvGSBBuhX4lrWihWri2WoeUsO64aZ9u.l3Wg28yDsKUWBNmLroKw.7b2x34eRoYtpB1wOtQQrtODvyuTntLp0WbM0ZolPWoV8OvBDZY0pElLbJNpk4Z</UploadId><RequestId>G1836JC898YAHSZC</RequestId><HostId>K42AVWX3m+Y1fTK0eEh9zXqtnttehZGiIVhTHt2BrWVb4C2YR7zkz0cw2zASHEcNEJ9dtWdGFTE=</HostId></Error>
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 22 Jul 2026 18:10:34 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - K42AVWX3m+Y1fTK0eEh9zXqtnttehZGiIVhTHt2BrWVb4C2YR7zkz0cw2zASHEcNEJ9dtWdGFTE=
+      x-amz-request-id:
+      - G1836JC898YAHSZC
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/complete-after-abort.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:36 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - Rw4OeCXSRanVPsUmqR9//Pp25BmjEuRQIx8uOJSYDk5mAoxJkVJDKTGpzA1+oJqf0mm8N4ednng=
+      x-amz-request-id:
+      - G180HVVP3CTTF66J
+      x-amz-version-id:
+      - v1azhH_5aIf69OJlk9S54WZc.HXpOMAl
+    status:
+      code: 204
+      message: No Content
+version: 1

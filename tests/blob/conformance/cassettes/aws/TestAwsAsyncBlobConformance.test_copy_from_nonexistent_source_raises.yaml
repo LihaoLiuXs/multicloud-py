@@ -1,0 +1,34 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 5d162772-c722-4439-bd61-bc052c65f04a
+      amz-sdk-request:
+      - attempt=1
+      x-amz-copy-source:
+      - testcloud-python-sdk-bucket/async-conformance-test/copyfrom/does-not-exist-abc123.txt
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/copyfrom/dest-missing-src.txt
+  response:
+    body:
+      string: <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/copyfrom/does-not-exist-abc123.txt</Key><RequestId>CXYY7KQR8RE0ZJ7T</RequestId><HostId>dCyisO9Sif7Zwy1ryDeByHgiV7ITT7o99mXTCUcbXV2fAXA579Vg39E6ixKB+zXlRNTjT0/IgUq0dVtUpmQnyGCI+DeMwCJm</HostId></Error>
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:06:18 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - dCyisO9Sif7Zwy1ryDeByHgiV7ITT7o99mXTCUcbXV2fAXA579Vg39E6ixKB+zXlRNTjT0/IgUq0dVtUpmQnyGCI+DeMwCJm
+      x-amz-request-id:
+      - CXYY7KQR8RE0ZJ7T
+    status:
+      code: 404
+      message: Not Found
+version: 1

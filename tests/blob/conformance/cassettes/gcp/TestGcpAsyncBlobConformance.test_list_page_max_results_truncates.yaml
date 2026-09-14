@@ -1,0 +1,405 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dHJ1bmNhdGlvbiBwYXlsb2Fk
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/list-page/truncate-ns/obj-0.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/list-page/truncate-ns/obj-0.txt/1787241475767044\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-0.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-0.txt?generation=1787241475767044&alt=media\",\n
+        \ \"name\": \"async-conformance-test/list-page/truncate-ns/obj-0.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787241475767044\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"qzPDT6DkmhzTsjHQzAu67w==\",\n
+        \ \"crc32c\": \"2iGaWw==\",\n  \"etag\": \"CIT2qarJr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T15:57:55.828Z\",\n  \"updated\": \"2026-08-20T15:57:55.828Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T15:57:55.828Z\",\n  \"timeFinalized\":
+        \"2026-08-20T15:57:55.828Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1022'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 15:57:55 GMT
+      Etag:
+      - CIT2qarJr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9btZtRZWVf3DUDaRsz7C4e7EnLa5LWmyBzR0pubH1OscmnuB8qmPgQJ4sTyvee1C4sI6gkKKEg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dHJ1bmNhdGlvbiBwYXlsb2Fk
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/list-page/truncate-ns/obj-1.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/list-page/truncate-ns/obj-1.txt/1787241475953027\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-1.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-1.txt?generation=1787241475953027&alt=media\",\n
+        \ \"name\": \"async-conformance-test/list-page/truncate-ns/obj-1.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787241475953027\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"qzPDT6DkmhzTsjHQzAu67w==\",\n
+        \ \"crc32c\": \"2iGaWw==\",\n  \"etag\": \"CIOjtarJr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T15:57:56.016Z\",\n  \"updated\": \"2026-08-20T15:57:56.016Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T15:57:56.016Z\",\n  \"timeFinalized\":
+        \"2026-08-20T15:57:56.016Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1022'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Etag:
+      - CIOjtarJr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YqrlBuOoZcW6BQEpBs1q1A3XzMsYiWU-QENg_whXfGzDg6lXS3Z5-WeCiwwn852wzdJsmuhD4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dHJ1bmNhdGlvbiBwYXlsb2Fk
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/list-page/truncate-ns/obj-2.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/list-page/truncate-ns/obj-2.txt/1787241476151427\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-2.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-2.txt?generation=1787241476151427&alt=media\",\n
+        \ \"name\": \"async-conformance-test/list-page/truncate-ns/obj-2.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787241476151427\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"qzPDT6DkmhzTsjHQzAu67w==\",\n
+        \ \"crc32c\": \"2iGaWw==\",\n  \"etag\": \"CIOxwarJr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T15:57:56.214Z\",\n  \"updated\": \"2026-08-20T15:57:56.214Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T15:57:56.214Z\",\n  \"timeFinalized\":
+        \"2026-08-20T15:57:56.214Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1022'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Etag:
+      - CIOxwarJr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bscOwJmC8hH-vcBLrPAw9FonXxBpcA6fbq22M31FrI9XM5hUEojyw6WQG1ich_aFCrzWzNwJs
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dHJ1bmNhdGlvbiBwYXlsb2Fk
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '18'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/list-page/truncate-ns/obj-3.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/list-page/truncate-ns/obj-3.txt/1787241476350778\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-3.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-3.txt?generation=1787241476350778&alt=media\",\n
+        \ \"name\": \"async-conformance-test/list-page/truncate-ns/obj-3.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787241476350778\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"qzPDT6DkmhzTsjHQzAu67w==\",\n
+        \ \"crc32c\": \"2iGaWw==\",\n  \"etag\": \"CLrGzarJr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T15:57:56.412Z\",\n  \"updated\": \"2026-08-20T15:57:56.412Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T15:57:56.412Z\",\n  \"timeFinalized\":
+        \"2026-08-20T15:57:56.412Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1022'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Etag:
+      - CLrGzarJr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZhPIigrP5kBYs3_H4xUNP9mpyn5V8064mN3hi6pJ1joW6bIL9QtgdQJQ7ipRYNwDZF0um2x_I
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o?maxResults=2&prefix=async-conformance-test/list-page/truncate-ns/
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\",\n  \"nextPageToken\": \"CjZhc3luYy1jb25mb3JtYW5jZS10ZXN0L2xpc3QtcGFnZS90cnVuY2F0ZS1ucy9vYmotMS50eHQ=\",\n
+        \ \"items\": [\n    {\n      \"kind\": \"storage#object\",\n      \"id\":
+        \"python-async-test-bucket/async-conformance-test/list-page/truncate-ns/obj-0.txt/1787241475767044\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-0.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-0.txt?generation=1787241475767044&alt=media\",\n
+        \     \"name\": \"async-conformance-test/list-page/truncate-ns/obj-0.txt\",\n
+        \     \"bucket\": \"python-async-test-bucket\",\n      \"generation\": \"1787241475767044\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"18\",\n      \"md5Hash\":
+        \"qzPDT6DkmhzTsjHQzAu67w==\",\n      \"crc32c\": \"2iGaWw==\",\n      \"etag\":
+        \"CIT2qarJr5YDEAE=\",\n      \"timeCreated\": \"2026-08-20T15:57:55.828Z\",\n
+        \     \"updated\": \"2026-08-20T15:57:55.828Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T15:57:55.828Z\",\n      \"timeFinalized\": \"2026-08-20T15:57:55.828Z\"\n
+        \   },\n    {\n      \"kind\": \"storage#object\",\n      \"id\": \"python-async-test-bucket/async-conformance-test/list-page/truncate-ns/obj-1.txt/1787241475953027\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-1.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-1.txt?generation=1787241475953027&alt=media\",\n
+        \     \"name\": \"async-conformance-test/list-page/truncate-ns/obj-1.txt\",\n
+        \     \"bucket\": \"python-async-test-bucket\",\n      \"generation\": \"1787241475953027\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"18\",\n      \"md5Hash\":
+        \"qzPDT6DkmhzTsjHQzAu67w==\",\n      \"crc32c\": \"2iGaWw==\",\n      \"etag\":
+        \"CIOjtarJr5YDEAE=\",\n      \"timeCreated\": \"2026-08-20T15:57:56.016Z\",\n
+        \     \"updated\": \"2026-08-20T15:57:56.016Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T15:57:56.016Z\",\n      \"timeFinalized\": \"2026-08-20T15:57:56.016Z\"\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '2354'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Expires:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YyXpjqwFEwsbKMEOGM4ZSBgJoq5YrEsG7_dgpR35m46EYbNWy1aNW88XvL7mARvgkE1Ev8vqQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-0.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZkjaSg7JOBVb1IJ-BJCXSExHc8EKvP5f8BQ3c7ZfhPEauAcaQy8JKIvJ_B6iKpWuSTyOFfeRU
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-1.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 15:57:56 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ayBTyD4nBilhJx-JUqgsdmZgnivPa66fWAntYYfmF0UxcSiEpj_w8Vongrg5nSOZbqMkuiut8
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-2.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 15:57:57 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9a5wf_x27EoxtvU04hJ3FgAHdxqKsiws6BsXtWp5AplXBTIEfMoEpLTarecnjR7KlJu15vJh9s
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Flist-page%2Ftruncate-ns%2Fobj-3.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 15:57:57 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YSvOQlpXNeJcnWAnuEs9p3SL1HRlzQ9QW8MwTMefkBzjCFqOZnrl4wOfomOhFDoDLL4YhNv8E
+    status:
+      code: 204
+      message: No Content
+version: 1

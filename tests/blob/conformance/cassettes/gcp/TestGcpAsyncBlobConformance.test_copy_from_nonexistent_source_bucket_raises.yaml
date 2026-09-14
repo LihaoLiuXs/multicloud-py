@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: '{}'
+    headers:
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json; charset=UTF-8
+    method: POST
+    uri: https://www.googleapis.com/storage/v1/b/multicloud-conformance-nonexistent-bucket-xyz-9f8e7d/o/any-key/rewriteTo/b/python-async-test-bucket/o/async-conformance-test%2Fcopyfrom%2Fdest-bad-src-bucket.txt
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"The specified
+        bucket does not exist.\",\n    \"errors\": [\n      {\n        \"message\":
+        \"The specified bucket does not exist.\",\n        \"domain\": \"global\",\n
+        \       \"reason\": \"notFound\"\n      }\n    ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '247'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:03:24 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9absMNe5h8nd1p2VpQx7rqpfgZlKbv9j21_UWyrlg8H-zEp2tqYmf5rk7NV2eAPAJK7jnlJjKw
+    status:
+      code: 404
+      message: Not Found
+version: 1

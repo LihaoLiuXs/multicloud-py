@@ -1,0 +1,200 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - f6443a77-f375-492e-8ec9-998b9b359f92
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-flat/top-two.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:55 GMT
+      Etag:
+      - '"99c212a6bbbdf095e58426364f8e5937"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - OcIBeQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - WxV2wj0TfarIEUpYFiCf7IsyIDWecONtZuIMu3+qhbl9XwFP4aVEUaqh+Vo5DAu0+TXZCZpCKng=
+      x-amz-request-id:
+      - D3HBARGRESYZ5EXC
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - ETL_6LI34joF8TBiWYzNxtQJG07zwVF8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - a91e4981-051b-476b-a993-11b68f35e7b0
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-flat/top-one.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:55 GMT
+      Etag:
+      - '"057c764ffe4c43ce786d932ce2d9fcf9"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - UmQN7g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - H7NRqcvx3KjkuM1ao4I9rKRC7NjEvoftNMr1yjYCH7/WmEwR95lDG5/Z1q0qugxL6OQdS5tyBZY=
+      x-amz-request-id:
+      - D3H3WBKMD0NQP3MD
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - XKHlUEb7cp7J_SY6SaiIYrfBGVSoYlAm
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 866a7f07-77d6-489b-90f8-daee1a85c84f
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fupload-flat%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/upload-flat/</Prefix><KeyCount>2</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/upload-flat/top-one.txt</Key><LastModified>2026-08-06T15:16:55.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-flat/top-two.txt</Key><LastModified>2026-08-06T15:16:55.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:56 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - GyL+GoW0OGCiMV95uQqKDnOBU/knlOogOwaJl/+AqVuvLVaJJyecGX9ZaL+bfYZRuVXUdoUTHIQ=
+      x-amz-request-id:
+      - Z0HKWY4X8AY882HC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 6d423244-162a-49c2-90c3-3f013a53e316
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fupload-flat%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/upload-flat/</Prefix><KeyCount>2</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/upload-flat/top-one.txt</Key><LastModified>2026-08-06T15:16:55.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-flat/top-two.txt</Key><LastModified>2026-08-06T15:16:55.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:56 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - l+TYdDR7gcVlkdNmYgJRWtfXdWmj1ScIkcHcpoZm32kBEujcnsj+VVHa7unGmaIsydvyPJZmt8A=
+      x-amz-request-id:
+      - Z0HV3F63BX5R38JG
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/upload-flat/top-one.txt</Key></Object><Object><Key>conformance-test-async/upload-flat/top-two.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '213'
+      amz-sdk-invocation-id:
+      - ff697347-3b67-4f42-a98c-c861991e0ce2
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - W8PjUQ==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>conformance-test-async/upload-flat/top-one.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>kxzcRiAqU8bT.AVr5pWy8x2njylnUPdC</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/upload-flat/top-two.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>NCiRrGZ5LYE6IsOZNf3SE6cYvlMNIdNb</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:56 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - YMjzbBOWGv+dKDEgHmJ+mTLVcqqGVeFDbAPE4sqeL7/GAa0hDp+aW0yAU2obnRFEvFbfkXhoBjc=
+      x-amz-request-id:
+      - Z0HTBNSVRDE1PB30
+    status:
+      code: 200
+      message: OK
+version: 1

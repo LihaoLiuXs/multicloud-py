@@ -1,0 +1,170 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '3328'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 834a999a-01e2-4db8-b4f1-422ee8b4a988
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/read.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 16:41:16 GMT
+      Etag:
+      - '"33dc58dc9923d6984dad6804c1435381"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - tFIYjw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - gyG8lhF1HcrQ6DmXXCIDigp5fROKaWNzaAM8e1pRxaS/QjsNxm38KX/RaTpbB3/f22vIlH+ztYU=
+      x-amz-request-id:
+      - JMWRW0CD7RGNBTCT
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - EbvYUhmN1TPGBm2FNwcAefyobrBGgXan
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - cad4663b-2352-4da8-8242-0b1491134617
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/read.bin
+  response:
+    body:
+      string: 'async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload async stream read
+        payload async stream read payload async stream read payload '
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '3328'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Tue, 25 Aug 2026 16:41:16 GMT
+      Etag:
+      - '"33dc58dc9923d6984dad6804c1435381"'
+      Last-Modified:
+      - Tue, 25 Aug 2026 16:41:16 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - tFIYjw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - s8uXmUdMQ6nqLToJ9aqMX1LCwryxC1v1RAKtwAH3B5O7Wf0fgWT/rF1tagKz1Sn26SEhRLANfdQ=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-23T16:41:15.137Z'
+      x-amz-request-id:
+      - JMWW0R58GS7XP1C1
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - EbvYUhmN1TPGBm2FNwcAefyobrBGgXan
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 5d39eba3-5708-4900-8b41-c595b29f7b02
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/read.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 16:41:16 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - j8nDrdoLkBKM4zGkXX5exJgCNU1Y95VhRUBX4FlpegCfbr8xvHOJCgeaJOuAJX2k/iyhcZKukwA=
+      x-amz-request-id:
+      - JMWHDCV00T6DZ4DA
+      x-amz-version-id:
+      - kUYSNpqXRxOeW7WYosPCX_.T.apOITIV
+    status:
+      code: 204
+      message: No Content
+version: 1

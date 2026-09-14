@@ -1,0 +1,143 @@
+interactions:
+- request:
+    body: Action=CreateRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-pol-attach&AssumeRolePolicyDocument=%7B%22Version%22%3A+%222012-10-17%22%2C+%22Statement%22%3A+%5B%7B%22Effect%22%3A+%22Allow%22%2C+%22Action%22%3A+%22sts%3AAssumeRole%22%2C+%22Principal%22%3A+%7B%22AWS%22%3A+%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%5D%7D%7D%5D%7D&Description=Test+identity+for+attach-policy
+    headers:
+      Content-Length:
+      - '383'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<CreateRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <CreateRoleResult>\n    <Role>\n      <Path>/</Path>\n      <AssumeRolePolicyDocument>%7B%22Version%22%3A%20%222012-10-17%22%2C%20%22Statement%22%3A%20%5B%7B%22Effect%22%3A%20%22Allow%22%2C%20%22Action%22%3A%20%22sts%3AAssumeRole%22%2C%20%22Principal%22%3A%20%7B%22AWS%22%3A%20%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Aroot%22%5D%7D%7D%5D%7D</AssumeRolePolicyDocument>\n
+        \     <RoleId>AROAEXAMPLE0000000000P</RoleId>\n      <RoleName>MultiCloudPyTestRole-pol-attach</RoleName>\n
+        \     <Arn>arn:aws:iam::123456789012:role/MultiCloudPyTestRole-pol-attach</Arn>\n
+        \     <CreateDate>2026-07-17T08:16:32Z</CreateDate>\n    </Role>\n  </CreateRoleResult>\n
+        \ <ResponseMetadata>\n    <RequestId>697fef4e-001d-4fd8-9a42-1d3448ddadb6</RequestId>\n
+        \ </ResponseMetadata>\n</CreateRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '836'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:32 GMT
+      x-amzn-RequestId:
+      - 697fef4e-001d-4fd8-9a42-1d3448ddadb6
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=PutRolePolicy&Version=2010-05-08&RoleName=MultiCloudPyTestRole-pol-attach&PolicyName=TestPolicy&PolicyDocument=%7B%22Version%22%3A+%222012-10-17%22%2C+%22Statement%22%3A+%5B%7B%22Effect%22%3A+%22Allow%22%2C+%22Action%22%3A+%5B%22s3%3AGetObject%22%2C+%22s3%3APutObject%22%5D%2C+%22Resource%22%3A+%5B%22arn%3Aaws%3As3%3A%3A%3Amulticloudj-iam-it-test-bucket%2F%2A%22%5D%7D%5D%7D
+    headers:
+      Content-Length:
+      - '381'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<PutRolePolicyResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <ResponseMetadata>\n    <RequestId>cadcd74e-9e39-4f7d-bb66-f2db737d778c</RequestId>\n
+        \ </ResponseMetadata>\n</PutRolePolicyResponse>\n"
+    headers:
+      Content-Length:
+      - '206'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:33 GMT
+      x-amzn-RequestId:
+      - cadcd74e-9e39-4f7d-bb66-f2db737d778c
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=GetRolePolicy&Version=2010-05-08&RoleName=MultiCloudPyTestRole-pol-attach&PolicyName=TestPolicy
+    headers:
+      Content-Length:
+      - '101'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<GetRolePolicyResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <GetRolePolicyResult>\n    <PolicyDocument>%7B%22Version%22%3A%20%222012-10-17%22%2C%20%22Statement%22%3A%20%5B%7B%22Effect%22%3A%20%22Allow%22%2C%20%22Action%22%3A%20%5B%22s3%3AGetObject%22%2C%20%22s3%3APutObject%22%5D%2C%20%22Resource%22%3A%20%5B%22arn%3Aaws%3As3%3A%3A%3Amulticloudj-iam-it-test-bucket%2F%2A%22%5D%7D%5D%7D</PolicyDocument>\n
+        \   <PolicyName>TestPolicy</PolicyName>\n    <RoleName>MultiCloudPyTestRole-pol-attach</RoleName>\n
+        \ </GetRolePolicyResult>\n  <ResponseMetadata>\n    <RequestId>cf4f8018-9c1f-45f7-8c4b-20bdf76a3699</RequestId>\n
+        \ </ResponseMetadata>\n</GetRolePolicyResponse>\n"
+    headers:
+      Content-Length:
+      - '671'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:34 GMT
+      x-amzn-RequestId:
+      - cf4f8018-9c1f-45f7-8c4b-20bdf76a3699
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=DeleteRolePolicy&Version=2010-05-08&RoleName=MultiCloudPyTestRole-pol-attach&PolicyName=TestPolicy
+    headers:
+      Content-Length:
+      - '104'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<DeleteRolePolicyResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <ResponseMetadata>\n    <RequestId>afb7065a-57a1-44da-97df-5f392b46026f</RequestId>\n
+        \ </ResponseMetadata>\n</DeleteRolePolicyResponse>\n"
+    headers:
+      Content-Length:
+      - '212'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:35 GMT
+      x-amzn-RequestId:
+      - afb7065a-57a1-44da-97df-5f392b46026f
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=DeleteRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-pol-attach
+    headers:
+      Content-Length:
+      - '76'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<DeleteRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <ResponseMetadata>\n    <RequestId>01158996-1ec2-4cf0-8efd-3752f879e5cb</RequestId>\n
+        \ </ResponseMetadata>\n</DeleteRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '200'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:36 GMT
+      x-amzn-RequestId:
+      - 01158996-1ec2-4cf0-8efd-3752f879e5cb
+    status:
+      code: 200
+      message: OK
+version: 1

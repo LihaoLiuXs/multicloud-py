@@ -1,0 +1,30 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - bcc5d50d-6191-4a25-9311-4c47b8c85474
+      amz-sdk-request:
+      - attempt=1
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/exists/never-written-xyz789.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:18:52 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - pwbNiDjqosJMK2F+5A23SnK5AKAJ2I0HfIJ9jqiYro+7ToO1Y2N3PqMFmcpzW3p+rqBVTLv1vzk9Z0oTj9rOfbaXP4ygESQX
+      x-amz-request-id:
+      - 2ZJ43QBCKFAS7MQ0
+    status:
+      code: 404
+      message: Not Found
+version: 1

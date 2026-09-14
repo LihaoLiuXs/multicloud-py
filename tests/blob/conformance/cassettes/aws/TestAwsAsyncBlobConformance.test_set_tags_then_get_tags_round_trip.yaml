@@ -1,0 +1,144 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '22'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - cfd2c8a6-7a28-402b-87a2-fbd78d2127c5
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 17:27:13 GMT
+      Etag:
+      - '"fc3b60b0b184ced520bd59ffd775f2d3"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - Y3b7Uw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 9YHwxOCm7rM008KygB/+BlWSAOjl3R3b+dfhmjkgNruaZBEEzg+y0nxJb9f54ZVVu8KvPag8NIE=
+      x-amz-request-id:
+      - HZKMK4JN1H6A94J3
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - W7dJ6siVqMcPRxNKk8GPpkcHcpugQ4Pe
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>environment</Key><Value>integration</Value></Tag></TagSet></Tagging>
+    headers:
+      Content-Length:
+      - '143'
+      amz-sdk-invocation-id:
+      - 70b95583-304c-4d99-b446-864cbae661e8
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - Ungvww==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/roundtrip.txt?tagging
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 17:27:13 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - piOwQ5KcCuxD06kSmDYxcsnKIKkZeBBolXajRbbBBPjw4KOpm8mSVPZoQKEvWzYiebIvmQWfDnU=
+      x-amz-request-id:
+      - HZKK7RXC69YS5D94
+      x-amz-version-id:
+      - W7dJ6siVqMcPRxNKk8GPpkcHcpugQ4Pe
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 72bd24ce-baa4-460d-9638-02c81fc9997a
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/roundtrip.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>environment</Key><Value>integration</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 17:27:13 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - VftiCubmgY5J7vjnvaGUpiQkOkK+7MAO5eMnjCxJ9qJQgMOMRrT2TGYPr+jBc1Y62eVYAr40xaE=
+      x-amz-request-id:
+      - HZKXKZE4SW7C578G
+      x-amz-version-id:
+      - W7dJ6siVqMcPRxNKk8GPpkcHcpugQ4Pe
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 7a3c3e45-dc02-4ae8-a6fa-6067230e0510
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 17:27:13 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - IURa/HJAbl8cSaGy2PQYdHgEB3RLop0b967FxOJQDl+isAPkSWiWO94ICkuMM1cGzQPttpzEGYs=
+      x-amz-request-id:
+      - HZKY4RHV533P56V3
+      x-amz-version-id:
+      - ynJrqn4bBqi6sFQEZNmVk4inwV.ryFsY
+    status:
+      code: 204
+      message: No Content
+version: 1

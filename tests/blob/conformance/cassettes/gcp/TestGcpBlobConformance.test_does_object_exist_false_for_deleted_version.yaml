@@ -1,0 +1,324 @@
+interactions:
+- request:
+    body: "--===============8268891496826433847==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/exists/deleted-version.txt\",
+      \"crc32c\": \"VDK5gg==\"}\r\n--===============8268891496826433847==\r\ncontent-type:
+      application/octet-stream\r\n\r\ndoomed version\r\n--===============8268891496826433847==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '306'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT04MjY4ODkxNDk2ODI2
+        NDMzODQ3PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-versioned/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-versioned/conformance-test/exists/deleted-version.txt/1785992184859231\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?generation=1785992184859231&alt=media\",\n
+        \ \"name\": \"conformance-test/exists/deleted-version.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-versioned\",\n  \"generation\": \"1785992184859231\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"14\",\n  \"md5Hash\": \"AYCyHFKXxYNI+YXXIvRLzw==\",\n
+        \ \"crc32c\": \"VDK5gg==\",\n  \"etag\": \"CN+UgK6bi5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-06T04:56:24.921Z\",\n  \"updated\": \"2026-08-06T04:56:24.921Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-06T04:56:24.921Z\",\n  \"timeFinalized\":
+        \"2026-08-06T04:56:24.921Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1002'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 06 Aug 2026 04:56:24 GMT
+      ETag:
+      - CN+UgK6bi5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KdHVBmFX5DIwMee3hlI3y-s4Y_IR5CjGw7nCdzdcOILQa3e5_qwFK2IWQ5HJ3Mx28v
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "--===============4175949692111013646==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/exists/deleted-version.txt\",
+      \"crc32c\": \"myfMkQ==\"}\r\n--===============4175949692111013646==\r\ncontent-type:
+      application/octet-stream\r\n\r\nsurviving version\r\n--===============4175949692111013646==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '309'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT00MTc1OTQ5NjkyMTEx
+        MDEzNjQ2PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-versioned/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-versioned/conformance-test/exists/deleted-version.txt/1785992185138968\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?generation=1785992185138968&alt=media\",\n
+        \ \"name\": \"conformance-test/exists/deleted-version.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-versioned\",\n  \"generation\": \"1785992185138968\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"17\",\n  \"md5Hash\": \"alVOU84sZCo29pCArP6vMg==\",\n
+        \ \"crc32c\": \"myfMkQ==\",\n  \"etag\": \"CJieka6bi5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-06T04:56:25.282Z\",\n  \"updated\": \"2026-08-06T04:56:25.282Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-06T04:56:25.282Z\",\n  \"timeFinalized\":
+        \"2026-08-06T04:56:25.282Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1002'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 06 Aug 2026 04:56:25 GMT
+      ETag:
+      - CJieka6bi5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7L2wUG0LGMgmaWI55VyZ4ULCsqlzjuenNWRG-sW7iJhlniTdsZ-4DSo3fdGOKnqZ6AFTKBRazE
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?generation=1785992184859231&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 06 Aug 2026 04:56:25 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7ImbZar2lIkkGQBQZ3nWK-jfuMekcjwQfx6rq1hTKMlppGbIZVeZ46tgoeQe1z52Pt4wdtZ0-w
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?generation=1785992184859231&fields=name&prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-versioned/conformance-test/exists/deleted-version.txt","errors":[{"message":"No
+        such object: testcloud-python-sdk-versioned/conformance-test/exists/deleted-version.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '279'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 06 Aug 2026 04:56:25 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LEuJ7egU9bwETtymTUo_7lwY7rYVjEh3vi9G6ZYcpJoL7HL0us_bbLIOPhYGagvMWEtfvX3yE
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?fields=name&prettyPrint=false
+  response:
+    body:
+      string: '{"name":"conformance-test/exists/deleted-version.txt"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '54'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 06 Aug 2026 04:56:25 GMT
+      ETag:
+      - CJieka6bi5YDEAE=
+      Expires:
+      - Thu, 06 Aug 2026 04:56:25 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IkakY9OmKh3UxWUk2DXlWE7-5Q-hcVmgGdIs6KCHBasH65OFaqGk8IxRkw-P5kFjHGPf6VRqY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o?projection=noAcl&prefix=conformance-test%2Fexists%2Fdeleted-version.txt&versions=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#objects","items":[{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/exists/deleted-version.txt/1785992185138968","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?generation=1785992185138968&alt=media","name":"conformance-test/exists/deleted-version.txt","bucket":"testcloud-python-sdk-versioned","generation":"1785992185138968","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"17","md5Hash":"alVOU84sZCo29pCArP6vMg==","crc32c":"myfMkQ==","etag":"CJieka6bi5YDEAE=","timeCreated":"2026-08-06T04:56:25.282Z","updated":"2026-08-06T04:56:25.282Z","timeStorageClassUpdated":"2026-08-06T04:56:25.282Z","timeFinalized":"2026-08-06T04:56:25.282Z"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '965'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 06 Aug 2026 04:56:26 GMT
+      Expires:
+      - Thu, 06 Aug 2026 04:56:26 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JaTWz9OkGDGFpNbGx9xm_d1topUnnc939uEcLXyZHzWI1hH-3Ip2qY4ASD5MPnTISS_QfKJ5E
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fexists%2Fdeleted-version.txt?generation=1785992185138968&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 06 Aug 2026 04:56:26 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JwDhJBiGwr9N_zQ1ysdXdkIftPJZsBXD0_yKsoKf2rhEZ5PFCtB2cw-4TJ4qsf2gpTmQQo3-0
+    status:
+      code: 204
+      message: No Content
+version: 1

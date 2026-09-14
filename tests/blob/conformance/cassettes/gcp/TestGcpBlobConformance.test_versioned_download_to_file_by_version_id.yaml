@@ -1,0 +1,345 @@
+interactions:
+- request:
+    body: "--===============8331352864661603565==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/versioned/to-file-by-id.txt\",
+      \"crc32c\": \"dIx/Dg==\"}\r\n--===============8331352864661603565==\r\ncontent-type:
+      application/octet-stream\r\n\r\nfirst version bytes\r\n--===============8331352864661603565==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '312'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT04MzMxMzUyODY0NjYx
+        NjAzNTY1PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-versioned/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-versioned/conformance-test/versioned/to-file-by-id.txt/1787198601785243\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198601785243&alt=media\",\n
+        \ \"name\": \"conformance-test/versioned/to-file-by-id.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-versioned\",\n  \"generation\": \"1787198601785243\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"19\",\n  \"md5Hash\": \"Run69NishRZvcljI3oDIpQ==\",\n
+        \ \"crc32c\": \"dIx/Dg==\",\n  \"etag\": \"CJvftc6prpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T04:03:21.848Z\",\n  \"updated\": \"2026-08-20T04:03:21.848Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T04:03:21.848Z\",\n  \"timeFinalized\":
+        \"2026-08-20T04:03:21.848Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1006'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 04:03:21 GMT
+      ETag:
+      - CJvftc6prpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bHqFHI_F6ZYl39zEXZKc8FB2lE7JjG8XvmYQBSCliG16mx8hBsHuvV2r8sbnw8_0g
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "--===============3523093189818579857==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/versioned/to-file-by-id.txt\",
+      \"crc32c\": \"7vuuEw==\"}\r\n--===============3523093189818579857==\r\ncontent-type:
+      application/octet-stream\r\n\r\nsecond version payload!!\r\n--===============3523093189818579857==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '317'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0zNTIzMDkzMTg5ODE4
+        NTc5ODU3PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-versioned/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-versioned/conformance-test/versioned/to-file-by-id.txt/1787198602057225\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198602057225&alt=media\",\n
+        \ \"name\": \"conformance-test/versioned/to-file-by-id.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-versioned\",\n  \"generation\": \"1787198602057225\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"24\",\n  \"md5Hash\": \"Fo2PMo7YIj9k1WeqZBDwVA==\",\n
+        \ \"crc32c\": \"7vuuEw==\",\n  \"etag\": \"CImsxs6prpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T04:03:22.188Z\",\n  \"updated\": \"2026-08-20T04:03:22.188Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T04:03:22.188Z\",\n  \"timeFinalized\":
+        \"2026-08-20T04:03:22.188Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1006'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      ETag:
+      - CImsxs6prpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZcvJO0PAa2MkSjR_IxVuOUJcaNna_VkulmmatOzE8xT7aVmCiFVoYh-TN4BIrtrIvAbP-mPVBSEodrGQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?alt=media&generation=1787198601785243
+  response:
+    body:
+      string: first version bytes
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '19'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      ETag:
+      - CJvftc6prpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Thu, 20 Aug 2026 04:03:21 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZCSwp8M-ukdhX7LpjUrT2C82CRXMD2cueGKyPIOMBFCeEWK0RBoIE9DkyZBlu5Zc4
+      X-Goog-Generation:
+      - '1787198601785243'
+      X-Goog-Hash:
+      - crc32c=dIx/Dg==,md5=Run69NishRZvcljI3oDIpQ==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '19'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198601785243&projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/versioned/to-file-by-id.txt/1787198601785243","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198601785243&alt=media","name":"conformance-test/versioned/to-file-by-id.txt","bucket":"testcloud-python-sdk-versioned","generation":"1787198601785243","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"19","md5Hash":"Run69NishRZvcljI3oDIpQ==","crc32c":"dIx/Dg==","etag":"CJvftc6prpYDEAE=","timeCreated":"2026-08-20T04:03:21.848Z","updated":"2026-08-20T04:03:21.848Z","timeDeleted":"2026-08-20T04:03:22.188Z","timeStorageClassUpdated":"2026-08-20T04:03:21.848Z","timeFinalized":"2026-08-20T04:03:21.848Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '973'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      ETag:
+      - CJvftc6prpYDEAE=
+      Expires:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Z4iDXdAumPescTqbIMafUhYuFxDM2TiiquZHzuqZwe1IOH5ah6IOQOVOWhPTMcRmTOYErSZDGvE6tjLg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o?projection=noAcl&prefix=conformance-test%2Fversioned%2Fto-file-by-id.txt&versions=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#objects","items":[{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/versioned/to-file-by-id.txt/1787198601785243","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198601785243&alt=media","name":"conformance-test/versioned/to-file-by-id.txt","bucket":"testcloud-python-sdk-versioned","generation":"1787198601785243","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"19","md5Hash":"Run69NishRZvcljI3oDIpQ==","crc32c":"dIx/Dg==","etag":"CJvftc6prpYDEAE=","timeCreated":"2026-08-20T04:03:21.848Z","updated":"2026-08-20T04:03:21.848Z","timeDeleted":"2026-08-20T04:03:22.188Z","timeStorageClassUpdated":"2026-08-20T04:03:21.848Z","timeFinalized":"2026-08-20T04:03:21.848Z"},{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/versioned/to-file-by-id.txt/1787198602057225","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198602057225&alt=media","name":"conformance-test/versioned/to-file-by-id.txt","bucket":"testcloud-python-sdk-versioned","generation":"1787198602057225","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"Fo2PMo7YIj9k1WeqZBDwVA==","crc32c":"7vuuEw==","etag":"CImsxs6prpYDEAE=","timeCreated":"2026-08-20T04:03:22.188Z","updated":"2026-08-20T04:03:22.188Z","timeStorageClassUpdated":"2026-08-20T04:03:22.188Z","timeFinalized":"2026-08-20T04:03:22.188Z"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1943'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      Expires:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aeRXcHaE02rlma5bwpPLoI2AAk0dnsAWW2isPrhV2fTEf4O5kscQbnilX3HBzvkp4HaptW8TlYgNlpaw
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198601785243&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 04:03:22 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9blZxvy_ffGPTwOR9VsenUOw0wBxQuqow05gNYIpDKx6UPSO-nLtK7uHWOmiiOsfeuar9ZLgscDf_2phA
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Fversioned%2Fto-file-by-id.txt?generation=1787198602057225&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 04:03:23 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bg8LofRfPwE6s6wkVMqhSVfkKyj7iZl69Bsb70rBFsHTDX-Vkv7uIhNmFy4wDXuO-108DEn3TDX9awqg
+    status:
+      code: 204
+      message: No Content
+version: 1

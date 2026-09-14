@@ -1,0 +1,157 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        b25jZQ==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/delete/idempotent.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/delete/idempotent.txt/1787241935792791\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fidempotent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fidempotent.txt?generation=1787241935792791&alt=media\",\n
+        \ \"name\": \"async-conformance-test/delete/idempotent.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1787241935792791\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"4\",\n  \"md5Hash\": \"4u/2wtr9kJ34UI+JGzhdiA==\",\n
+        \ \"crc32c\": \"9C1ieQ==\",\n  \"etag\": \"CJfV14XLr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T16:05:35.861Z\",\n  \"updated\": \"2026-08-20T16:05:35.861Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T16:05:35.861Z\",\n  \"timeFinalized\":
+        \"2026-08-20T16:05:35.861Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '977'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:35 GMT
+      Etag:
+      - CJfV14XLr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9av22FUKRidGryf7XX14XPKCCW1N_k7uXKzIioLP106KCbCUI2lsOePIUhB84haoQ16EbH1UWg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fidempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 16:05:36 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZMISfdRk8rGdsg_33HhdRHKaDXZ_4q0y1xHHy-xOPym1ymXfH27OaUVAa_bDxzoNWnOtEZrrE
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fidempotent.txt
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/delete/idempotent.txt\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/delete/idempotent.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '345'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:36 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YgKTXTouccTVzT27qZUvCXKmLTPnEBr27xrApAinLFeqA4BmwP3BW8Wrainte4h0kvKj8ynqo
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fidempotent.txt?alt=media
+  response:
+    body:
+      string: 'No such object: python-async-test-bucket/async-conformance-test/delete/idempotent.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:36 GMT
+      Expires:
+      - Thu, 20 Aug 2026 16:05:36 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZtPhBVpNdiQovP1xOCe11NL-PdomKgoSFTDE1RKomYb6EP93IknSeEmiLbxl1Cf-Qvuqu01yM
+    status:
+      code: 404
+      message: Not Found
+version: 1

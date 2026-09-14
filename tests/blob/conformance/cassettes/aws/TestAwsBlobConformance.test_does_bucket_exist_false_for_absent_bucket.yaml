@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        Y2RmZmU2NzMtOGVjMS00YjhlLWFjYzYtNmQwYzE4MDdlNWRk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: HEAD
+    uri: https://multicloudj-conformance-absent-bucket-do-not-create.s3.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 14:52:00 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - R6FfeJIG5CWzeTnzqs5XI+4AWJB+i4t48J+YxG30nepBiZVvkDXZl0n0/3IF07XL4VD4VLwfwmZNUlSTsZIjyB3xbO/P/P6K
+      x-amz-request-id:
+      - M2Z7N6RKCYC5NHB4
+    status:
+      code: 404
+      message: Not Found
+version: 1

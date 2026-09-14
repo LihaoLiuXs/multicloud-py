@@ -1,0 +1,339 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTINCnJldGFpbmVkLXRoZW4taGVsZA0KMA0KeC1hbXotY2hlY2tzdW0tY3JjMzI6cjhhaUV3PT0N
+        Cg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTg=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NGVkNzJkYzEtY2YyMC00ODg1LThiOTktODg0MmRkZWM1YTk5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-object-lock-mode:
+      - !!binary |
+        R09WRVJOQU5DRQ==
+      x-amz-object-lock-retain-until-date:
+      - !!binary |
+        MjAyNi0wOS0xNVQwMDowMDowMFo=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 13 Aug 2026 17:07:41 GMT
+      ETag:
+      - '"954ab1b909118f89237537b6b0cdf25b"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - r8aiEw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 2/PQNaqAEEDGcwN3VZzGRJ9NSjfxD6zobYDgHQ0jWNqBjTOn361LO2sUWhikTH29u3171NdwUK4j4CkOmeR9S/qF8wMaxEOH
+      x-amz-request-id:
+      - G2Z44CT2JX3XAWVN
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '90'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OTJkNmQ1ZDEtN2VjNC00NmMyLWEwNGUtNGIwMDExM2QzMDA5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        NlhXeGx3PT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 13 Aug 2026 17:07:41 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - Ra3gTd6NQHyn1q/tSoRRcgT/zPDHvpxW7J3NBEpubbbr+Wf1KQE4PDjRXBt8Rw12QEy8/iH44vDNoLaDzpoHPOzNCfKb6YTP
+      x-amz-request-id:
+      - G2Z0S64SFBW1W54K
+      x-amz-version-id:
+      - cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWI2OWQwYTEtMDczNi00ODc0LWExMjAtMDdlOTg2ZmMxNjQx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-15T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Thu, 13 Aug 2026 17:07:42 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - S7VbQZHDlVZSAAmBsTA+aUQPHvsxNLCXTDTZ0/jE0lLn4tIQKtawO836VH5w75Kcjd1Uqeh2vTYJNmYE52NFN/obiE8Z6xOc
+      x-amz-request-id:
+      - 9NCMQDY49PBPCXGJ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-30T00:00:00Z</RetainUntilDate></Retention>
+    headers:
+      Content-Length:
+      - '149'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OThhNmU2NTItYTBjMy00YmJkLWE2MDktZDQ3NmY1Y2E1ZDRj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        dDJtNHNBPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?retention
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 13 Aug 2026 17:07:43 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - kfLjZZRea35XSyjjDqMVVMABCBZhyeDmfni7W8q0ujprYy4fQqEKd7I5PSA3kNaRM+57PgkxgW7k2GJrc3Xlra+VM63VB1hv
+      x-amz-request-id:
+      - 6JHXNTT7QT6XGMQB
+      x-amz-version-id:
+      - cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWNmNmYzYzAtMmY3Ni00NWY3LWE0NDktMGY2MmJmOTlhMGEx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-30T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Thu, 13 Aug 2026 17:07:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - i/V7APZwnHa5EZJRGNcsQABtbm7Dx2DnNZ3SPxnCP1pX/PIU938HCBqnnuX0n5am/rdMYdZXoJSRS9iMjTsjPruKPnEu83cE
+      x-amz-request-id:
+      - 6JHHT9FZJRAPJSTZ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        Njk4OWQwZWUtZWUzOS00NzkwLTlkN2YtNWE1NTNlN2E1YzI0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>'
+    headers:
+      Date:
+      - Thu, 13 Aug 2026 17:07:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 08Lnq4l01P/xX4PV3nlFcQ4+4zErbrYSoO9FcSdFnFgx/xYZE5RORI7nKfyfGemzI3ouOu5VoHS3Azs1oY8SloP0zbZmGUsf
+      x-amz-request-id:
+      - 6JHZT3S6T10M6WCJ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '91'
+      amz-sdk-invocation-id:
+      - !!binary |
+        YjFmNDdiZmItZTIzNS00MTEyLWFkYTgtOTI3ZWViZTYyMTNm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        U1dxNnpnPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 13 Aug 2026 17:07:44 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 0w0ELfJCfoXZvyI+NIbTyfXE2Tl9WzCMQF347cgKQ5y9sWEWFLIFv2rYY8gXmvw2+VdCc0w31VYEw6oN3LI03jGe3q0f34UN
+      x-amz-request-id:
+      - NRF0R1NWRNA2401W
+      x-amz-version-id:
+      - cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NzMxYTc1NzEtOGQ0Ni00ODY4LTlkMGUtYzBlY2MyZTY3ZjU3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Fupdate-legal-hold%2Fapplied-across-retention.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>conformance-test/update-legal-hold/applied-across-retention.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/update-legal-hold/applied-across-retention.txt</Key><VersionId>cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-13T17:07:41.000Z</LastModified><ETag>&quot;954ab1b909118f89237537b6b0cdf25b&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 13 Aug 2026 17:07:44 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - Xb2NZbsC47zMMPmUTA/JIRQY0gUgcXFFN83A6cXVsBx2qyUURffP3mrVGA0Qrnt1c6lITlEuXThZc4rP6rCY6MXMTVj1+urj
+      x-amz-request-id:
+      - NRF095E9V7R9TFX6
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZjgyOThhMTQtNTJmNi00MmFlLWJhYzUtYTQwZWRkNjY1ZDEx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-legal-hold/applied-across-retention.txt?versionId=cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 13 Aug 2026 17:07:45 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - ZWCUWQ8Dl/3GKlzf5UdWoQUmL9E3ZWQIX9E4H3fA3VtHlIfpmseqxaRukcnTzZzdb8o2P5zVSWEYFZ5e3bdQJiQU9CW2aVef
+      x-amz-request-id:
+      - GX7ZVRDDDSZZVC6X
+      x-amz-version-id:
+      - cLzpjEb82VSfXgiLjVcjLhvqa7LO6SH0
+    status:
+      code: 204
+      message: No Content
+version: 1

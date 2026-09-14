@@ -1,0 +1,501 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dmVyYmF0aW0=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '8'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?name=conformance-test-async/delete-dir/verbatim/logs/inside.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/logs/inside.txt/1787204460874945\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs%2Finside.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs%2Finside.txt?generation=1787204460874945&alt=media\",\n
+        \ \"name\": \"conformance-test-async/delete-dir/verbatim/logs/inside.txt\",\n
+        \ \"bucket\": \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1787204460874945\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"8\",\n  \"md5Hash\": \"8a1J+lsE3aDI2V8PMCsBxg==\",\n
+        \ \"crc32c\": \"U8A/ow==\",\n  \"etag\": \"CMGZoLi/rpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T05:41:00.937Z\",\n  \"updated\": \"2026-08-20T05:41:00.937Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T05:41:00.937Z\",\n  \"timeFinalized\":
+        \"2026-08-20T05:41:00.937Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1045'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:00 GMT
+      Etag:
+      - CMGZoLi/rpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Zp_3fyRQH1VZ-JovQj7P6deb2GyxksmDsPM4LP6f55D9lwi4rciutwMUFBmr1BHjd_tBcNElQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dmVyYmF0aW0=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '8'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?name=conformance-test-async/delete-dir/verbatim/logs.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/logs.txt/1787204461069321\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs.txt?generation=1787204461069321&alt=media\",\n
+        \ \"name\": \"conformance-test-async/delete-dir/verbatim/logs.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1787204461069321\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"8\",\n  \"md5Hash\": \"8a1J+lsE3aDI2V8PMCsBxg==\",\n
+        \ \"crc32c\": \"U8A/ow==\",\n  \"etag\": \"CImIrLi/rpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T05:41:01.132Z\",\n  \"updated\": \"2026-08-20T05:41:01.132Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T05:41:01.132Z\",\n  \"timeFinalized\":
+        \"2026-08-20T05:41:01.132Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1013'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Etag:
+      - CImIrLi/rpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aaugOLNcOUHJFXZjYK7ijsWTB5AqMXh7j8ihPi4JKLnFnXgqXu354RbY74jpqzh6bPf8NzDw0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dmVyYmF0aW0=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '8'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?name=conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt/1787204461260518\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs-archive%2Foutside.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs-archive%2Foutside.txt?generation=1787204461260518&alt=media\",\n
+        \ \"name\": \"conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt\",\n
+        \ \"bucket\": \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1787204461260518\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"8\",\n  \"md5Hash\": \"8a1J+lsE3aDI2V8PMCsBxg==\",\n
+        \ \"crc32c\": \"U8A/ow==\",\n  \"etag\": \"CObdt7i/rpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T05:41:01.322Z\",\n  \"updated\": \"2026-08-20T05:41:01.322Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T05:41:01.322Z\",\n  \"timeFinalized\":
+        \"2026-08-20T05:41:01.322Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1081'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Etag:
+      - CObdt7i/rpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9akz17etY2T17Bmwdu1ZChKFxEu3I_TMEjrdANJeLawWK9_gRt60DHIDODo3-u60U278552wXM
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        dmVyYmF0aW0=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '8'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?name=conformance-test-async/delete-dir/verbatim/other.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/other.txt/1787204461434973\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt?generation=1787204461434973&alt=media\",\n
+        \ \"name\": \"conformance-test-async/delete-dir/verbatim/other.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1787204461434973\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"8\",\n  \"md5Hash\": \"8a1J+lsE3aDI2V8PMCsBxg==\",\n
+        \ \"crc32c\": \"U8A/ow==\",\n  \"etag\": \"CN2wwri/rpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T05:41:01.496Z\",\n  \"updated\": \"2026-08-20T05:41:01.496Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T05:41:01.496Z\",\n  \"timeFinalized\":
+        \"2026-08-20T05:41:01.496Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1017'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Etag:
+      - CN2wwri/rpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bNHRrcBpCvadkkzUaKtrdepQGZrlP5c8JHo9rtzXhbff-ut7zisqxm9PADRHiKO_rAWRjiUV4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?maxResults=1000&prefix=conformance-test-async/delete-dir/verbatim/logs
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\",\n  \"items\": [\n    {\n      \"kind\":
+        \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt/1787204461260518\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs-archive%2Foutside.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs-archive%2Foutside.txt?generation=1787204461260518&alt=media\",\n
+        \     \"name\": \"conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1787204461260518\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"8\",\n      \"md5Hash\":
+        \"8a1J+lsE3aDI2V8PMCsBxg==\",\n      \"crc32c\": \"U8A/ow==\",\n      \"etag\":
+        \"CObdt7i/rpYDEAE=\",\n      \"timeCreated\": \"2026-08-20T05:41:01.322Z\",\n
+        \     \"updated\": \"2026-08-20T05:41:01.322Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T05:41:01.322Z\",\n      \"timeFinalized\": \"2026-08-20T05:41:01.322Z\"\n
+        \   },\n    {\n      \"kind\": \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/logs.txt/1787204461069321\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs.txt?generation=1787204461069321&alt=media\",\n
+        \     \"name\": \"conformance-test-async/delete-dir/verbatim/logs.txt\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1787204461069321\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"8\",\n      \"md5Hash\":
+        \"8a1J+lsE3aDI2V8PMCsBxg==\",\n      \"crc32c\": \"U8A/ow==\",\n      \"etag\":
+        \"CImIrLi/rpYDEAE=\",\n      \"timeCreated\": \"2026-08-20T05:41:01.132Z\",\n
+        \     \"updated\": \"2026-08-20T05:41:01.132Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T05:41:01.132Z\",\n      \"timeFinalized\": \"2026-08-20T05:41:01.132Z\"\n
+        \   },\n    {\n      \"kind\": \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/logs/inside.txt/1787204460874945\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs%2Finside.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs%2Finside.txt?generation=1787204460874945&alt=media\",\n
+        \     \"name\": \"conformance-test-async/delete-dir/verbatim/logs/inside.txt\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1787204460874945\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"8\",\n      \"md5Hash\":
+        \"8a1J+lsE3aDI2V8PMCsBxg==\",\n      \"crc32c\": \"U8A/ow==\",\n      \"etag\":
+        \"CMGZoLi/rpYDEAE=\",\n      \"timeCreated\": \"2026-08-20T05:41:00.937Z\",\n
+        \     \"updated\": \"2026-08-20T05:41:00.937Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T05:41:00.937Z\",\n      \"timeFinalized\": \"2026-08-20T05:41:00.937Z\"\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '3431'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Expires:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Y-rlikuiwPmCIoS6UcSFawmEQkvrvQuWmln1xb7nq1SLbUZDUoqzqpRTGzGKtYJenDnCL5vno
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs-archive%2Foutside.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YJKwMIG1G8ezaooL9JV5u_2hxtZRpw0hsb0F1POqmZegTuzKNlI1LUwqfkUlcEY9uP_nBu7KA
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZImX-uNFBfPbHQ3O-qtek00b99AvfDMScm61DnvnRWkCf34xpaUG2f1gZeNz9Z0XPS
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs%2Finside.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZhC9s-Qp2-t_WLvYjmYiXUtphPw0Lw5qyoNWmbsO3pPog2cmXhxxwaf10jHKLI7SP0ywozu-A
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?maxResults=1000&prefix=conformance-test-async/delete-dir/verbatim/
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\",\n  \"items\": [\n    {\n      \"kind\":
+        \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/other.txt/1787204461434973\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt?generation=1787204461434973&alt=media\",\n
+        \     \"name\": \"conformance-test-async/delete-dir/verbatim/other.txt\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1787204461434973\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"8\",\n      \"md5Hash\":
+        \"8a1J+lsE3aDI2V8PMCsBxg==\",\n      \"crc32c\": \"U8A/ow==\",\n      \"etag\":
+        \"CN2wwri/rpYDEAE=\",\n      \"timeCreated\": \"2026-08-20T05:41:01.496Z\",\n
+        \     \"updated\": \"2026-08-20T05:41:01.496Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T05:41:01.496Z\",\n      \"timeFinalized\": \"2026-08-20T05:41:01.496Z\"\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1147'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Expires:
+      - Thu, 20 Aug 2026 05:41:01 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9beXWFWU8kqARIF-LJglhUloFxoPPv1IfV35DU6aNq_uwJ1KqxGtZII2_EcxdSZEZYcr81AgC8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?maxResults=1000&prefix=conformance-test-async/delete-dir/verbatim/
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\",\n  \"items\": [\n    {\n      \"kind\":
+        \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/delete-dir/verbatim/other.txt/1787204461434973\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt?generation=1787204461434973&alt=media\",\n
+        \     \"name\": \"conformance-test-async/delete-dir/verbatim/other.txt\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1787204461434973\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"application/octet-stream\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"8\",\n      \"md5Hash\":
+        \"8a1J+lsE3aDI2V8PMCsBxg==\",\n      \"crc32c\": \"U8A/ow==\",\n      \"etag\":
+        \"CN2wwri/rpYDEAE=\",\n      \"timeCreated\": \"2026-08-20T05:41:01.496Z\",\n
+        \     \"updated\": \"2026-08-20T05:41:01.496Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-20T05:41:01.496Z\",\n      \"timeFinalized\": \"2026-08-20T05:41:01.496Z\"\n
+        \   }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1147'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:41:02 GMT
+      Expires:
+      - Thu, 20 Aug 2026 05:41:02 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ah5DT9OW6L1T_dzh5LfdmPKzkQqN27lym7V2FJfBPx3FNx9PEg-Dh0jmqiTyx-cEboe0gikjo
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fdelete-dir%2Fverbatim%2Fother.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 05:41:02 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZM_F1apfUTL1xPWL1E1MgUskCRrqjOVQhBhbsmooNhBeylScUrwrbFz9N7B0sze3o17kQDdD4
+    status:
+      code: 204
+      message: No Content
+version: 1

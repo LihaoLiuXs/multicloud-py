@@ -1,0 +1,197 @@
+interactions:
+- request:
+    body: "--===============4170660795248189477==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/download/with-meta.txt\",
+      \"metadata\": {\"test-key\": \"test-value\"}, \"crc32c\": \"fyKHqA==\"}\r\n--===============4170660795248189477==\r\ncontent-type:
+      text/plain\r\n\r\nmetadata download test\r\n--===============4170660795248189477==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '336'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT00MTcwNjYwNzk1MjQ4
+        MTg5NDc3PT0i
+      x-upload-content-type:
+      - text/plain
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/download/with-meta.txt/1780895162523185\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt?generation=1780895162523185&alt=media\",\n
+        \ \"name\": \"conformance-test/download/with-meta.txt\",\n  \"bucket\": \"testcloud-python-sdk-bucket\",\n
+        \ \"generation\": \"1780895162523185\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"text/plain\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"22\",\n
+        \ \"md5Hash\": \"JyohjD7OZf3y9UXh1GLNkQ==\",\n  \"crc32c\": \"fyKHqA==\",\n
+        \ \"etag\": \"CLG8rbzv9pQDEAE=\",\n  \"timeCreated\": \"2026-06-08T05:06:02.593Z\",\n
+        \ \"updated\": \"2026-06-08T05:06:02.593Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-06-08T05:06:02.593Z\",\n  \"timeFinalized\": \"2026-06-08T05:06:02.593Z\",\n
+        \ \"metadata\": {\n    \"test-key\": \"test-value\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1002'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 08 Jun 2026 05:06:02 GMT
+      ETag:
+      - CLG8rbzv9pQDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEILFK9R-d1kRpVq6W_m5EFzW-uQ6nhKZxj5yKrjqKQaZNxsTNbmMnMcM1Dn7NhApZ3SUcnJh4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt?alt=media
+  response:
+    body:
+      string: metadata download test
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '22'
+      Content-Type:
+      - text/plain
+      Date:
+      - Mon, 08 Jun 2026 05:06:02 GMT
+      ETag:
+      - CLG8rbzv9pQDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Mon, 08 Jun 2026 05:06:02 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhHM1vBq9Gi8ub74K78cV7zPSeQAjAcNd3Of49dKg7IQKHBGFKCPVfS-dKvS7GEYGb3Ny2vx-bs
+      X-Goog-Generation:
+      - '1780895162523185'
+      X-Goog-Hash:
+      - crc32c=fyKHqA==,md5=JyohjD7OZf3y9UXh1GLNkQ==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '22'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt?generation=1780895162523185&projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/download/with-meta.txt/1780895162523185","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt?generation=1780895162523185&alt=media","name":"conformance-test/download/with-meta.txt","bucket":"testcloud-python-sdk-bucket","generation":"1780895162523185","metageneration":"1","contentType":"text/plain","storageClass":"STANDARD","size":"22","md5Hash":"JyohjD7OZf3y9UXh1GLNkQ==","crc32c":"fyKHqA==","etag":"CLG8rbzv9pQDEAE=","timeCreated":"2026-06-08T05:06:02.593Z","updated":"2026-06-08T05:06:02.593Z","timeStorageClassUpdated":"2026-06-08T05:06:02.593Z","timeFinalized":"2026-06-08T05:06:02.593Z","metadata":{"test-key":"test-value"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '915'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 08 Jun 2026 05:06:02 GMT
+      ETag:
+      - CLG8rbzv9pQDEAE=
+      Expires:
+      - Mon, 08 Jun 2026 05:06:02 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhHUd8KjmseR7gFq1XOHe0nBFItbMQAXTdIzh7CeTsymVarxEpKP3WE3dLOfyFcogU0Gz8LwZqw
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fwith-meta.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 08 Jun 2026 05:06:03 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEP8gpky_Vv9WSrzgrBTamvBHNv9gyGUNEwm85HLYbs2FzkOlaG5MxFP67RPAI5sbME
+    status:
+      code: 204
+      message: No Content
+version: 1

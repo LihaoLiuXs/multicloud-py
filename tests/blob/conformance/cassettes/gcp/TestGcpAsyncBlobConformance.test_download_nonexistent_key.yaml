@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload%2Fdoes-not-exist-xyz123.txt?alt=media
+  response:
+    body:
+      string: 'No such object: python-async-test-bucket/async-conformance-test/download/does-not-exist-xyz123.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '98'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:08:24 GMT
+      Expires:
+      - Thu, 20 Aug 2026 16:08:24 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZKocpmHIVmkuZJT1Ul6-SKyyjCBxHIpHTz_3fKDVJ3KbFy72bsXWa_7pptrlde3jDFhoG6TNM
+    status:
+      code: 404
+      message: Not Found
+version: 1

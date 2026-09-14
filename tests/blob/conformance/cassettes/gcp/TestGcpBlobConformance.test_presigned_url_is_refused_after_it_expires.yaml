@@ -1,0 +1,222 @@
+interactions:
+- request:
+    body: '{"delegates": [], "scope": ["https://www.googleapis.com/auth/cloud-platform"],
+      "lifetime": "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_ACCESSTOKEN","expireTime":"2026-08-07T02:18:16Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:18:16 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "--===============1376524487346805376==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/presign/expired.txt\", \"crc32c\":
+      \"WBh7Jg==\"}\r\n--===============1376524487346805376==\r\ncontent-type: application/octet-stream\r\n\r\nshould
+      not be reachable once expired\r\n--===============1376524487346805376==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '321'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0xMzc2NTI0NDg3MzQ2
+        ODA1Mzc2PT0i
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/presign/expired.txt/1786065496515191\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fpresign%2Fexpired.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fpresign%2Fexpired.txt?generation=1786065496515191&alt=media\",\n
+        \ \"name\": \"conformance-test/presign/expired.txt\",\n  \"bucket\": \"testcloud-python-sdk-bucket\",\n
+        \ \"generation\": \"1786065496515191\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"application/octet-stream\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"36\",\n  \"md5Hash\": \"ztF0xU5+csZEEGakDeEAOQ==\",\n  \"crc32c\": \"WBh7Jg==\",\n
+        \ \"etag\": \"CPfE3LusjZYDEAE=\",\n  \"timeCreated\": \"2026-08-07T01:18:16.587Z\",\n
+        \ \"updated\": \"2026-08-07T01:18:16.587Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-08-07T01:18:16.587Z\",\n  \"timeFinalized\": \"2026-08-07T01:18:16.587Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '954'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:18:16 GMT
+      ETag:
+      - CPfE3LusjZYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7K4VT252HePmSzMnOWpnSCYfgiw1GBUMwRMvGdrRHDcwe4OISnVA3Z7FHvUcsu-xliwiILi0X4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"payload": "R09PRzQtUlNBLVNIQTI1NgoyMDI2MDgwN1QwMTE4MTZaCjIwMjYwODA3L2F1dG8vc3RvcmFnZS9nb29nNF9yZXF1ZXN0CjVlNjM0YjYwODE4NzAxZDk0YmM2M2YwY2Y1YzQ5NzEzZWFlODNmYzViZTU3MzdiNDE4NGQyNTUxNTRiNGZhZTI="}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '195'
+      Content-type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:signBlob?alt=json
+  response:
+    body:
+      string: "{\n  \"keyId\": \"77981b5f69cbdf78032905e17dde4d8e3cd7f2c3\",\n  \"signedBlob\":
+        \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:18:16 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '422'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://storage.googleapis.com/testcloud-python-sdk-bucket/conformance-test/presign/expired.txt?X-Goog-Algorithm=FILTERED&X-Goog-Credential=FILTERED&X-Goog-Date=FILTERED&X-Goog-Expires=FILTERED&X-Goog-SignedHeaders=FILTERED&X-Goog-Signature=FILTERED
+  response:
+    body:
+      string: '<?xml version=''1.0'' encoding=''UTF-8''?><Error><Code>ExpiredToken</Code><Message>Invalid
+        argument.</Message><Details>The provided token has expired. Request signature
+        expired at: 2026-08-07T01:18:17+00:00</Details></Error>'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '220'
+      Content-Type:
+      - application/xml; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:18:18 GMT
+      Expires:
+      - Fri, 07 Aug 2026 01:18:18 GMT
+      Server:
+      - UploadServer
+      X-GUploader-UploadID:
+      - AKhXX7InjPUEssfg22RhD19IrLGJk34U7XJv3wXYgtWOoerGNf2EyTEI-xrXxI82kkbv5mRipaIGcxY9j4xMvA
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fpresign%2Fexpired.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 07 Aug 2026 01:18:19 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IDVcRcsKXqPst2YR7nkCtQ5fI4mKTr7LnmYCamkZoAOARQF0abSFDxZ3-NWtnwf0qEZsqiq9E
+    status:
+      code: 204
+      message: No Content
+version: 1

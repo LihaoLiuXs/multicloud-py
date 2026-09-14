@@ -1,0 +1,222 @@
+interactions:
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://cloudresourcemanager.googleapis.com/v3/projects/example-project:getIamPolicy?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"version":1,"etag":"BwZWyr4thdM=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024"]}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 08:57:28 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '24306'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"policy":{"version":1,"etag":"BwZWyr4thdM=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024","serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]}]}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '25785'
+      Content-Type:
+      - application/json
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://cloudresourcemanager.googleapis.com/v3/projects/example-project:setIamPolicy?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"version":1,"etag":"BwZWyr8u9L4=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 08:57:31 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '24494'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://cloudresourcemanager.googleapis.com/v3/projects/example-project:getIamPolicy?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"version":1,"etag":"BwZWyr8u9L4=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 08:57:32 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '24494'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://cloudresourcemanager.googleapis.com/v3/projects/example-project:getIamPolicy?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"version":1,"etag":"BwZWyr8u9L4=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]},{"role":"roles/storage.objectViewer","members":["serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 08:57:34 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '24494'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"policy":{"version":1,"etag":"BwZWyr8u9L4=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]}]}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '25689'
+      Content-Type:
+      - application/json
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://cloudresourcemanager.googleapis.com/v3/projects/example-project:setIamPolicy?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"version":1,"etag":"BwZWyr+LbYo=","bindings":[{"role":"roles/storage.objectCreator","members":["deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000001","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000023","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000002","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000003","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000004","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000005","deleted:serviceAccount:mcp-conf-sa-pol-attach@example-project.iam.gserviceaccount.com?uid=900000000000000000006","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000007","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000008","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000009","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000010","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000011","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000024","deleted:serviceAccount:mcp-conf-sa-pol-details@example-project.iam.gserviceaccount.com?uid=900000000000000000012","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000013","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000014","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000015","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000016","deleted:serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com?uid=900000000000000000017","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000018","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000019","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000020","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000022","deleted:serviceAccount:mcp-conf-sa-pol-remove@example-project.iam.gserviceaccount.com?uid=900000000000000000021","serviceAccount:mcp-conf-sa-pol-list@example-project.iam.gserviceaccount.com"]}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 08:57:37 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '24400'
+    status:
+      code: 200
+      message: OK
+version: 1

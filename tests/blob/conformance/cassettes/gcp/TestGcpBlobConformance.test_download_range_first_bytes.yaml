@@ -1,0 +1,207 @@
+interactions:
+- request:
+    body: "--===============4953501218554476175==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/download-range/first.txt\",
+      \"crc32c\": \"tdgwBw==\"}\r\n--===============4953501218554476175==\r\ncontent-type:
+      application/octet-stream\r\n\r\n0123456789ABCDEF\r\n--===============4953501218554476175==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '306'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT00OTUzNTAxMjE4NTU0
+        NDc2MTc1PT0i
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/download-range/first.txt/1783324033413949\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt?generation=1783324033413949&alt=media\",\n
+        \ \"name\": \"conformance-test/download-range/first.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1783324033413949\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"16\",\n  \"md5Hash\": \"5D35taRrdV6o8bTdCCZVRA==\",\n
+        \ \"crc32c\": \"tdgwBw==\",\n  \"etag\": \"CL3mn9zHvZUDEAE=\",\n  \"timeCreated\":
+        \"2026-07-06T07:47:13.487Z\",\n  \"updated\": \"2026-07-06T07:47:13.487Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-06T07:47:13.487Z\",\n  \"timeFinalized\":
+        \"2026-07-06T07:47:13.487Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '974'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 06 Jul 2026 07:47:13 GMT
+      ETag:
+      - CL3mn9zHvZUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhH_0nyGbj8pzGUuavmqrQTN4_Qv23BDfUSCuj4Oz-xdTzdkm4L_GWSIkTQyXw_ih9Ek
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      range:
+      - bytes=0-3
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt?alt=media
+  response:
+    body:
+      string: '0123'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '4'
+      Content-Range:
+      - bytes 0-3/16
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Mon, 06 Jul 2026 07:47:13 GMT
+      ETag:
+      - CL3mn9zHvZUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Mon, 06 Jul 2026 07:47:13 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEpwasQ3sAR9xy5etii8yo0gQTIle-HP8APrwAWZsg9u7pxNFD7RC_YnjOPfwhVRbqZ
+      X-Goog-Generation:
+      - '1783324033413949'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '16'
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-goog-user-project:
+      - example-project
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt?generation=1783324033413949&projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/download-range/first.txt/1783324033413949","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt?generation=1783324033413949&alt=media","name":"conformance-test/download-range/first.txt","bucket":"testcloud-python-sdk-bucket","generation":"1783324033413949","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"16","md5Hash":"5D35taRrdV6o8bTdCCZVRA==","crc32c":"tdgwBw==","etag":"CL3mn9zHvZUDEAE=","timeCreated":"2026-07-06T07:47:13.487Z","updated":"2026-07-06T07:47:13.487Z","timeStorageClassUpdated":"2026-07-06T07:47:13.487Z","timeFinalized":"2026-07-06T07:47:13.487Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '900'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 06 Jul 2026 07:47:14 GMT
+      ETag:
+      - CL3mn9zHvZUDEAE=
+      Expires:
+      - Mon, 06 Jul 2026 07:47:14 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhFkqjdcAVm57gzoE1NZ6zWjD-hHwnKABROdZ03QHvgw-oCoqQBjY43CVUpg6eS1Cb0O
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-range%2Ffirst.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 06 Jul 2026 07:47:14 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhE6xKhI0_vgCH05dIbZ_Smv3GWiZDhwXmNCVcOKOqFBsh0B9DNkOCEWmqD-87C_12iQ
+    status:
+      code: 204
+      message: No Content
+version: 1

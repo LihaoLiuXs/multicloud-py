@@ -1,0 +1,382 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '13'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - d6f9002b-56a6-48f6-b353-abd78744d77c
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-0.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Etag:
+      - '"82f6f93dbb06cf3e285dd634f8d4c249"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - Z4pjcw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - HWXzlD0isEG13i+d3V0Ww66A76DFhcOVegrYemx/zusJiRc60wi7xxnxKXWVe9WD6CImhsFMJPg=
+      x-amz-request-id:
+      - N60TPM0NBRDSEVEH
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Eypd2c8ontao0mATG.y_OiSlsGe4JCp4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '13'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 7facb489-1c69-427a-b122-b7eee3a28c13
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-1.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Etag:
+      - '"82f6f93dbb06cf3e285dd634f8d4c249"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - Z4pjcw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - xC3bwIZ/JqWBN5rD7qsqH1IvuXttZQNQV/OaM3CzRMr0ASylPTMzH/cWpG3IK0go+n9zsFpYD20=
+      x-amz-request-id:
+      - N60VKDENAMFZDK7F
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 4Mrawu1TGcODduGXTzb9AbBQlZaYXXqx
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '13'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 4ef938b8-f59c-488b-94d2-20fbea47ae6b
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-2.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:07:26 GMT
+      Etag:
+      - '"82f6f93dbb06cf3e285dd634f8d4c249"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - Z4pjcw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 0m3OnGIZSsN1SwSHNcPcP4dqG70gzAH3ecLqPqpp/oMAI5y/fm3rn0jQR7MxWO+vs7bxUaSMTdQ=
+      x-amz-request-id:
+      - 2W71D5K610KD9HMZ
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 2HHzBx4uf2rrq_0bjKIH2eqt4DKHIOby
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>async-conformance-test/delete/batch-0.txt</Key></Object><Object><Key>async-conformance-test/delete/batch-1.txt</Key></Object><Object><Key>async-conformance-test/delete/batch-2.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '272'
+      amz-sdk-invocation-id:
+      - f7fc1886-5a58-4f96-9fc9-5c371e7cc299
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - iknbVA==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>async-conformance-test/delete/batch-2.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>js81SKvXltOJ8OnwiQWONijlp7TzXk0L</DeleteMarkerVersionId></Deleted><Deleted><Key>async-conformance-test/delete/batch-0.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>ovv25sJtonIyoH9YZEipGi.0twQBaymp</DeleteMarkerVersionId></Deleted><Deleted><Key>async-conformance-test/delete/batch-1.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>0xQkwgsG1XlldZ1y7WU.xU_cCTgYyfcu</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:26 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - gp69wjnoniJUf00ENHGbdUS20Aw/iWMOMarUCsHKvz600RAZOz6rQB5m+skW4uoBppxKmc3hid0=
+      x-amz-request-id:
+      - 2W71ABRFA1Z2V0BP
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 1076ac97-0181-421a-98d4-67488684a48b
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-0.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/delete/batch-0.txt</Key><RequestId>2W7CPXRAM5XM5KYS</RequestId><HostId>b0JHMxZ0aRrrJqnv4X/8yOWd1A2FzTzGmrInMQtjetOACwgfl6Tl+eubihx2G7pATk8V3cdrx8Y=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - b0JHMxZ0aRrrJqnv4X/8yOWd1A2FzTzGmrInMQtjetOACwgfl6Tl+eubihx2G7pATk8V3cdrx8Y=
+      x-amz-request-id:
+      - 2W7CPXRAM5XM5KYS
+      x-amz-version-id:
+      - ovv25sJtonIyoH9YZEipGi.0twQBaymp
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 7ad723dc-fa5f-4502-baab-aaf3d54bd7e9
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-1.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/delete/batch-1.txt</Key><RequestId>2W754J5PQB9G4TXG</RequestId><HostId>zcDIQLeGqQ/ftV+hhdEV9qICJQd04w98cQkYHCqIxNJlNQjVxh3rnrhzEZOpMfHlpMVROG3cHVI=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - zcDIQLeGqQ/ftV+hhdEV9qICJQd04w98cQkYHCqIxNJlNQjVxh3rnrhzEZOpMfHlpMVROG3cHVI=
+      x-amz-request-id:
+      - 2W754J5PQB9G4TXG
+      x-amz-version-id:
+      - 0xQkwgsG1XlldZ1y7WU.xU_cCTgYyfcu
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 22a83fc9-3f1c-4887-865e-b7c590f17487
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-2.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/delete/batch-2.txt</Key><RequestId>YWP6XNRBXB2GFJMP</RequestId><HostId>Ddwlw6kXE9eKOzkIQz16oFwhk2MjwN2XGv80SKWh9q2Ex8fXLJreOSTLxuiwg6eTbmr/rE3Th6Q=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - Ddwlw6kXE9eKOzkIQz16oFwhk2MjwN2XGv80SKWh9q2Ex8fXLJreOSTLxuiwg6eTbmr/rE3Th6Q=
+      x-amz-request-id:
+      - YWP6XNRBXB2GFJMP
+      x-amz-version-id:
+      - js81SKvXltOJ8OnwiQWONijlp7TzXk0L
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - f354f111-23d6-4827-b986-10f7a746f6e3
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-0.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:27 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - d1+mk0l+ud4FeOzzmU6aT5eS55shz/KSaoMpjlzT0UIKlwi20rSYSeDzxV3kL2o6lrTAMZy+xvk=
+      x-amz-request-id:
+      - YWP5Y64MCC4QM3SY
+      x-amz-version-id:
+      - 47gyFGPv0Er75AGZ56n_BGK3AW8mf1WM
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - ea024431-156e-4d98-8860-98906cff6285
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-1.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:27 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - r8lXxF5zXVB9o73iul9kxUhOol5mty745FGNKIlIGruDqjSlbLEBMZ+UUlg+cQ+cET4dzXLpnEg=
+      x-amz-request-id:
+      - YWP81T6M1JSPT1Z6
+      x-amz-version-id:
+      - jwDWGa5bfnmwn1WSjWFnW3AVg8lh0yxC
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - efea88de-9db5-4922-86b4-62a01cc1a4ca
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/batch-2.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:27 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 8bXSQ/+gJfymwo/6mKuDz/tj0zd1Lo5KQrZlNNrh82bdzEpwpuAeuIWUZymF3jVE8k35FGTc3G4=
+      x-amz-request-id:
+      - YWP0AFRC2BG445MD
+      x-amz-version-id:
+      - BT0I1HRDMbB9v5W.UwnvfVJwEEpst05A
+    status:
+      code: 204
+      message: No Content
+version: 1

@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fget-metadata%2Fdoes-not-exist-xyz123.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/get-metadata/does-not-exist-xyz123.txt","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/get-metadata/does-not-exist-xyz123.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '293'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 23 Jul 2026 15:50:46 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Jfv0yWnvPXaGyJElVvaDuOfqIw4fTsNudPzgidzQXBcmwMTBQ-MBgPou7LLSigGSytN46IJXo
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,0 +1,302 @@
+interactions:
+- request:
+    body: "--===============6473603785997640788==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/tags/object-lock.txt\", \"metadata\":
+      {\"gcp-tag-tag1\": \"value1\"}, \"crc32c\": \"jn2Kgw==\"}\r\n--===============6473603785997640788==\r\ncontent-type:
+      application/octet-stream\r\n\r\ntags on object-lock bucket\r\n--===============6473603785997640788==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '352'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT02NDczNjAzNzg1OTk3
+        NjQwNzg4PT0i
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-versioned/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-versioned/conformance-test/tags/object-lock.txt/1784665697736067\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&alt=media\",\n
+        \ \"name\": \"conformance-test/tags/object-lock.txt\",\n  \"bucket\": \"testcloud-python-sdk-versioned\",\n
+        \ \"generation\": \"1784665697736067\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"application/octet-stream\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"26\",\n  \"md5Hash\": \"0Fm5bE0zLRtnIt789yzhXg==\",\n  \"crc32c\": \"jn2Kgw==\",\n
+        \ \"etag\": \"CIOr0+fN5JUDEAE=\",\n  \"timeCreated\": \"2026-07-21T20:28:17.838Z\",\n
+        \ \"updated\": \"2026-07-21T20:28:17.838Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-07-21T20:28:17.838Z\",\n  \"timeFinalized\": \"2026-07-21T20:28:17.838Z\",\n
+        \ \"metadata\": {\n    \"gcp-tag-tag1\": \"value1\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1028'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Jul 2026 20:28:17 GMT
+      ETag:
+      - CIOr0+fN5JUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Ie-LqJg0FOVbohGSM8JPXc-aMpsRsxCijxKG4MZ4mJYf_YT9aqcj3Z72X_i9T_xjRU
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/tags/object-lock.txt/1784665697736067","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&alt=media","name":"conformance-test/tags/object-lock.txt","bucket":"testcloud-python-sdk-versioned","generation":"1784665697736067","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"26","md5Hash":"0Fm5bE0zLRtnIt789yzhXg==","crc32c":"jn2Kgw==","etag":"CIOr0+fN5JUDEAE=","timeCreated":"2026-07-21T20:28:17.838Z","updated":"2026-07-21T20:28:17.838Z","timeStorageClassUpdated":"2026-07-21T20:28:17.838Z","timeFinalized":"2026-07-21T20:28:17.838Z","metadata":{"gcp-tag-tag1":"value1"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '941'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      ETag:
+      - CIOr0+fN5JUDEAE=
+      Expires:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KKO0xiyMtqW2G42_jCehDjw-yma4KgZPmEgsRlFPaG2kNy-peXrqyPx8hzkyKecF2s
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/tags/object-lock.txt/1784665697736067","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&alt=media","name":"conformance-test/tags/object-lock.txt","bucket":"testcloud-python-sdk-versioned","generation":"1784665697736067","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"26","md5Hash":"0Fm5bE0zLRtnIt789yzhXg==","crc32c":"jn2Kgw==","etag":"CIOr0+fN5JUDEAE=","timeCreated":"2026-07-21T20:28:17.838Z","updated":"2026-07-21T20:28:17.838Z","timeStorageClassUpdated":"2026-07-21T20:28:17.838Z","timeFinalized":"2026-07-21T20:28:17.838Z","metadata":{"gcp-tag-tag1":"value1"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '941'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      ETag:
+      - CIOr0+fN5JUDEAE=
+      Expires:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7L4TqJ8eptU-arNBmLiWeoDLyjuGY5qjWC9xqcwKrWHrIjaFjiVg9syCrfwrhzwmhei
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"metadata": {"gcp-tag-tag1": null, "gcp-tag-tag3": "value3"}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '62'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&projection=full&ifMetagenerationMatch=1&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/tags/object-lock.txt/1784665697736067","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&alt=media","name":"conformance-test/tags/object-lock.txt","bucket":"testcloud-python-sdk-versioned","generation":"1784665697736067","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"26","md5Hash":"0Fm5bE0zLRtnIt789yzhXg==","crc32c":"jn2Kgw==","etag":"CIOr0+fN5JUDEAI=","timeCreated":"2026-07-21T20:28:17.838Z","updated":"2026-07-21T20:28:18.686Z","timeStorageClassUpdated":"2026-07-21T20:28:17.838Z","timeFinalized":"2026-07-21T20:28:17.838Z","metadata":{"gcp-tag-tag3":"value3"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '941'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      ETag:
+      - CIOr0+fN5JUDEAI=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LxHGQNgZRq9lRbA2VxRo7l7DKfd9pQ0NdLg83lw_H6equV8maYIneBysuWwFADXZAA00-t_YprV4UbEA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/tags/object-lock.txt/1784665697736067","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&alt=media","name":"conformance-test/tags/object-lock.txt","bucket":"testcloud-python-sdk-versioned","generation":"1784665697736067","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"26","md5Hash":"0Fm5bE0zLRtnIt789yzhXg==","crc32c":"jn2Kgw==","etag":"CIOr0+fN5JUDEAI=","timeCreated":"2026-07-21T20:28:17.838Z","updated":"2026-07-21T20:28:18.686Z","timeStorageClassUpdated":"2026-07-21T20:28:17.838Z","timeFinalized":"2026-07-21T20:28:17.838Z","metadata":{"gcp-tag-tag3":"value3"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '941'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      ETag:
+      - CIOr0+fN5JUDEAI=
+      Expires:
+      - Tue, 21 Jul 2026 20:28:18 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KgQ8njF5Tr4XSUsSGxXNSSdCFMeRUaVHS9baGvborUcu0s_JiBlEo_t5g5Shtyfb2-
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o?projection=noAcl&prefix=conformance-test%2Ftags%2Fobject-lock.txt&versions=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#objects","items":[{"kind":"storage#object","id":"testcloud-python-sdk-versioned/conformance-test/tags/object-lock.txt/1784665697736067","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&alt=media","name":"conformance-test/tags/object-lock.txt","bucket":"testcloud-python-sdk-versioned","generation":"1784665697736067","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"26","md5Hash":"0Fm5bE0zLRtnIt789yzhXg==","crc32c":"jn2Kgw==","etag":"CIOr0+fN5JUDEAI=","timeCreated":"2026-07-21T20:28:17.838Z","updated":"2026-07-21T20:28:18.686Z","timeStorageClassUpdated":"2026-07-21T20:28:17.838Z","timeFinalized":"2026-07-21T20:28:17.838Z","metadata":{"gcp-tag-tag3":"value3"}}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '978'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 21 Jul 2026 20:28:19 GMT
+      Expires:
+      - Tue, 21 Jul 2026 20:28:19 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7K_Yf4JiJI6J0o-QxZ_hQUx8ngpOSRvOFZ1PsjhCggld71auOZ67L71LM9-O-9mmfX6mJuxwnNeCuRRUA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-versioned/o/conformance-test%2Ftags%2Fobject-lock.txt?generation=1784665697736067&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 21 Jul 2026 20:28:19 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JvVwToSB96gKf7fvvZUdgEZj8GQfcmsIy8saRzfc_wYYXP-mjBtFrj5S8thrRYKGtf5_6aIGQ
+    status:
+      code: 204
+      message: No Content
+version: 1

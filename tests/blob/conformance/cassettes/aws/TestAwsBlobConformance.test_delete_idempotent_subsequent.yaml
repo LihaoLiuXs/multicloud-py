@@ -1,0 +1,166 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        NA0Kb25jZQ0KMA0KeC1hbXotY2hlY2tzdW0tY3JjMzI6YzBCejBBPT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        NA==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MmY5NGE5YmMtMWMxNS00ZmJkLWI1ZjEtZGQ4NzIyNzc0ZjNh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 02 Jul 2026 08:01:47 GMT
+      ETag:
+      - '"e2eff6c2dafd909df8508f891b385d88"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - c0Bz0A==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - /N34UOYu9r1OyPHlIQdYr1gGVnlmd26XeBTfi6JNqbQEMc+iihxcxXFuGwwj39GWNIOW9q9twlU=
+      x-amz-request-id:
+      - 0WA3NS38DCGV309D
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Z4_pq4PFvHvV79Q.IJZQaEjz.1ln2wV2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZGI3NjhlZjktNzMzMC00NzY3LTgzNTYtNjIzM2QyY2M2YzUw
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 02 Jul 2026 08:01:48 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - oExzlRUb05FDCaTP1NfROjKsTgMAwrjnJGSBjq0GyVVcxG+7ZbvnEkttOlx5sUzU1gjKBd+s1kdYQEiKBuuwJN/gHRgF53L7
+      x-amz-request-id:
+      - 9QMVT3J5ZSQMPPM6
+      x-amz-version-id:
+      - mcnloBUtqAKjwixtMGUuQvDzMD4cNGfZ
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NDVmNTU0OTYtYzNjYy00ZTRiLTljYjAtYWMxNWY5MjliZTdk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 02 Jul 2026 08:01:49 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - e50nnYFeJcusvJmTOg0S8WvC0pVeOiE/MmJLyiPJQfqgphIPVUaI18pzg+wEQXiNzXIMvAR7fYrIvMYVwDfhNEXPhoFCjQQM
+      x-amz-request-id:
+      - VZM2EANFKE1D182Q
+      x-amz-version-id:
+      - RO2YT8QCgiYUi8XqrPHszw9fd7oAECsB
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NjE3OTJjMDAtYThiZS00ZWYyLWEzOTktMWE1ZWZjODI1MDYw
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>conformance-test/delete/idempotent.txt</Key><RequestId>VZM2ZCG08F283KE1</RequestId><HostId>hmvNoo8+3zJ1I9a0etlzAqYSdaDmSJ+KU/Rsgbw6kqUdl7KMxS+Mjwgz8YhWtuUN6NwoiI7AK5qaPoMfap3tZAbMRyfrVw2A</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 02 Jul 2026 08:01:48 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - hmvNoo8+3zJ1I9a0etlzAqYSdaDmSJ+KU/Rsgbw6kqUdl7KMxS+Mjwgz8YhWtuUN6NwoiI7AK5qaPoMfap3tZAbMRyfrVw2A
+      x-amz-request-id:
+      - VZM2ZCG08F283KE1
+      x-amz-version-id:
+      - RO2YT8QCgiYUi8XqrPHszw9fd7oAECsB
+    status:
+      code: 404
+      message: Not Found
+version: 1

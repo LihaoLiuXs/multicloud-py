@@ -1,0 +1,209 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '24'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - c0c3005a-db13-486a-a36f-441014470b44
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/blocks-delete.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:43 GMT
+      Etag:
+      - '"174f1013575a69ad484d5552495bc679"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - A8WKkQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - uI2T/bkMrEwSjdV+kUTyBDyX0jADXNM42ON7sbMCCNRL8Aj04ry0aStbRxugWeA9rIgFsDNBzVA=
+      x-amz-request-id:
+      - WTFK3RHXE7F21Q4C
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '90'
+      amz-sdk-invocation-id:
+      - 03b31888-58b4-4171-aaf7-c2b36d067316
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - 6XWxlw==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/blocks-delete.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:44 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - K0WVo+n+KzfOPrx8Ob3b5BquGNu6yWct+k0Uch2kEtefBpqWf9EoCTVU4V8d610rmpIPd37PMZ0=
+      x-amz-request-id:
+      - JA8RXW0ZPMHD87CK
+      x-amz-version-id:
+      - QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 79b05510-8374-4be3-962c-3024adda8420
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/blocks-delete.txt?versionId=QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>AccessDenied</Code><Message>Access Denied because object protected
+        by object lock.</Message><RequestId>JA8VVABRDGS60K59</RequestId><HostId>DL9mnj80HSVzd7fihBDXYLAxXByuARa1VflCtCm1B6vUBAkhEfC6wtGckjTeJKH7VBNuOCf4VcQ=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 26 Aug 2026 06:13:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - DL9mnj80HSVzd7fihBDXYLAxXByuARa1VflCtCm1B6vUBAkhEfC6wtGckjTeJKH7VBNuOCf4VcQ=
+      x-amz-request-id:
+      - JA8VVABRDGS60K59
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 3a322c20-8319-4ffe-b5ec-ce546d500bbc
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=async-conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>async-conformance-test/update-legal-hold/blocks-delete.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>async-conformance-test/update-legal-hold/blocks-delete.txt</Key><VersionId>QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-26T06:13:43.000Z</LastModified><ETag>&quot;174f1013575a69ad484d5552495bc679&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>24</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 26 Aug 2026 06:13:45 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - M0PUA1xJlY9uL3wHN8+YJ8dX/xLSkbPO0y53D6YLkGVSEUD3ydAgIg2RsofDsAWL2oyI144yLrE=
+      x-amz-request-id:
+      - BCV9GFMEVS4DYP42
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '91'
+      amz-sdk-invocation-id:
+      - 46481b96-86c2-43d1-95a3-3a4e59c578b9
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - SWq6zg==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/blocks-delete.txt?legal-hold&versionId=QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:45 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 5oriQ30XA0iUDugPj7Ytbc0y98bvB+38ST7SO1qFUJjH5ijFjILb3ZmpUQMWk0h7bKiSuBg19xg=
+      x-amz-request-id:
+      - BCVCNPKV0RQNFYPW
+      x-amz-version-id:
+      - QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 9f20c8ea-e316-4a74-bb65-6aeb90900519
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/blocks-delete.txt?versionId=QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 26 Aug 2026 06:13:45 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - vjS0qvEwLVZLaKUza47xPXeGiojbbPnhSAztxLH8OhxOqYBm/Ivlxtt7IJZYzaBVcZGjJoDCGdU=
+      x-amz-request-id:
+      - BCV59QGDTE5C7N1H
+      x-amz-version-id:
+      - QFE0RRRmqk0CJAv0HXuEqYRnpXKMu7l5
+    status:
+      code: 204
+      message: No Content
+version: 1

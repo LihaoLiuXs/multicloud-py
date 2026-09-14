@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfdc-multicloud-common"
+version = "0.1.4"
+description = "Shared base for the python-multicloud SDK: exception hierarchy, provider registry, entry-point discovery."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]
+
+# multicloud/ and multicloud/common/ are PEP 420 implicit namespace packages
+# (no __init__.py at multicloud/) so multiple distributions — multicloud-blob,
+# multicloud-sts, multicloud-blob-aws, ... — can contribute submodules under
+# the shared `multicloud.*` namespace. multicloud/common/ keeps its own
+# __init__.py because it is a concrete leaf package owned by THIS distribution.

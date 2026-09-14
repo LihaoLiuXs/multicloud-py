@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfdc-multicloud-docstore-gcp-firestore"
+version = "0.1.4"
+description = "GCP Firestore provider for multicloud-docstore."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sfdc-multicloud-docstore>=0.1.4",
+    "sfdc-multicloud-gcp-common>=0.1.4",
+    "google-cloud-firestore>=2.13.0",
+    "google-api-core>=2.10.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+
+# The docstore client discovers providers by importing every module
+# advertised under the ``multicloud.docstore.providers`` entry-point
+# group. Importing this module triggers the
+# ``@DOCSTORE_REGISTRY.register("gcp-firestore")`` decorator on
+# FirestoreDocStore, registering it.
+[project.entry-points."multicloud.docstore.providers"]
+gcp-firestore = "multicloud.docstore.docstore_gcp_firestore"
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]

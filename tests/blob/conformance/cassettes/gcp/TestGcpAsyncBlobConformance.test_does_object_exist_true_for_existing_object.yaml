@@ -1,0 +1,243 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/exists/present.txt\",\n    \"errors\":
+        [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/exists/present.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '339'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:33 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IXHNgEztO3GBLKH_PtVaTbQ8naJ4ePfUIQzLiNj6_h2lCq_qhkOLx6gJ5lJwUmd0jN
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZXhpc3RzIGNvbmZvcm1hbmNlIHBheWxvYWQ=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '26'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/exists/present.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/exists/present.txt/1786137813914536\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt?generation=1786137813914536&alt=media\",\n
+        \ \"name\": \"async-conformance-test/exists/present.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1786137813914536\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"26\",\n  \"md5Hash\": \"Q0Z/2g96yvHMpuaDnh3l+g==\",\n
+        \ \"crc32c\": \"l6Jr4Q==\",\n  \"etag\": \"CKinrO+5j5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-07T21:23:33.981Z\",\n  \"updated\": \"2026-08-07T21:23:33.981Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-07T21:23:33.981Z\",\n  \"timeFinalized\":
+        \"2026-08-07T21:23:33.981Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '966'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:34 GMT
+      Etag:
+      - CKinrO+5j5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LgZ8I7QMjttTVV4zmOtjfOv30VFWgfTgE4-ARkyhcTcgio7AAQPG1Tzvx3knokWoEG
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/exists/present.txt/1786137813914536\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt?generation=1786137813914536&alt=media\",\n
+        \ \"name\": \"async-conformance-test/exists/present.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1786137813914536\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"26\",\n  \"md5Hash\": \"Q0Z/2g96yvHMpuaDnh3l+g==\",\n
+        \ \"crc32c\": \"l6Jr4Q==\",\n  \"etag\": \"CKinrO+5j5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-07T21:23:33.981Z\",\n  \"updated\": \"2026-08-07T21:23:33.981Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-07T21:23:33.981Z\",\n  \"timeFinalized\":
+        \"2026-08-07T21:23:33.981Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '966'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:34 GMT
+      Etag:
+      - CKinrO+5j5YDEAE=
+      Expires:
+      - Fri, 07 Aug 2026 21:23:34 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KGRnQ4CjivM-LTIzKhOttpwZmDumKoyAZNa-FjqqBnSA-e06x4xS3UQVTZIL87_RxK
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent?alt=json
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/exists/present\",\n    \"errors\":
+        [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/exists/present\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '331'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:34 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7ITsPqG5YRQR9tr27dgNZFNzu34Lwha4TX3viuFkR7XZ-EIEEF4KaRS4aYGOkOB1Lvh
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2F?alt=json
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/exists/\",\n    \"errors\":
+        [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/exists/\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '317'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:34 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Klz5wYskQ6PQm0xWiuNkEIPJ-zjBtWxzapT3nniyXM2rfv-Q5mgr6N-mXJ847rQpNt
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fexists%2Fpresent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 07 Aug 2026 21:23:34 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IMT81iSk-Ttg9-d_dj0MzH_mWNPy9iEqRTdQA-81IwlLedT_fsOK0QjTj6n1CWDzNc
+    status:
+      code: 204
+      message: No Content
+version: 1

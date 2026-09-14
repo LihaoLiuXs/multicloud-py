@@ -1,0 +1,116 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '23'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 2603c0ec-a72e-40fc-9e44-3b069684acf6
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/does-not-exist-xyz123.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 17:04:48 GMT
+      Etag:
+      - '"90a682c8d8270dfbadfe349004c09b52"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - sT2F8g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - Z4crSwc3/HoqtdfBaT0Z9RHrjnV8Juc/cb/QQ6Kct1v8Y8EHG9JOKRzgeCI743J2Fk870LC2rP6x8pWFHTc4fOroFSYLH73m
+      x-amz-request-id:
+      - Q14Y34J1M4DYA973
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - UQ.voqJRK44dvMppt.eezdNRbtT.tnGC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - b2b08a31-8885-4d3b-8d97-1d04212a225a
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/does-not-exist-xyz123.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 17:04:49 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - FeyRZzogEg4XoZIEoBsXHoBg9au4EQuTfy48BIFxbNkQBeJ3Wvu1pOmcCCon9zKFd9QP4XbNZQv9KBgH5wO7lk1LqBX3rc9v
+      x-amz-request-id:
+      - 0VGH8JR09X02QYHA
+      x-amz-version-id:
+      - DgjM6egAauuuRPuNZXU88D4XnsGyr_Qw
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 3cababd7-4448-484f-a586-9f8972ea18e2
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-stream/does-not-exist-xyz123.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/download-stream/does-not-exist-xyz123.txt</Key><RequestId>0VGRRBB4SBQ3JN21</RequestId><HostId>KDTPmWsstxxrHqEdiVTwQNv6R++r0SL1P7o7lccp2swhZL3Qnhi3CPPW9ED9ZWt53nxlP+ReGXc5DSTSOhiGEm3LDOBw4RCu</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 25 Aug 2026 17:04:48 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - KDTPmWsstxxrHqEdiVTwQNv6R++r0SL1P7o7lccp2swhZL3Qnhi3CPPW9ED9ZWt53nxlP+ReGXc5DSTSOhiGEm3LDOBw4RCu
+      x-amz-request-id:
+      - 0VGRRBB4SBQ3JN21
+      x-amz-version-id:
+      - DgjM6egAauuuRPuNZXU88D4XnsGyr_Qw
+    status:
+      code: 404
+      message: Not Found
+version: 1

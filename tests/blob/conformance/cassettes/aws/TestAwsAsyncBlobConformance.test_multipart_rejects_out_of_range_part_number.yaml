@@ -1,0 +1,60 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000002
+      amz-sdk-request:
+      - attempt=1
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-bad-part-number.bin?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test-async/multipart-bad-part-number.bin</Key><UploadId>dA1V_Ht65Y0OXcxCY1McUQ9P7rtz3d0UXQwkMg9IKTu3.HSJZ7flNfEBcVXeCXdNIg2UTUTLeNiy1ugr4lmvz0Z0u6QzVMEd7bGo9tdOK25rk76b75c8672XYFqcE4mhOy8vs6zSCpXrEq2kfQxjeGEi78DBvTSa9R5bkI1fQ6NNNXcW4xuxz_q_yR3pU7t1</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 15:09:23 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - jJUyhmzjgsuJXdoblVU6szLUKPPKO2VXDFMzVaeaD510mXE12adp9PlKwXkr+wr2PAL8g7wclP8=
+      x-amz-request-id:
+      - JTMSCZDKMV3EP3AZ
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000004
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-bad-part-number.bin?uploadId=dA1V_Ht65Y0OXcxCY1McUQ9P7rtz3d0UXQwkMg9IKTu3.HSJZ7flNfEBcVXeCXdNIg2UTUTLeNiy1ugr4lmvz0Z0u6QzVMEd7bGo9tdOK25rk76b75c8672XYFqcE4mhOy8vs6zSCpXrEq2kfQxjeGEi78DBvTSa9R5bkI1fQ6NNNXcW4xuxz_q_yR3pU7t1
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 15:09:23 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - EJ1OjwdX/DKMJjvU/UNjbiRDMTGoD8afMSk8yDGrgaxsMzMqGIOcjX/Agn9cyn9HTmxSsdAl1QU=
+      x-amz-request-id:
+      - JTMQ7KVGK5D40RMW
+    status:
+      code: 204
+      message: No Content
+version: 1

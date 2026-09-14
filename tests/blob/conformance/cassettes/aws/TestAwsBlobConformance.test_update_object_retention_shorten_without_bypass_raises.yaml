@@ -1,0 +1,165 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTMNCnJldGVudGlvbi1ub3Nob3J0ZW4NCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOkthazljUT09
+        DQoNCg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTk=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YTQ4YWRhZGItZjFiOC00M2U3LTk1N2ItOGIwNmUzN2Q2ZWQw
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-object-lock-mode:
+      - !!binary |
+        R09WRVJOQU5DRQ==
+      x-amz-object-lock-retain-until-date:
+      - !!binary |
+        MjAyNi0wOS0zMFQwMDowMDowMFo=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/shorten-no-bypass.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 10 Aug 2026 20:44:10 GMT
+      ETag:
+      - '"021ce188dda379d30f643ab00c08b378"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - Kak9cQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - TwRqpVvQNVBypcuLz7Hp5q9e05hI3DpwBncTCAAERpaoAD2eXTxgs3PzYtbnQ1SfIQDGpnlm8iQ=
+      x-amz-request-id:
+      - 0YDQGTEK20K2EHKC
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 8OYbYMvj_g87ng2ESVBr8KRAQXg_8NQj
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NzBiYzE5Y2UtOTc1ZC00NDYzLWEyNTMtOGMwYmMzM2ZkNzI4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/shorten-no-bypass.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-30T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Mon, 10 Aug 2026 20:44:10 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - tI+KGsR8ETvZ+g71dtoIaTPrxEzT44W5Nw+RVnLtUZvLUPmY+0AR+96sX3BejaIDewQiUIf/mJk=
+      x-amz-request-id:
+      - 0YDV6W9ZZC8MVGMD
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MGRmODhjMmItMTZlYy00ODYxLWIxZjEtY2VlZmQwNzJkMjFl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Fupdate-retention%2Fshorten-no-bypass.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>conformance-test/update-retention/shorten-no-bypass.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/update-retention/shorten-no-bypass.txt</Key><VersionId>8OYbYMvj_g87ng2ESVBr8KRAQXg_8NQj</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-10T20:44:10.000Z</LastModified><ETag>&quot;021ce188dda379d30f643ab00c08b378&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 10 Aug 2026 20:44:10 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 5Q8sn5Of5N7nqy6a7+/1Wx0zfHPFLpUZsnJ7dg1JDa+bUuXycBUAgiNBChLf1cDt3+LDhHOhV+A=
+      x-amz-request-id:
+      - 0YDPC42FDSD6G2CQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MWMyZjk5ZDgtNTExNC00M2NmLTliODAtNDU2NTViNmU3NTAz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/shorten-no-bypass.txt?versionId=8OYbYMvj_g87ng2ESVBr8KRAQXg_8NQj
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 10 Aug 2026 20:44:11 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 2/qM/mMSxYPbdidD/HkpLNU43iZQP5I1pUmv898FLWrY+jmHJXeYQOdTMMlEk+/Oapd1NDzpah8=
+      x-amz-request-id:
+      - 9HPE1XJ9G3XHWC2E
+      x-amz-version-id:
+      - 8OYbYMvj_g87ng2ESVBr8KRAQXg_8NQj
+    status:
+      code: 204
+      message: No Content
+version: 1

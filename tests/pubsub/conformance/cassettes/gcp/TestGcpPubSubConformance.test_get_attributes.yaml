@@ -1,0 +1,104 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - subscription=projects/example-project/subscriptions/sub-testGetAttributes
+      x-goog-user-project:
+      - example-project
+    method: GET
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/subscriptions/sub-testGetAttributes?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"name": "projects/example-project/subscriptions/sub-testGetAttributes",
+        "topic": "projects/example-project/topics/topic-testGetAttributes",
+        "pushConfig": {}, "ackDeadlineSeconds": 10, "messageRetentionDuration": "604800s",
+        "expirationPolicy": {}, "state": 1}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:16:02 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '290'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - subscription=projects/example-project/subscriptions/sub-testGetAttributes
+      x-goog-user-project:
+      - example-project
+    method: GET
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/subscriptions/sub-testGetAttributes?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"name": "projects/example-project/subscriptions/sub-testGetAttributes",
+        "topic": "projects/example-project/topics/topic-testGetAttributes",
+        "pushConfig": {}, "ackDeadlineSeconds": 10, "messageRetentionDuration": "604800s",
+        "expirationPolicy": {}, "state": 1}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:42:02 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '290'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,725 @@
+interactions:
+- request:
+    body: '{"QueueName": "test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '47'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxNjIyWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkNyZWF0ZVF1ZXVl
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzM2OWZjYzAtMWM2NC00NDU1LTk4OTctZTc2ZGUwODE1NTE1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:16:23 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 87e45e17-c67e-5dbb-8308-3cdf4e5906a3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueName": "test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '47'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxNjIzWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkdldFF1ZXVlVXJs
+      amz-sdk-invocation-id:
+      - !!binary |
+        NmQzY2MwNzUtZjZlYS00MTlkLWIxMDktNmYxNTViMWFkYWFh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:16:23 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 20bc1243-1991-5f38-a632-708b91b6c6d7
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 1", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "1"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxNjIzWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZmMyNzI2YWUtZmQ4Ny00MjQxLThkZDAtMTU1NzA2ZTNjNzEz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"757eaf8d6a95a57537db927a16e92a7e","MD5OfMessageBody":"68390233272823b7adf13a1db79b2cd7","MessageId":"3902d021-032e-441d-8a1f-aae2335de8c0"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:16:24 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 9ea2d820-9b29-5168-a415-bae81301be3c
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 2", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "2"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxNjI0Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YjEyYjhjZGQtNTQxNS00NjAxLTliNzgtNGRjMDFlMDI2YmY4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"6ef1ffe15b4826182e589b8e3d0ceaaf","MD5OfMessageBody":"88ef8f31ed540f1c4c03d5fdb06a7935","MessageId":"ecb6b79a-2b72-4812-aa57-4cefb2dd4f49"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:16:24 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 4aa1a591-3a49-5aee-9e22-c759b261989d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 3", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "3"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxNjI0Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDgxMWVkMTktMmQ1ZS00ODhmLTgwNGQtOWZiMWNjMjY4YWJj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"804069276d344d5118ff0a2cb4abfa7c","MD5OfMessageBody":"335f063c95cf6bcca8694a36fcd51103","MessageId":"6258feff-e0ee-4219-b770-6b638b3c0336"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:16:25 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 03fe7afa-fdbe-52ab-ab29-18327597a818
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueName": "test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '47'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixnLEQs
+        WiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS40My4w
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxOTA5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkNyZWF0ZVF1ZXVl
+      amz-sdk-invocation-id:
+      - !!binary |
+        MWQ3NjI0YmUtYmUzOC00MDNjLTljY2QtNjA0ZDlkYzA1MjFk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:19:10 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 75340666-aca8-5c18-b027-64ae2466a917
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueName": "test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '47'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxOTEwWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkdldFF1ZXVlVXJs
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWNhMjE2MmMtYmNjYi00YTA4LWIzNGItNDQzYzIzMTA5MDVh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:19:11 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 84e5ceba-0cf4-51c2-9921-ac72843bacf3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 1", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "1"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxOTExWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MTRhNTFmZjQtZWNmYy00NTdiLWIyMzItNmM4N2M0NTFjZTNm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"757eaf8d6a95a57537db927a16e92a7e","MD5OfMessageBody":"68390233272823b7adf13a1db79b2cd7","MessageId":"b741ca69-ce72-451a-bed7-3e45425f8b06"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:19:11 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 5b38151a-58aa-5b95-8418-77d2d065aa52
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 2", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "2"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxOTExWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MmI3YjViZDktYzA2OC00MGYzLWI0YWQtNWU5NTc1YThkNmQ5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"6ef1ffe15b4826182e589b8e3d0ceaaf","MD5OfMessageBody":"88ef8f31ed540f1c4c03d5fdb06a7935","MessageId":"fa852ad1-beb6-429d-a5b9-81958db29c9e"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:19:12 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 9ea597b0-342e-507f-af3a-f578bcfe99cd
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 3", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "3"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcxOTEyWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        N2RkODIxNjItODliNi00MGViLWE2ZWItZWJhMWU3MWU4YzZh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"804069276d344d5118ff0a2cb4abfa7c","MD5OfMessageBody":"335f063c95cf6bcca8694a36fcd51103","MessageId":"6ca61719-88bf-4bf4-af45-979fc57f619f"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:19:12 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - a02a0ca8-b760-5c83-8011-6e603fb04db9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueName": "test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '47'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixnLFos
+        RCBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS40My4w
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcyMDQzWg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkNyZWF0ZVF1ZXVl
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZTY2MjM2NzAtN2Y5Mi00MzkwLWEyN2QtNTgyMWIwNWNmZTQ2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:20:44 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 65215307-a9db-5949-a507-31cf20f71444
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueName": "test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '47'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixaLEQg
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcyMDQ0Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkdldFF1ZXVlVXJs
+      amz-sdk-invocation-id:
+      - !!binary |
+        OGNkZWU4ZTItMDQ0YS00ZDU3LWI0YjMtYTA3NmRiM2JjNDdm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages"}'
+    headers:
+      Content-Length:
+      - '94'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:20:45 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - ffb08cd2-5aef-5e82-a50d-ee1ad3c25988
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 1", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "1"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixaLEQg
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcyMDQ1Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YmRkOTAzNWEtYTEwZS00OTZkLThjMzEtYzFiY2YwN2I3OWNl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"757eaf8d6a95a57537db927a16e92a7e","MD5OfMessageBody":"68390233272823b7adf13a1db79b2cd7","MessageId":"27762fad-3333-4607-a9b1-afa63f5323c6"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:20:45 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 394650a6-5eba-5f92-aa62-326ed797013e
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 2", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "2"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixaLEQg
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcyMDQ1Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        Mjk1MjkyODUtMzhlZC00ZWQzLTk3NTMtNmUwZmNiYTVlZmJm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"6ef1ffe15b4826182e589b8e3d0ceaaf","MD5OfMessageBody":"88ef8f31ed540f1c4c03d5fdb06a7935","MessageId":"cf03baee-cf4a-4510-9e72-520e76b773ee"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:20:46 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - db1d4384-5c94-5439-96b0-214cd5baf335
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"QueueUrl": "https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testSendBatchMessages",
+      "Entries": [{"Id": "0", "MessageBody": "Message 3", "MessageAttributes": {"batch-id":
+      {"DataType": "String", "StringValue": "3"}}}]}'
+    headers:
+      Content-Length:
+      - '228'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixaLEQg
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MDhUMTcyMDQ2Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLlNlbmRNZXNzYWdlQmF0Y2g=
+      amz-sdk-invocation-id:
+      - !!binary |
+        Y2ZmZDg3ZDctNDRlNC00OTViLWJhNDYtNDZiMjRjMDMyYjNh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"Successful":[{"Id":"0","MD5OfMessageAttributes":"804069276d344d5118ff0a2cb4abfa7c","MD5OfMessageBody":"335f063c95cf6bcca8694a36fcd51103","MessageId":"7ffaf1cc-7a91-4c7e-afbe-bcd4149bec16"}]}'
+    headers:
+      Content-Length:
+      - '192'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Wed, 08 Jul 2026 17:20:46 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - d67a0371-fd16-5e55-b1fe-61b974388f2f
+    status:
+      code: 200
+      message: OK
+version: 1

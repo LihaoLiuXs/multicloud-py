@@ -1,0 +1,493 @@
+interactions:
+- request:
+    body: "--===============4810886750364152786==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test-async/upload-tags/top-two.txt\",
+      \"metadata\": {\"gcp-tag-origin\": \"conformance\", \"gcp-tag-kind\": \"directory\"},
+      \"crc32c\": \"tgZDFg==\"}\r\n--===============4810886750364152786==\r\ncontent-type:
+      text/plain\r\n\r\ntop level file two\r\n--===============4810886750364152786==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT00ODEwODg2NzUwMzY0
+        MTUyNzg2PT0i
+      x-upload-content-type:
+      - text/plain
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/top-two.txt/1786391567174711\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt?generation=1786391567174711&alt=media\",\n
+        \ \"name\": \"conformance-test-async/upload-tags/top-two.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786391567174711\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"mcISpru98JXlhCY2T45ZNw==\",\n
+        \ \"crc32c\": \"tgZDFg==\",\n  \"etag\": \"CLeYqpbrlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:52:47.245Z\",\n  \"updated\": \"2026-08-10T19:52:47.245Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:52:47.245Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:52:47.245Z\",\n  \"metadata\": {\n    \"gcp-tag-origin\":
+        \"conformance\",\n    \"gcp-tag-kind\": \"directory\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1070'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:47 GMT
+      ETag:
+      - CLeYqpbrlpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7L8wWSvRgsZX8ACMdoQNFpAMYD36NPCxXzdpcDUeL21RFADQmxME4AN4nLCV4xkA0FdBtTmYnQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "--===============1596184444723223000==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test-async/upload-tags/top-one.txt\",
+      \"metadata\": {\"gcp-tag-origin\": \"conformance\", \"gcp-tag-kind\": \"directory\"},
+      \"crc32c\": \"zkpCXA==\"}\r\n--===============1596184444723223000==\r\ncontent-type:
+      text/plain\r\n\r\ntop level file one\r\n--===============1596184444723223000==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '375'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0xNTk2MTg0NDQ0NzIz
+        MjIzMDAwPT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - text/plain
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/top-one.txt/1786391567418145\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt?generation=1786391567418145&alt=media\",\n
+        \ \"name\": \"conformance-test-async/upload-tags/top-one.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786391567418145\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"BXx2T/5MQ854bZMs4tn8+Q==\",\n
+        \ \"crc32c\": \"zkpCXA==\",\n  \"etag\": \"CKGGuZbrlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:52:47.495Z\",\n  \"updated\": \"2026-08-10T19:52:47.495Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:52:47.495Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:52:47.495Z\",\n  \"metadata\": {\n    \"gcp-tag-origin\":
+        \"conformance\",\n    \"gcp-tag-kind\": \"directory\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1070'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:47 GMT
+      ETag:
+      - CKGGuZbrlpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Jtdt6WOCeTyoCYm-JXqfhDwLk-3Dl0AspEC2cYmlavVz4WgemWJIciP6dxzd-LzMr19UAhvjY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "--===============9025478072316052645==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test-async/upload-tags/nested/deep.txt\",
+      \"metadata\": {\"gcp-tag-origin\": \"conformance\", \"gcp-tag-kind\": \"directory\"},
+      \"crc32c\": \"CThq/w==\"}\r\n--===============9025478072316052645==\r\ncontent-type:
+      text/plain\r\n\r\nnested file content\r\n--===============9025478072316052645==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '380'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT05MDI1NDc4MDcyMzE2
+        MDUyNjQ1PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - text/plain
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/nested/deep.txt/1786391567749921\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt?generation=1786391567749921&alt=media\",\n
+        \ \"name\": \"conformance-test-async/upload-tags/nested/deep.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786391567749921\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"19\",\n  \"md5Hash\": \"JXpzdtIODuCFb7LGky5e3Q==\",\n
+        \ \"crc32c\": \"CThq/w==\",\n  \"etag\": \"CKGmzZbrlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:52:47.818Z\",\n  \"updated\": \"2026-08-10T19:52:47.818Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:52:47.818Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:52:47.818Z\",\n  \"metadata\": {\n    \"gcp-tag-origin\":
+        \"conformance\",\n    \"gcp-tag-kind\": \"directory\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1090'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:47 GMT
+      ETag:
+      - CKGmzZbrlpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JG4lZUWvsXEla6W00JAss8_frwoWRsaJnS9vRvl1jTZaaZ3T_2qKqi62CZyO6xf61VR83O6CM
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/top-one.txt/1786391567418145\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt?generation=1786391567418145&alt=media\",\n
+        \ \"name\": \"conformance-test-async/upload-tags/top-one.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786391567418145\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"BXx2T/5MQ854bZMs4tn8+Q==\",\n
+        \ \"crc32c\": \"zkpCXA==\",\n  \"etag\": \"CKGGuZbrlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:52:47.495Z\",\n  \"updated\": \"2026-08-10T19:52:47.495Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:52:47.495Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:52:47.495Z\",\n  \"metadata\": {\n    \"gcp-tag-origin\":
+        \"conformance\",\n    \"gcp-tag-kind\": \"directory\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1066'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Etag:
+      - CKGGuZbrlpYDEAE=
+      Expires:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KKogXaRY2I1VEqsx5hyxs4-4TwTHEiK2_vCnjMJYdon7zlx7zjn4pkep3inuQGlUpA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/top-two.txt/1786391567174711\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt?generation=1786391567174711&alt=media\",\n
+        \ \"name\": \"conformance-test-async/upload-tags/top-two.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786391567174711\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"mcISpru98JXlhCY2T45ZNw==\",\n
+        \ \"crc32c\": \"tgZDFg==\",\n  \"etag\": \"CLeYqpbrlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:52:47.245Z\",\n  \"updated\": \"2026-08-10T19:52:47.245Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:52:47.245Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:52:47.245Z\",\n  \"metadata\": {\n    \"gcp-tag-origin\":
+        \"conformance\",\n    \"gcp-tag-kind\": \"directory\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1066'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Etag:
+      - CLeYqpbrlpYDEAE=
+      Expires:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KN1Hzqa5PT3vXgyrHDhJPRNsLQpm4iwf8kPacG07QFFb-_ToDLWQcjVsTnFC3ORu5n4ocud9M
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/nested/deep.txt/1786391567749921\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt?generation=1786391567749921&alt=media\",\n
+        \ \"name\": \"conformance-test-async/upload-tags/nested/deep.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1786391567749921\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"19\",\n  \"md5Hash\": \"JXpzdtIODuCFb7LGky5e3Q==\",\n
+        \ \"crc32c\": \"CThq/w==\",\n  \"etag\": \"CKGmzZbrlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:52:47.818Z\",\n  \"updated\": \"2026-08-10T19:52:47.818Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:52:47.818Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:52:47.818Z\",\n  \"metadata\": {\n    \"gcp-tag-origin\":
+        \"conformance\",\n    \"gcp-tag-kind\": \"directory\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1086'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Etag:
+      - CKGmzZbrlpYDEAE=
+      Expires:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I9hbXmz5BU7Ilgk6N_JO1JjoOVxnGNcAdCJPjuZFADNVt1Ss0pgTmPJn5pt876MjZ4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o?maxResults=1000&prefix=conformance-test-async/upload-tags/
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#objects\",\n  \"items\": [\n    {\n      \"kind\":
+        \"storage#object\",\n      \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/nested/deep.txt/1786391567749921\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt?generation=1786391567749921&alt=media\",\n
+        \     \"name\": \"conformance-test-async/upload-tags/nested/deep.txt\",\n
+        \     \"bucket\": \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1786391567749921\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"text/plain\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"19\",\n      \"md5Hash\":
+        \"JXpzdtIODuCFb7LGky5e3Q==\",\n      \"crc32c\": \"CThq/w==\",\n      \"etag\":
+        \"CKGmzZbrlpYDEAE=\",\n      \"timeCreated\": \"2026-08-10T19:52:47.818Z\",\n
+        \     \"updated\": \"2026-08-10T19:52:47.818Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-10T19:52:47.818Z\",\n      \"timeFinalized\": \"2026-08-10T19:52:47.818Z\",\n
+        \     \"metadata\": {\n        \"gcp-tag-origin\": \"conformance\",\n        \"gcp-tag-kind\":
+        \"directory\"\n      }\n    },\n    {\n      \"kind\": \"storage#object\",\n
+        \     \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/top-one.txt/1786391567418145\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt?generation=1786391567418145&alt=media\",\n
+        \     \"name\": \"conformance-test-async/upload-tags/top-one.txt\",\n      \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1786391567418145\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"text/plain\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"18\",\n      \"md5Hash\":
+        \"BXx2T/5MQ854bZMs4tn8+Q==\",\n      \"crc32c\": \"zkpCXA==\",\n      \"etag\":
+        \"CKGGuZbrlpYDEAE=\",\n      \"timeCreated\": \"2026-08-10T19:52:47.495Z\",\n
+        \     \"updated\": \"2026-08-10T19:52:47.495Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-10T19:52:47.495Z\",\n      \"timeFinalized\": \"2026-08-10T19:52:47.495Z\",\n
+        \     \"metadata\": {\n        \"gcp-tag-origin\": \"conformance\",\n        \"gcp-tag-kind\":
+        \"directory\"\n      }\n    },\n    {\n      \"kind\": \"storage#object\",\n
+        \     \"id\": \"testcloud-python-sdk-bucket/conformance-test-async/upload-tags/top-two.txt/1786391567174711\",\n
+        \     \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt\",\n
+        \     \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt?generation=1786391567174711&alt=media\",\n
+        \     \"name\": \"conformance-test-async/upload-tags/top-two.txt\",\n      \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n      \"generation\": \"1786391567174711\",\n
+        \     \"metageneration\": \"1\",\n      \"contentType\": \"text/plain\",\n
+        \     \"storageClass\": \"STANDARD\",\n      \"size\": \"18\",\n      \"md5Hash\":
+        \"mcISpru98JXlhCY2T45ZNw==\",\n      \"crc32c\": \"tgZDFg==\",\n      \"etag\":
+        \"CLeYqpbrlpYDEAE=\",\n      \"timeCreated\": \"2026-08-10T19:52:47.245Z\",\n
+        \     \"updated\": \"2026-08-10T19:52:47.245Z\",\n      \"timeStorageClassUpdated\":
+        \"2026-08-10T19:52:47.245Z\",\n      \"timeFinalized\": \"2026-08-10T19:52:47.245Z\",\n
+        \     \"metadata\": {\n        \"gcp-tag-origin\": \"conformance\",\n        \"gcp-tag-kind\":
+        \"directory\"\n      }\n    }\n  ]\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '3558'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Expires:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LChW6s5K1PsKkHvt-hP7Cj_m9KFotqaz-wCFB9uztscpeKhKZzfokYNWNwjIAiZ3AR
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Fnested%2Fdeep.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Kq4MwOGT18PSblgjs1ZUJUGCv656DnopIvGWiidIxjOhpmNteGKdkCmH9oEUp52mTD
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-two.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I3VTaK5XBWvfMGOEjhqsNfQITUrekekuo_77Tb3HxDhc_RExwy3vkGboPNxHCvvsp_TGLaiQo
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test-async%2Fupload-tags%2Ftop-one.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 10 Aug 2026 19:52:48 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Il8P9XfEbgijj06tXQknoHa1_VMwiiTB1VbrMBNlR3F1-pig23iZe3qByZH4GxHbdR
+    status:
+      code: 204
+      message: No Content
+version: 1

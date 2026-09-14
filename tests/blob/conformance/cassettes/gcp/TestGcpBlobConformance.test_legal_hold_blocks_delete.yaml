@@ -1,0 +1,403 @@
+interactions:
+- request:
+    body: "--===============1019931855041941547==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/update-legal-hold/blocks-delete.txt\",
+      \"crc32c\": \"DDuJmw==\"}\r\n--===============1019931855041941547==\r\ncontent-type:
+      application/octet-stream\r\n\r\ncannot-delete-while-held\r\n--===============1019931855041941547==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '325'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0xMDE5OTMxODU1MDQx
+        OTQxNTQ3PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/sdk-blob-with-object-lock/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media\",\n
+        \ \"name\": \"conformance-test/update-legal-hold/blocks-delete.txt\",\n  \"bucket\":
+        \"sdk-blob-with-object-lock\",\n  \"generation\": \"1786600888448991\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"24\",\n  \"md5Hash\": \"F08QE1daaa1ITVVSSVvGeQ==\",\n
+        \ \"crc32c\": \"DDuJmw==\",\n  \"etag\": \"CN/vvvr2nJYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-13T06:01:28.525Z\",\n  \"updated\": \"2026-08-13T06:01:28.525Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-13T06:01:28.525Z\",\n  \"timeFinalized\":
+        \"2026-08-13T06:01:28.525Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1018'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:28 GMT
+      ETag:
+      - CN/vvvr2nJYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KGD4DZ0GR-_SgoRxZ5vjM6uds1C_U9s_0zxI2RvmNQeOb6ecW1bIt7XY7IxVRrDuqj5XmM3-YGK-I3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media","name":"conformance-test/update-legal-hold/blocks-delete.txt","bucket":"sdk-blob-with-object-lock","generation":"1786600888448991","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"F08QE1daaa1ITVVSSVvGeQ==","crc32c":"DDuJmw==","etag":"CN/vvvr2nJYDEAE=","timeCreated":"2026-08-13T06:01:28.525Z","updated":"2026-08-13T06:01:28.525Z","timeStorageClassUpdated":"2026-08-13T06:01:28.525Z","timeFinalized":"2026-08-13T06:01:28.525Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '944'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:28 GMT
+      ETag:
+      - CN/vvvr2nJYDEAE=
+      Expires:
+      - Thu, 13 Aug 2026 06:01:28 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LGxJ-s4xREzr9G-IrgxygpQkSG9LP7dIKbftImw442kwlm9IvAvntkfHEMC7l4MnWBqhtzvUMu7y50
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"temporaryHold": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&projection=full&ifMetagenerationMatch=1&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media","name":"conformance-test/update-legal-hold/blocks-delete.txt","bucket":"sdk-blob-with-object-lock","generation":"1786600888448991","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"F08QE1daaa1ITVVSSVvGeQ==","crc32c":"DDuJmw==","etag":"CN/vvvr2nJYDEAI=","temporaryHold":true,"timeCreated":"2026-08-13T06:01:28.525Z","updated":"2026-08-13T06:01:29.053Z","timeStorageClassUpdated":"2026-08-13T06:01:28.525Z","timeFinalized":"2026-08-13T06:01:28.525Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '965'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:29 GMT
+      ETag:
+      - CN/vvvr2nJYDEAI=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7K3hBEXUo0Qk5JL1jnpoalZEnNvsgPpPM8wUPvvmAIm1s4qVUggnUqWMpZ8J3zIDdOJez7WTUwa3M11
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":403,"message":"Object ''sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt''
+        is under active Temporary hold and cannot be deleted, overwritten or archived
+        until hold is removed.","errors":[{"message":"Object ''sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt''
+        is under active Temporary hold and cannot be deleted, overwritten or archived
+        until hold is removed.","domain":"global","reason":"forbidden"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '476'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:29 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I6fsX1MjIWhAhTL3GVVBdNsnjeFCDjwin5-0ffvcCi0Of5p4c5WjuYRX9K7skpo8wEaChwtnBi2aG8
+    status:
+      code: 403
+      message: Forbidden
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media","name":"conformance-test/update-legal-hold/blocks-delete.txt","bucket":"sdk-blob-with-object-lock","generation":"1786600888448991","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"F08QE1daaa1ITVVSSVvGeQ==","crc32c":"DDuJmw==","etag":"CN/vvvr2nJYDEAI=","temporaryHold":true,"timeCreated":"2026-08-13T06:01:28.525Z","updated":"2026-08-13T06:01:29.053Z","timeStorageClassUpdated":"2026-08-13T06:01:28.525Z","timeFinalized":"2026-08-13T06:01:28.525Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '965'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:29 GMT
+      ETag:
+      - CN/vvvr2nJYDEAI=
+      Expires:
+      - Thu, 13 Aug 2026 06:01:29 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Kvsleu0rGXJy-Bfsd3Cb0bRltDFksjIH_Q41CYjet-9Y_C8qRvrAYVxdJBEzAK_AzM34SnTwRjV_PW
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"eventBasedHold": false, "temporaryHold": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '49'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&projection=full&ifMetagenerationMatch=2&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media","name":"conformance-test/update-legal-hold/blocks-delete.txt","bucket":"sdk-blob-with-object-lock","generation":"1786600888448991","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"F08QE1daaa1ITVVSSVvGeQ==","crc32c":"DDuJmw==","etag":"CN/vvvr2nJYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-13T06:01:28.525Z","updated":"2026-08-13T06:01:29.857Z","timeStorageClassUpdated":"2026-08-13T06:01:28.525Z","timeFinalized":"2026-08-13T06:01:28.525Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '989'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:29 GMT
+      ETag:
+      - CN/vvvr2nJYDEAM=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Jg5X05MrJ0znX4SDY4HsyPF40Vp_9SabGOszhykeR21EwN54KB-Jp3l1GGYgudL6g7pHOecC8XUFXQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media","name":"conformance-test/update-legal-hold/blocks-delete.txt","bucket":"sdk-blob-with-object-lock","generation":"1786600888448991","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"F08QE1daaa1ITVVSSVvGeQ==","crc32c":"DDuJmw==","etag":"CN/vvvr2nJYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-13T06:01:28.525Z","updated":"2026-08-13T06:01:29.857Z","timeStorageClassUpdated":"2026-08-13T06:01:28.525Z","timeFinalized":"2026-08-13T06:01:28.525Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '989'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:30 GMT
+      ETag:
+      - CN/vvvr2nJYDEAM=
+      Expires:
+      - Thu, 13 Aug 2026 06:01:30 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JM5CelCL1Lw0NGah5v9CUrPg9X8vAszhFsCOkCxDNGziS5eHN1IcPdLFi9C7rxlYI8uddRCs-FfvFt
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"retention": {"mode": null, "retainUntilTime": null, "retentionExpirationTime":
+      null}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '87'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&projection=full&overrideUnlockedRetention=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/blocks-delete.txt/1786600888448991","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&alt=media","name":"conformance-test/update-legal-hold/blocks-delete.txt","bucket":"sdk-blob-with-object-lock","generation":"1786600888448991","metageneration":"4","contentType":"application/octet-stream","storageClass":"STANDARD","size":"24","md5Hash":"F08QE1daaa1ITVVSSVvGeQ==","crc32c":"DDuJmw==","etag":"CN/vvvr2nJYDEAQ=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-13T06:01:28.525Z","updated":"2026-08-13T06:01:30.453Z","timeStorageClassUpdated":"2026-08-13T06:01:28.525Z","timeFinalized":"2026-08-13T06:01:28.525Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '989'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 13 Aug 2026 06:01:30 GMT
+      ETag:
+      - CN/vvvr2nJYDEAQ=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KwtIsT9W96Lpse8E00tk5hO2rUigd3ZXGgokeqHF77jnTL51htRJsLWW1c1JRp56PGunXhuANb2txr
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fblocks-delete.txt?generation=1786600888448991&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 13 Aug 2026 06:01:30 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JtseES2HSfOYxqposjGWH93Mo2m1e9bEKeH4zGv4FjrD6DOuVokpPubP0UjByF0AnOqA5D_qm2DHCl
+    status:
+      code: 204
+      message: No Content
+version: 1

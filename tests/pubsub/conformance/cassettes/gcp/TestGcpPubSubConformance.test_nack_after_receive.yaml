@@ -1,0 +1,154 @@
+interactions:
+- request:
+    body: '{"messages": [{"data": "aXQtbmFjay10ZXN0", "attributes": {"case": "nack"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '122'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testNackAfterReceive
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testNackAfterReceive:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20263663052638873"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:43:32 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"returnImmediately": true, "maxMessages": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - subscription=projects/example-project/subscriptions/sub-testNackAfterReceive
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/subscriptions/sub-testNackAfterReceive:pull?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"receivedMessages": [{"ackId": "XUZIUTcZCGhRDk9eIz81IChFEQUIFAV8fXRSSDwKGytbTAQZHX1hdWpaEghUEAZ2DQ0ZWGpWXn8HQzwZauvbsYlsMSAARVp3X1oaDm5aW3MDWA8delWX4Jmzt-mVVElCZ82hyYtqfPL1sv0rZi89XxJLLD5-Ny1FQV5AEkw8GERJUytDCypYEU4EISE-MD5FU0RQBhYs",
+        "message": {"data": "aXQtbmFjay10ZXN0", "attributes": {"case": "nack"}, "messageId":
+        "20990113667649248", "publishTime": "2026-08-12T23:41:48.142Z"}}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:43:34 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '478'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ackIds": ["XUZIUTcZCGhRDk9eIz81IChFEQUIFAV8fXRSSDwKGytbTAQZHX1hdWpaEghUEAZ2DQ0ZWGpWXn8HQzwZauvbsYlsMSAARVp3X1oaDm5aW3MDWA8delWX4Jmzt-mVVElCZ82hyYtqfPL1sv0rZi89XxJLLD5-Ny1FQV5AEkw8GERJUytDCypYEU4EISE-MD5FU0RQBhYs"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '228'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - subscription=projects/example-project/subscriptions/sub-testNackAfterReceive
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/subscriptions/sub-testNackAfterReceive:modifyAckDeadline?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:43:34 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '3'
+    status:
+      code: 200
+      message: OK
+version: 1

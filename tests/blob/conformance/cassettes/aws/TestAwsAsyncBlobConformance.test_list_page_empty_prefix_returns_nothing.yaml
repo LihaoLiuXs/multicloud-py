@@ -1,0 +1,34 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 869c4647-87ac-436a-a021-aae595878d76
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=async-conformance-test%2Flist-page%2Fempty-ns%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>async-conformance-test/list-page/empty-ns/</Prefix><KeyCount>0</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:04:18 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - VaK31hR+FjvVNqMu23mE1qenOlLZNGErelBNr8H1xn8nIxyqEVh4quqYXX7Fn/NL43hKPj8qQME=
+      x-amz-request-id:
+      - BG3APAS2FZZNKYR6
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,144 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '17'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 602ebf45-2689-499f-8e11-470dc7251a5b
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/multi.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 17:27:16 GMT
+      Etag:
+      - '"74526865a067b83f149510173903770d"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - mJHEOA==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - +pSRnpkzfcX5ST4Qu3GRIz3DbHjlHbc3xQevqlk/GKroGCI0ykZHvjrV6LO/mEHrc8AjGSnYlIg=
+      x-amz-request-id:
+      - 1A49XMB8A03182G9
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - YJz3Oc9M0wrwJO3VASXzkCnk8elOxGJG
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>environment</Key><Value>integration</Value></Tag><Tag><Key>owner</Key><Value>storage-sdk</Value></Tag><Tag><Key>tier</Key><Value>archive</Value></Tag></TagSet></Tagging>
+    headers:
+      Content-Length:
+      - '244'
+      amz-sdk-invocation-id:
+      - 0db575a6-d5b4-400f-ad8f-48bbb0824e59
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - 3qnacQ==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/multi.txt?tagging
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 25 Aug 2026 17:27:16 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 4qhALg60tiOsYfxZvMZOVM+H3fcdjD1FKMBCTav3Q3IoqivejJBqL8s0WOOgL6+IWykd6fkUolA=
+      x-amz-request-id:
+      - 1A46QX0FW6WHMWNM
+      x-amz-version-id:
+      - YJz3Oc9M0wrwJO3VASXzkCnk8elOxGJG
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 7429243b-b309-4111-885e-b74e5f311fe5
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/multi.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>owner</Key><Value>storage-sdk</Value></Tag><Tag><Key>environment</Key><Value>integration</Value></Tag><Tag><Key>tier</Key><Value>archive</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 17:27:16 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 6kCJcC33BZvFM3ZQC1DYfN3rOMFaslRZqwccCxwJgqkcX9WSCK2nONHzV0NTnc9aO3niBpj9ZW4=
+      x-amz-request-id:
+      - 1A460P6MDHA13PV9
+      x-amz-version-id:
+      - YJz3Oc9M0wrwJO3VASXzkCnk8elOxGJG
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - f66576dc-2f03-496c-8124-d3e543d00e7b
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/tags/multi.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 25 Aug 2026 17:27:16 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - GWZEEn5LJDkJ6J+wMYaxZZTKm91iCbYzSWlTAr/EEgPSPLrvpbw9aEx77f1IIrd/AEB/nQ4sR5E=
+      x-amz-request-id:
+      - 1A4F1V0TACANCTEN
+      x-amz-version-id:
+      - UD1b.tYDeipMyOUeijO8bIcf8krPjYKV
+    status:
+      code: 204
+      message: No Content
+version: 1

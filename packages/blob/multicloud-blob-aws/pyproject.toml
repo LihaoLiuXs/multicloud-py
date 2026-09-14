@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfdc-multicloud-blob-aws"
+version = "0.1.4"
+description = "AWS S3 provider for multicloud-blob."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sfdc-multicloud-blob>=0.1.4",
+    "sfdc-multicloud-aws-common>=0.1.4",
+    # botocore 1.35.69 is the first release whose bundled S3 model accepts the
+    # PutObject IfMatch parameter (IfNoneMatch landed earlier, in 1.35.7). Since
+    # conditional writes here use both, the floor is the later of the two.
+    # botocore validates inputs against its bundled model before calling S3, so
+    # an older resolution would fail every conditional upload with a
+    # ParamValidationError instead of reaching S3.
+    "boto3>=1.35.69",
+    "botocore>=1.35.69",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+# aiobotocore 2.16.0 is the first release that pins botocore>=1.35.74, i.e. the
+# first that guarantees the PutObject IfMatch/IfNoneMatch parameters are
+# modeled for the async client (2.15.x caps botocore below that).
+async = ["aiobotocore>=2.16.0"]
+
+# The blob client discovers providers by importing every module advertised
+# under the ``multicloud.blob.providers`` entry-point group. Importing this
+# module triggers the ``@BLOB_REGISTRY.register("aws")`` decorator on
+# AwsBlobStore, registering it.
+[project.entry-points."multicloud.blob.providers"]
+aws = "multicloud.blob.blob_aws"
+
+[project.entry-points."multicloud.blob.async_providers"]
+aws = "multicloud.blob.blob_aws.async_blob"
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]

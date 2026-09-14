@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        ODNkNWMzOTctZTdjZS00YTE4LWI0NzYtMzBkZDlhNjVhOGQ3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-copy-source:
+      - !!binary |
+        bXVsdGljbG91ZC1jb25mb3JtYW5jZS1ub25leGlzdGVudC1idWNrZXQteHl6LTlmOGU3ZC9hbnkt
+        a2V5
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/copyfrom/dest-bad-src-bucket.txt
+  response:
+    body:
+      string: <Error><Code>NoSuchBucket</Code><Message>The specified bucket does not
+        exist</Message><BucketName>multicloud-conformance-nonexistent-bucket-xyz-9f8e7d</BucketName><RequestId>G3VAD9V3X6PGXMKC</RequestId><HostId>iCtpNG1zMfF+2R+s01LiZuMTxKbzcd0i+BUuqif29yzmah31jH8chFg8JWLIFFkpcL/PK3wg415CKGLVtV6wPPOWJqCXkR9U</HostId></Error>
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 07 Jul 2026 08:42:40 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - iCtpNG1zMfF+2R+s01LiZuMTxKbzcd0i+BUuqif29yzmah31jH8chFg8JWLIFFkpcL/PK3wg415CKGLVtV6wPPOWJqCXkR9U
+      x-amz-request-id:
+      - G3VAD9V3X6PGXMKC
+    status:
+      code: 404
+      message: Not Found
+version: 1

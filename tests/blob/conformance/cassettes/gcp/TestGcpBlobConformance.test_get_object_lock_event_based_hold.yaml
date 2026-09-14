@@ -1,0 +1,356 @@
+interactions:
+- request:
+    body: "--===============3065539852111176966==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/object-lock/event-based-hold.txt\",
+      \"crc32c\": \"y11zUQ==\"}\r\n--===============3065539852111176966==\r\ncontent-type:
+      application/octet-stream\r\n\r\nevent-held\r\n--===============3065539852111176966==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '308'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0zMDY1NTM5ODUyMTEx
+        MTc2OTY2PT0i
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/sdk-blob-with-object-lock/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media\",\n
+        \ \"name\": \"conformance-test/object-lock/event-based-hold.txt\",\n  \"bucket\":
+        \"sdk-blob-with-object-lock\",\n  \"generation\": \"1786379607133495\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"10\",\n  \"md5Hash\": \"wbcCfy/CVOwQMGYxdOOtRg==\",\n
+        \ \"crc32c\": \"y11zUQ==\",\n  \"etag\": \"CLeaq8++lpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T16:33:27.189Z\",\n  \"updated\": \"2026-08-10T16:33:27.189Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T16:33:27.189Z\",\n  \"timeFinalized\":
+        \"2026-08-10T16:33:27.189Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1006'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:27 GMT
+      ETag:
+      - CLeaq8++lpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LstFrk8aHZ_EiydA5b4_L1N8gP--3TxjFK-GEKhMXq0hJF4kQWXBLuNRO2A4SmC8mGZqI-8NU
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"eventBasedHold": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '24'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&projection=full&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media","name":"conformance-test/object-lock/event-based-hold.txt","bucket":"sdk-blob-with-object-lock","generation":"1786379607133495","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"wbcCfy/CVOwQMGYxdOOtRg==","crc32c":"y11zUQ==","etag":"CLeaq8++lpYDEAI=","eventBasedHold":true,"timeCreated":"2026-08-10T16:33:27.189Z","updated":"2026-08-10T16:33:27.522Z","timeStorageClassUpdated":"2026-08-10T16:33:27.189Z","timeFinalized":"2026-08-10T16:33:27.189Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '954'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:27 GMT
+      ETag:
+      - CLeaq8++lpYDEAI=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I40pa-dvRf4mbrVEP6YD0ddiYtmccmTtiRf2E_bhkb-rcP3mKHW2coprddAnI1s4boDPJaYOs
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media","name":"conformance-test/object-lock/event-based-hold.txt","bucket":"sdk-blob-with-object-lock","generation":"1786379607133495","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"wbcCfy/CVOwQMGYxdOOtRg==","crc32c":"y11zUQ==","etag":"CLeaq8++lpYDEAI=","eventBasedHold":true,"timeCreated":"2026-08-10T16:33:27.189Z","updated":"2026-08-10T16:33:27.522Z","timeStorageClassUpdated":"2026-08-10T16:33:27.189Z","timeFinalized":"2026-08-10T16:33:27.189Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '954'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:27 GMT
+      ETag:
+      - CLeaq8++lpYDEAI=
+      Expires:
+      - Mon, 10 Aug 2026 16:33:27 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I_WklGCUAEaCSwo-VGLm9g_LBmkhd50bpgV5n-MXOLMzNB1dOmNCuDPS3dtK8YGTmi
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media","name":"conformance-test/object-lock/event-based-hold.txt","bucket":"sdk-blob-with-object-lock","generation":"1786379607133495","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"wbcCfy/CVOwQMGYxdOOtRg==","crc32c":"y11zUQ==","etag":"CLeaq8++lpYDEAI=","eventBasedHold":true,"timeCreated":"2026-08-10T16:33:27.189Z","updated":"2026-08-10T16:33:27.522Z","timeStorageClassUpdated":"2026-08-10T16:33:27.189Z","timeFinalized":"2026-08-10T16:33:27.189Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '954'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:28 GMT
+      ETag:
+      - CLeaq8++lpYDEAI=
+      Expires:
+      - Mon, 10 Aug 2026 16:33:28 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LAPb-C-e0oGUU558IqVCTyCszy3Xt_qXNopIPo-yEOLK1_gXWsv8nJHWEZBqEalnXTnBvgkZBQ87HxJg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"eventBasedHold": false, "temporaryHold": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '49'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&projection=full&ifMetagenerationMatch=2&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media","name":"conformance-test/object-lock/event-based-hold.txt","bucket":"sdk-blob-with-object-lock","generation":"1786379607133495","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"wbcCfy/CVOwQMGYxdOOtRg==","crc32c":"y11zUQ==","etag":"CLeaq8++lpYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-10T16:33:27.189Z","updated":"2026-08-10T16:33:28.408Z","timeStorageClassUpdated":"2026-08-10T16:33:27.189Z","timeFinalized":"2026-08-10T16:33:27.189Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '977'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:28 GMT
+      ETag:
+      - CLeaq8++lpYDEAM=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Knba-EXeJb6AExhx_4F87B2eQ5u-XnEUyT0HFQV1_ncOxm5c9Z8C_8d57y5UeG3pY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media","name":"conformance-test/object-lock/event-based-hold.txt","bucket":"sdk-blob-with-object-lock","generation":"1786379607133495","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"wbcCfy/CVOwQMGYxdOOtRg==","crc32c":"y11zUQ==","etag":"CLeaq8++lpYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-10T16:33:27.189Z","updated":"2026-08-10T16:33:28.408Z","timeStorageClassUpdated":"2026-08-10T16:33:27.189Z","timeFinalized":"2026-08-10T16:33:27.189Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '977'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:28 GMT
+      ETag:
+      - CLeaq8++lpYDEAM=
+      Expires:
+      - Mon, 10 Aug 2026 16:33:28 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LPepJ9hD8JZnjLI_nJJa-Eqy93KQM14_TmEo7rSrMfZ0RQSR3_D9OhwEqzBuJGbKo
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"retention": {"mode": null, "retainUntilTime": null, "retentionExpirationTime":
+      null}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '87'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&projection=full&overrideUnlockedRetention=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/object-lock/event-based-hold.txt/1786379607133495","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&alt=media","name":"conformance-test/object-lock/event-based-hold.txt","bucket":"sdk-blob-with-object-lock","generation":"1786379607133495","metageneration":"4","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"wbcCfy/CVOwQMGYxdOOtRg==","crc32c":"y11zUQ==","etag":"CLeaq8++lpYDEAQ=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-10T16:33:27.189Z","updated":"2026-08-10T16:33:28.962Z","timeStorageClassUpdated":"2026-08-10T16:33:27.189Z","timeFinalized":"2026-08-10T16:33:27.189Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '977'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 16:33:28 GMT
+      ETag:
+      - CLeaq8++lpYDEAQ=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JUpIhJ3f3IulxMVSwBJkGcqfmcX-qDKVMvXPJM1bG0Alu6fOTr8axL1_KoTHwKHI3r
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fobject-lock%2Fevent-based-hold.txt?generation=1786379607133495&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 10 Aug 2026 16:33:29 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JhhLxcZuKrXaX7mWraz0N_CvZ9z7F0O5QmEf1QC5aGmHWaXJlRd-3o0yZ_QqUNOKNJ
+    status:
+      code: 204
+      message: No Content
+version: 1

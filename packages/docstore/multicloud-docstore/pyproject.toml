@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfdc-multicloud-docstore"
+version = "0.1.4"
+description = "Cloud-agnostic document store client for the python-multicloud SDK. Pair with a provider package (multicloud-docstore-aws) for actual cloud calls."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sfdc-multicloud-common>=0.1.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]
+
+# multicloud/ and multicloud/docstore/ are PEP 420 implicit namespace
+# packages (no __init__.py) so provider distributions
+# (multicloud-docstore-aws) can drop their subpackages alongside
+# docstore_client/ at install time. Only docstore_client/ itself is a
+# concrete leaf owned by THIS distribution.

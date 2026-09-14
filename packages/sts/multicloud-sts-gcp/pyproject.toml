@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfdc-multicloud-sts-gcp"
+version = "0.1.4"
+description = "Google Cloud IAM provider for multicloud-sts."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sfdc-multicloud-sts>=0.1.4",
+    "sfdc-multicloud-gcp-common>=0.1.4",
+    "google-auth>=2.0.0",
+    "google-cloud-iam>=2.0.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+
+[project.entry-points."multicloud.sts.providers"]
+gcp = "multicloud.sts.sts_gcp"
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]

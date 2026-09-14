@@ -1,0 +1,317 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        c291cmNlIGNvbnRlbnQgd2lucw==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '19'
+      Content-Type:
+      - text/plain
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/copy/src-overwrite.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/copy/src-overwrite.txt/1787241796567905\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fsrc-overwrite.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fsrc-overwrite.txt?generation=1787241796567905&alt=media\",\n
+        \ \"name\": \"async-conformance-test/copy/src-overwrite.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1787241796567905\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\": \"STANDARD\",\n
+        \ \"size\": \"19\",\n  \"md5Hash\": \"8+5sNFv8RploRtRNAuliPg==\",\n  \"crc32c\":
+        \"Pf/JsA==\",\n  \"etag\": \"COGGpsPKr5YDEAE=\",\n  \"timeCreated\": \"2026-08-20T16:03:16.637Z\",\n
+        \ \"updated\": \"2026-08-20T16:03:16.637Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-08-20T16:03:16.637Z\",\n  \"timeFinalized\": \"2026-08-20T16:03:16.637Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '968'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:03:16 GMT
+      Etag:
+      - COGGpsPKr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZAxq1-WfeAE02itoMMotdpZ2GNzgwzRuL935b2f6ZuTc4tkwjX1Bnf1khpRRwzxpU8OlLIOb8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        c3RhbGUgZGVzdGluYXRpb24gY29udGVudA==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '25'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/copy/dest-overwrite.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/copy/dest-overwrite.txt/1787241796756621\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt?generation=1787241796756621&alt=media\",\n
+        \ \"name\": \"async-conformance-test/copy/dest-overwrite.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1787241796756621\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"25\",\n  \"md5Hash\": \"ps92Sj1PU4HqnsRAx5rRSQ==\",\n
+        \ \"crc32c\": \"PpqHMA==\",\n  \"etag\": \"CI3JscPKr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T16:03:16.825Z\",\n  \"updated\": \"2026-08-20T16:03:16.825Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T16:03:16.825Z\",\n  \"timeFinalized\":
+        \"2026-08-20T16:03:16.825Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '986'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:03:16 GMT
+      Etag:
+      - CI3JscPKr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aiioGYHNn220iJetPckP2TWanqz7iJtuXsp7PyE2Y3H9h9xr0iteJb3-IqaA0xE8_SwmxjOPs
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{}'
+    headers:
+      Content-Length:
+      - '2'
+      Content-Type:
+      - application/json; charset=UTF-8
+    method: POST
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fsrc-overwrite.txt/rewriteTo/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#rewriteResponse\",\n  \"totalBytesRewritten\":
+        \"19\",\n  \"objectSize\": \"19\",\n  \"done\": true,\n  \"resource\": {\n
+        \   \"kind\": \"storage#object\",\n    \"id\": \"python-async-test-bucket/async-conformance-test/copy/dest-overwrite.txt/1787241796939512\",\n
+        \   \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt\",\n
+        \   \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt?generation=1787241796939512&alt=media\",\n
+        \   \"name\": \"async-conformance-test/copy/dest-overwrite.txt\",\n    \"bucket\":
+        \"python-async-test-bucket\",\n    \"generation\": \"1787241796939512\",\n
+        \   \"metageneration\": \"1\",\n    \"contentType\": \"text/plain\",\n    \"storageClass\":
+        \"STANDARD\",\n    \"size\": \"19\",\n    \"md5Hash\": \"8+5sNFv8RploRtRNAuliPg==\",\n
+        \   \"crc32c\": \"Pf/JsA==\",\n    \"etag\": \"CPjdvMPKr5YDEAE=\",\n    \"timeCreated\":
+        \"2026-08-20T16:03:17.076Z\",\n    \"updated\": \"2026-08-20T16:03:17.076Z\",\n
+        \   \"timeStorageClassUpdated\": \"2026-08-20T16:03:17.076Z\",\n    \"timeFinalized\":
+        \"2026-08-20T16:03:17.076Z\"\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1134'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YGRFY09Hm5Ua9STelWu5cD5S6zk19P40IsTGjOfGuH1HngX8hVV71zD37UWd2Uo-_uTmsChik
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt?alt=media
+  response:
+    body:
+      string: source content wins
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '19'
+      Content-Type:
+      - text/plain
+      Date:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Etag:
+      - CPjdvMPKr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZkM3bQz8_d0Bbe2vaUK15HVI1ZgsuKCvbs0A9cVWMz8KYZql05U6CjagTjMEuA_neGZ7i7RSs
+      X-Goog-Generation:
+      - '1787241796939512'
+      X-Goog-Hash:
+      - crc32c=Pf/JsA==,md5=8+5sNFv8RploRtRNAuliPg==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '19'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/copy/dest-overwrite.txt/1787241796939512\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt?generation=1787241796939512&alt=media\",\n
+        \ \"name\": \"async-conformance-test/copy/dest-overwrite.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1787241796939512\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\": \"STANDARD\",\n
+        \ \"size\": \"19\",\n  \"md5Hash\": \"8+5sNFv8RploRtRNAuliPg==\",\n  \"crc32c\":
+        \"Pf/JsA==\",\n  \"etag\": \"CPjdvMPKr5YDEAE=\",\n  \"timeCreated\": \"2026-08-20T16:03:17.076Z\",\n
+        \ \"updated\": \"2026-08-20T16:03:17.076Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-08-20T16:03:17.076Z\",\n  \"timeFinalized\": \"2026-08-20T16:03:17.076Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '972'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Etag:
+      - CPjdvMPKr5YDEAE=
+      Expires:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YtDSHp5DuXf8bKMhQqk5rGJ2Hx99K48v1TobNCvtvbCerEV8QhZlxqvRTR8PiQXOOfRl9-qbg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fsrc-overwrite.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YLCI1vuB42yOzgXi7ywKJPC9onvYADd6HYFHYZ6K8OXAAXR5SeSaWDqjmzi4_Diq3_Fy1btW4
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fcopy%2Fdest-overwrite.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 16:03:17 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bCCKGa-k8R4RqguzSfGSdcIAHleDoqlnLhp7sGkubMjZG--JCkPPxhYZCV9_73f9ne-SEQJ0k
+    status:
+      code: 204
+      message: No Content
+version: 1

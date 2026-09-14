@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '90'
+      amz-sdk-invocation-id:
+      - f517e06b-b13e-4ff4-880c-0809cb2b3805
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - 6XWxlw==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/does-not-exist-xyz123.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/update-legal-hold/does-not-exist-xyz123.txt</Key><RequestId>T52EMK8KVFSP7WJ8</RequestId><HostId>JhSmy4ExMU/MIU9dQOcMaD4/+hAlFsfRVnJcmJ633ZUgwerj12EPDNq/RmvGW7q7fvlR5BCJAEs=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 24 Aug 2026 07:14:42 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - JhSmy4ExMU/MIU9dQOcMaD4/+hAlFsfRVnJcmJ633ZUgwerj12EPDNq/RmvGW7q7fvlR5BCJAEs=
+      x-amz-request-id:
+      - T52EMK8KVFSP7WJ8
+    status:
+      code: 404
+      message: Not Found
+version: 1

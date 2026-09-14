@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sfdc-multicloud-pubsub-aws"
+version = "0.1.4"
+description = "AWS SNS/SQS provider for multicloud-pubsub."
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sfdc-multicloud-pubsub>=0.1.4",
+    "sfdc-multicloud-aws-common>=0.1.4",
+    "boto3>=1.18.0",
+    "botocore>=1.21.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+
+# Importing the module triggers both ``@TOPIC_REGISTRY.register("aws")``
+# and ``@SUBSCRIPTION_REGISTRY.register("aws")`` decorators (when the
+# provider impl lands), so the same module is advertised under both
+# entry-point groups.
+[project.entry-points."multicloud.pubsub.topic.providers"]
+aws = "multicloud.pubsub.pubsub_aws"
+
+[project.entry-points."multicloud.pubsub.subscription.providers"]
+aws = "multicloud.pubsub.pubsub_aws"
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]

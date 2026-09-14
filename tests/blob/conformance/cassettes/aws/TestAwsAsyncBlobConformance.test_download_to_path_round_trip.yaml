@@ -1,0 +1,128 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '24'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 7d902373-f530-4065-a0da-96cc11fc26cc
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-to-path/simple.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:08:24 GMT
+      Etag:
+      - '"3b8d643b55f0481b25551181cf22b873"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - NLEgHQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - v41agE/rLXIDVSdK0beaa0Eg0FKGKMOx56gNbBKeqq5B93n8bqCXp4EwIKNehBuu2aeb/dR4U2g=
+      x-amz-request-id:
+      - 976YJCAPTE3NGRXK
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - _0oFa5ueP40XZh1XKzpPh6GDVtJ9TdBm
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 35cd4a8b-b0ba-45d9-a3fc-405b034dddcc
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-to-path/simple.txt
+  response:
+    body:
+      string: download_to_path payload
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '24'
+      Content-Type:
+      - text/plain
+      Date:
+      - Thu, 20 Aug 2026 21:08:24 GMT
+      Etag:
+      - '"3b8d643b55f0481b25551181cf22b873"'
+      Last-Modified:
+      - Thu, 20 Aug 2026 21:08:24 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - NLEgHQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 0UZjFI7pEO4jExtbeja1Fl2C4L8Pd9NC3499ovz6acb7FNUOsbucx+Owfc0JBJcSW0l1iEoiCbk=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-18T21:08:23.488Z'
+      x-amz-request-id:
+      - 976QDT33HAR6J9FY
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - _0oFa5ueP40XZh1XKzpPh6GDVtJ9TdBm
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 25a97df3-cfba-4175-a829-d103c442c56f
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download-to-path/simple.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:08:24 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - vHA+3VvrzihA/Ev5YowSLMP52P5GxQjsO6ZMdEQsFBgadjmOQtBL3RayjKpqzaM5a5bpyv3Sl/I=
+      x-amz-request-id:
+      - 976TEPGNC5Q18GRG
+      x-amz-version-id:
+      - IkEn8GSKoDUhiognE7Z.trLhg5pmKjEP
+    status:
+      code: 204
+      message: No Content
+version: 1

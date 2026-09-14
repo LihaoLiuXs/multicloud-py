@@ -1,0 +1,312 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - d86de61d-4e97-4cb4-88b2-c476abb12627
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+      x-amz-tagging:
+      - origin=conformance&kind=directory
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-tags/top-two.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:57 GMT
+      Etag:
+      - '"99c212a6bbbdf095e58426364f8e5937"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - OcIBeQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - s+f/rLf0+mGqi3TbiBrOtVniNh8Y9Xn5KuKVaBI8eyoy7UwFktG1IacH9fDQrhnvfpTIXwu+rPE=
+      x-amz-request-id:
+      - NE69E057XDQYS7SW
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - ew3QwvwaboxwXaZAvO0bHNr1_p0_Xx3t
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 7468e387-f72c-489d-b756-9af8fa30409e
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+      x-amz-tagging:
+      - origin=conformance&kind=directory
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-tags/top-one.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:57 GMT
+      Etag:
+      - '"057c764ffe4c43ce786d932ce2d9fcf9"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - UmQN7g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - jS7CGXZIiKKRCv3fgwJZY2sdw4KTz64QsbemiSDu26wiO93iFIeCPqBnxPig/uwcSyo9OX3js+g=
+      x-amz-request-id:
+      - NE6A0BCGRVSJYVZ1
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 0j6vL0MBw38aNwlWPSem46st0DODZon3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '19'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 9ebcb284-18f4-4645-9914-25b9c733c3ed
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+      x-amz-tagging:
+      - origin=conformance&kind=directory
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-tags/nested/deep.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:57 GMT
+      Etag:
+      - '"257a7376d20e0ee0856fb2c6932e5edd"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 5gH6dQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 0uITeN+XgbVoWxv2dOdb4Qy1FLNohhG8L5/1aw3ZvpOCI7Z/nSeoebnCvLS8m+dIu5sGu5gqa18=
+      x-amz-request-id:
+      - NE64SP6AYK0K9J32
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - avJR6oVzMB_e47Yjqfng_qyJz3_xy.eD
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 89b109ef-27fa-40c6-99af-cea36af2fdef
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-tags/top-one.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>kind</Key><Value>directory</Value></Tag><Tag><Key>origin</Key><Value>conformance</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Thu, 06 Aug 2026 15:16:57 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - TaLidpOTDVkn0qq9RIXJBVbpmBPZGXG7SjulEFgB+wvUWHfrHxA/r29hW0NeQWue7ejfLmKggBc=
+      x-amz-request-id:
+      - NE6EG1YWHBECRE1S
+      x-amz-version-id:
+      - 0j6vL0MBw38aNwlWPSem46st0DODZon3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 76629e48-d02b-45cd-af41-62e4a365c87f
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-tags/top-two.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>kind</Key><Value>directory</Value></Tag><Tag><Key>origin</Key><Value>conformance</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Thu, 06 Aug 2026 15:16:57 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - qGNvb4XJ2GmgCKPJIKRTNhItbSHnOG/HqYln8rnx516obFLH5eVIapmOU61o5hOrO4ioKdr/4x8=
+      x-amz-request-id:
+      - NE65RHX88XVVRSA8
+      x-amz-version-id:
+      - ew3QwvwaboxwXaZAvO0bHNr1_p0_Xx3t
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 9893a116-ce92-4acd-a37e-88c67e3b1d60
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-tags/nested/deep.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>kind</Key><Value>directory</Value></Tag><Tag><Key>origin</Key><Value>conformance</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Thu, 06 Aug 2026 15:16:58 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - TLwSuMAaGGKoxiHwbUcgxSDZuWXTQD8cCsaWJyqRioRHOFavF6GtYLdWBh+gkXZ9xyaQ+JZEFBg=
+      x-amz-request-id:
+      - B8ASPGQ16SZJWSXC
+      x-amz-version-id:
+      - avJR6oVzMB_e47Yjqfng_qyJz3_xy.eD
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 2192d63e-9034-4e0f-bbeb-867f6240bfc8
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fupload-tags%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/upload-tags/</Prefix><KeyCount>3</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/upload-tags/nested/deep.txt</Key><LastModified>2026-08-06T15:16:57.000Z</LastModified><ETag>&quot;257a7376d20e0ee0856fb2c6932e5edd&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-tags/top-one.txt</Key><LastModified>2026-08-06T15:16:57.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-tags/top-two.txt</Key><LastModified>2026-08-06T15:16:57.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:58 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - oq6oa+I9DOOlsFsGR5irUsspmfF4ld0iHfyWIr5NXmDtJ7M4N0nwT90d9LOfyW/Z25WUcECou+g=
+      x-amz-request-id:
+      - B8AXPEE4FVBZWBNN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/upload-tags/nested/deep.txt</Key></Object><Object><Key>conformance-test-async/upload-tags/top-one.txt</Key></Object><Object><Key>conformance-test-async/upload-tags/top-two.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '291'
+      amz-sdk-invocation-id:
+      - f9d0fc8a-114c-4c7c-9384-470acc4cd118
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - TpuwvA==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>conformance-test-async/upload-tags/top-one.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>6nbyo1yww8V9eJKeEJeV7EtoLdOYhZWk</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/upload-tags/nested/deep.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>NFyBJTA_.uy_nkNYrzgaYzPXKi0KCOkU</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/upload-tags/top-two.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>gja1Cd1js6gW.RVChuDvUzjpY.7Ro595</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:58 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - C6N7GJ3cmHDvYiwoYysPO82TE0+3PRxrSvn/UBzCLW321hTA4q4rnnyrHCVPBgXMFo6y05xRldc=
+      x-amz-request-id:
+      - B8AHZJ1B9PX1NCMZ
+    status:
+      code: 200
+      message: OK
+version: 1

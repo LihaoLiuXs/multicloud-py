@@ -1,0 +1,48 @@
+# NOTE: The JWT-shaped token below is a synthetic replay fixture with placeholder
+# claims, an expiration date in 2000, and a deliberately invalid signature. It is
+# decodable for conformance assertions but cannot authenticate. See RECORDING.md.
+interactions:
+- request:
+    body: '{"audience": "https://example-project.iam.gserviceaccount.com",
+      "delegates": [], "includeEmail": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '109'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/test-service-account@example-project.iam.gserviceaccount.com:generateIdToken
+  response:
+    body:
+      string: "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6InN5bnRoZXRpYy10ZXN0LWtleSIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwczovL2V4YW1wbGUtcHJvamVjdC5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImF6cCI6IjAwMDAwMDAwMDAwMDAwMDAwMDAwMCIsImVtYWlsIjoidGVzdC1zZXJ2aWNlLWFjY291bnRAZXhhbXBsZS1wcm9qZWN0LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImV4cCI6OTQ2Njg0ODAwLCJpYXQiOjk0NjY4MTIwMCwiaXNzIjoiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tIiwic3ViIjoiMDAwMDAwMDAwMDAwMDAwMDAwMDAwIn0.aW52YWxpZC1zaWduYXR1cmU\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 11:51:19 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '842'
+    status:
+      code: 200
+      message: OK
+version: 1

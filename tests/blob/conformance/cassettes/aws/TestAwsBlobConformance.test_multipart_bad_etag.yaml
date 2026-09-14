@@ -1,0 +1,189 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/bad-etag.bin?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test/multipart/bad-etag.bin</Key><UploadId>ky_UCz0JDocXfXcDHK0IiOQqjdvsoEn9HK1H.ndWMSVvcU1GWmkf5qB5ZXU.Og_U9wZ0ibEVGd.5AGtN6pDCVxdwK0ILVshtZtvffXlutPvlt9wCS1eDUg3eFmXKRewIIeDDzMnKiy6rvwIpNbXfBxhTloL.L0BeO1Ep3H97CCYtLrErAxiRlNTyAdXhjRBC</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:39 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - NN39BsE+Xspenjsdzoklg49bpWeSUYHdDWnlhHtGhUXZAwkTmpwfamLTdxz7nlc8sdhw7NuwHq4=
+      x-amz-request-id:
+      - WK41JG9HYVX99NZS
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        Yw0KcmVhbCBjb250ZW50DQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjpqSXB6QVE9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTI=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/bad-etag.bin?uploadId=ky_UCz0JDocXfXcDHK0IiOQqjdvsoEn9HK1H.ndWMSVvcU1GWmkf5qB5ZXU.Og_U9wZ0ibEVGd.5AGtN6pDCVxdwK0ILVshtZtvffXlutPvlt9wCS1eDUg3eFmXKRewIIeDDzMnKiy6rvwIpNbXfBxhTloL.L0BeO1Ep3H97CCYtLrErAxiRlNTyAdXhjRBC&partNumber=1
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 22 Jul 2026 18:10:39 GMT
+      ETag:
+      - '"f0ef0fb5ab42cbc8e3ff4325ab30f1c4"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - jIpzAQ==
+      x-amz-id-2:
+      - YGkNDKjsG0wmSaeJ2KZuUshrFSUG/e8nK2/zqnThQJYcg6It2i7/CEeyWAMvW58O7H9coUWTbVk=
+      x-amz-request-id:
+      - WK445GS2V7WGDKGW
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><PartNumber>1</PartNumber><ETag>00000000000000000000000000000000</ETag></Part></CompleteMultipartUpload>
+    headers:
+      Content-Length:
+      - '183'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/bad-etag.bin?uploadId=ky_UCz0JDocXfXcDHK0IiOQqjdvsoEn9HK1H.ndWMSVvcU1GWmkf5qB5ZXU.Og_U9wZ0ibEVGd.5AGtN6pDCVxdwK0ILVshtZtvffXlutPvlt9wCS1eDUg3eFmXKRewIIeDDzMnKiy6rvwIpNbXfBxhTloL.L0BeO1Ep3H97CCYtLrErAxiRlNTyAdXhjRBC
+  response:
+    body:
+      string: <Error><Code>InvalidPart</Code><Message>One or more of the specified
+        parts could not be found.  The part may not have been uploaded, or the specified
+        entity tag may not match the part's entity tag.</Message><UploadId>ky_UCz0JDocXfXcDHK0IiOQqjdvsoEn9HK1H.ndWMSVvcU1GWmkf5qB5ZXU.Og_U9wZ0ibEVGd.5AGtN6pDCVxdwK0ILVshtZtvffXlutPvlt9wCS1eDUg3eFmXKRewIIeDDzMnKiy6rvwIpNbXfBxhTloL.L0BeO1Ep3H97CCYtLrErAxiRlNTyAdXhjRBC</UploadId><PartNumber>1</PartNumber><ETag>00000000000000000000000000000000</ETag><RequestId>WK4C7GSY37VR0RYV</RequestId><HostId>+YdCE7rfByQ52sJwAer8I4uQt4dJ22UUN/f0SZHjO67SM+wZr6qXbGmyxUqF/ZQXv+ZZI4k2924=</HostId></Error>
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 22 Jul 2026 18:10:37 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - +YdCE7rfByQ52sJwAer8I4uQt4dJ22UUN/f0SZHjO67SM+wZr6qXbGmyxUqF/ZQXv+ZZI4k2924=
+      x-amz-request-id:
+      - WK4C7GSY37VR0RYV
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/bad-etag.bin?uploadId=ky_UCz0JDocXfXcDHK0IiOQqjdvsoEn9HK1H.ndWMSVvcU1GWmkf5qB5ZXU.Og_U9wZ0ibEVGd.5AGtN6pDCVxdwK0ILVshtZtvffXlutPvlt9wCS1eDUg3eFmXKRewIIeDDzMnKiy6rvwIpNbXfBxhTloL.L0BeO1Ep3H97CCYtLrErAxiRlNTyAdXhjRBC
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:40 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 0VW4AEh0/Zn/ardEim8+jus7zd2IisdO/m8naxVE7FahiD/KnLMIvuBGmhB+G4GxQIH+YjJTPpM=
+      x-amz-request-id:
+      - Z1Y4QCQJPPFTRP0A
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/bad-etag.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:40 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 3a58NgOzrfh55JVQ69G7ulJUBJMxqFsF6OcnKOOoLOy+E1EgZVtH3YgOGjh8jOJEb5xbWkOHKUU=
+      x-amz-request-id:
+      - Z1Y888GZMBP4FERN
+      x-amz-version-id:
+      - uBA0ICu3CEFZV.OQiaXsl3lwpkBVpTmC
+    status:
+      code: 204
+      message: No Content
+version: 1

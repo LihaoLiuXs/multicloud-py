@@ -1,0 +1,34 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MjRlMTYwMjktNDE0MS00NTFjLTliNjEtYWI0MzgxNWRhMWI2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Flist-versions%2Fnever-existed-xyz789.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-versioned</Name><Prefix>conformance-test/list-versions/never-existed-xyz789.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 20 Jul 2026 09:16:33 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - oa9IcKiAlNBLH5Ghv0F4x711uGIIOc41d07TLUCeP5WY4hjmwZ1VsmXjBpRIAfVRKzbj72l1yiM=
+      x-amz-request-id:
+      - Y510937RVMPJT0YR
+    status:
+      code: 200
+      message: OK
+version: 1

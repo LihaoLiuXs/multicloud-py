@@ -1,0 +1,122 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary ""
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '31'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 8ac33cac-0138-488e-b26c-29f155680acf
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/presign/download-roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 07 Aug 2026 20:19:03 GMT
+      Etag:
+      - '"d167f6b985a90110ea5353d945c2dfec"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - uaIfKQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - PNJgATzTiAd5B7rSO9pCxpC6kfI/SwQGppmio0Wi76GBPNf/OatzTjUsGmZ4mXtR7FMToG6mHqY=
+      x-amz-request-id:
+      - 1WV11WR9D1KFQW8N
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - qT5WO2fBTGkDq5N.fstrSraAgdjtVA7C
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.amazonaws.com/async-conformance-test/presign/download-roundtrip.txt?X-Amz-Algorithm=FILTERED&X-Amz-Credential=FILTERED&X-Amz-Date=FILTERED&X-Amz-Expires=FILTERED&X-Amz-SignedHeaders=FILTERED&X-Amz-Security-Token=FILTERED&X-Amz-Signature=FILTERED
+  response:
+    body:
+      string: fetched through a presigned url
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Fri, 07 Aug 2026 20:19:05 GMT
+      Etag:
+      - '"d167f6b985a90110ea5353d945c2dfec"'
+      Last-Modified:
+      - Fri, 07 Aug 2026 20:19:03 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - rVkbed9rlJdUsEUBtiuvw+K16R9g1/YSddO3yDdXu4qTkCwV0jm4Z8OR1/9qdXSJ7yGWTuI0dNYbbQr61RJRvyzIBe5GOpcf
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-05T20:19:02.688Z'
+      x-amz-request-id:
+      - 16GBXV0Y6QEGGE7S
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - qT5WO2fBTGkDq5N.fstrSraAgdjtVA7C
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 20d232c8-65e4-496d-940d-1a7f3d5b26a9
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/presign/download-roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Fri, 07 Aug 2026 20:19:05 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 2Rt+CbfcnJgnEzFu/7HrbWcLZ7W921bHgdssyVGkCqc8BlA2fghSERBGwZH3vmMUNDkyQRU99HM=
+      x-amz-request-id:
+      - 16G3C3EGGQ209Y2Y
+      x-amz-version-id:
+      - a1lpzmDXipm0xfk9csk1ZEkmekK_zben
+    status:
+      code: 204
+      message: No Content
+version: 1

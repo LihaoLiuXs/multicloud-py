@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fget-metadata%2Fnever-existed-4b7c1e.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/get-metadata/never-existed-4b7c1e.txt\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/get-metadata/never-existed-4b7c1e.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '377'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:44:04 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bajpTi_uh5S9cMSzGtSfcUYWfCPft5CIrSG25lTarnuLcQ6D_Dd8493WaUWZWLgYnkWWJp4o8
+    status:
+      code: 404
+      message: Not Found
+version: 1

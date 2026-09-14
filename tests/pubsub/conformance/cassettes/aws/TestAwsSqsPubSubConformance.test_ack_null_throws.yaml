@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: '{"QueueName": "test-sqs-testAckNullThrows"}'
+    headers:
+      Content-Length:
+      - '43'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjA=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS40My4wIG1kL0JvdG9jb3JlIzEuNDMuMCB1YS8yLjEgb3MvbWFjb3MjMjUuNS4wIG1k
+        L2FyY2gjYXJtNjQgbGFuZy9weXRob24jMy4xMy43IG1kL3B5aW1wbCNDUHl0aG9uIG0vYixELFog
+        Y2ZnL3JldHJ5LW1vZGUjbGVnYWN5IEJvdG9jb3JlLzEuNDMuMA==
+      X-Amz-Date:
+      - !!binary |
+        MjAyNjA3MTFUMjExNzQ5Wg==
+      X-Amz-Target:
+      - !!binary |
+        QW1hem9uU1FTLkNyZWF0ZVF1ZXVl
+      amz-sdk-invocation-id:
+      - !!binary |
+        MzE0MzZmYmMtNTZmNC00OWY1LWJkNDYtNzA2OTRmMmJjMWEz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amzn-query-mode:
+      - !!binary |
+        dHJ1ZQ==
+    method: POST
+    uri: https://sqs.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: '{"QueueUrl":"https://sqs.us-west-2.amazonaws.com/123456789012/test-sqs-testAckNullThrows"}'
+    headers:
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.0
+      Date:
+      - Sat, 11 Jul 2026 21:17:50 GMT
+      connection:
+      - keep-alive
+      x-amzn-RequestId:
+      - 9b247d16-6ffd-569d-a82f-1fdadac3596d
+    status:
+      code: 200
+      message: OK
+version: 1

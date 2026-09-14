@@ -1,0 +1,45 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '6'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000002
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-unknown-id.bin?uploadId=never-issued-by-anyone&partNumber=1
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchUpload</Code><Message>The specified upload does not exist.
+        The upload ID may be invalid, or the upload may have been aborted or completed.</Message><UploadId>never-issued-by-anyone</UploadId><RequestId>EMBQTZNQZ5YDK122</RequestId><HostId>+f75xsqNv/DQVyIqLKm3uIY7ohEoR5vXzfRubEKXfaPphc5jQDZGaoQj5vUGKa5V4G6A36quTZuQ1079uiPNE+zYDdhAS3nF</HostId></Error>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 12 Aug 2026 17:56:50 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - +f75xsqNv/DQVyIqLKm3uIY7ohEoR5vXzfRubEKXfaPphc5jQDZGaoQj5vUGKa5V4G6A36quTZuQ1079uiPNE+zYDdhAS3nF
+      x-amz-request-id:
+      - EMBQTZNQZ5YDK122
+    status:
+      code: 404
+      message: Not Found
+version: 1

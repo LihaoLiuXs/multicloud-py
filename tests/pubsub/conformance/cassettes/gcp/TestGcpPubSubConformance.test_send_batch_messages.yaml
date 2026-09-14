@@ -1,0 +1,302 @@
+interactions:
+- request:
+    body: '{"messages": [{"data": "TWVzc2FnZSAx", "attributes": {"batch-id": "1"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testSendBatchMessages
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testSendBatchMessages:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20263726280478039"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:15:38 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"data": "TWVzc2FnZSAy", "attributes": {"batch-id": "2"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testSendBatchMessages
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testSendBatchMessages:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20263836515769968"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:15:38 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"data": "TWVzc2FnZSAz", "attributes": {"batch-id": "3"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testSendBatchMessages
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testSendBatchMessages:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20263727823592058"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:15:38 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"data": "TWVzc2FnZSAx", "attributes": {"batch-id": "1"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testSendBatchMessages
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testSendBatchMessages:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20263705214910074"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:41:39 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"data": "TWVzc2FnZSAy", "attributes": {"batch-id": "2"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testSendBatchMessages
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testSendBatchMessages:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20263663621367052"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:41:39 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"messages": [{"data": "TWVzc2FnZSAz", "attributes": {"batch-id": "3"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '119'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testSendBatchMessages
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testSendBatchMessages:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["21432542617697711"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:41:39 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+version: 1

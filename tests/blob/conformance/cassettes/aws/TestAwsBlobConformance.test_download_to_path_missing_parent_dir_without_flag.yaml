@@ -1,0 +1,146 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        Nw0KcGF5bG9hZA0KMA0KeC1hbXotY2hlY2tzdW0tY3JjMzI6UWl4cUZRPT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        Nw==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NmExODY5MTYtNjMzNi00MmM1LWJlMjEtNjAwMGNjNjJkZGNj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-to-path/missing-parent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 06 Jul 2026 07:42:55 GMT
+      ETag:
+      - '"321c3cf486ed509164edec1e1981fec8"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - QixqFQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - QweX3E7PRRihs51Ao8ffsN6WQUPbp7+qcuetsflmFha1fk47D0/RFtCv9kwzZsgFCtjGmRNkz/6Q0qHxBZiupTiuTQJL1OYG
+      x-amz-request-id:
+      - 6AEP2WKBRA8QD8H6
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 9HeBiMptILG3HbFoWmz0OeJ9pvk_VhTB
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        YjM4ZmZkMDYtMzQzOC00ZDQ1LWJhOWYtZGI0ZDAwNDBjNzc1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-to-path/missing-parent.txt
+  response:
+    body:
+      string: payload
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '7'
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Mon, 06 Jul 2026 07:42:56 GMT
+      ETag:
+      - '"321c3cf486ed509164edec1e1981fec8"'
+      Last-Modified:
+      - Mon, 06 Jul 2026 07:42:55 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - QixqFQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - m+XN6yCv/K4LuosFJwzKoaCF+Esf1hFV73BGu+FLqHFgGl5AhvxAV/SSvC1GOoHOXpH+eLdL+2LswC2Ol7030ZllAw+vTXGi
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-04T07:42:54.620Z'
+      x-amz-request-id:
+      - WZZ2177RYSZ8Y955
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 9HeBiMptILG3HbFoWmz0OeJ9pvk_VhTB
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        ODllZmRhNjgtMzNmMy00ZmM2LWExNTEtMmMzZGJhMjEwOGEy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-to-path/missing-parent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 06 Jul 2026 07:42:57 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - COTwK7GhDdaVTdYflNAbFs5dl5f5HDKmjElhL+T3JVdI+KhGk+XLw1ldVeysK7Vcm5Gv66husaw=
+      x-amz-request-id:
+      - DRXBHC97CQQKC2C8
+      x-amz-version-id:
+      - amJiOFO6y63PylAaItlDJv8jv9pztGHk
+    status:
+      code: 204
+      message: No Content
+version: 1

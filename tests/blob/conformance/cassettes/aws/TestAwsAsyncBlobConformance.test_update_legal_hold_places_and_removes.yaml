@@ -1,0 +1,328 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 13a52a0c-e5ee-479e-8c88-cb501e7a9c62
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:40 GMT
+      Etag:
+      - '"11fb221784f3147ac5a5d0cd81da9478"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - axK9CQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - UtmJxWqEyzTfsOKgqBVFL/yecWAIS39/QU0EnD1MxFRDohdF0EoFHqs7poR+MOJtiQ/4RbNhP6M=
+      x-amz-request-id:
+      - 9BRSW3ZDH9JVWC42
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '90'
+      amz-sdk-invocation-id:
+      - 066220d6-c9c1-4220-a694-1e07de257dce
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - 6XWxlw==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:40 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - bkNdaCD9CYQ7JTniA1D2gbMNlAqyOc8w/KkSHVqvrHUVaLmSPztrfC3QgXXzez8uAgrOF4iTnUQ=
+      x-amz-request-id:
+      - 9BRJJNJXBFQCHBQ2
+      x-amz-version-id:
+      - X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 4da8baaf-0665-41b9-8aea-10a52f66143a
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>6MSV1GY03MVD1H6V</RequestId><HostId>wlihYcTi+WRvbv+mzyTD+p+xyFHyWaQXyTWVCg7YT5eQYz0P1D0ElzZDfYEEN1HLESafQRSnVR4=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 26 Aug 2026 06:13:39 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - wlihYcTi+WRvbv+mzyTD+p+xyFHyWaQXyTWVCg7YT5eQYz0P1D0ElzZDfYEEN1HLESafQRSnVR4=
+      x-amz-request-id:
+      - 6MSV1GY03MVD1H6V
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 05a516f3-b1de-42b9-9cbd-91b5595be2a3
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>ON</Status></LegalHold>'
+    headers:
+      Date:
+      - Wed, 26 Aug 2026 06:13:41 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - rlKfpYFtjxRYVEsLkKojyb8opM4aSjiewGxo/2JI59zwR/TQoEEg7yxjGoqGzHIp1emgTbiaxA4=
+      x-amz-request-id:
+      - 6MSN5A3XXVE6AFE2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '91'
+      amz-sdk-invocation-id:
+      - a987ed48-1d29-42f0-8002-b85a7082ebb4
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - SWq6zg==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?legal-hold
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:41 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - REWzWl81NpJNDn8k7+A3mZIKi1kPRijN14aI5sr9uppNTo7Gke8vtzeXdGtwawCiCzVFNVWdS5Y=
+      x-amz-request-id:
+      - 6MSRQ0JH02SATGAF
+      x-amz-version-id:
+      - X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 60bd7d68-4156-477a-af2f-b044c43678d9
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>6MSRH79FHJCF3VCF</RequestId><HostId>e3qT4gHMHFgqHUCc51W1R/NGrIaEze6NR9ys6YapnEwbyrnmbCRnGq96g/zZlgKQko9RRsZDIvI=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 26 Aug 2026 06:13:40 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - e3qT4gHMHFgqHUCc51W1R/NGrIaEze6NR9ys6YapnEwbyrnmbCRnGq96g/zZlgKQko9RRsZDIvI=
+      x-amz-request-id:
+      - 6MSRH79FHJCF3VCF
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 4a9672dd-60f1-4817-8a5b-895eecb6ee21
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>'
+    headers:
+      Date:
+      - Wed, 26 Aug 2026 06:13:42 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - Oc5ub1RDD7dwkkunM7RRfSiY7HvHC45IPDOoXmqjU3nCfnnoABGSAOy/DQaQUwRYpglkSeWJOqc=
+      x-amz-request-id:
+      - FV5N6X4Q318YMS8S
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - c134f8e9-667d-467f-8963-31bb62dce621
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=async-conformance-test%2Fupdate-legal-hold%2Ftoggle.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>async-conformance-test/update-legal-hold/toggle.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>async-conformance-test/update-legal-hold/toggle.txt</Key><VersionId>X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-26T06:13:40.000Z</LastModified><ETag>&quot;11fb221784f3147ac5a5d0cd81da9478&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 26 Aug 2026 06:13:42 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - e9YWEuWNMfl9+t+88ces246eUFYKTxbv6Var8GSWTr9Y3s5W5SouciBg6IolJgowuK0svhoykHc=
+      x-amz-request-id:
+      - FV5SNKXWRVY0Z8CN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <LegalHold xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Status>OFF</Status></LegalHold>
+    headers:
+      Content-Length:
+      - '91'
+      amz-sdk-invocation-id:
+      - 6d280930-d827-456c-a6b0-b1e655fbb208
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - SWq6zg==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?legal-hold&versionId=X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 26 Aug 2026 06:13:42 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 3NRc/n2TD9oljf4w2KCWqT/YRA4FRtax0QV1eNzzGxJvoA0lfMkjSKfaTMSkTZpL258jHowDe/M=
+      x-amz-request-id:
+      - FV5ZATM8Q9NTBVZW
+      x-amz-version-id:
+      - X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 912f523c-7109-4988-a783-c06af0fc30a2
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/update-legal-hold/toggle.txt?versionId=X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 26 Aug 2026 06:13:42 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - BYP5cuGvVFoetlO3g++rH8C9+RaZHY6yPjutUSUlZJ20x4dzcFFUGJQdZ7NUSeSun1briFCSCgQ=
+      x-amz-request-id:
+      - FV5R9512AD7VM827
+      x-amz-version-id:
+      - X5p7vHgrJoqJXfTCFyd7pCW4JkNFShmi
+    status:
+      code: 204
+      message: No Content
+version: 1

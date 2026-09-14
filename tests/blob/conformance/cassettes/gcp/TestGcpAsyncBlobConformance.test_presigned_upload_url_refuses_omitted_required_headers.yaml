@@ -1,0 +1,116 @@
+interactions:
+- request:
+    body: '{"delegates": [], "scope": ["https://www.googleapis.com/auth/cloud-platform"],
+      "lifetime": "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_ACCESSTOKEN","expireTime":"2026-08-07T22:23:43Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:43 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"payload": "R09PRzQtUlNBLVNIQTI1NgoyMDI2MDgwN1QyMTIzNDNaCjIwMjYwODA3L2F1dG8vc3RvcmFnZS9nb29nNF9yZXF1ZXN0CjBhZWU5ODZhMWQxMmI1MDMzYTQ3MDNhOWQwZTFhMzRjNjQ5NGRhYzI2NThhNjUyNWQ0ZGZiYmE2ZTE2MDYzOTA="}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '195'
+      Content-type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:signBlob?alt=json
+  response:
+    body:
+      string: "{\n  \"keyId\": \"c4938f7c8c339a5395f1570bf78aa17b82e44169\",\n  \"signedBlob\":
+        \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:43 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '422'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: no headers sent
+    headers: {}
+    method: PUT
+    uri: https://storage.googleapis.com/python-async-test-bucket/async-conformance-test/presign/missing-headers.txt?X-Goog-Algorithm=FILTERED&X-Goog-Credential=FILTERED&X-Goog-Date=FILTERED&X-Goog-Expires=FILTERED&X-Goog-SignedHeaders=FILTERED&X-Goog-Signature=FILTERED
+  response:
+    body:
+      string: <?xml version='1.0' encoding='UTF-8'?><Error><Code>MalformedSecurityHeader</Code><Message>Invalid
+        argument.</Message><Details>Your request has a malformed header. Header was
+        included in signedheaders, but not in the request.</Details><ParameterName>x-goog-meta-owner</ParameterName></Error>
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Length:
+      - '290'
+      Content-Type:
+      - application/xml; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:44 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      X-GUploader-UploadID:
+      - AKhXX7KrqML6WzWDLmprdNTGvR5Fty5iYSu9Q20KM2Z9JJugFlkwb9T9eMFPhWeOR8ny37qN0dOq7WYmIQNG0Q
+    status:
+      code: 400
+      message: Bad Request
+version: 1

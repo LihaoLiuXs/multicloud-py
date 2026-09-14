@@ -1,0 +1,119 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZGVsZXRlIG1l
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '9'
+      Content-Type:
+      - text/plain
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/delete/single.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/delete/single.txt/1787241934533166\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fsingle.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fsingle.txt?generation=1787241934533166&alt=media\",\n
+        \ \"name\": \"async-conformance-test/delete/single.txt\",\n  \"bucket\": \"python-async-test-bucket\",\n
+        \ \"generation\": \"1787241934533166\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"text/plain\",\n  \"storageClass\": \"STANDARD\",\n  \"size\": \"9\",\n  \"md5Hash\":
+        \"OQTdem9pMzCa+N957vxoNQ==\",\n  \"crc32c\": \"N2P7zQ==\",\n  \"etag\": \"CK7kioXLr5YDEAE=\",\n
+        \ \"timeCreated\": \"2026-08-20T16:05:34.606Z\",\n  \"updated\": \"2026-08-20T16:05:34.606Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T16:05:34.606Z\",\n  \"timeFinalized\":
+        \"2026-08-20T16:05:34.606Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '947'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:34 GMT
+      Etag:
+      - CK7kioXLr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bGxJX6c4i9WalkQlGffFHaE9GMLehlzy4i0n9r1nJsBODgknWCcxIC1MWQKpiQsu7u
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fsingle.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 16:05:34 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bx3Eht3e5z3TKy-tORoD06T8m8dqfCc32oWELTIm_stE1EbmTK_WGq5QNtrHHIMs4Z
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdelete%2Fsingle.txt?alt=media
+  response:
+    body:
+      string: 'No such object: python-async-test-bucket/async-conformance-test/delete/single.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '81'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:05:34 GMT
+      Expires:
+      - Thu, 20 Aug 2026 16:05:34 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YQy2qsH9s_MsVX7m4IcefoGIyrKKjA2YVbO4mwL_DOhUjJzSDhVFsb9ugP4n_tOljr
+    status:
+      code: 404
+      message: Not Found
+version: 1

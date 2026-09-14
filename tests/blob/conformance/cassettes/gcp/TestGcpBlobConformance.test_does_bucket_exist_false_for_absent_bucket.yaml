@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/multicloudj-conformance-absent-bucket-do-not-create?fields=name&prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"The specified bucket does not exist.","errors":[{"message":"The
+        specified bucket does not exist.","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '171'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 06 Aug 2026 14:46:50 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I1ieO3AvGMbZIt5e5RPej95Oow7wuCbISA7soXgaRmOg2KLjYVgh4ReDLflvodR4Bw
+    status:
+      code: 404
+      message: Not Found
+version: 1

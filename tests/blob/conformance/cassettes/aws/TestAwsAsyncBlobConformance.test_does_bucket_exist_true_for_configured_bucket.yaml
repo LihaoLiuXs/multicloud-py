@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 0f7036ac-1498-405a-9fc8-6fb250c071d9
+      amz-sdk-request:
+      - attempt=1
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 20:19:01 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-access-point-alias:
+      - 'false'
+      x-amz-bucket-arn:
+      - arn:aws:s3:::testcloud-python-sdk-bucket
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - bTnrWLsc6HRW97hhZbrJc1ojeOzDrn5vNdou9w5angX4fzwthJV9yduNAPU3K4A2BCS7VC9hr4qa+p5vT1QP7lZpikmcMUrp
+      x-amz-request-id:
+      - S4KA401K7XN76BRX
+    status:
+      code: 200
+      message: OK
+version: 1

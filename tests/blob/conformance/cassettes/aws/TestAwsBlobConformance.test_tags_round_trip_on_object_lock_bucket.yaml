@@ -1,0 +1,231 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MWENCnRhZ3Mgb24gb2JqZWN0LWxvY2sgYnVja2V0DQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjo2
+        WmcxTlE9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MjY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ODY1MTY1OGYtZmUwMy00YWY4LTk5ODgtN2NhNjNmMmFhNTEy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+      x-amz-tagging:
+      - !!binary |
+        dGFnMT12YWx1ZTE=
+    method: PUT
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/conformance-test/tags/object-lock.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:28:55 GMT
+      ETag:
+      - '"d059b96c4d332d1b6722defcf72ce15e"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 6Zg1NQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - Wfb14ElP6Wt2+0CGOigQ5seK+YvVuSmQ29jAM3jxJ6B+AkIGsP6ozF8UCxn0PsOQ+bXraHP+iJI=
+      x-amz-request-id:
+      - 6ZR9HXHXSDA6KHMD
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MzE4ODdkYmUtNjc5Yy00MjAzLWI4M2UtMGM3OTQwOTkyMGY4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/conformance-test/tags/object-lock.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>tag1</Key><Value>value1</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:28:55 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - FvXt/DlvHExQ7YXuB0ad8zC9ppu3IzJN2yq2Y9ZO+cEFAtMRG4i4Uqi4qHtUxr9kdGiiFR+YYAI=
+      x-amz-request-id:
+      - 6ZR7Y3PD5G3GH57K
+      x-amz-version-id:
+      - qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>tag3</Key><Value>value3</Value></Tag></TagSet></Tagging>
+    headers:
+      Content-Length:
+      - '131'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OTZhZWE2NTctYTE2NC00MzBlLWIyNWMtZTAxMTY5NTRmMDhh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        eXUxZUdnPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/conformance-test/tags/object-lock.txt?tagging
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:28:56 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - dz+Hmi3uc7x3/Bi4jW623PzcIN8WM9pe+jw2SVXs/O/HLMHdE2sOp59CyPBGoN4H3lUZZiyK+BY=
+      x-amz-request-id:
+      - CV6X80BTE411CZEW
+      x-amz-version-id:
+      - qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        M2NjY2JiNzAtNTA1NS00ZTNiLWEwZjctYTYyMjJiY2IwM2Ri
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/conformance-test/tags/object-lock.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>tag3</Key><Value>value3</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:28:56 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - s3LxADU4h+lxCXcoMQA/xM+SIRMfMc+acLcJR+ISyyhvbMN/sneBvBs9H0xCE7cy6kKPapE2YBE=
+      x-amz-request-id:
+      - CV6R9DRC6AJG8ZDB
+      x-amz-version-id:
+      - qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ODkyZmFjN2YtMjEyYS00ZWUxLTllMGYtNTZkMjk1NTdhNzJm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Ftags%2Fobject-lock.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-versioned</Name><Prefix>conformance-test/tags/object-lock.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/tags/object-lock.txt</Key><VersionId>qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn</VersionId><IsLatest>true</IsLatest><LastModified>2026-07-21T20:28:55.000Z</LastModified><ETag>&quot;d059b96c4d332d1b6722defcf72ce15e&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>26</Size><Owner><ID>b6eaab2af32ba61bce00b8c9aceaa1c649844388ec2c3827bbd3e2b06f798cf1</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 21 Jul 2026 20:28:57 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - iA7WoWrqcR5UkoEKnBHTHnW2bC2liwCgaKcVfVltr86sHR9gZbuCc5A2Lm2vPcDP2yXHAFBxqBg=
+      x-amz-request-id:
+      - 8VRDX8SFCBJNR60V
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OGYzZjg3NzYtOWU4ZC00ZGJkLWE1NGUtMTkwYjcyYWEyZTQy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/conformance-test/tags/object-lock.txt?versionId=qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:28:57 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - lM/to1xs+n8o8XmFQVVDw5325vEl3MKqt2SvG6Tycj3mt25BBW9olESHV/dcX45npdsoAajcXf4=
+      x-amz-request-id:
+      - 8VRD1WW8GA55E638
+      x-amz-version-id:
+      - qSChgVDzvy4VQZPPC3mBuHgsrF3IpFbn
+    status:
+      code: 204
+      message: No Content
+version: 1

@@ -1,0 +1,520 @@
+interactions:
+- request:
+    body: "--===============6157840099264810101==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/update-legal-hold/toggle.txt\",
+      \"crc32c\": \"zjYzMA==\"}\r\n--===============6157840099264810101==\r\ncontent-type:
+      application/octet-stream\r\n\r\nheld-then-released\r\n--===============6157840099264810101==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '312'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT02MTU3ODQwMDk5MjY0
+        ODEwMTAxPT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/sdk-blob-with-object-lock/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media\",\n
+        \ \"name\": \"conformance-test/update-legal-hold/toggle.txt\",\n  \"bucket\":
+        \"sdk-blob-with-object-lock\",\n  \"generation\": \"1786576203472104\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"18\",\n  \"md5Hash\": \"EfsiF4TzFHrFpdDNgdqUeA==\",\n
+        \ \"crc32c\": \"zjYzMA==\",\n  \"etag\": \"COi54/+anJYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-12T23:10:03.526Z\",\n  \"updated\": \"2026-08-12T23:10:03.526Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-12T23:10:03.526Z\",\n  \"timeFinalized\":
+        \"2026-08-12T23:10:03.526Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '990'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:03 GMT
+      ETag:
+      - COi54/+anJYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7L891hwVot3FnNv7uj1e5TB1Z7-zLKzGBC1Fc5jyurUdTFv6lS3teZZuhJSgT78BYFI7-lTr1N5x2i6Ww
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAE=","timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:03.526Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '916'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:03 GMT
+      ETag:
+      - COi54/+anJYDEAE=
+      Expires:
+      - Wed, 12 Aug 2026 23:10:03 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7INaT-4xbM7mSV4exY0ws6eY1K4r-KM9Qmym4rahJBTXyudMwJgBuwPk07eVQMTEbhbWKKPm3f3lb8pqg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"temporaryHold": true}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&projection=full&ifMetagenerationMatch=1&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAI=","temporaryHold":true,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:04.054Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '937'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:04 GMT
+      ETag:
+      - COi54/+anJYDEAI=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LC-TG-3dxj_bcIGxUpEHVU4v5KQWB1mZStpKOaxkTjIplhBjYaSXVK5d-sYpmq48U9DacgJPi2SJbiYw
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAI=","temporaryHold":true,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:04.054Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '937'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:04 GMT
+      ETag:
+      - COi54/+anJYDEAI=
+      Expires:
+      - Wed, 12 Aug 2026 23:10:04 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KJ1UngTzpAsMooWftrmKuBI4yUtjP85YAZ-eIAI4J6fKJhKMDYPLqNgltRMGFfg2TRbhLdSLWij5ejNg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAI=","temporaryHold":true,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:04.054Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '937'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:04 GMT
+      ETag:
+      - COi54/+anJYDEAI=
+      Expires:
+      - Wed, 12 Aug 2026 23:10:04 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LUkja7quKFdf_dsvoLYcLUrMlnOeVTQRMz7yZ7SGj01JFs-V6lCnvBqEejpsTwv3-cT83DpuhewfOsWw
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"temporaryHold": false, "eventBasedHold": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '49'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&projection=full&ifMetagenerationMatch=2&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:04.801Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '961'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:04 GMT
+      ETag:
+      - COi54/+anJYDEAM=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KVfZO-a1aL-jazLQchUVWoKHFlJu19o4Z2xq8yzMlZIpeAxT_WZJd3ZuqYQ7m75E8J1s2Pb93RiFxv0w
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:04.801Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '961'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      ETag:
+      - COi54/+anJYDEAM=
+      Expires:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KFZuDrx8Xja30WNE1vp8guPevmtHRrKfl1TddWc6cWAh5VX4VLG1OOHsY9wPHz2-M1rBHrNGAE9oOT3A
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"3","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAM=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:04.801Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '961'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      ETag:
+      - COi54/+anJYDEAM=
+      Expires:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7K0hIAXWc9NsBpXU_iQdMiMQzrEOq_h4Qk9zAob5WqgKfaZ2XqnGns05McM8c-EsrbGW3Gm6J8zeG-Csw
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"temporaryHold": false, "eventBasedHold": false}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '49'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&projection=full&ifMetagenerationMatch=3&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"4","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAQ=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:05.515Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '961'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      ETag:
+      - COi54/+anJYDEAQ=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JCIn-02rxqcgBb48XpdbLw52gKvjGbQ86mG4rNhb9T90o_WCOyAwMGz33jaqAay06xncK04UagESmVsA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"4","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAQ=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:05.515Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '961'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      ETag:
+      - COi54/+anJYDEAQ=
+      Expires:
+      - Wed, 12 Aug 2026 23:10:05 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LvIj7PM3YS4paLGrZsAreTpQr2UVh1vLzCGx8_X-7G7-0Hq8xtSuKMaCY_I9W_TqJAHRb0bAtxeacjxA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"retention": {"mode": null, "retainUntilTime": null, "retentionExpirationTime":
+      null}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '87'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&projection=full&overrideUnlockedRetention=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-legal-hold/toggle.txt/1786576203472104","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&alt=media","name":"conformance-test/update-legal-hold/toggle.txt","bucket":"sdk-blob-with-object-lock","generation":"1786576203472104","metageneration":"5","contentType":"application/octet-stream","storageClass":"STANDARD","size":"18","md5Hash":"EfsiF4TzFHrFpdDNgdqUeA==","crc32c":"zjYzMA==","etag":"COi54/+anJYDEAU=","temporaryHold":false,"eventBasedHold":false,"timeCreated":"2026-08-12T23:10:03.526Z","updated":"2026-08-12T23:10:06.046Z","timeStorageClassUpdated":"2026-08-12T23:10:03.526Z","timeFinalized":"2026-08-12T23:10:03.526Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '961'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:10:06 GMT
+      ETag:
+      - COi54/+anJYDEAU=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KZFnE12vBb09i1ZU30HLibXxsl0jCjb7qwRmQF2_DhPn_BGkx2fdHb9dbjqy_eNawVtRE3LrEDloSIKA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Ftoggle.txt?generation=1786576203472104&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 12 Aug 2026 23:10:06 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7INenHEo6s3tkO3SNgIVwXgZ8DGgjTR_Fwj0oB-nBe8WOEsq1SqMhTWd1Dc_2S3irbLvy_XgoR2_SNrag
+    status:
+      code: 204
+      message: No Content
+version: 1

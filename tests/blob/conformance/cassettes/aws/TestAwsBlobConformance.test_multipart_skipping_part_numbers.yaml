@@ -1,0 +1,326 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test/multipart/skipping-numbers.bin</Key><UploadId>ZD8BJILdoNxMflcCNNO0VXDMlHRc4rdvxwhq82NiAIjOIkVOjjgJaMxI7zhCRHJ5EV1C__LLOtEOMh3.ZgiXBan4BVLCgXod1bOyKA_7OgXPLe0By4aNw_SUMiGjglcsXjn5ZkkzqNH5QBd50ms.Xln6foIBw98XkmE.WEjfmEWTxscOJ_u7IGtgg8_cYza_</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:20 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 0AwaAcg05s0bUD5t6sKwTiYDIX/GFKgmUUB7ESmyMxPoBVwQBXvtHoAtp06gWfxlfenFmtzlmK0=
+      x-amz-request-id:
+      - F7ZGMQY30FNVY6QH
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        PHZjci10cnVuY2F0ZWQgNTI0Mjk2NiBieXRlcz4=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        NTI0Mjg4MA==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin?uploadId=ZD8BJILdoNxMflcCNNO0VXDMlHRc4rdvxwhq82NiAIjOIkVOjjgJaMxI7zhCRHJ5EV1C__LLOtEOMh3.ZgiXBan4BVLCgXod1bOyKA_7OgXPLe0By4aNw_SUMiGjglcsXjn5ZkkzqNH5QBd50ms.Xln6foIBw98XkmE.WEjfmEWTxscOJ_u7IGtgg8_cYza_&partNumber=1
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 22 Jul 2026 18:10:20 GMT
+      ETag:
+      - '"08b46181d7094b5ece88bb389c7499af"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 67XDxA==
+      x-amz-id-2:
+      - eTxrgwayXjxxg3jk9aHnWUumoriBZmxzrAD3npxy/0AAGUp6sLpIepYQUFhAcrzeMTp/i42Knus=
+      x-amz-request-id:
+      - F7ZS7MZ7JT987BJV
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTANCgMDAwMDAwMDAwMDAwMDAwMNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOjllZnBNZz09DQoN
+        Cg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin?uploadId=ZD8BJILdoNxMflcCNNO0VXDMlHRc4rdvxwhq82NiAIjOIkVOjjgJaMxI7zhCRHJ5EV1C__LLOtEOMh3.ZgiXBan4BVLCgXod1bOyKA_7OgXPLe0By4aNw_SUMiGjglcsXjn5ZkkzqNH5QBd50ms.Xln6foIBw98XkmE.WEjfmEWTxscOJ_u7IGtgg8_cYza_&partNumber=3
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 22 Jul 2026 18:10:22 GMT
+      ETag:
+      - '"b09931959951caa2ac110feebbd16750"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 9efpMg==
+      x-amz-id-2:
+      - c6Rs0F0yMNxdh9tYt+gD1ig+PglTH9mcOnnFwuS/9lt3KMYsDWkH4ymfUsWNo+v15agpLsuqKIw=
+      x-amz-request-id:
+      - 63ZYXYBH2BV9H0PF
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><PartNumber>1</PartNumber><ETag>08b46181d7094b5ece88bb389c7499af</ETag></Part><Part><PartNumber>3</PartNumber><ETag>b09931959951caa2ac110feebbd16750</ETag></Part></CompleteMultipartUpload>
+    headers:
+      Content-Length:
+      - '267'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin?uploadId=ZD8BJILdoNxMflcCNNO0VXDMlHRc4rdvxwhq82NiAIjOIkVOjjgJaMxI7zhCRHJ5EV1C__LLOtEOMh3.ZgiXBan4BVLCgXod1bOyKA_7OgXPLe0By4aNw_SUMiGjglcsXjn5ZkkzqNH5QBd50ms.Xln6foIBw98XkmE.WEjfmEWTxscOJ_u7IGtgg8_cYza_
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+
+        <CompleteMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Location>https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test%2Fmultipart%2Fskipping-numbers.bin</Location><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test/multipart/skipping-numbers.bin</Key><ETag>"b4d9f1567169bbe36b3810c544697b27-2"</ETag><ChecksumCRC64NVME>PHOBN1A4gPo=</ChecksumCRC64NVME><ChecksumType>FULL_OBJECT</ChecksumType></CompleteMultipartUploadResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 22 Jul 2026 18:10:22 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - j/0UXAw2Jjn+E2wLk8ELdI9Cooa6sM8ubrJ7Ww3OwgDDR8hSVjBJlkDQkFtaWxam5nMJdoCkLMc=
+      x-amz-request-id:
+      - 63ZGVNBA3AT5F9XQ
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - IuNqBQK4F.f3jVaGLEPRY7hlyRrUAS0x
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Range:
+      - !!binary |
+        Ynl0ZXM9MC0w
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin
+  response:
+    body:
+      string: "\x01"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1'
+      Content-Range:
+      - bytes 0-0/5242896
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Wed, 22 Jul 2026 18:10:23 GMT
+      ETag:
+      - '"b4d9f1567169bbe36b3810c544697b27-2"'
+      Last-Modified:
+      - Wed, 22 Jul 2026 18:10:20 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - SnnJ/7a76m8dQ3+qB3tbilsYxPx+w3d/WsD/JuQbJLaQBGCbEvGxeoy/i2BnyBmYX48VMsGnJYc=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-20T18:10:19.352Z'
+      x-amz-request-id:
+      - 24WNVQMAAJK6VD10
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - IuNqBQK4F.f3jVaGLEPRY7hlyRrUAS0x
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Range:
+      - !!binary |
+        Ynl0ZXM9NTI0Mjg4MC01MjQyODgw
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin
+  response:
+    body:
+      string: "\x03"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1'
+      Content-Range:
+      - bytes 5242880-5242880/5242896
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Wed, 22 Jul 2026 18:10:23 GMT
+      ETag:
+      - '"b4d9f1567169bbe36b3810c544697b27-2"'
+      Last-Modified:
+      - Wed, 22 Jul 2026 18:10:20 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - cyylSbQZ3SxhW8nBxvfrXkLs9oBOvAQFFU3gCEU47pVZRADKpxpGKlSFcfWQy6pMV12liPJ5tkg=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-20T18:10:19.352Z'
+      x-amz-request-id:
+      - 24WSH4WQWK30P0JS
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - IuNqBQK4F.f3jVaGLEPRY7hlyRrUAS0x
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDA3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/skipping-numbers.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 22 Jul 2026 18:10:23 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - zKyOcNJ+GCyqpcEHULvcmd88h19YXBHzHb6TD+aNn/lwUJgVUGeMWcUEMMAWvDtmLpeeW9IdBWQ=
+      x-amz-request-id:
+      - 24WXT03DN130SZJF
+      x-amz-version-id:
+      - qwCNejxqCzrpJdtasC6M_EFHo3nEuhBx
+    status:
+      code: 204
+      message: No Content
+version: 1

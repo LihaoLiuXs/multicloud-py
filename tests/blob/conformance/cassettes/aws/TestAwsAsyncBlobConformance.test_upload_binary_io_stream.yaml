@@ -1,0 +1,137 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '768'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 355cb65b-5c85-4f41-bfa8-2f12e3d663b9
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/upload/from-stream.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:09:25 GMT
+      Etag:
+      - '"89558e0916f547d577105181a7019299"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - gwXNGw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - f78ZTTBVXLILBESSu+cZ5k7+K0nfc4VQNIBrr91O0KxMPKOZ+DlVNLFgVaSkEomELTPOsf9Bx8Fmoqb7Ba63bh4MY6v1IBac
+      x-amz-request-id:
+      - SEVXB459ZEVKN1EF
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - eA35uy64S95UMDzb9Eif.VfZk165ct2_
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - b0e47b30-ff11-4ade-9621-8b9871e4da71
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/upload/from-stream.bin
+  response:
+    body:
+      string: 'stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload '
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '768'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 20 Aug 2026 21:09:24 GMT
+      Etag:
+      - '"89558e0916f547d577105181a7019299"'
+      Last-Modified:
+      - Thu, 20 Aug 2026 21:09:25 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - gwXNGw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - vEKtXeP/YYC0dOzw8iI0M7pyq+f19/abqMKBRLYWyozjVOWfL5hbyRlF6uTuyahNLWdyHp6ZATCfoiOgSXMd56Os4MYKegKu
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-18T21:09:24.073Z'
+      x-amz-request-id:
+      - SEVZZPTTG6NFJ81D
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - eA35uy64S95UMDzb9Eif.VfZk165ct2_
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 16a07d34-ee9b-4495-93e2-af6784e9d16a
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/upload/from-stream.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:09:25 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 7NrTq6YhU/EBort3hofK5KWNPPSCKnio9a8M2I6zd3c/m1PDRnRoO6wy/lLmPN6PVHwVc8Cvxcn00CMDJplLzGov75CKtYxi
+      x-amz-request-id:
+      - SEVYEH24KX28HA29
+      x-amz-version-id:
+      - 6zfoTQis4M4gzNgUerYQhTkl9GjVA1Eo
+    status:
+      code: 204
+      message: No Content
+version: 1

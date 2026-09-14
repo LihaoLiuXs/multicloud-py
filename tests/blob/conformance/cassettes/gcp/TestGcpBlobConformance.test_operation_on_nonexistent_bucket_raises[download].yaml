@@ -1,0 +1,41 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/multicloud-conformance-nonexistent-bucket-gcp-9f8e7d/o/conformance-test%2Fnonexistent-bucket-probe.txt?alt=media
+  response:
+    body:
+      string: The specified bucket does not exist.
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '36'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 01:49:33 GMT
+      Expires:
+      - Fri, 07 Aug 2026 01:49:33 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KyWAVBETLD433QlYng2xvzAdhh3ilet2loaUOcL1srwDSyOKoYuksTecg8XpEztQRtv271YF8
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,0 +1,257 @@
+interactions:
+- request:
+    body: '{"lifetime": "3600s", "scope": ["https://www.googleapis.com/auth/devstorage.full_control"],
+      "delegates": null}'
+    headers: {}
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_ACCESSTOKEN","expireTime":"2026-08-07T22:23:42Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:42 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZmV0Y2hlZCB0aHJvdWdoIGEgcHJlc2lnbmVkIHVybA==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/presign/download-roundtrip.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/presign/download-roundtrip.txt/1786137822383279\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fpresign%2Fdownload-roundtrip.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fpresign%2Fdownload-roundtrip.txt?generation=1786137822383279&alt=media\",\n
+        \ \"name\": \"async-conformance-test/presign/download-roundtrip.txt\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1786137822383279\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"31\",\n  \"md5Hash\": \"0Wf2uYWpARDqU1PZRcLf7A==\",\n
+        \ \"crc32c\": \"Awd5Sg==\",\n  \"etag\": \"CK+ZsfO5j5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-07T21:23:42.449Z\",\n  \"updated\": \"2026-08-07T21:23:42.449Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-07T21:23:42.449Z\",\n  \"timeFinalized\":
+        \"2026-08-07T21:23:42.449Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1014'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:42 GMT
+      Etag:
+      - CK+ZsfO5j5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7I6i5GCBOVcaiA4ObbuGOg7scq4047LkZK4rj_jiQnEPbSJk6ySuoHYDhJdTLXOv1aT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"delegates": [], "scope": ["https://www.googleapis.com/auth/cloud-platform"],
+      "lifetime": "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_ACCESSTOKEN","expireTime":"2026-08-07T22:23:42Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:42 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"payload": "R09PRzQtUlNBLVNIQTI1NgoyMDI2MDgwN1QyMTIzNDJaCjIwMjYwODA3L2F1dG8vc3RvcmFnZS9nb29nNF9yZXF1ZXN0CjFkZjI0ZGQzMTg0MDRhMjU5MDhmZDFkMzQ4M2Y3NjhjNTUxMzhkYmM1NWE2ZTRhOGEzYmM4OWZmMjVjNjM1OWE="}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '195'
+      Content-type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/FILTERED_SA@FILTERED_PROJECT.iam.gserviceaccount.com:signBlob?alt=json
+  response:
+    body:
+      string: "{\n  \"keyId\": \"c4938f7c8c339a5395f1570bf78aa17b82e44169\",\n  \"signedBlob\":
+        \"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 07 Aug 2026 21:23:42 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '422'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://storage.googleapis.com/python-async-test-bucket/async-conformance-test/presign/download-roundtrip.txt?X-Goog-Algorithm=FILTERED&X-Goog-Credential=FILTERED&X-Goog-Date=FILTERED&X-Goog-Expires=FILTERED&X-Goog-SignedHeaders=FILTERED&X-Goog-Signature=FILTERED
+  response:
+    body:
+      string: fetched through a presigned url
+    headers:
+      Accept-Ranges:
+      - bytes
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '31'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Fri, 07 Aug 2026 21:23:43 GMT
+      Etag:
+      - '"d167f6b985a90110ea5353d945c2dfec"'
+      Expires:
+      - Fri, 07 Aug 2026 21:23:43 GMT
+      Last-Modified:
+      - Fri, 07 Aug 2026 21:23:42 GMT
+      Server:
+      - UploadServer
+      X-GUploader-UploadID:
+      - AKhXX7JGumvHkQIPJGQZ0hwH9ruSD-jAxa7boKDuai5COwhzScCNKYWqkyq4uHTV5CdKMEWmJAcX40ZuTQdLVA
+      x-goog-generation:
+      - '1786137822383279'
+      x-goog-hash:
+      - crc32c=Awd5Sg==
+      - md5=0Wf2uYWpARDqU1PZRcLf7A==
+      x-goog-metageneration:
+      - '1'
+      x-goog-storage-class:
+      - STANDARD
+      x-goog-stored-content-encoding:
+      - identity
+      x-goog-stored-content-length:
+      - '31'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fpresign%2Fdownload-roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Fri, 07 Aug 2026 21:23:43 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JczPv6kYV7UyfUBaDfS-gCw9xX82CWPpozE8DYhI0q4U_aXB2kYfavwWLuZBgWh5CX
+    status:
+      code: 204
+      message: No Content
+version: 1

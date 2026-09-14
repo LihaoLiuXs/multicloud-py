@@ -1,0 +1,392 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 0cfee690-9217-4ed2-89b7-df1b28b1f0ad
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/download-round-trip/top-two.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Etag:
+      - '"99c212a6bbbdf095e58426364f8e5937"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - OcIBeQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - u3hXjGt0w2bo64YjMHdIK2IXMAziQ5p2+ZRJCKHjUTa/AoWAb6LuIpzkJOuQehDSfCaemubQmFQ=
+      x-amz-request-id:
+      - 20GKHSSGJCJG0FZ8
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - m_Swp4enIKNZDomjJstysq_U7Q8FZvcW
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 09f61685-3c40-4c94-b153-eb915316eabe
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/download-round-trip/top-one.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Etag:
+      - '"057c764ffe4c43ce786d932ce2d9fcf9"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - UmQN7g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - YUirXQyp0qrIdUuVhzoxwJSBnUUA9OMTFeuNctp//5lA599u8xH9m8m9t6J5iV9nClU1H40P5Ow=
+      x-amz-request-id:
+      - 20GVBDJV829H6FZF
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - M1mDPiX5BgR2was8YSGTQdtQQoC_ZPB8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '19'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 896170de-4680-46dc-9abc-d964eb358c99
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/download-round-trip/nested/deep.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Etag:
+      - '"257a7376d20e0ee0856fb2c6932e5edd"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 5gH6dQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - HmK246aE1JNKlgvzhq3Gn1x/yTfIWT9lCCm8hGF8cD+B7qQ/2p8yXo1rSFnSczWKCboo6yihqME=
+      x-amz-request-id:
+      - 20GNZH92RCSDBD5F
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - U6n3y1KY4bEBGXsHj_iv1fmYUgrAjiDn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 80284332-dd24-41d6-93b4-573dcdb46320
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&prefix=conformance-test-async%2Fdownload-round-trip%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/download-round-trip/</Prefix><KeyCount>3</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/download-round-trip/nested/deep.txt</Key><LastModified>2026-08-06T15:16:59.000Z</LastModified><ETag>&quot;257a7376d20e0ee0856fb2c6932e5edd&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/download-round-trip/top-one.txt</Key><LastModified>2026-08-06T15:16:59.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/download-round-trip/top-two.txt</Key><LastModified>2026-08-06T15:16:59.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - CfZqOGPbfdG92/vVk7t8vjBo9bAp9kBJRY5jQ2cgUKxPOJ8aMeTJddtHjzly5V1OLybBwEebMG8=
+      x-amz-request-id:
+      - 20GKVMMC4ZEESFVM
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 26323ace-5d56-42f0-ae48-ac313cdccf42
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/download-round-trip/nested/deep.txt
+  response:
+    body:
+      string: nested file content
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '19'
+      Content-Type:
+      - text/plain
+      Date:
+      - Thu, 06 Aug 2026 15:17:00 GMT
+      Etag:
+      - '"257a7376d20e0ee0856fb2c6932e5edd"'
+      Last-Modified:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 5gH6dQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 23dzATsXBbi0Tw82Dau6ON0/0LWfmzmJHUwBDY9ZBdKMord23qvpBN7Gnq/WoSpamP5UHjcsyy8=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-04T15:16:58.587Z'
+      x-amz-request-id:
+      - SFHG8VDV2EJ9YCZA
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - U6n3y1KY4bEBGXsHj_iv1fmYUgrAjiDn
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - ab8ee6f2-6f9a-4097-b0d8-577938c71e29
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/download-round-trip/top-one.txt
+  response:
+    body:
+      string: top level file one
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '18'
+      Content-Type:
+      - text/plain
+      Date:
+      - Thu, 06 Aug 2026 15:17:00 GMT
+      Etag:
+      - '"057c764ffe4c43ce786d932ce2d9fcf9"'
+      Last-Modified:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - UmQN7g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - wt2QSn4SN82PXMIa8F3WM8mC/vyqSR9odSH1JwPNVzCF2vwwq9KAUfdujGkUEWdWHnBaqmL+Irw=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-04T15:16:58.349Z'
+      x-amz-request-id:
+      - SFHYJK43ZH43PJ7T
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - M1mDPiX5BgR2was8YSGTQdtQQoC_ZPB8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - e6c2de32-93ba-445f-bdf4-55766c5716df
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/download-round-trip/top-two.txt
+  response:
+    body:
+      string: top level file two
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '18'
+      Content-Type:
+      - text/plain
+      Date:
+      - Thu, 06 Aug 2026 15:17:00 GMT
+      Etag:
+      - '"99c212a6bbbdf095e58426364f8e5937"'
+      Last-Modified:
+      - Thu, 06 Aug 2026 15:16:59 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - OcIBeQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - TyJG9XMc++HPBNd4BhSxBGtvrphPN2QM8H6rmSfzXuGtqdZ0TE3MUVPHdXFbKbbQKWvqC1utQA8=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-04T15:16:58.113Z'
+      x-amz-request-id:
+      - SFHNE6ESKYAMQVFP
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - m_Swp4enIKNZDomjJstysq_U7Q8FZvcW
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 90418945-7eae-4c9f-ba9c-76c5c50bc5d0
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fdownload-round-trip%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/download-round-trip/</Prefix><KeyCount>3</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/download-round-trip/nested/deep.txt</Key><LastModified>2026-08-06T15:16:59.000Z</LastModified><ETag>&quot;257a7376d20e0ee0856fb2c6932e5edd&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/download-round-trip/top-one.txt</Key><LastModified>2026-08-06T15:16:59.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/download-round-trip/top-two.txt</Key><LastModified>2026-08-06T15:16:59.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:17:00 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - p8HT2Xba86b+9TSBxyre5k7jrNzrgtpr88001RtlqQuhIGnfKMO0hswHe+x0U6TaFWaIQJV7ndQ=
+      x-amz-request-id:
+      - SFHGHG42CQ607SKW
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/download-round-trip/nested/deep.txt</Key></Object><Object><Key>conformance-test-async/download-round-trip/top-one.txt</Key></Object><Object><Key>conformance-test-async/download-round-trip/top-two.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '315'
+      amz-sdk-invocation-id:
+      - cb645cad-650d-4b65-a564-887b9bc57ae7
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - bX5hLA==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>conformance-test-async/download-round-trip/nested/deep.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>C3Xwx9FP7.RvrYd0Mb9ZtMvIpbCvZwKr</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/download-round-trip/top-two.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>YkNGF6KFIUlLBGlKyi3UXUG0GhykmWEA</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/download-round-trip/top-one.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>Q_wse6YSVzUxEXPlMb2wqOv9GNQDreqd</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:17:00 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - UjihhQNWMuOgDUA9IpUGH+ZEFFnTCabdM0ck/O5kpxZ+1pRnLf5c75zPFknMTFLgYLKQOn1o0Gg=
+      x-amz-request-id:
+      - SFHYZ07B2W6GR7GQ
+    status:
+      code: 200
+      message: OK
+version: 1

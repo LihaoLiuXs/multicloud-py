@@ -1,0 +1,226 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        YTAwDQpzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQg
+        cGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJl
+        YWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFt
+        LXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3Ry
+        ZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQg
+        c3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxv
+        YWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBh
+        eWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFk
+        IHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1y
+        ZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVh
+        bS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0
+        cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2Fk
+        IHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXls
+        b2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBw
+        YXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVh
+        ZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0t
+        cmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJl
+        YW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBz
+        dHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9h
+        ZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5
+        bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQg
+        cGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJl
+        YWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFt
+        LXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3Ry
+        ZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQg
+        c3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxv
+        YWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBh
+        eWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFk
+        IHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1y
+        ZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVh
+        bS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0
+        cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2Fk
+        IHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXls
+        b2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBw
+        YXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVh
+        ZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0t
+        cmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBzdHJl
+        YW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9hZCBz
+        dHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5bG9h
+        ZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQgcGF5
+        bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJlYWQg
+        cGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFtLXJl
+        YWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3RyZWFt
+        LXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQgc3Ry
+        ZWFtLXJlYWQgcGF5bG9hZCBzdHJlYW0tcmVhZCBwYXlsb2FkIHN0cmVhbS1yZWFkIHBheWxvYWQg
+        DQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjpmeTZOdFE9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFt
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MjU2MA==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YmRkYjk3ZWQtZWE0ZS00MGE0LTg1MGQtOWY0MmVjMWM5MWU2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-stream/read.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 06 Jul 2026 07:43:05 GMT
+      ETag:
+      - '"5d8ad83b9fdbb64ca49d1ef0e55876df"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - fy6NtQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - jI3FBwR6hudwb4UWvEmpBseXwn6bfFZwX1WuceSLeo5Xu24+XAf+GZjgZXZq8lW3MlYzgkmB4i4=
+      x-amz-request-id:
+      - STS1T7TTP03HG60P
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - GEto8Cxtgsp58Zh5mwhpkZL6pA5aI_bU
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZTY0ZjViZGItNzI5Ny00YWIxLTgxNGMtZmQ5ZWJmZTJiZDli
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-stream/read.bin
+  response:
+    body:
+      string: 'stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload stream-read payload stream-read payload stream-read payload stream-read
+        payload '
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '2560'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Mon, 06 Jul 2026 07:43:06 GMT
+      ETag:
+      - '"5d8ad83b9fdbb64ca49d1ef0e55876df"'
+      Last-Modified:
+      - Mon, 06 Jul 2026 07:43:05 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - fy6NtQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - aLrniwKDxk368PFPz7fbj24Q/4QgrnrztJ+3jxPkR6gVUdJWnSMGIBzmlxh6ppm4/pBcqZoGQEI=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-04T07:43:04.161Z'
+      x-amz-request-id:
+      - SN0FBTTX4W0C7C63
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - GEto8Cxtgsp58Zh5mwhpkZL6pA5aI_bU
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        M2E4Njg5ZTEtZDRkNy00MGE0LWFlOTAtZDRjMDdhNTM5Zjk5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-stream/read.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 06 Jul 2026 07:43:07 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - EwZLXrrjBqOP2W9ecfjhdfDIPvOiTpYpnk/Ed+NZOpATdvZ4ynenSDqMEYrphu5wKQWwE2oMzZs=
+      x-amz-request-id:
+      - QMCTFNM8XWJFKJNV
+      x-amz-version-id:
+      - eyi.0z1Dp6Kax1iPcWAKEJZ.c9Ei2HVb
+    status:
+      code: 204
+      message: No Content
+version: 1

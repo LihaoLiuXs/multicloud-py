@@ -1,0 +1,147 @@
+interactions:
+- request:
+    body: "--===============3319985373323440123==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/copy/src-bad-dest-bucket.txt\",
+      \"crc32c\": \"9ONpcA==\"}\r\n--===============3319985373323440123==\r\ncontent-type:
+      text/plain\r\n\r\npayload\r\n--===============3319985373323440123==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '287'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0zMzE5OTg1MzczMzIz
+        NDQwMTIzPT0i
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - text/plain
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/copy/src-bad-dest-bucket.txt/1783414452274833\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fcopy%2Fsrc-bad-dest-bucket.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fcopy%2Fsrc-bad-dest-bucket.txt?generation=1783414452274833&alt=media\",\n
+        \ \"name\": \"conformance-test/copy/src-bad-dest-bucket.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1783414452274833\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"text/plain\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"7\",\n  \"md5Hash\": \"Mhw89IbtUJFk7eweGYH+yA==\",\n
+        \ \"crc32c\": \"9ONpcA==\",\n  \"etag\": \"CJGNqceYwJUDEAE=\",\n  \"timeCreated\":
+        \"2026-07-07T08:54:12.341Z\",\n  \"updated\": \"2026-07-07T08:54:12.341Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-07T08:54:12.341Z\",\n  \"timeFinalized\":
+        \"2026-07-07T08:54:12.341Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '975'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 07 Jul 2026 08:54:12 GMT
+      ETag:
+      - CJGNqceYwJUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEeTICu8s85llYwBzzeUI_XMpJA1GGRYmrGdVX-SA-wbzAkzhUmC5fXuXvYlz0i1CooUr9N8hg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fcopy%2Fsrc-bad-dest-bucket.txt/copyTo/b/multicloud-conformance-nonexistent-bucket-xyz-9f8e7d/o/conformance-test%2Fcopy%2Fdest-bad-bucket.txt?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"The specified bucket does not exist.","errors":[{"message":"The
+        specified bucket does not exist.","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '171'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 07 Jul 2026 08:54:13 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhGZwbX14ADN_f5ycszENzPORUqkw1mlpqgmFA0pczb82cfsq0rH9Z2flAS7mTM7t2F_-77m
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fcopy%2Fsrc-bad-dest-bucket.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 07 Jul 2026 08:54:14 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhGC7xR26Cem7-gFxRLlwkMC4Ui71RMPKfQAZuX2PNyBJ0E1R5rJpMNRujIEmuir425l
+    status:
+      code: 204
+      message: No Content
+version: 1

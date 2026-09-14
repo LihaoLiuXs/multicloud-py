@@ -1,0 +1,248 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 33ba38a9-8354-473f-bdf4-01e770431d61
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-recursive/top-two.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:53 GMT
+      Etag:
+      - '"99c212a6bbbdf095e58426364f8e5937"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - OcIBeQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - f1qMHDJ/ccyl1qyAQvxyRMnWdZQmLFyHFY0g7T8uEDE1d1KC7r+/Zs3dCiONPngheFV6TK8jqmI=
+      x-amz-request-id:
+      - MX9CMHR8A2BN1PTV
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - BVciejkJAn72_oTPJBgjPFs_P0nOfBCy
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '18'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 54ecaa55-7668-4854-8bfd-4ddf922015a7
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-recursive/top-one.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:53 GMT
+      Etag:
+      - '"057c764ffe4c43ce786d932ce2d9fcf9"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - UmQN7g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 1l8xf1kD7cXMdUQ7Yx3MwYZe3FdUYlbsMprkTIeMX6mIYb4WaVgikkUYblH0RG8MdFMyZyLNkM0=
+      x-amz-request-id:
+      - MX992PVDKCGYF262
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 5e31oit0mxXHiiPJiBkXqbXIc_Faxw8V
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '19'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 50a57d4c-7584-4fd3-922c-5ee042783bbb
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/upload-recursive/nested/deep.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 15:16:54 GMT
+      Etag:
+      - '"257a7376d20e0ee0856fb2c6932e5edd"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 5gH6dQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - YKUkDXRLRB2RkvzAw9Vy5e/UkMlpoTBLGeAS9eeCZa43pVE7SWKQh80ZJWhi9TM9YO0NIc5hh/I=
+      x-amz-request-id:
+      - 9XXXCZJKVPQ7ZAJE
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - WQMSMYnTZ0N7aAWjK.OATqZFfObvu0aO
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 3679bdec-44bf-46ec-89d0-b03c02f566df
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fupload-recursive%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/upload-recursive/</Prefix><KeyCount>3</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/upload-recursive/nested/deep.txt</Key><LastModified>2026-08-06T15:16:54.000Z</LastModified><ETag>&quot;257a7376d20e0ee0856fb2c6932e5edd&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-recursive/top-one.txt</Key><LastModified>2026-08-06T15:16:53.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-recursive/top-two.txt</Key><LastModified>2026-08-06T15:16:53.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:54 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - TljX6kToVcBPg7XfDcA5nFwkRuya2/zrs0ENso0EfIRyKouWCCoorEEd/Vy0TPoqn0ETGxq68Kw=
+      x-amz-request-id:
+      - 9XXQSAWPHKZ7F8M2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 2cb8660a-2d26-439a-93db-3b555a7df2f8
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fupload-recursive%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/upload-recursive/</Prefix><KeyCount>3</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/upload-recursive/nested/deep.txt</Key><LastModified>2026-08-06T15:16:54.000Z</LastModified><ETag>&quot;257a7376d20e0ee0856fb2c6932e5edd&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>19</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-recursive/top-one.txt</Key><LastModified>2026-08-06T15:16:53.000Z</LastModified><ETag>&quot;057c764ffe4c43ce786d932ce2d9fcf9&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/upload-recursive/top-two.txt</Key><LastModified>2026-08-06T15:16:53.000Z</LastModified><ETag>&quot;99c212a6bbbdf095e58426364f8e5937&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>18</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:55 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - WR6nz/7RIUj1zyPI4DoGa+HfrXbxSFRDMgp2mxw3S5zFnUbmgUCm+W4F3IcdCWHU/sOzFBocRfo=
+      x-amz-request-id:
+      - D3HBRZ1VNCH0CXZ0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/upload-recursive/nested/deep.txt</Key></Object><Object><Key>conformance-test-async/upload-recursive/top-one.txt</Key></Object><Object><Key>conformance-test-async/upload-recursive/top-two.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '306'
+      amz-sdk-invocation-id:
+      - 5af9e214-04be-42a4-b5a5-f0eed42fc6cc
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - obKpNQ==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>conformance-test-async/upload-recursive/top-one.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>rtGjnEI_I1h7cHTdEjpfxwedLtXZICAw</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/upload-recursive/nested/deep.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>XKUsTCJ1fVdFg_.g3BOZT87XB0zEJ.FK</DeleteMarkerVersionId></Deleted><Deleted><Key>conformance-test-async/upload-recursive/top-two.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>CVEIkIG1dztIOgDE_hn8P_eDEfcYtK2X</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 15:16:55 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - +JOjVNQYNBQTdx5eNKoSFssdsKg9vlH1rW3hLWhuKhYbOCzsNnSr9Lt+Ww99zQbUBI8ItZAamHM=
+      x-amz-request-id:
+      - D3HFMKFWCMZ0T04S
+    status:
+      code: 200
+      message: OK
+version: 1

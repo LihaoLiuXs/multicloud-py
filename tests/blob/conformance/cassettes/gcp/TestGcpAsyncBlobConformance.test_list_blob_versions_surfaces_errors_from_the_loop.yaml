@@ -1,0 +1,40 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o?prefix=async-conformance-test/list-versions/unauthorized.txt&versions=true&maxResults=1000
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"Invalid Credentials\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"Invalid Credentials\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"authError\",\n        \"locationType\":
+        \"header\",\n        \"location\": \"Authorization\"\n      }\n    ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '285'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 05:50:02 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      WWW-Authenticate:
+      - Bearer realm="https://accounts.google.com/", error=invalid_token
+      X-GUploader-UploadID:
+      - AJjja9aVlA-U80KW2GMmJX7p5wV6vcnYMHPngZYsBURZXjTJjYPX4PFKXgwmWqJOr6Wb67Ml
+    status:
+      code: 401
+      message: Unauthorized
+version: 1

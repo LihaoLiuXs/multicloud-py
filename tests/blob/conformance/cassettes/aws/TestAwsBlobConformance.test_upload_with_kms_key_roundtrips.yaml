@@ -1,0 +1,162 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MjENCmttcy1lbmNyeXB0ZWQgY29uZm9ybWFuY2UgcGF5bG9hZA0KMA0KeC1hbXotY2hlY2tzdW0t
+        Y3JjMzI6MEVuU2dRPT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MzM=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MWMzMDFmNzgtMzM3YS00NzBkLWI5NTctMWFiNTZmMzY0NmU2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+      x-amz-server-side-encryption:
+      - !!binary |
+        YXdzOmttcw==
+      x-amz-server-side-encryption-aws-kms-key-id:
+      - !!binary |
+        YXJuOmF3czprbXM6dXMtd2VzdC0yOjY1NDY1NDM3MDg5NTprZXkvZmFhMTQwYWYtODE5NS00OWMw
+        LTlmOGEtZjAzZTlmZDQ3ZDg5
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/encryption/kms-upload.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 27 Aug 2026 16:13:11 GMT
+      ETag:
+      - '"2c600091103f2a37d960429c2b318bbf"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 0EnSgQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 05sFLGt9E0Ld9hU+1zGcBN/EhnLULe7h4s0PRMmFZ6wJUxJcz/GdPFzD4Hy8rxbh7eJoLyDw/fpcVp8DP7RfaduG29I5za5f81KOOKQlcuQ=
+      x-amz-request-id:
+      - E72RTG3DBN1J8B12
+      x-amz-server-side-encryption:
+      - aws:kms
+      x-amz-server-side-encryption-aws-kms-key-id:
+      - arn:aws:kms:us-west-2:123456789012:key/00000000-0000-4000-8000-000000000000
+      x-amz-server-side-encryption-bucket-key-enabled:
+      - 'true'
+      x-amz-version-id:
+      - hB93GyrGGym0wqZlk2X4fcXFz0cPhEKY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        OTMxZmQwOWMtYWYwZS00ODM4LTk4YmItMjZmNzEzMzE0MmY0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/encryption/kms-upload.txt
+  response:
+    body:
+      string: kms-encrypted conformance payload
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '33'
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Thu, 27 Aug 2026 16:13:10 GMT
+      ETag:
+      - '"2c600091103f2a37d960429c2b318bbf"'
+      Last-Modified:
+      - Thu, 27 Aug 2026 16:13:11 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 0EnSgQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - CFSVX6aUwqT8ogQt0FTXI33TAtqrMQ+ZXipP9mDlIsQ1ZXTer51WgaRdYYAjzdnPCmo+80le4m6bQfbRMZVhaRTWCZ6f/fR8TLlSnelsiKo=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-25T16:13:10.306Z'
+      x-amz-request-id:
+      - E72K8V6B3V8VY1RB
+      x-amz-server-side-encryption:
+      - aws:kms
+      x-amz-server-side-encryption-aws-kms-key-id:
+      - arn:aws:kms:us-west-2:123456789012:key/00000000-0000-4000-8000-000000000000
+      x-amz-server-side-encryption-bucket-key-enabled:
+      - 'true'
+      x-amz-version-id:
+      - hB93GyrGGym0wqZlk2X4fcXFz0cPhEKY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzEzMzA0NDktOGQ5Mi00OGY0LTkzYzgtY2I2ZGY3YjUyZTcz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/encryption/kms-upload.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 27 Aug 2026 16:13:12 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 8W+/FHlSnmBYKu1aeDlOwcun2z9obrT4qoC4/c/LbNvjqWw1rZLEx3mtcPBefyvEFrS5YPJjmL0o9ns7QSOCBDqBjrFLVkhcj+TM0IfDkmo=
+      x-amz-request-id:
+      - 4D3S31VBPDFGTMX9
+      x-amz-version-id:
+      - kH8cJ38r8TIPAv8INJgo0YH5uwtxLh1e
+    status:
+      code: 204
+      message: No Content
+version: 1

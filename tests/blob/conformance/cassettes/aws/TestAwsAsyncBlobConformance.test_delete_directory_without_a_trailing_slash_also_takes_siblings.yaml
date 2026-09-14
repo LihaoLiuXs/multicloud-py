@@ -1,0 +1,366 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '8'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - c909f7c1-83a4-4ee5-803a-5e1fb4352b80
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/delete-dir/verbatim/logs/inside.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 05:41:16 GMT
+      Etag:
+      - '"f1ad49fa5b04dda0c8d95f0f302b01c6"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - JNUxOg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - ZRs1vtCMREjTOUe4dw9ou04tiqB5nt+hKw8jNHZc/L91UoTvZkVrpPjRzVBY92z9/EIroldv1ic=
+      x-amz-request-id:
+      - CFKZ3TTEMQ1SZ030
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - NZFsaN.a.AqMZzrx6WnyJ6ze1f0Xv9a.
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '8'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 67cef1c2-ea46-4225-affa-2bf0dcab2741
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/delete-dir/verbatim/logs.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 05:41:16 GMT
+      Etag:
+      - '"f1ad49fa5b04dda0c8d95f0f302b01c6"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - JNUxOg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - rmsXo/PEKy+yQ7H2Ma1lGDEGYz3LmnsC/L+tOkl+gF2pgAQwWLVPvcIZA9XNPU7Vu/WCwbk/hHc=
+      x-amz-request-id:
+      - CFKZE37V9P19DBYP
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 4WIFbqJpMOsaGBaL5m04aj987.xoyIfw
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '8'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - d686f35d-874e-492c-b7bf-9ec0032f30f8
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 05:41:17 GMT
+      Etag:
+      - '"f1ad49fa5b04dda0c8d95f0f302b01c6"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - JNUxOg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 0EsjszFugMSUz3b2m+d0ks/ExmiUwZoSVzaSW1kmEOGC43EGdNbbV5KAkAVpiuXBCC3DKb7AoCs=
+      x-amz-request-id:
+      - YA4PD74M34V3HKMJ
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - I_cxR.SyWwm0TZ8WoBFoG.jKq.5rv1Kq
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '8'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 7acb115d-1b37-4ca1-a5f7-c9276ea5e821
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/delete-dir/verbatim/other.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 05:41:17 GMT
+      Etag:
+      - '"f1ad49fa5b04dda0c8d95f0f302b01c6"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - JNUxOg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 1gmB9cMgk+d/MwNKB2RHO7i2dazsotYQuQSBo+pegUxJF7MSlPadDdKvKEYBPBNo7GnWoNiPtMo=
+      x-amz-request-id:
+      - YA4RH6GVQ2PCQD64
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - stJAB5A4OZ_llYV5ddcXyaoHkM5sMsdJ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 9968148b-82c4-448f-a78b-0e398a0bbd6f
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&prefix=conformance-test-async%2Fdelete-dir%2Fverbatim%2Flogs&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/delete-dir/verbatim/logs</Prefix><KeyCount>3</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt</Key><LastModified>2026-08-20T05:41:17.000Z</LastModified><ETag>&quot;f1ad49fa5b04dda0c8d95f0f302b01c6&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>8</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/delete-dir/verbatim/logs.txt</Key><LastModified>2026-08-20T05:41:16.000Z</LastModified><ETag>&quot;f1ad49fa5b04dda0c8d95f0f302b01c6&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>8</Size><StorageClass>STANDARD</StorageClass></Contents><Contents><Key>conformance-test-async/delete-dir/verbatim/logs/inside.txt</Key><LastModified>2026-08-20T05:41:16.000Z</LastModified><ETag>&quot;f1ad49fa5b04dda0c8d95f0f302b01c6&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>8</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:41:17 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - fBWQnbmVx9hszVdMfyBAHqhT47bhjqN0kC5jiatu9H+ka7mlmgaiLNwXa06b0+o/nshjltsaq70=
+      x-amz-request-id:
+      - YA4TZR7Y1PDJE5AE
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/delete-dir/verbatim/logs-archive/outside.txt</Key></Object><Object><Key>conformance-test-async/delete-dir/verbatim/logs.txt</Key></Object><Object><Key>conformance-test-async/delete-dir/verbatim/logs/inside.txt</Key></Object><Quiet>true</Quiet></Delete>
+    headers:
+      Content-Length:
+      - '344'
+      amz-sdk-invocation-id:
+      - ddd07e47-a5c0-47a6-9589-a29fdc9b9c0e
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - t6Inzw==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:41:17 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - bJ5k9AH8INOaewREXREYLfDQku0JyxX8un3zgvQDvzBKoHqwPZU/hMB/XxUJEjm8Aid6nQjgNO0=
+      x-amz-request-id:
+      - YA4SR9RAK0PD1AGH
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - be480c0f-e774-4dab-bff5-989978609569
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fdelete-dir%2Fverbatim%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/delete-dir/verbatim/</Prefix><KeyCount>1</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/delete-dir/verbatim/other.txt</Key><LastModified>2026-08-20T05:41:17.000Z</LastModified><ETag>&quot;f1ad49fa5b04dda0c8d95f0f302b01c6&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>8</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:41:18 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - /5WeDs/iyGn//MasNNUSvw/aKYV0ca3G0yCLHpAaI3xtNktufPCO9ad0fv+MQA8Xi62A000wA/M=
+      x-amz-request-id:
+      - X0VB47HYY653RA2W
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 42bf53f4-6e78-4c92-9cc2-435988f6b89b
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fdelete-dir%2Fverbatim%2F&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/delete-dir/verbatim/</Prefix><KeyCount>1</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/delete-dir/verbatim/other.txt</Key><LastModified>2026-08-20T05:41:17.000Z</LastModified><ETag>&quot;f1ad49fa5b04dda0c8d95f0f302b01c6&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>8</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:41:18 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - LbKTpq2l/3XCYF9erFHycjxSTSKZBB65D416j2MQB84DagWoq7noML+RNgAj3ooyooN2BVcS6VM=
+      x-amz-request-id:
+      - X0V0BFDFWEHMHZ19
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/delete-dir/verbatim/other.txt</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '145'
+      amz-sdk-invocation-id:
+      - 2d41cd78-41d7-4f14-b32d-f9918a050ae9
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - LHLU9w==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>conformance-test-async/delete-dir/verbatim/other.txt</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>63ObhNrS2xcXAR8BY5F5wnGZp4Ds9HRu</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:41:18 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - nw11UYX6hLdsT5j57jECheI+hLv07fievHO5FAgJl4BXQkWJnoMLKXFOfNvsMtL+TzRm51wHgWw=
+      x-amz-request-id:
+      - X0V5QFDFEPB7AQTY
+    status:
+      code: 200
+      message: OK
+version: 1

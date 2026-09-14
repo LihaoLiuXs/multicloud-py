@@ -1,0 +1,156 @@
+interactions:
+- request:
+    body: '{"messages": [{"data": "aXQtbmFjay12aXNpYmlsaXR5LXRpbWVvdXQ=", "attributes":
+      {"case": "nack-visibility-timeout"}}]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '161'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - topic=projects/example-project/topics/topic-testNackWithVisibilityTimeout
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/topics/topic-testNackWithVisibilityTimeout:publish?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"messageIds": ["20989918240574172"]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:43:35 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '50'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"returnImmediately": true, "maxMessages": 1}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '51'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - subscription=projects/example-project/subscriptions/sub-testNackWithVisibilityTimeout
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/subscriptions/sub-testNackWithVisibilityTimeout:pull?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{"receivedMessages": [{"ackId": "XUZIUTcZCGhRDk9eIz81IChFEAMIFAV8fUtSSDwKGytbTAwadxJhdWpaEwALEwV2WggZDmtcVnUNUR8ocmX7z665JSMjR1N3V1ISDGBeWHUCVgkYdX9J2aKz7IHI30JkZGOBt6y_alXa2-JnZi49XxJLLD5-Ny1FQV5AEkw8GERJUytDCypYEU4EISE-MD5FU0RQBhYs",
+        "message": {"data": "aXQtbmFjay12aXNpYmlsaXR5LXRpbWVvdXQ=", "attributes":
+        {"case": "nack-visibility-timeout"}, "messageId": "20989918240574172", "publishTime":
+        "2026-08-12T23:43:35.734Z"}}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:43:38 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '517'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ackDeadlineSeconds": 5, "ackIds": ["XUZIUTcZCGhRDk9eIz81IChFEAMIFAV8fUtSSDwKGytbTAwadxJhdWpaEwALEwV2WggZDmtcVnUNUR8ocmX7z665JSMjR1N3V1ISDGBeWHUCVgkYdX9J2aKz7IHI30JkZGOBt6y_alXa2-JnZi49XxJLLD5-Ny1FQV5AEkw8GERJUytDCypYEU4EISE-MD5FU0RQBhYs"]}'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '255'
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.34.2
+      x-goog-request-params:
+      - subscription=projects/example-project/subscriptions/sub-testNackWithVisibilityTimeout
+      x-goog-user-project:
+      - example-project
+    method: POST
+    uri: https://pubsub.googleapis.com/v1/projects/example-project/subscriptions/sub-testNackWithVisibilityTimeout:modifyAckDeadline?%24alt=json%3Benum-encoding%3Dint
+  response:
+    body:
+      string: '{}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 23:43:38 GMT
+      Server:
+      - ESF
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '3'
+    status:
+      code: 200
+      message: OK
+version: 1

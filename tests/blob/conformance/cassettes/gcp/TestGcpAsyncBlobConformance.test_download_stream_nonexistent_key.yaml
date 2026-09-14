@@ -1,0 +1,126 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZGVsZXRlZCBiZWZvcmUgZG93bmxvYWQ=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '23'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/download-stream/does-not-exist-xyz123.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/download-stream/does-not-exist-xyz123.txt/1787677465033260\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fdoes-not-exist-xyz123.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fdoes-not-exist-xyz123.txt?generation=1787677465033260&alt=media\",\n
+        \ \"name\": \"async-conformance-test/download-stream/does-not-exist-xyz123.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787677465033260\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"23\",\n  \"md5Hash\": \"kKaCyNgnDfut/jSQBMCbUg==\",\n
+        \ \"crc32c\": \"eod/vA==\",\n  \"etag\": \"CKz0msKhvJYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-25T17:04:25.129Z\",\n  \"updated\": \"2026-08-25T17:04:25.129Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-25T17:04:25.129Z\",\n  \"timeFinalized\":
+        \"2026-08-25T17:04:25.129Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1058'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Aug 2026 17:04:25 GMT
+      Etag:
+      - CKz0msKhvJYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZBUp92vce5sIYob4L_6jYoDPhXqplFeMtAm8cOr1QXJEW6Ol0Znrfcs7hl6KIt8igNl_zG540
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fdoes-not-exist-xyz123.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 25 Aug 2026 17:04:25 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Z3UM2CrSOR-GZoETcEvKWqhdodVrpWdUfPvk7qImT_d2QrnuJ1QPc-I9AKsVAV_nZju1K6nbk
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fdoes-not-exist-xyz123.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"No such object:
+        python-async-test-bucket/async-conformance-test/download-stream/does-not-exist-xyz123.txt\",\n
+        \   \"errors\": [\n      {\n        \"message\": \"No such object: python-async-test-bucket/async-conformance-test/download-stream/does-not-exist-xyz123.txt\",\n
+        \       \"domain\": \"global\",\n        \"reason\": \"notFound\"\n      }\n
+        \   ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '385'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Aug 2026 17:04:25 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aalVVOB_GKH1fT_SjVdORRyunwFgEhJE6YaR84kZvfUDShwPWdiNWg5UnXeCQUtzwwlqF6ZR4
+    status:
+      code: 404
+      message: Not Found
+version: 1

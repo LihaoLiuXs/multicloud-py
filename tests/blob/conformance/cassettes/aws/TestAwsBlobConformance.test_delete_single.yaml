@@ -1,0 +1,137 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        OQ0KZGVsZXRlIG1lDQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjp2czVWUWc9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Content-Type:
+      - !!binary |
+        dGV4dC9wbGFpbg==
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        OQ==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        M2IxYjk0ZWQtOTZkMC00MzRiLThjMzAtMzNiMjQxYTdhNjc4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/single.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 02 Jul 2026 08:01:43 GMT
+      ETag:
+      - '"3904dd7a6f6933309af8df79eefc6835"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - vs5VQg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - ddu27YE5dZ0gXIMELU3eTSs0WjfXK4dgbncwVbiEB+vBg0xS5ofwx7dpLMYOrZbOleJqmAKjk20=
+      x-amz-request-id:
+      - B3XWHFSY8H3XANW5
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - DXKrxeWb14OdflBADeFXEW6DiQyG2bqg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NzM1MzE3NTItYzQ5YS00YmU4LTgwYTMtNzlmNjkxNjIyNzhj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/single.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 02 Jul 2026 08:01:44 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 4/iojVZ99/04MN6C2iZEM17XhsAQOXwTRY6aPFG0xM7q9Bxkz+GVNsrgK064Gwpu3P7QjKwBFF4=
+      x-amz-request-id:
+      - 8NB8HZNT2SQ2DFW3
+      x-amz-version-id:
+      - kk2NQHcQcpvWEH5tBAVW6c3h6.nNhRA1
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MjEyNDBmZDAtOTViMS00YjgyLWI4MTAtYjc5ZWY3NDg2YmI5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/delete/single.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>conformance-test/delete/single.txt</Key><RequestId>VNF3FCN1V2H3H697</RequestId><HostId>7N7ncivg/pjqiqMsylErN23GVRG5hRCya88dyN9fKbhRWYZ36cKMXG32bff/xaqZPZmG8YinO9s=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 02 Jul 2026 08:01:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - 7N7ncivg/pjqiqMsylErN23GVRG5hRCya88dyN9fKbhRWYZ36cKMXG32bff/xaqZPZmG8YinO9s=
+      x-amz-request-id:
+      - VNF3FCN1V2H3H697
+      x-amz-version-id:
+      - kk2NQHcQcpvWEH5tBAVW6c3h6.nNhRA1
+    status:
+      code: 404
+      message: Not Found
+version: 1

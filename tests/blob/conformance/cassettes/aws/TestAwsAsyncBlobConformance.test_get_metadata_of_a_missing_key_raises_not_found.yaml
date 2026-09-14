@@ -1,0 +1,30 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 58946306-ed08-4770-96bc-25efd37227f7
+      amz-sdk-request:
+      - attempt=1
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/get-metadata/never-existed-4b7c1e.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:44:08 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - sFkJ2vOVf/K67ndWuykfnhz/HAmBTNhvbXGUZwZIqGnPnErfpO4aeUvdY4lk/p0YZvxEA4EDSO8=
+      x-amz-request-id:
+      - BXNJ1M8EEPQEM99E
+    status:
+      code: 404
+      message: Not Found
+version: 1

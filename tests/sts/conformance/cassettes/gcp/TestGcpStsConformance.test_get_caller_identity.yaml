@@ -1,0 +1,91 @@
+# NOTE: The JWT-shaped token below is a synthetic replay fixture with placeholder
+# claims, an expiration date in 2000, and a deliberately invalid signature. It is
+# decodable for conformance assertions but cannot authenticate. See RECORDING.md.
+interactions:
+- request:
+    body: '{"delegates": [], "scope": ["https://www.googleapis.com/auth/cloud-platform"],
+      "lifetime": "3600s"}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '99'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/test-service-account@example-project.iam.gserviceaccount.com:generateAccessToken
+  response:
+    body:
+      string: '{"accessToken":"FILTERED_accessToken","expireTime":"2026-07-17T12:51:17Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 11:51:17 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '1088'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"audience": "multicloud-python-sdk", "delegates": [], "includeEmail":
+      true}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '76'
+      Content-Type:
+      - application/json
+    method: POST
+    uri: https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/test-service-account@example-project.iam.gserviceaccount.com:generateIdToken
+  response:
+    body:
+      string: "{\n  \"token\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6InN5bnRoZXRpYy10ZXN0LWtleSIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJtdWx0aWNsb3VkLXB5dGhvbi1zZGsiLCJhenAiOiIwMDAwMDAwMDAwMDAwMDAwMDAwMDAiLCJlbWFpbCI6InRlc3Qtc2VydmljZS1hY2NvdW50QGV4YW1wbGUtcHJvamVjdC5pYW0uZ3NlcnZpY2VhY2NvdW50LmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJleHAiOjk0NjY4NDgwMCwiaWF0Ijo5NDY2ODEyMDAsImlzcyI6Imh0dHBzOi8vYWNjb3VudHMuZ29vZ2xlLmNvbSIsInN1YiI6IjAwMDAwMDAwMDAwMDAwMDAwMDAwMCJ9.aW52YWxpZC1zaWduYXR1cmU\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Fri, 17 Jul 2026 11:51:17 GMT
+      Server:
+      - scaffolding on HTTPServer2
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Origin
+      - X-Origin
+      - Referer
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - '0'
+      content-length:
+      - '798'
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDIyMDcyY2QtZGNhYS00ZGI4LTljNTAtN2M0MTIxYjYyOGU1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: HEAD
+    uri: https://multicloud-conformance-nonexistent-bucket-aws-9f8e7d.s3.us-west-2.amazonaws.com/conformance-test/nonexistent-bucket-probe.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 01:40:40 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - hxeRrp7cwV9TdU8XuFPS+eGalM9Zc8st1ZbUNcyouWdS1dX4TOCrjpYgMqK1N2978LgIQuhlGpOuzeyYTSpwf2gUJ9yHNdlg
+      x-amz-request-id:
+      - 1VDNHDCQX8CVGQ8X
+    status:
+      code: 404
+      message: Not Found
+version: 1

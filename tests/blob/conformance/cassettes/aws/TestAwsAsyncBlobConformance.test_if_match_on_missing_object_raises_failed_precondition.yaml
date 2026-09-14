@@ -1,0 +1,48 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      If-Match:
+      - '"nonexistent-etag"'
+      X-Amz-Decoded-Content-Length:
+      - '4'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 9afd9f19-a657-46e0-8f68-06606d349084
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/conditional/if-match-missing.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/conditional/if-match-missing.txt</Key><RequestId>8Z6J77YQCH3DN98M</RequestId><HostId>Df8iPFdAihbpqV+hwu5VfYCWGvZEEiBarweJMfirxY9LtCsN/evRsnnDEaHWkJ85EEpJ/5y+4cov3WrRQB6Xh4coNuJzA78APPNzmOczIrM=</HostId></Error>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 27 Aug 2026 16:13:29 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - Df8iPFdAihbpqV+hwu5VfYCWGvZEEiBarweJMfirxY9LtCsN/evRsnnDEaHWkJ85EEpJ/5y+4cov3WrRQB6Xh4coNuJzA78APPNzmOczIrM=
+      x-amz-request-id:
+      - 8Z6J77YQCH3DN98M
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZGF0YQ==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '4'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?ifGenerationMatch=1&name=async-conformance-test/conditional/if-version-missing.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 412,\n    \"message\": \"At least
+        one of the pre-conditions you specified did not hold.\",\n    \"errors\":
+        [\n      {\n        \"message\": \"At least one of the pre-conditions you
+        specified did not hold.\",\n        \"domain\": \"global\",\n        \"reason\":
+        \"conditionNotMet\",\n        \"locationType\": \"header\",\n        \"location\":
+        \"If-Match\"\n      }\n    ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '372'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 27 Aug 2026 15:59:11 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9b4k_1LwqcK2Ebp3wNX6sSVj8lh_eEAzCGSRHqMam9wEyB11t1Zjs-ArQm7YvSUzZ-mAAkWXLE
+    status:
+      code: 412
+      message: Precondition Failed
+version: 1

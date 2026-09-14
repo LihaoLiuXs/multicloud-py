@@ -1,0 +1,34 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 1133a719-6682-424d-ae21-5da942bea18c
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/download/does-not-exist-xyz123.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/download/does-not-exist-xyz123.txt</Key><RequestId>76VCGNA5N7K8ZDMP</RequestId><HostId>vfFhLHwcYDY5p7W6RvaGD1HFpjybt5iTkmPjvguI1+bWR93yzKygFSeaEy1MCvMgsvjKRfByNhM=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:08:16 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - vfFhLHwcYDY5p7W6RvaGD1HFpjybt5iTkmPjvguI1+bWR93yzKygFSeaEy1MCvMgsvjKRfByNhM=
+      x-amz-request-id:
+      - 76VCGNA5N7K8ZDMP
+    status:
+      code: 404
+      message: Not Found
+version: 1

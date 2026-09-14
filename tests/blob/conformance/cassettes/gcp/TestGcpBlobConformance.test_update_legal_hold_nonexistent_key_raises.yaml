@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-legal-hold%2Fdoes-not-exist-xyz123.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: sdk-blob-with-object-lock/conformance-test/update-legal-hold/does-not-exist-xyz123.txt","errors":[{"message":"No
+        such object: sdk-blob-with-object-lock/conformance-test/update-legal-hold/does-not-exist-xyz123.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '303'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 12 Aug 2026 21:21:52 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JadzYjf4X798qpzThE7H7BHjR_5JPL5TRkB0ufRbusGJ2w0UwIcAV0mYKQZacp0AINpn1dveM
+    status:
+      code: 404
+      message: Not Found
+version: 1

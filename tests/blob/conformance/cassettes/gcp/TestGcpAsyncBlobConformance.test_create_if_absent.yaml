@@ -1,0 +1,324 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZnJlc2g=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '5'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?ifGenerationMatch=0&name=async-conformance-test/conditional/create-if-absent.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/conditional/create-if-absent.txt/1787846349718470\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?generation=1787846349718470&alt=media\",\n
+        \ \"name\": \"async-conformance-test/conditional/create-if-absent.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787846349718470\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"5\",\n  \"md5Hash\": \"dgEIWMg2LXMC71+UNqpmOQ==\",\n
+        \ \"crc32c\": \"rnPr7g==\",\n  \"etag\": \"CMaH2tSWwZYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-27T15:59:09.821Z\",\n  \"updated\": \"2026-08-27T15:59:09.821Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-27T15:59:09.821Z\",\n  \"timeFinalized\":
+        \"2026-08-27T15:59:09.821Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1021'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 27 Aug 2026 15:59:09 GMT
+      Etag:
+      - CMaH2tSWwZYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YjORiJYRtRgFX9jeseOSQs2IFjB-hx2GlQPutaN5oyQxQMrsyECPOL72aWWoxo9FWu5hgGiLY
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?alt=media
+  response:
+    body:
+      string: fresh
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '5'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 27 Aug 2026 15:59:09 GMT
+      Etag:
+      - CMaH2tSWwZYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Thu, 27 Aug 2026 15:59:09 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YZ5OeXkopLW5L07fn2CmBei2pxqLpblnztPlCpZD-XkIjwV2JAR1LKWrRD66bDAKDa
+      X-Goog-Generation:
+      - '1787846349718470'
+      X-Goog-Hash:
+      - crc32c=rnPr7g==,md5=dgEIWMg2LXMC71+UNqpmOQ==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/conditional/create-if-absent.txt/1787846349718470\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?generation=1787846349718470&alt=media\",\n
+        \ \"name\": \"async-conformance-test/conditional/create-if-absent.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787846349718470\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"5\",\n  \"md5Hash\": \"dgEIWMg2LXMC71+UNqpmOQ==\",\n
+        \ \"crc32c\": \"rnPr7g==\",\n  \"etag\": \"CMaH2tSWwZYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-27T15:59:09.821Z\",\n  \"updated\": \"2026-08-27T15:59:09.821Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-27T15:59:09.821Z\",\n  \"timeFinalized\":
+        \"2026-08-27T15:59:09.821Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1021'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Etag:
+      - CMaH2tSWwZYDEAE=
+      Expires:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9apcq7D0A-q8HKzICa9NoqLvjUlIWIHnHWu185_pozXh39t_K8bWC979d5iqiSVMzzilSV4r2s
+    status:
+      code: 200
+      message: OK
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        cmVwbGFjZW1lbnQ=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '11'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?ifGenerationMatch=0&name=async-conformance-test/conditional/create-if-absent.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"error\": {\n    \"code\": 412,\n    \"message\": \"At least
+        one of the pre-conditions you specified did not hold.\",\n    \"errors\":
+        [\n      {\n        \"message\": \"At least one of the pre-conditions you
+        specified did not hold.\",\n        \"domain\": \"global\",\n        \"reason\":
+        \"conditionNotMet\",\n        \"locationType\": \"header\",\n        \"location\":
+        \"If-Match\"\n      }\n    ]\n  }\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '372'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Z7SGgZtE6Rhjnbsfozp896Vvt1UCdsLaxSU00AQI0bBQtWIyXaZV-xlP4QmFEnuN4r
+    status:
+      code: 412
+      message: Precondition Failed
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?alt=media
+  response:
+    body:
+      string: fresh
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '5'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Etag:
+      - CMaH2tSWwZYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Thu, 27 Aug 2026 15:59:09 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YprLHbu1CwJ6tvcWNz2CL_6TfiE8bZrSRgNUS7N8VNsc-8mm6y9hkX96K2LMou-qHaxzNc7z4
+      X-Goog-Generation:
+      - '1787846349718470'
+      X-Goog-Hash:
+      - crc32c=rnPr7g==,md5=dgEIWMg2LXMC71+UNqpmOQ==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '5'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/conditional/create-if-absent.txt/1787846349718470\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt?generation=1787846349718470&alt=media\",\n
+        \ \"name\": \"async-conformance-test/conditional/create-if-absent.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787846349718470\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"5\",\n  \"md5Hash\": \"dgEIWMg2LXMC71+UNqpmOQ==\",\n
+        \ \"crc32c\": \"rnPr7g==\",\n  \"etag\": \"CMaH2tSWwZYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-27T15:59:09.821Z\",\n  \"updated\": \"2026-08-27T15:59:09.821Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-27T15:59:09.821Z\",\n  \"timeFinalized\":
+        \"2026-08-27T15:59:09.821Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1021'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Etag:
+      - CMaH2tSWwZYDEAE=
+      Expires:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aPnhPr-G-4e-O3r-j4mtXW5nEa0P4mqy6irBFErvZ-Qtyfo7F0qylxd3SF99YVPW7RR-E6jig
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fconditional%2Fcreate-if-absent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 27 Aug 2026 15:59:10 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9ZKhVMkiPRTA5EE58Sdr81gGLsB8NOqmsov8eFVaguw13gW3LUK4795rH9uUeYLLC1o
+    status:
+      code: 204
+      message: No Content
+version: 1

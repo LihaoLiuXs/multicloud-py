@@ -1,0 +1,166 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTYNCnRhZyByb3VuZC10cmlwIHBheWxvYWQNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOlkzYjdV
+        dz09DQoNCg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MjI=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YTA2ZjM1MDEtYTYyOS00MDg2LTg1ZTItODE0YTc2N2E2YjMz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:05:46 GMT
+      ETag:
+      - '"fc3b60b0b184ced520bd59ffd775f2d3"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - Y3b7Uw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - zUgnvZZ4OuLk5tZ3Ctl6yUh/a5zACFuvb8n6cvSIez/TcHqpZrUDAilJI37IIfd4/YzMmMwGMVo=
+      x-amz-request-id:
+      - P870RJDPTDVRF1XZ
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Bx.QG18Hu7fEB_aMr7XcL5_PaFLO0qap
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>env</Key><Value>conformance</Value></Tag></TagSet></Tagging>
+    headers:
+      Content-Length:
+      - '135'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NGM5MTZiZDItYjk1OC00NDVjLWE0NzctNDcwYWE3ODk3N2Nl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        bXlOK2NRPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/roundtrip.txt?tagging
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:05:47 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - fe+uoQrx3XyR1CoRFAPBHgGCa1nHvtXf8+n/R9Q81AdOo9gSQ2L9/kS7eMWn0GNii6KRaC5ZzOs=
+      x-amz-request-id:
+      - X7H7EHHBY2Q0H1T8
+      x-amz-version-id:
+      - Bx.QG18Hu7fEB_aMr7XcL5_PaFLO0qap
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDE2N2IyOTctNGYxZC00NzBiLWExMTMtYjk3NzBjNTNlY2U4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/roundtrip.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>env</Key><Value>conformance</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:05:47 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - IfFlnAhsfv/qVNdYGaXfuPpuvuzhFoEDyScxzS9qrPG+YAzuW482Lg1ED0JtiNq0mfn4ufobwFE=
+      x-amz-request-id:
+      - X7H8XXM7TQQSS139
+      x-amz-version-id:
+      - Bx.QG18Hu7fEB_aMr7XcL5_PaFLO0qap
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWI0Mjk2ZmUtZTQ3MS00Y2JjLTg5MjctNTUxYmRmOTI3YTli
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/roundtrip.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:05:47 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - qChUCJcs42FrpvZtQO1fIvpQiN6wa62W0VSMFeoSl8rvYPlDrMVhDEbum8W4HIIS9GeHxN9Ruhg=
+      x-amz-request-id:
+      - X7H6R6EWPSH6D6ET
+      x-amz-version-id:
+      - qYUvUJtOnCC0liHsijCEHL0YLI6..RTY
+    status:
+      code: 204
+      message: No Content
+version: 1

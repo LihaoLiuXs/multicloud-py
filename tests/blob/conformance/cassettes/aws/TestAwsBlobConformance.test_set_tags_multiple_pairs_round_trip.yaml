@@ -1,0 +1,166 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTENCm11bHRpLXRhZyBwYXlsb2FkDQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjptSkhFT0E9PQ0K
+        DQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTc=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        OTc1NTczNTQtMzY0NC00MDI5LWJmYzUtNWEwODU4NzU2YTE5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/multi.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:05:52 GMT
+      ETag:
+      - '"74526865a067b83f149510173903770d"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - mJHEOA==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - WE8FY58IJvHQeKEMag4A5wbFCBkyREG7lMM4/Nwvush33B7XRsc0qtCBE8a8OY8h2Gc/nZ6iV08=
+      x-amz-request-id:
+      - V7ZZWZ00FWEN06VF
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - jgEEcmq1VKrtbRJM4o8_x0YjanXJ31c.
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>env</Key><Value>conformance</Value></Tag><Tag><Key>owner</Key><Value>sdk</Value></Tag><Tag><Key>tier</Key><Value>gold</Value></Tag></TagSet></Tagging>
+    headers:
+      Content-Length:
+      - '225'
+      amz-sdk-invocation-id:
+      - !!binary |
+        Y2I3NDdlYTItMGViYy00MmE2LTllYTctZGFkMGU1OTdhZjc4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        MlNyNk5nPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/multi.txt?tagging
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:05:52 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - ffWNQyOCqdX6ZLrYk4gvZORlG8lrAlu7/utx8Leg1L0U6BC4XEPx2BmEl30bgygTVBsDhYL83AE=
+      x-amz-request-id:
+      - V7ZQJ6JY1HBZSJK3
+      x-amz-version-id:
+      - jgEEcmq1VKrtbRJM4o8_x0YjanXJ31c.
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDI2YzU0NzktM2JiMC00NzZkLTg3NTEtNGU0Yzk1MDQ4ZmVi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/multi.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>owner</Key><Value>sdk</Value></Tag><Tag><Key>tier</Key><Value>gold</Value></Tag><Tag><Key>env</Key><Value>conformance</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:05:53 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - i83zqSDp6Dn9naMCHHY/De7vEKEMXFLcKJ5GyRp40PZTJNvZpNc6pA0jwS80J+RDktMphsd3g0U=
+      x-amz-request-id:
+      - TYY2YZ8XA9MRPTQF
+      x-amz-version-id:
+      - jgEEcmq1VKrtbRJM4o8_x0YjanXJ31c.
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        N2I4YzQyODItNjY2Yy00ZjZkLWJiODItZTUyZjNjYjFjZTk4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/multi.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:05:53 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - a5fZTu9XnKuhQ9pEe6zCFYWECtcMRmS2z/ermXxBbxN4uNfc+VxO5VbnMK+ddrwpRVY8/TsP/Oo=
+      x-amz-request-id:
+      - TYY41GXKMR2MR9X2
+      x-amz-version-id:
+      - z1D2Pcndslyw_cnifxJmMOrmgsOx8wb0
+    status:
+      code: 204
+      message: No Content
+version: 1

@@ -1,0 +1,251 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fbatch-missing-only-a.txt?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-a.txt","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-a.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '275'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 08 Jul 2026 10:08:06 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEHAu94kUmoK3CCpAhSEZfSNA_mgQlMQp6WORugx728zp0_gyLRDz5vbwV6sNJNZV3q
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fbatch-missing-only-b.txt?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-b.txt","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-b.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '275'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 08 Jul 2026 10:08:06 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhHaYVPzVq0IUgpZ00MJaXrCVkzU5vz-w2oID6RzCfaZHaOcPH461zDb61uljhxqU-Gl
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fbatch-missing-only-c.txt?prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"No such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-c.txt","errors":[{"message":"No
+        such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-c.txt","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '275'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 08 Jul 2026 10:08:06 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEv-E2ppqZjN0nDouCo2wuNHnqX6lcaN5HRiY8r3WVYZXoQx0rXkbY2Qdj6ejRRV-Qc
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fbatch-missing-only-a.txt?alt=media
+  response:
+    body:
+      string: 'No such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-a.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '88'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 08 Jul 2026 10:08:07 GMT
+      Expires:
+      - Wed, 08 Jul 2026 10:08:07 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEFpCjdufk2BDg-MPOmEL3lnd1aLtPEyEbFlHvMx8tUa-Qdd1rYdf4MqyA9_pfZ75QE
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fbatch-missing-only-b.txt?alt=media
+  response:
+    body:
+      string: 'No such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-b.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '88'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 08 Jul 2026 10:08:07 GMT
+      Expires:
+      - Wed, 08 Jul 2026 10:08:07 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhEodWITqDNrgl7QlyqVCwQ4FmLG6v5YoF4m80peAioASsVszveQpnLDDcOAVtBNRV4F
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdelete%2Fbatch-missing-only-c.txt?alt=media
+  response:
+    body:
+      string: 'No such object: testcloud-python-sdk-bucket/conformance-test/delete/batch-missing-only-c.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '88'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Wed, 08 Jul 2026 10:08:08 GMT
+      Expires:
+      - Wed, 08 Jul 2026 10:08:08 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhFX4CZNigZ5xmDrVuAv4mNQU3nxOfmspunvo0tPIT_uQOLAWItUNAMsXrSGoxa-zx7H
+    status:
+      code: 404
+      message: Not Found
+version: 1

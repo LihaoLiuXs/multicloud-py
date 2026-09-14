@@ -1,0 +1,41 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload%2Fdoes-not-exist-xyz123.txt?alt=media
+  response:
+    body:
+      string: 'No such object: testcloud-python-sdk-bucket/conformance-test/download/does-not-exist-xyz123.txt'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0
+      Content-Length:
+      - '93'
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Mon, 08 Jun 2026 05:06:03 GMT
+      Expires:
+      - Mon, 08 Jun 2026 05:06:03 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhFFmeVjv8R-UQmd2N51y0hSasp9GIWid1L-DLHAYHVgiMXiwFGPZ3a_2ykhpoOcgHg0
+    status:
+      code: 404
+      message: Not Found
+version: 1

@@ -1,0 +1,181 @@
+interactions:
+- request:
+    body: "--===============6354231653347915227==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/update-retention/no-existing-retention.txt\",
+      \"crc32c\": \"kGiQ8A==\"}\r\n--===============6354231653347915227==\r\ncontent-type:
+      application/octet-stream\r\n\r\nunretained\r\n--===============6354231653347915227==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '318'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT02MzU0MjMxNjUzMzQ3
+        OTE1MjI3PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/sdk-blob-with-object-lock/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"sdk-blob-with-object-lock/conformance-test/update-retention/no-existing-retention.txt/1786390358947956\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt?generation=1786390358947956&alt=media\",\n
+        \ \"name\": \"conformance-test/update-retention/no-existing-retention.txt\",\n
+        \ \"bucket\": \"sdk-blob-with-object-lock\",\n  \"generation\": \"1786390358947956\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"10\",\n  \"md5Hash\": \"ulyq364z4lvrmixjp5g1cg==\",\n
+        \ \"crc32c\": \"kGiQ8A==\",\n  \"etag\": \"CPTwmdbmlpYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-10T19:32:38.998Z\",\n  \"updated\": \"2026-08-10T19:32:38.998Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-10T19:32:38.998Z\",\n  \"timeFinalized\":
+        \"2026-08-10T19:32:38.998Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1046'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:32:39 GMT
+      ETag:
+      - CPTwmdbmlpYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IlocNb-eea3EgIT0BanMvWdGR0TraYFnS5qHZ6xwT-O8ySI_cfnbIGkkkkdsxHJdcB4tCjrlqU49z_bQ
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-retention/no-existing-retention.txt/1786390358947956","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt?generation=1786390358947956&alt=media","name":"conformance-test/update-retention/no-existing-retention.txt","bucket":"sdk-blob-with-object-lock","generation":"1786390358947956","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"ulyq364z4lvrmixjp5g1cg==","crc32c":"kGiQ8A==","etag":"CPTwmdbmlpYDEAE=","timeCreated":"2026-08-10T19:32:38.998Z","updated":"2026-08-10T19:32:38.998Z","timeStorageClassUpdated":"2026-08-10T19:32:38.998Z","timeFinalized":"2026-08-10T19:32:38.998Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '972'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:32:39 GMT
+      ETag:
+      - CPTwmdbmlpYDEAE=
+      Expires:
+      - Mon, 10 Aug 2026 19:32:39 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LrHyklAWZ_TowCT-xAtFP7HD297peyBe47d93mB4xi3mB-sBJXxtT9z5OF7B177ein9yVKJLeFz2FMdg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o?projection=noAcl&prefix=conformance-test%2Fupdate-retention%2Fno-existing-retention.txt&versions=True&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#objects","items":[{"kind":"storage#object","id":"sdk-blob-with-object-lock/conformance-test/update-retention/no-existing-retention.txt/1786390358947956","selfLink":"https://www.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt?generation=1786390358947956&alt=media","name":"conformance-test/update-retention/no-existing-retention.txt","bucket":"sdk-blob-with-object-lock","generation":"1786390358947956","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"10","md5Hash":"ulyq364z4lvrmixjp5g1cg==","crc32c":"kGiQ8A==","etag":"CPTwmdbmlpYDEAE=","timeCreated":"2026-08-10T19:32:38.998Z","updated":"2026-08-10T19:32:38.998Z","timeStorageClassUpdated":"2026-08-10T19:32:38.998Z","timeFinalized":"2026-08-10T19:32:38.998Z"}]}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1009'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 10 Aug 2026 19:32:39 GMT
+      Expires:
+      - Mon, 10 Aug 2026 19:32:39 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JjyYeUYfaYemUOwI7iwKej1WBz0uOAUeN-bd76BfeAWN4MLKlwzk3M3WSvt33cSUmjdewbwfI
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/sdk-blob-with-object-lock/o/conformance-test%2Fupdate-retention%2Fno-existing-retention.txt?generation=1786390358947956&prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 10 Aug 2026 19:32:39 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LvdHV7UD8Oh-JcLos6AvcfMnGC4wRujc-UGl8EFfDd5DIr9hFwBtcdaMQxWiFNhY9v236ZDcIL-zPQ5g
+    status:
+      code: 204
+      message: No Content
+version: 1

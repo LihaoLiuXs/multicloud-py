@@ -1,0 +1,62 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        NA0KZGF0YQ0KMA0KeC1hbXotY2hlY2tzdW0tY3JjMzI6cmZQell3PT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      If-Match:
+      - !!binary |
+        Im5vbmV4aXN0ZW50LWV0YWci
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        NA==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NTQ3NzNiOWEtMmI5Ni00NDMxLTgwYjEtN2U4YzIxMmQyYjA2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/conditional/if-match-missing.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>conformance-test/conditional/if-match-missing.txt</Key><RequestId>AD5NZ1V5N5G0Z3NK</RequestId><HostId>CRSp6y53Y1NQmL6gwS0J7rb+n8XouGSPrDv9aVLmQuXMiojsbJdpj8teZVsDysaVeKTc10qPv8FqFcmBzoB8iohuExLznkez2JtrA5+qWew=</HostId></Error>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 27 Aug 2026 16:13:09 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - CRSp6y53Y1NQmL6gwS0J7rb+n8XouGSPrDv9aVLmQuXMiojsbJdpj8teZVsDysaVeKTc10qPv8FqFcmBzoB8iohuExLznkez2JtrA5+qWew=
+      x-amz-request-id:
+      - AD5NZ1V5N5G0Z3NK
+    status:
+      code: 404
+      message: Not Found
+version: 1

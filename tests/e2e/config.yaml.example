@@ -1,0 +1,16 @@
+aws:
+  region: us-west-2
+  account_id: "123456789012"
+  test_identity_prefix: "multicloud-live-test-"
+  trusted_principal: "arn:aws:iam::123456789012:root"
+
+gcp:
+  project_id: "my-gcp-project"
+  region: us-central1
+  test_identity_prefix: "mc-live-test-"
+  trusted_principal: "serviceAccount:other@my-gcp-project.iam.gserviceaccount.com"
+
+settings:
+  interactive: true
+  cleanup_on_failure: true
+  verbose: true

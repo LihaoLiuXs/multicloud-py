@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: Action=GetCallerIdentity&Version=2011-06-15
+    headers:
+      Content-Length:
+      - '43'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://sts.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: "<GetCallerIdentityResponse xmlns=\"https://sts.amazonaws.com/doc/2011-06-15/\">\n
+        \ <GetCallerIdentityResult>\n    <Arn>arn:aws:sts::123456789012:assumed-role/ExampleAdministratorRole/example-session</Arn>\n
+        \   <UserId>AROAEXAMPLE00000000002:example-session</UserId>\n
+        \   <Account>123456789012</Account>\n  </GetCallerIdentityResult>\n  <ResponseMetadata>\n
+        \   <RequestId>4a90806b-8ff0-4be9-a359-2b7011be2dce</RequestId>\n  </ResponseMetadata>\n</GetCallerIdentityResponse>\n"
+    headers:
+      Content-Length:
+      - '550'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 11:40:38 GMT
+      X-Amz-Sts-Extended-Request-Id:
+      - MTp1cy13ZXN0LTI6UzoxNzg0Mjg4NDM4MjQ3OlI6Z3FnZ3lEUE4=
+      x-amzn-RequestId:
+      - 4a90806b-8ff0-4be9-a359-2b7011be2dce
+    status:
+      code: 200
+      message: OK
+version: 1

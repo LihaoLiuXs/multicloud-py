@@ -1,0 +1,33 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - ffa0a551-852a-411b-b3e3-fe3fa0a6c4dd
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?versions&prefix=async-conformance-test%2Flist-versions%2Funauthorized.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>InvalidAccessKeyId</Code><Message>The AWS Access Key Id you provided
+        does not exist in our records.</Message><AWSAccessKeyId>FILTERED</AWSAccessKeyId><RequestId>D6FG229WNCKCVQ6V</RequestId><HostId>7CzSVI5JFnR1y3s0mcqNvWgKNo18QfBVatBcEezc8MMQDCMqtQejDJB5tl1Cpji/RENeEwho99Q=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 05:50:05 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 7CzSVI5JFnR1y3s0mcqNvWgKNo18QfBVatBcEezc8MMQDCMqtQejDJB5tl1Cpji/RENeEwho99Q=
+      x-amz-request-id:
+      - D6FG229WNCKCVQ6V
+    status:
+      code: 403
+      message: Forbidden
+version: 1

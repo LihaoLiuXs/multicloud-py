@@ -1,0 +1,140 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '39'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - a32bb220-1ed6-4dbb-bc31-45aab0bb2f87
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+      x-amz-server-side-encryption:
+      - aws:kms
+      x-amz-server-side-encryption-aws-kms-key-id:
+      - arn:aws:kms:us-west-2:123456789012:key/00000000-0000-4000-8000-000000000000
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/encryption/kms-upload.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 27 Aug 2026 16:13:31 GMT
+      Etag:
+      - '"997c862c23322b04dcfa491f6c86af25"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - TdWpTw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - l/9oUg1HcxAJJ7JBULQxM8E3dMYAx/+vWQDDnL2FDk7hc8j6IkFfb3QjF8ugJq8Gk2AIdm5DoCWleMwmyzVyJ0LfifkVkfAC02UkAeUQWHc=
+      x-amz-request-id:
+      - H12MTD69NJYHJKCQ
+      x-amz-server-side-encryption:
+      - aws:kms
+      x-amz-server-side-encryption-aws-kms-key-id:
+      - arn:aws:kms:us-west-2:123456789012:key/00000000-0000-4000-8000-000000000000
+      x-amz-server-side-encryption-bucket-key-enabled:
+      - 'true'
+      x-amz-version-id:
+      - zpfnrjKUb9R5mLlVj0MkD_G0tyaa9ZV8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - f7723b61-9866-4113-8a83-9dd965f063b8
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/encryption/kms-upload.txt
+  response:
+    body:
+      string: kms-encrypted async conformance payload
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '39'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 27 Aug 2026 16:13:30 GMT
+      Etag:
+      - '"997c862c23322b04dcfa491f6c86af25"'
+      Last-Modified:
+      - Thu, 27 Aug 2026 16:13:31 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - TdWpTw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - gRbCpu8C3a7yP+sKLAE9eoAd/W4jQ5DCmCx/P2jbnxSh2jRuvH1LuxO6fKlCbfldjCyL/1/3UKjtHxJFmGYyN6BLf93BaxkN6DgSFjjfaFI=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-25T16:13:30.531Z'
+      x-amz-request-id:
+      - H12GAWTHJY1V9FCC
+      x-amz-server-side-encryption:
+      - aws:kms
+      x-amz-server-side-encryption-aws-kms-key-id:
+      - arn:aws:kms:us-west-2:123456789012:key/00000000-0000-4000-8000-000000000000
+      x-amz-server-side-encryption-bucket-key-enabled:
+      - 'true'
+      x-amz-version-id:
+      - zpfnrjKUb9R5mLlVj0MkD_G0tyaa9ZV8
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - b61e53bf-1663-48a4-8eb8-0ad0e4865fd6
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/encryption/kms-upload.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 27 Aug 2026 16:13:31 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - tYWWICoFDCa5g1m0b5B2VtEIVrFyx/ZxkB2WBB+vmlavkDxCCaLticExUd0IMJ3Xw4uwHkE996HMHgvMHc0EnzIhLvCGZtW1f/NsCtZn1mk=
+      x-amz-request-id:
+      - H12PPGEBDMMEFNY3
+      x-amz-version-id:
+      - RhmL1lqAVLmly4RTRncI.ag25DWv8xke
+    status:
+      code: 204
+      message: No Content
+version: 1

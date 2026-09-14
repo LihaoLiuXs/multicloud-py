@@ -1,0 +1,146 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '4'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 2ebfbd85-a01f-4a4d-a7b9-2047abedcade
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:07:24 GMT
+      Etag:
+      - '"e2eff6c2dafd909df8508f891b385d88"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - c0Bz0A==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 8/VzKuC28avjGDn+l2v3yMTH6KzB54g4Eql4a80Wxx9JKE3dYe5MqbpbSW0w7OOgYUAbTWtsTBY=
+      x-amz-request-id:
+      - T024MN3E64ABBXTY
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - yWykUURGEgJs6FdOh8WBY.VdVr2mTewF
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - a0d59afb-6a1a-4c3f-883f-09f0a9356aa0
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - fmkoStgNDD+yua7stSKcLonvS/FIDGzWekZghNagV2ftqo18C3IYpvOVDJ7VPcHhJJVy0vl0Xrs=
+      x-amz-request-id:
+      - N60GJZ2VBFE49A73
+      x-amz-version-id:
+      - OtaT7HrS3Qu.OJJMYZ5Z3Jfj5kNHBLvS
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - f0e2adbf-bd64-4fef-8f3c-d1de07f56026
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:07:25 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - T5v5o4YsEB34K3hOUmPfroPe+rpsH0cv6al85YmfvQ00jwFrGjKmql2JjOzU6TLPTWEciodmbrw=
+      x-amz-request-id:
+      - N60X22850P8DN1SA
+      x-amz-version-id:
+      - Q7KpdLn1HXaTEgy5Y.UluJ7NYUauUjF_
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 69557c4b-0563-4172-b2db-6a4b5f6dca36
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/delete/idempotent.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>async-conformance-test/delete/idempotent.txt</Key><RequestId>N60M1BQ4ZGQWB6NA</RequestId><HostId>z2qFRVwOkkjFDZGlk/oHmce0MjDo7d7kbRQf3Mpe6g65qbocBxv16wr0Q/K3VOwXenzotCB9GL4=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:07:24 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - z2qFRVwOkkjFDZGlk/oHmce0MjDo7d7kbRQf3Mpe6g65qbocBxv16wr0Q/K3VOwXenzotCB9GL4=
+      x-amz-request-id:
+      - N60M1BQ4ZGQWB6NA
+      x-amz-version-id:
+      - Q7KpdLn1HXaTEgy5Y.UluJ7NYUauUjF_
+    status:
+      code: 404
+      message: Not Found
+version: 1

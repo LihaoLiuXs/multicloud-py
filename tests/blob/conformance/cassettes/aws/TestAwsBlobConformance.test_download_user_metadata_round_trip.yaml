@@ -1,0 +1,159 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        NQ0KaGVsbG8NCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOk5oQ21oZz09DQoNCg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Content-Type:
+      - !!binary |
+        dGV4dC9wbGFpbg==
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        NQ==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MzdkZGJmYzgtNmNkYS00OTBkLTlhMTMtOTYxMjRiYzE4ZTlm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-meta-author:
+      - !!binary |
+        Y29uZm9ybWFuY2U=
+      x-amz-meta-purpose:
+      - !!binary |
+        cm91bmQtdHJpcA==
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download/user-meta.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 06 Jul 2026 07:42:34 GMT
+      ETag:
+      - '"5d41402abc4b2a76b9719d911017c592"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - NhCmhg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - D72Y7HshMW5TMc5Zz7BsqkynOyDcJHFivojT1yUKH2MeqyrKObCTNglCKHsUCB8KGUFWcix0CiCDCRoineYxlDbmwM/Of5DC
+      x-amz-request-id:
+      - DC83W6TQ9XA5J7QM
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - IaYBNlzWEDy7yu_GieXnihaxANUIOxAk
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDQwMGU0YTAtZDY4MS00NTg1LTk1YzEtYWUzOTAyYzM3ZWMw
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download/user-meta.txt
+  response:
+    body:
+      string: hello
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '5'
+      Content-Type:
+      - text/plain
+      Date:
+      - Mon, 06 Jul 2026 07:42:36 GMT
+      ETag:
+      - '"5d41402abc4b2a76b9719d911017c592"'
+      Last-Modified:
+      - Mon, 06 Jul 2026 07:42:34 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - NhCmhg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - nvkrcgKfAaZlb2fs8ArhcPZY3B5Ud6KFOLUMzx6VnvOD8M22zSt+kgXMSb3sf//8HOgBLarcO8547EStvuY7LJ+g3iY6HoV7
+      x-amz-meta-author:
+      - conformance
+      x-amz-meta-purpose:
+      - round-trip
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-04T07:42:33.953Z'
+      x-amz-request-id:
+      - RGPZKYCTE5DMTVHA
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - IaYBNlzWEDy7yu_GieXnihaxANUIOxAk
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDk5NDBiZDAtMTBlZS00MjhkLTliNTQtMjdlMWQwMzY4ZmQ0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download/user-meta.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 06 Jul 2026 07:42:36 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - ToacoNDKAPqA8SkNPo5ys2tjYig051Gr9eI8YHfd574EJByVmQyf03Nc2J4fltgn4QI5SRNfhiqY2B8VDv1Z/3zg2y85ONBq
+      x-amz-request-id:
+      - RGPJNX58NVZ5F94N
+      x-amz-version-id:
+      - Y9O_BUVTTh1TKBnNgm6F3ATmzJI1AGg5
+    status:
+      code: 204
+      message: No Content
+version: 1

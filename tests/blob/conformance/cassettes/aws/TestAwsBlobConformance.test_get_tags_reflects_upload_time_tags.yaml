@@ -1,0 +1,131 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTgNCnVwbG9hZC10aW1lIHRhZ3MgcGF5bG9hZA0KMA0KeC1hbXotY2hlY2tzdW0tY3JjMzI6bURn
+        aS93PT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MjQ=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NmFjOGNmNWUtMjg0MS00NTEyLTg2MjEtOTQ2ZjE3YTBjYTli
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+      x-amz-tagging:
+      - !!binary |
+        c291cmNlPXVwbG9hZCZ0ZWFtPWNvbmZvcm1hbmNl
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/upload-time.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 21 Jul 2026 20:05:48 GMT
+      ETag:
+      - '"8b3a3f8d70e54076e60fd4a94cfbe98c"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - mDgi/w==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - bYJ9orXzJsI22/WngXfpFWLVJg/9A5zx7/HlsT2m79qTPUbR7cczKsKhUULTE/P6+4f5gYcIeVI=
+      x-amz-request-id:
+      - Q7Z500FW04WSSBKX
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - 90Tm9VSTbq67YJ9OwKUdFY9JxyWfBGm3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzYwNzU1NjEtY2VlMC00NjA3LThhYjktNTBmMjhmMzcyMjZm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/upload-time.txt?tagging
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Tagging xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><TagSet><Tag><Key>source</Key><Value>upload</Value></Tag><Tag><Key>team</Key><Value>conformance</Value></Tag></TagSet></Tagging>'
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:05:48 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - NZfD1ghVE2EmU6TpgOQU6VFJepCWJ9+4exrBYO0XMd4ChxegaK3PockvX6dVAF8foYr9ghMcDc0=
+      x-amz-request-id:
+      - Q7Z0DYPTA091Q5CZ
+      x-amz-version-id:
+      - 90Tm9VSTbq67YJ9OwKUdFY9JxyWfBGm3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MmExNmJlMDktMzlkNi00NWQxLThiZGItYTYxNDhhMzBhNzNi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/tags/upload-time.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Tue, 21 Jul 2026 20:05:49 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - kcgHlzBMSEZQ9nhmhC/9ILqou7KtMKiwNxiFsuHEYkbHaPs1+aM8wtH325RmxhE2vsZkvyy5rwY=
+      x-amz-request-id:
+      - 34PR178TPEBBV96B
+      x-amz-version-id:
+      - swg3XhxhEm50rjozr4HHg1aoNFQm.3ex
+    status:
+      code: 204
+      message: No Content
+version: 1

@@ -1,0 +1,148 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTANCjAxMjM0NTY3ODlBQkNERUYNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOm1EdzN0UT09DQoN
+        Cg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NzE3ZDZmZDUtMDkzZi00N2VkLThjOWEtM2UyZjk3NTQ1MmE5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-stream/range.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 06 Jul 2026 07:43:08 GMT
+      ETag:
+      - '"e43df9b5a46b755ea8f1b4dd08265544"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - mDw3tQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - OlRyJTJjrEEGh0DjxBYGLsqEy5R+XEQUWSPvdjSDfKpWit0Yb3eOtRGIUqVhkfGMWraPRNyR234=
+      x-amz-request-id:
+      - S4XD42ZRM3EED0TK
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - pkNNiq_XA08ap_G_XrhvhJsmA24Knmvx
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Range:
+      - !!binary |
+        Ynl0ZXM9Mi03
+      amz-sdk-invocation-id:
+      - !!binary |
+        MGIyMmUwOWMtYjk1NC00YWRiLWE5ZTgtYzUzNjgxYWY3NDVl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-stream/range.txt
+  response:
+    body:
+      string: '234567'
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '6'
+      Content-Range:
+      - bytes 2-7/16
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Mon, 06 Jul 2026 07:43:09 GMT
+      ETag:
+      - '"e43df9b5a46b755ea8f1b4dd08265544"'
+      Last-Modified:
+      - Mon, 06 Jul 2026 07:43:08 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - VXcL72uK7lKNb/qBXf637kUsCCpI173iLJmV4wvigtw8l1+HnZgF0fGsW2ByuQfbfxnPnjZl1HU=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-04T07:43:07.069Z'
+      x-amz-request-id:
+      - PJNDJVCRKNCXGTZ2
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - pkNNiq_XA08ap_G_XrhvhJsmA24Knmvx
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        YmViZjZhODMtZTA0Yy00OGZmLTgyNTYtNWZjOGI3YjNlNDEy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/download-stream/range.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 06 Jul 2026 07:43:10 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - ysmoW5/E1CaULSInquaZHPF+2M709fmkAkIaoskZYtyTul1YJ8Ep66y1DQ1TrJgo8uJO5oDOufk=
+      x-amz-request-id:
+      - GHCC5XXDGBM1A75F
+      x-amz-version-id:
+      - LZNqUjPrALK.TWZoM4E4dLSNuXbdSbnK
+    status:
+      code: 204
+      message: No Content
+version: 1

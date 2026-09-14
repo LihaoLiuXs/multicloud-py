@@ -1,0 +1,234 @@
+interactions:
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZGY1Nzk5YmMtMTFjYy00YmY5LWJmZmEtYWU2N2M4NWRiZmNh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/exists/present.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 05:18:42 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - cvqPoGv45aRSq0BN6Nls74pYlB+p3o8Qax10g40x1Dgfv7l1XUZJN+pOR3t1zGYFl6eXRNUQfNk=
+      x-amz-request-id:
+      - W4QF40SCJE5E3A6W
+      x-amz-version-id:
+      - Dbdt_nabZ7PziB_EGX3nJa0QBMQ6.8e7
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MWENCmV4aXN0cyBjb25mb3JtYW5jZSBwYXlsb2FkDQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjpQ
+        UmRPN2c9PQ0KDQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MjY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzQ0MDliNGEtOGNmOC00YTkzLTg5ODQtOGY3OTU5Y2YwZmFh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/exists/present.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 06 Aug 2026 05:18:44 GMT
+      ETag:
+      - '"43467fda0f7acaf1cca6e6839e1de5fa"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - PRdO7g==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - NWsaRGbN/nbNdcNfJoVYP8FSuo/po1lx20jtvExW8tkpiZinbxbdcCdXq5zydR6Gwu59K97xksk=
+      x-amz-request-id:
+      - E273712FMZXR1RWK
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - JK_atIzM2nySA9OLcTASp3iFPzhZa0Lb
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MTMyZDYwODQtMTE1MC00ODI0LWJmY2UtYTRkZjhjNDFhOTdk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/exists/present.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '26'
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Thu, 06 Aug 2026 05:18:44 GMT
+      ETag:
+      - '"43467fda0f7acaf1cca6e6839e1de5fa"'
+      Last-Modified:
+      - Thu, 06 Aug 2026 05:18:44 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 1ecL6JcsQe9PuSw8JqcnCwxthweXXayPXrLkX7ZX+VjGk8G0NXfJnN51FrhFYIHGax5N1SFzVbI=
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-04T05:18:43.353Z'
+      x-amz-request-id:
+      - E270HRHV0AYS46NY
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - JK_atIzM2nySA9OLcTASp3iFPzhZa0Lb
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MjY2MjZiOGYtYWM1MC00MjdmLWI1ZTMtNGUyYzBhMGVjYzdj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/exists/present
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 05:18:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - suCiG/XLyEyfDPdSobwzAfJnvuwCh2AEOMkcsgHlmIs8StxcM5QOEnm1RF+JtEir5ZRwAirSZP8=
+      x-amz-request-id:
+      - 6N5E9FVC79HNCGTE
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        Zjc2MTFlNGUtMzBjNC00NGUzLWFhODEtMjQwNWFmY2FiOGZj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: HEAD
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/exists/
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 06 Aug 2026 05:18:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - tFAi9vwXxqTZHB96pWehEiekVtnbXYaeISYbKEjluqsLU9MXtIANcR7zIwdConQVZAEvS+fap8s=
+      x-amz-request-id:
+      - 6N54MPTBGB2HM0AF
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MTRkYzlhMWYtZTAxZS00YzQ4LWEyMDQtYjVkMjliZjAyYzEy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/exists/present.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 06 Aug 2026 05:18:46 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - wENe4c6piDk4f8nfpkiw5c/0AuPbjqdmlpxOzfFh07u0BNhHVPtzfmA9FglRjgkxQJ9mk99rF2I=
+      x-amz-request-id:
+      - 6N5FKQ9MJQGTRVA8
+      x-amz-version-id:
+      - 9KpiNfGqHZ3Cd9d31Of5gkSeWxLXbG0m
+    status:
+      code: 204
+      message: No Content
+version: 1

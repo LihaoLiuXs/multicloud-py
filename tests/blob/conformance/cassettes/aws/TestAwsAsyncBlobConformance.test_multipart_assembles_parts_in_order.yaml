@@ -1,0 +1,321 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000002
+      amz-sdk-request:
+      - attempt=1
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-ordered.bin?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test-async/multipart-ordered.bin</Key><UploadId>4Z2JoiIEE8qFMxE9W4uSo0jLAlfBYH4bzHrn6elnaZ7Svf.pM3QOnU92oRYPHjLbGA9hnQIxPXWmqaAGl4LY8GV_tJwLsjiE4_8xquozNr3PUs8jmw3I1mOZ7DJKxPRJmvMr0L4w7ZVExM_mn9KAF_8BrzdM1rPxjo6dqaOiif9FDKvIz9zF09DpPGh8bAEm</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 17:56:43 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - K9W3GX1xazgXfq8C7tNyw/YQfc8fGC2Zf4rvtNl8fu25NXI9tpTivErAIx6pZClDKPhSsfZQ2pw7y0MsBGyQC6iwFFtrPhcU
+      x-amz-request-id:
+      - KNC5E4GCWXTPAD2H
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '16'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000004
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-ordered.bin?uploadId=4Z2JoiIEE8qFMxE9W4uSo0jLAlfBYH4bzHrn6elnaZ7Svf.pM3QOnU92oRYPHjLbGA9hnQIxPXWmqaAGl4LY8GV_tJwLsjiE4_8xquozNr3PUs8jmw3I1mOZ7DJKxPRJmvMr0L4w7ZVExM_mn9KAF_8BrzdM1rPxjo6dqaOiif9FDKvIz9zF09DpPGh8bAEm&partNumber=2
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 12 Aug 2026 17:56:43 GMT
+      Etag:
+      - '"437b25ad27df2f61eb14c6400ae98309"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - S/yK0A==
+      x-amz-id-2:
+      - 6Z6GpTf30n9BccNDWZxJf5osg/yDFQLkfYTGS6jZZTNZ9Jcx78G4LfoYSe3TnbgiHPEaxe7VtZ1Wt05HXKSJiN+IEeGHeNve
+      x-amz-request-id:
+      - KNCE3EJFFRM85A5G
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '5242880'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000006
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-ordered.bin?uploadId=4Z2JoiIEE8qFMxE9W4uSo0jLAlfBYH4bzHrn6elnaZ7Svf.pM3QOnU92oRYPHjLbGA9hnQIxPXWmqaAGl4LY8GV_tJwLsjiE4_8xquozNr3PUs8jmw3I1mOZ7DJKxPRJmvMr0L4w7ZVExM_mn9KAF_8BrzdM1rPxjo6dqaOiif9FDKvIz9zF09DpPGh8bAEm&partNumber=1
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 12 Aug 2026 17:56:43 GMT
+      Etag:
+      - '"08b46181d7094b5ece88bb389c7499af"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 67XDxA==
+      x-amz-id-2:
+      - w0Rh0z6MKR927IDVVQgml8xlCJNn3R3fSJT71PHXSVie3w2VnreRBu19HxTxRAlEV4Stum3DMCakuTANhwN+jv9v8kTpaCIE
+      x-amz-request-id:
+      - KNC3ZJXEFZZMFK8F
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><PartNumber>1</PartNumber><ETag>08b46181d7094b5ece88bb389c7499af</ETag></Part><Part><PartNumber>2</PartNumber><ETag>437b25ad27df2f61eb14c6400ae98309</ETag></Part></CompleteMultipartUpload>
+    headers:
+      Content-Length:
+      - '267'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000008
+      amz-sdk-request:
+      - attempt=1
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-ordered.bin?uploadId=4Z2JoiIEE8qFMxE9W4uSo0jLAlfBYH4bzHrn6elnaZ7Svf.pM3QOnU92oRYPHjLbGA9hnQIxPXWmqaAGl4LY8GV_tJwLsjiE4_8xquozNr3PUs8jmw3I1mOZ7DJKxPRJmvMr0L4w7ZVExM_mn9KAF_8BrzdM1rPxjo6dqaOiif9FDKvIz9zF09DpPGh8bAEm
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+
+        <CompleteMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Location>https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async%2Fmultipart-ordered.bin</Location><Bucket>testcloud-python-sdk-bucket</Bucket><Key>conformance-test-async/multipart-ordered.bin</Key><ETag>"55309b8ba2df6027ddb6e3cb1457a786-2"</ETag><ChecksumCRC64NVME>iX0tC8wSjmM=</ChecksumCRC64NVME><ChecksumType>FULL_OBJECT</ChecksumType></CompleteMultipartUploadResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 12 Aug 2026 17:56:44 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 01Wj2u3uexDVa7UkOcjFfC1xT5sktvg1OqvCRowRHOIJYpDB5ShKYqPafi181xye18Cf96C7J7z/Qtz4zh/k+7WqGDPL8cAr
+      x-amz-request-id:
+      - Y2EBAAH7WGX66SJ0
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - qVNVgaDosW9ES_rolWD0ut7hyLwddbky
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Range:
+      - bytes=0-0
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000009
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-ordered.bin
+  response:
+    body:
+      string: "\x01"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1'
+      Content-Range:
+      - bytes 0-0/5242896
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Wed, 12 Aug 2026 17:56:44 GMT
+      Etag:
+      - '"55309b8ba2df6027ddb6e3cb1457a786-2"'
+      Last-Modified:
+      - Wed, 12 Aug 2026 17:56:43 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - KtvVXPw/zQasNNlMjSMkd5XqB8GU8G+j/XfX8wBV5D4tFpLz5NSRXrCOHkdeLrL9CraeBmc4Z9N1umzWakFElBPcHAqZqhbH
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-10T17:56:42.224Z'
+      x-amz-request-id:
+      - Y2E68B8K5AC5KRPC
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - qVNVgaDosW9ES_rolWD0ut7hyLwddbky
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Range:
+      - bytes=5242880-5242880
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-00000000000a
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test-async/multipart-ordered.bin
+  response:
+    body:
+      string: "\x02"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '1'
+      Content-Range:
+      - bytes 5242880-5242880/5242896
+      Content-Type:
+      - binary/octet-stream
+      Date:
+      - Wed, 12 Aug 2026 17:56:45 GMT
+      Etag:
+      - '"55309b8ba2df6027ddb6e3cb1457a786-2"'
+      Last-Modified:
+      - Wed, 12 Aug 2026 17:56:43 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - BpEUbhTdDKWVvp3F9w6U2L6MoZeBZxoPrJhsMwo/fyjQagNoekife5TIQzyU3tHOMZ9CuApB/eojxw4soJRR7sRo4U0jRdjn
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-11-10T17:56:42.224Z'
+      x-amz-request-id:
+      - 9P539JEVTKGBPKR3
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - qVNVgaDosW9ES_rolWD0ut7hyLwddbky
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-00000000000b
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?list-type=2&max-keys=1000&prefix=conformance-test-async%2Fmultipart-ordered.bin&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-bucket</Name><Prefix>conformance-test-async/multipart-ordered.bin</Prefix><KeyCount>1</KeyCount><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Contents><Key>conformance-test-async/multipart-ordered.bin</Key><LastModified>2026-08-12T17:56:43.000Z</LastModified><ETag>&quot;55309b8ba2df6027ddb6e3cb1457a786-2&quot;</ETag><ChecksumAlgorithm>CRC64NVME</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>5242896</Size><StorageClass>STANDARD</StorageClass></Contents></ListBucketResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 12 Aug 2026 17:56:45 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-bucket-region:
+      - us-west-2
+      x-amz-id-2:
+      - hn/mNmPbf5KUvdxqA/6Z99NqcRNh2JihfNWv4/5QLTLZmA0LiVQ89ZGAXFGBztQWNyUhycLVDOqZG7goKFyKSV9olj6Pfi7r
+      x-amz-request-id:
+      - 9P564AQVYCM113GN
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Delete xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Object><Key>conformance-test-async/multipart-ordered.bin</Key></Object></Delete>
+    headers:
+      Content-Length:
+      - '137'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-00000000000c
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-crc32:
+      - LKjR4g==
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/?delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <DeleteResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Deleted><Key>conformance-test-async/multipart-ordered.bin</Key><DeleteMarker>true</DeleteMarker><DeleteMarkerVersionId>grkeOeKUrSDoeBTyxEQlJh_kqLaNaLfW</DeleteMarkerVersionId></Deleted></DeleteResult>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 12 Aug 2026 17:56:45 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 54zozTvRH4DTtfgzeyXS0s3Y8w5292zLxxvwO2sTtpk7spnPT7OloWPFUn6Xz5sJE7Z3hoNnC/7e3p2fO6qc3R/IDP9sXtts
+      x-amz-request-id:
+      - 9P57W27AAVSMTM8A
+    status:
+      code: 200
+      message: OK
+version: 1

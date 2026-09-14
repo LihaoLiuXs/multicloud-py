@@ -1,0 +1,29 @@
+{
+  "method": "/google.iam.admin.v1.IAM/SetIamPolicy",
+  "request": {
+    "policy": {
+      "bindings": [
+        {
+          "members": [
+            "serviceAccount:test-service-account@example-project.iam.gserviceaccount.com"
+          ],
+          "role": "roles/iam.serviceAccountTokenCreator"
+        }
+      ],
+      "etag": "ACAB"
+    },
+    "resource": "projects/example-project/serviceAccounts/mcp-conf-sa-trusted@example-project.iam.gserviceaccount.com"
+  },
+  "response": {
+    "bindings": [
+      {
+        "members": [
+          "serviceAccount:test-service-account@example-project.iam.gserviceaccount.com"
+        ],
+        "role": "roles/iam.serviceAccountTokenCreator"
+      }
+    ],
+    "etag": "BwZWysFCoLY=",
+    "version": 1
+  }
+}

@@ -1,0 +1,536 @@
+interactions:
+- request:
+    body: <vcr-truncated 5243224 bytes>
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '5243224'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT03MjAyNjA4NDM5Njc5
+        NjA5Njc0PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__1/1784743542728494\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin__multipart__00000000000000000000000000000001__1\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin__multipart__00000000000000000000000000000001__1?generation=1784743542728494&alt=media\",\n
+        \ \"name\": \"conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__1\",\n
+        \ \"bucket\": \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1784743542728494\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"5242880\",\n  \"md5Hash\":
+        \"CLRhgdcJS17OiLs4nHSZrw==\",\n  \"crc32c\": \"5WyABQ==\",\n  \"etag\": \"CK7OhOfv5pUDEAE=\",\n
+        \ \"timeCreated\": \"2026-07-22T18:05:42.776Z\",\n  \"updated\": \"2026-07-22T18:05:42.776Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-22T18:05:42.776Z\",\n  \"timeFinalized\":
+        \"2026-07-22T18:05:42.776Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1195'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:42 GMT
+      ETag:
+      - CK7OhOfv5pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IlVM3EpVsnbTR6ZYf5YcVKURatCn3yjSFtiOgxGF4-2cUECc6lQNT_x71CRL3SaS26S6M-0uImK8_g
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "--===============8944958663099597862==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__3\",
+      \"crc32c\": \"SkQ1kg==\"}\r\n--===============8944958663099597862==\r\ncontent-type:
+      application/octet-stream\r\n\r\n\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\x03\r\n--===============8944958663099597862==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '360'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT04OTQ0OTU4NjYzMDk5
+        NTk3ODYyPT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__3/1784743543082374\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin__multipart__00000000000000000000000000000001__3\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin__multipart__00000000000000000000000000000001__3?generation=1784743543082374&alt=media\",\n
+        \ \"name\": \"conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__3\",\n
+        \ \"bucket\": \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1784743543082374\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"16\",\n  \"md5Hash\": \"sJkxlZlRyqKsEQ/uu9FnUA==\",\n
+        \ \"crc32c\": \"SkQ1kg==\",\n  \"etag\": \"CIabmufv5pUDEAE=\",\n  \"timeCreated\":
+        \"2026-07-22T18:05:43.128Z\",\n  \"updated\": \"2026-07-22T18:05:43.128Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-22T18:05:43.128Z\",\n  \"timeFinalized\":
+        \"2026-07-22T18:05:43.128Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1190'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:43 GMT
+      ETag:
+      - CIabmufv5pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Kjj_92aNhnxUDmrY0D0JkC_Cp9WzuSQ_WupwkTjzH1-ro8ShxSaO4zWP5uzHp380oz9-lkH0E
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"sourceObjects": [{"name": "conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__1",
+      "generation": null}, {"name": "conformance-test/multipart/skipping-numbers.bin__multipart__00000000000000000000000000000001__3",
+      "generation": null}], "destination": {}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '296'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: POST
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin/compose?prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/multipart/skipping-numbers.bin/1784743543392563","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&alt=media","name":"conformance-test/multipart/skipping-numbers.bin","bucket":"testcloud-python-sdk-bucket","generation":"1784743543392563","metageneration":"1","storageClass":"STANDARD","size":"5242896","crc32c":"ohJHcw==","componentCount":2,"etag":"CLOSrefv5pUDEAE=","timeCreated":"2026-07-22T18:05:43.439Z","updated":"2026-07-22T18:05:43.439Z","timeStorageClassUpdated":"2026-07-22T18:05:43.439Z","timeFinalized":"2026-07-22T18:05:43.439Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '870'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:43 GMT
+      ETag:
+      - CLOSrefv5pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Iy6DslAdrowGPPOI8IroYc7rWC3c_9ZoefFrMG7-rse8hpqiRszWsgAPvjfjE9Ureo3zh2yKU
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin__multipart__00000000000000000000000000000001__1?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 22 Jul 2026 18:05:43 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7L5U0iKSYBcBb7ZPm6F6oMI980Or5ZzzDslSTe6mc4P5_obppFqNZxn9bIl-Ea5B2skimHO3Us
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin__multipart__00000000000000000000000000000001__3?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 22 Jul 2026 18:05:44 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LH5K77pE865XM-5VlChol9tRr3nSI3MLADB92pQL9rgB8uMjNfeXAYO2eZl8KeBBSneMrONh0
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/multipart/skipping-numbers.bin/1784743543392563","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&alt=media","name":"conformance-test/multipart/skipping-numbers.bin","bucket":"testcloud-python-sdk-bucket","generation":"1784743543392563","metageneration":"1","storageClass":"STANDARD","size":"5242896","crc32c":"ohJHcw==","componentCount":2,"etag":"CLOSrefv5pUDEAE=","timeCreated":"2026-07-22T18:05:43.439Z","updated":"2026-07-22T18:05:43.439Z","timeStorageClassUpdated":"2026-07-22T18:05:43.439Z","timeFinalized":"2026-07-22T18:05:43.439Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '870'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:44 GMT
+      ETag:
+      - CLOSrefv5pUDEAE=
+      Expires:
+      - Wed, 22 Jul 2026 18:05:44 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IIGSib6DiXoLBvxhkh96D8E256Fp-7HHMdOHMzsOPELEwt0srxLLb7bf1BGFzKcWXaV1LG83M
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      range:
+      - bytes=0-0
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?alt=media
+  response:
+    body:
+      string: "\x01"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '1'
+      Content-Range:
+      - bytes 0-0/5242896
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Wed, 22 Jul 2026 18:05:44 GMT
+      ETag:
+      - CLOSrefv5pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Wed, 22 Jul 2026 18:05:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7K8B3cgCeRMDJu99JcG5r0DHC9h2jIG-60EaHW8nN7MS8Q9w-O59_34TUELNLnBpSObnvQYxSaSxNvP
+      X-Goog-Generation:
+      - '1784743543392563'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '5242896'
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/multipart/skipping-numbers.bin/1784743543392563","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&alt=media","name":"conformance-test/multipart/skipping-numbers.bin","bucket":"testcloud-python-sdk-bucket","generation":"1784743543392563","metageneration":"1","storageClass":"STANDARD","size":"5242896","crc32c":"ohJHcw==","componentCount":2,"etag":"CLOSrefv5pUDEAE=","timeCreated":"2026-07-22T18:05:43.439Z","updated":"2026-07-22T18:05:43.439Z","timeStorageClassUpdated":"2026-07-22T18:05:43.439Z","timeFinalized":"2026-07-22T18:05:43.439Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '870'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:44 GMT
+      ETag:
+      - CLOSrefv5pUDEAE=
+      Expires:
+      - Wed, 22 Jul 2026 18:05:44 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LbqYUfDsEeWjXY0kVfsHDwFU9gohIUABleIdFS7MpWJTjNJ4J4kp9DSkyiM4Q69ZLJyTUnQCW-Bq1z
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      content-type:
+      - application/json; charset=UTF-8
+      range:
+      - bytes=5242880-5242880
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/json; charset=UTF-8
+    method: GET
+    uri: https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?alt=media
+  response:
+    body:
+      string: "\x03"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '1'
+      Content-Range:
+      - bytes 5242880-5242880/5242896
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Wed, 22 Jul 2026 18:05:45 GMT
+      ETag:
+      - CLOSrefv5pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Wed, 22 Jul 2026 18:05:43 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7JyWF9xg7zGNpPBlypAmGBNoH4E14L-YL_0nKsJe2RzPO2UX6sUCt56V4SIrxUuBEZVTrG7GNQ
+      X-Goog-Generation:
+      - '1784743543392563'
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '5242896'
+    status:
+      code: 206
+      message: Partial Content
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/multipart/skipping-numbers.bin/1784743543392563","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?generation=1784743543392563&alt=media","name":"conformance-test/multipart/skipping-numbers.bin","bucket":"testcloud-python-sdk-bucket","generation":"1784743543392563","metageneration":"1","storageClass":"STANDARD","size":"5242896","crc32c":"ohJHcw==","componentCount":2,"etag":"CLOSrefv5pUDEAE=","timeCreated":"2026-07-22T18:05:43.439Z","updated":"2026-07-22T18:05:43.439Z","timeStorageClassUpdated":"2026-07-22T18:05:43.439Z","timeFinalized":"2026-07-22T18:05:43.439Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '870'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Wed, 22 Jul 2026 18:05:45 GMT
+      ETag:
+      - CLOSrefv5pUDEAE=
+      Expires:
+      - Wed, 22 Jul 2026 18:05:45 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IOGMKaqfu8Asoia3oXBaUj2XIk6Rg3uz5LIDAHCRGRASOktNiCUYKzn_whKziKlGT8apjOELjuJFdi
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fmultipart%2Fskipping-numbers.bin?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 22 Jul 2026 18:05:45 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7IMuyGRBm1wWQQy99k-VsiMw2XB1edoPNPjG5fG-wew_Mbj3KpzPnrd5JDc7h03VXjXx-4HICo
+    status:
+      code: 204
+      message: No Content
+version: 1

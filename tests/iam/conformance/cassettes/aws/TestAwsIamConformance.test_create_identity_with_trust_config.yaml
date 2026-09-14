@@ -1,0 +1,93 @@
+interactions:
+- request:
+    body: Action=CreateRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-trusted&AssumeRolePolicyDocument=%7B%22Version%22%3A+%222012-10-17%22%2C+%22Statement%22%3A+%5B%7B%22Effect%22%3A+%22Allow%22%2C+%22Action%22%3A+%22sts%3AAssumeRole%22%2C+%22Principal%22%3A+%7B%22AWS%22%3A+%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Arole%2FMultiCloudPyTestRole%22%5D%7D%7D%5D%7D&Description=Test+identity+with+trust+configuration
+    headers:
+      Content-Length:
+      - '411'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<CreateRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <CreateRoleResult>\n    <Role>\n      <Path>/</Path>\n      <AssumeRolePolicyDocument>%7B%22Version%22%3A%20%222012-10-17%22%2C%20%22Statement%22%3A%20%5B%7B%22Effect%22%3A%20%22Allow%22%2C%20%22Action%22%3A%20%22sts%3AAssumeRole%22%2C%20%22Principal%22%3A%20%7B%22AWS%22%3A%20%5B%22arn%3Aaws%3Aiam%3A%3A123456789012%3Arole%2FMultiCloudPyTestRole%22%5D%7D%7D%5D%7D</AssumeRolePolicyDocument>\n
+        \     <RoleId>AROAEXAMPLE0000000000O</RoleId>\n      <RoleName>MultiCloudPyTestRole-trusted</RoleName>\n
+        \     <Arn>arn:aws:iam::123456789012:role/MultiCloudPyTestRole-trusted</Arn>\n
+        \     <CreateDate>2026-07-17T08:16:55Z</CreateDate>\n    </Role>\n  </CreateRoleResult>\n
+        \ <ResponseMetadata>\n    <RequestId>f81c69d9-4f8c-4f92-be78-17f92d2c5e16</RequestId>\n
+        \ </ResponseMetadata>\n</CreateRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '854'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:55 GMT
+      x-amzn-RequestId:
+      - f81c69d9-4f8c-4f92-be78-17f92d2c5e16
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=GetRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-trusted
+    headers:
+      Content-Length:
+      - '70'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<GetRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <GetRoleResult>\n    <Role>\n      <Path>/</Path>\n      <AssumeRolePolicyDocument>%7B%22Version%22%3A%222012-10-17%22%2C%22Statement%22%3A%5B%7B%22Effect%22%3A%22Allow%22%2C%22Principal%22%3A%7B%22AWS%22%3A%22arn%3Aaws%3Aiam%3A%3A123456789012%3Arole%2FMultiCloudPyTestRole%22%7D%2C%22Action%22%3A%22sts%3AAssumeRole%22%7D%5D%7D</AssumeRolePolicyDocument>\n
+        \     <MaxSessionDuration>3600</MaxSessionDuration>\n      <RoleId>AROAEXAMPLE0000000000O</RoleId>\n
+        \     <RoleLastUsed/>\n      <RoleName>MultiCloudPyTestRole-trusted</RoleName>\n
+        \     <Description>Test identity with trust configuration</Description>\n
+        \     <Arn>arn:aws:iam::123456789012:role/MultiCloudPyTestRole-trusted</Arn>\n
+        \     <CreateDate>2026-07-17T08:16:55Z</CreateDate>\n    </Role>\n  </GetRoleResult>\n
+        \ <ResponseMetadata>\n    <RequestId>9c648f9d-ce12-4f79-b64d-0c04bd5ec563</RequestId>\n
+        \ </ResponseMetadata>\n</GetRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '955'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:56 GMT
+      x-amzn-RequestId:
+      - 9c648f9d-ce12-4f79-b64d-0c04bd5ec563
+    status:
+      code: 200
+      message: OK
+- request:
+    body: Action=DeleteRole&Version=2010-05-08&RoleName=MultiCloudPyTestRole-trusted
+    headers:
+      Content-Length:
+      - '73'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://iam.amazonaws.com/
+  response:
+    body:
+      string: "<DeleteRoleResponse xmlns=\"https://iam.amazonaws.com/doc/2010-05-08/\">\n
+        \ <ResponseMetadata>\n    <RequestId>de45e283-6a64-4bb6-b826-6e2737b25050</RequestId>\n
+        \ </ResponseMetadata>\n</DeleteRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '200'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 08:16:57 GMT
+      x-amzn-RequestId:
+      - de45e283-6a64-4bb6-b826-6e2737b25050
+    status:
+      code: 200
+      message: OK
+version: 1

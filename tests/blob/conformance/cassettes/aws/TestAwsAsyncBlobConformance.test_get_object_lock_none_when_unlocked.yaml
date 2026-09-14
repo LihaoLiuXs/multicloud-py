@@ -1,0 +1,214 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '12'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 76971fdd-703c-4f95-9854-b37c284669e7
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/object-lock/unlocked.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Fri, 21 Aug 2026 12:43:02 GMT
+      Etag:
+      - '"dd935532ac12caf4f86572d8122df3d2"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - DKgGkQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - zmpUS47dapQhiXfWsrUv4h1eTaJUqNempxgxfb8JcR8ML84YVtwTIAADXhlU7+JrmCqxB3wDNBYiTNeSzWXEdG4t3dmXz/ph
+      x-amz-request-id:
+      - ZX03EVDFES5VH84E
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - xZFAnmHeOCjl4LSY5FZcyRnFFUzr1MP9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 9c81bd8b-8201-4dff-aa10-50f000bffc4f
+      amz-sdk-request:
+      - attempt=1
+      x-amz-checksum-mode:
+      - ENABLED
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/object-lock/unlocked.txt
+  response:
+    body:
+      string: no lock here
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '12'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Fri, 21 Aug 2026 12:43:02 GMT
+      Etag:
+      - '"dd935532ac12caf4f86572d8122df3d2"'
+      Last-Modified:
+      - Fri, 21 Aug 2026 12:43:02 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - DKgGkQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - vd0+02qCThl+worJ3SsYopaLGcLbSnbKbzgM1cY+SkYhXHwo+GIaX7GEVtXp5nPzXn6iOrAEnJShfK8FCtKF88gK6LvIkuZZ
+      x-amz-request-id:
+      - SQXJ7F857E7W4NTR
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - xZFAnmHeOCjl4LSY5FZcyRnFFUzr1MP9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 09d762c4-718f-45fd-9bdf-bd921c18a3be
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/object-lock/unlocked.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>SQXH1YW3E63KGP3V</RequestId><HostId>jK0FQS/J6BaM3NEGsuAuTLl4qE79XQ7v543V/zF6OKYNvXbbDcztSrIE0lUjU3lYGn4aZCndbqsLpfADCKQePcYhqJQP545p</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 21 Aug 2026 12:43:02 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - jK0FQS/J6BaM3NEGsuAuTLl4qE79XQ7v543V/zF6OKYNvXbbDcztSrIE0lUjU3lYGn4aZCndbqsLpfADCKQePcYhqJQP545p
+      x-amz-request-id:
+      - SQXH1YW3E63KGP3V
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - a9e73b52-5168-4ba6-9810-51e2c1258fd6
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/object-lock/unlocked.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>SQXHSM975TQK7W3A</RequestId><HostId>zNCf2vu2eRxrDPI+8JHaICyFw/aFofG4gYJUEGtWs/zd5lRb/tksbfQ9FpCYAf3QOLynWlDZD7Tws5SAwFdaFx7cBLxLlotv</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 21 Aug 2026 12:43:02 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - zNCf2vu2eRxrDPI+8JHaICyFw/aFofG4gYJUEGtWs/zd5lRb/tksbfQ9FpCYAf3QOLynWlDZD7Tws5SAwFdaFx7cBLxLlotv
+      x-amz-request-id:
+      - SQXHSM975TQK7W3A
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 5d32e62d-e4eb-4599-812b-e8c96a576ee7
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=async-conformance-test%2Fobject-lock%2Funlocked.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>async-conformance-test/object-lock/unlocked.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>async-conformance-test/object-lock/unlocked.txt</Key><VersionId>xZFAnmHeOCjl4LSY5FZcyRnFFUzr1MP9</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-21T12:43:02.000Z</LastModified><ETag>&quot;dd935532ac12caf4f86572d8122df3d2&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>12</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 21 Aug 2026 12:43:03 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - Pdtyt5upbR5x8Tz+saGk6l91j+gyN5IwimxNNLOeSwo62b+oLL482NujGkvKKXNtdBegOimEMBXAhHb9VlZ+pbK9X1mWK4e1
+      x-amz-request-id:
+      - SQXRDWC5SRCWENY4
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 0c5a0278-9194-4df4-8d39-48568f236533
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/async-conformance-test/object-lock/unlocked.txt?versionId=xZFAnmHeOCjl4LSY5FZcyRnFFUzr1MP9
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Fri, 21 Aug 2026 12:43:04 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - LzliQ0qm9aT86fuFqdOcNWi6/gs9HFN+WbvaWAF1NLVRE53CJod4OXxWHDCHdRwRBmC+RfQ7YtbhNntEvfO/s00gaKHAa7lP
+      x-amz-request-id:
+      - 52W41HAWDQ5F5PG3
+      x-amz-version-id:
+      - xZFAnmHeOCjl4LSY5FZcyRnFFUzr1MP9
+    status:
+      code: 204
+      message: No Content
+version: 1

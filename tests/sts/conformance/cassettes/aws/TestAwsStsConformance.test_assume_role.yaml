@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: Action=AssumeRole&Version=2011-06-15&RoleArn=arn%3Aaws%3Aiam%3A%3A123456789012%3Arole%2FMultiCloudPyTestRole&RoleSessionName=conformance-test-session&DurationSeconds=3600
+    headers:
+      Content-Length:
+      - '171'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkOyBjaGFyc2V0PXV0Zi04
+    method: POST
+    uri: https://sts.us-west-2.amazonaws.com/
+  response:
+    body:
+      string: "<AssumeRoleResponse xmlns=\"https://sts.amazonaws.com/doc/2011-06-15/\">\n
+        \ <AssumeRoleResult>\n    <AssumedRoleUser>\n      <AssumedRoleId>AROAEXAMPLE0000000000M:conformance-test-session</AssumedRoleId>\n
+        \     <Arn>arn:aws:sts::123456789012:assumed-role/MultiCloudPyTestRole/conformance-test-session</Arn>\n
+        \   </AssumedRoleUser>\n    <Credentials>\n      <AccessKeyId>FILTERED_AccessKeyId</AccessKeyId>\n
+        \     <SecretAccessKey>FILTERED_SecretAccessKey</SecretAccessKey>\n      <SessionToken>FILTERED_SessionToken</SessionToken>\n
+        \     <Expiration>2026-07-17T12:40:39Z</Expiration>\n    </Credentials>\n
+        \ </AssumeRoleResult>\n  <ResponseMetadata>\n    <RequestId>e30bb2a3-dbd4-4072-8684-91c269051f8d</RequestId>\n
+        \ </ResponseMetadata>\n</AssumeRoleResponse>\n"
+    headers:
+      Content-Length:
+      - '1496'
+      Content-Type:
+      - text/xml
+      Date:
+      - Fri, 17 Jul 2026 11:40:39 GMT
+      X-Amz-Sts-Extended-Request-Id:
+      - MTp1cy13ZXN0LTI6UzoxNzg0Mjg4NDM5MzU4OlI6NktJTFl5ZG8=
+      x-amzn-RequestId:
+      - e30bb2a3-dbd4-4072-8684-91c269051f8d
+    status:
+      code: 200
+      message: OK
+version: 1

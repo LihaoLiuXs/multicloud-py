@@ -1,0 +1,105 @@
+interactions:
+- request:
+    body: "--===============2730982254508134086==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/download-to-path/missing-parent.txt\",
+      \"crc32c\": \"9ONpcA==\"}\r\n--===============2730982254508134086==\r\ncontent-type:
+      application/octet-stream\r\n\r\npayload\r\n--===============2730982254508134086==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '308'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0yNzMwOTgyMjU0NTA4
+        MTM0MDg2PT0i
+      x-goog-user-project:
+      - example-project
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/download-to-path/missing-parent.txt/1783324045140122\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-to-path%2Fmissing-parent.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-to-path%2Fmissing-parent.txt?generation=1783324045140122&alt=media\",\n
+        \ \"name\": \"conformance-test/download-to-path/missing-parent.txt\",\n  \"bucket\":
+        \"testcloud-python-sdk-bucket\",\n  \"generation\": \"1783324045140122\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"7\",\n  \"md5Hash\": \"Mhw89IbtUJFk7eweGYH+yA==\",\n
+        \ \"crc32c\": \"9ONpcA==\",\n  \"etag\": \"CJrB6+HHvZUDEAE=\",\n  \"timeCreated\":
+        \"2026-07-06T07:47:25.207Z\",\n  \"updated\": \"2026-07-06T07:47:25.207Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-07-06T07:47:25.207Z\",\n  \"timeFinalized\":
+        \"2026-07-06T07:47:25.207Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1017'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 06 Jul 2026 07:47:25 GMT
+      ETag:
+      - CJrB6+HHvZUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhH-67mhg2Nn22ywERRzpeMpljNlNqFsrNkBH7FnA0Y4BrBW6OY31pia8yxgYel9wKSE
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-goog-user-project:
+      - example-project
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Fdownload-to-path%2Fmissing-parent.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 06 Jul 2026 07:47:25 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhE6eYLvZTEKldcoJPD19CiqBTBETjWgzrwPmC6iZkvj0KY9c_Umd3ybykQi0Zo2j8HM
+    status:
+      code: 204
+      message: No Content
+version: 1

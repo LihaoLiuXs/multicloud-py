@@ -1,0 +1,266 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTANCnJldGVudGlvbi1leHRlbmQNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOjVSdU9wZz09DQoN
+        Cg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTY=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDU1ZDU3MDQtOTQzYy00MzIzLTllNzQtYjBmZTMyMzMwNGRk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-object-lock-mode:
+      - !!binary |
+        R09WRVJOQU5DRQ==
+      x-amz-object-lock-retain-until-date:
+      - !!binary |
+        MjAyNi0wOS0xNVQwMDowMDowMFo=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/extend-date.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 10 Aug 2026 19:36:54 GMT
+      ETag:
+      - '"e77ca335ce27041aa0210ee8af00fd4e"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - 5RuOpg==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - SEMg496OpowgzBZn2LJaPZW8+td4BobOdBniXRv0cXTJfKY/1TcZ+Srnw1CxHlOJSZxSH8PThWc=
+      x-amz-request-id:
+      - PG9127HB1DFDVTYF
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - lO0fHRns5kNR.9kAd_u5METRx6Y94lrd
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        YmJlMjcxNjQtMTUxNC00MGY4LTk0OTYtODQ3MzQ2Y2U5MmNi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/extend-date.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-15T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Mon, 10 Aug 2026 19:36:55 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - msAzXcACa7cH2L6OVcIkTSOKLi6z1MhA/JF7xUDC1CaFek966Nxbvc0DKRBHpKwJMsrROA9OZX0=
+      x-amz-request-id:
+      - 0KXP8V42S0ZQZJV3
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-30T00:00:00Z</RetainUntilDate></Retention>
+    headers:
+      Content-Length:
+      - '149'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWFlODJhMTctMmIxMS00OGM3LWJmY2EtYTc3Mjg4YmU4M2Fh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-crc32:
+      - !!binary |
+        dDJtNHNBPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/extend-date.txt?retention
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 10 Aug 2026 19:36:55 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - /s37UncMfKcDdMLIoy+D5mxOBP37o9upPda2Q+fCEXTztjsiuNmOJQuMZr4Kf2EviOroFtHJi5M=
+      x-amz-request-id:
+      - 0KXRSN6DKPQSXQNW
+      x-amz-version-id:
+      - lO0fHRns5kNR.9kAd_u5METRx6Y94lrd
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZjRjMzVmMDktOGFkNy00ZWU4LWJkNWUtY2NhYzdkYmQyMTBj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/extend-date.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-09-30T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Mon, 10 Aug 2026 19:36:55 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - IKUfqhE2/iOVBaLPE9Qy+7Km2LlQIJ0U3xobG6KSNuLG0JDmlfFuDEgiefeeAhzMtCZmeoVLEjw=
+      x-amz-request-id:
+      - 0KXV916K53HHVB2G
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        YTJmZDgzZGMtYjhlYS00MDVjLWJmODEtZDc2MWEwYjU0OTg0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/extend-date.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>0AYD98E0A6TYDZX9</RequestId><HostId>d44oexio+ZhQU520hf0GevwkW3QRDymBdbZHefYIELDlkJAIWZzCTsPL2nBAYp9pFp55PgxOXas=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 10 Aug 2026 19:36:54 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - d44oexio+ZhQU520hf0GevwkW3QRDymBdbZHefYIELDlkJAIWZzCTsPL2nBAYp9pFp55PgxOXas=
+      x-amz-request-id:
+      - 0AYD98E0A6TYDZX9
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NThmZGZjNWQtYTdlZS00NTc4LWI5NWQtZjcxNmI2YThhN2Rl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Fupdate-retention%2Fextend-date.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>conformance-test/update-retention/extend-date.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/update-retention/extend-date.txt</Key><VersionId>lO0fHRns5kNR.9kAd_u5METRx6Y94lrd</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-10T19:36:54.000Z</LastModified><ETag>&quot;e77ca335ce27041aa0210ee8af00fd4e&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>16</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Mon, 10 Aug 2026 19:36:56 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - mzQp9wTGhZ9kJLC1J0tLpZWw4XUY4VjvVHkMUrYzt5VupNj9tw36LRpSafcMrsi+dC+kOGuJdck=
+      x-amz-request-id:
+      - 0AY76ZQHGV4RSDJM
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        OGY4MzAxMWEtYmVkZi00NTY5LTkzMGMtYmJiMzliYmU4MmJh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/extend-date.txt?versionId=lO0fHRns5kNR.9kAd_u5METRx6Y94lrd
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 10 Aug 2026 19:36:56 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - RqEw+bqvYoOfsoz1gNrx7HY9VvGd6cRjbkUdcFBEYeoGnNAxB49D9qNFjkM2qWUfL12ENGtxykU=
+      x-amz-request-id:
+      - 0AY0XGN0TX1FCS16
+      x-amz-version-id:
+      - lO0fHRns5kNR.9kAd_u5METRx6Y94lrd
+    status:
+      code: 204
+      message: No Content
+version: 1

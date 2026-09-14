@@ -1,0 +1,131 @@
+# Root workspace for the python-multicloud SDK.
+#
+# This file is NOT itself a distribution. The SDK ships as 18 separate
+# distributions (all prefixed with ``sfdc-`` for Salesforce Nexus release),
+# one per directory under ``packages/``:
+#
+#   sfdc-multicloud-common, sfdc-multicloud-aws-common,
+#   sfdc-multicloud-gcp-common, sfdc-multicloud-blob,
+#   sfdc-multicloud-blob-aws, sfdc-multicloud-blob-gcp,
+#   sfdc-multicloud-blob-alibaba, sfdc-multicloud-sts,
+#   sfdc-multicloud-sts-aws, sfdc-multicloud-sts-gcp,
+#   sfdc-multicloud-sts-alibaba, sfdc-multicloud-iam,
+#   sfdc-multicloud-iam-aws, sfdc-multicloud-iam-gcp,
+#   sfdc-multicloud-pubsub, sfdc-multicloud-pubsub-aws,
+#   sfdc-multicloud-pubsub-gcp, sfdc-multicloud-pubsub-alibaba
+#
+# Note: distribution names carry the ``sfdc-`` prefix, but the Python
+# import namespace remains ``multicloud.*`` (unchanged). End users
+# ``pip install sfdc-multicloud-blob-aws`` then ``from multicloud.blob
+# import BucketClient``.
+#
+# Each ``packages/<name>/`` has its own ``pyproject.toml``. This root
+# file contains:
+#   - The uv workspace declaration (so ``uv sync`` installs every member).
+#   - The dev-dependency group used during development and in CI.
+#   - Repo-wide tool configuration (pytest, mypy, black, isort).
+#
+# Development setup::
+#
+#     uv sync            # creates .venv and installs every workspace member
+#     uv run pytest      # runs the full unit test suite
+
+# ---------------------------------------------------------------------------
+# uv workspace
+# ---------------------------------------------------------------------------
+
+# Workspace members live two levels deep: ``packages/<service>/<distribution>``.
+# Grouping by service (blob, sts, iam, pubsub, common) keeps related
+# distributions together; matches the Azure SDK for Python layout.
+[tool.uv.workspace]
+members = ["packages/*/*"]
+
+# Tell uv that intra-workspace deps (e.g. sfdc-multicloud-blob-aws →
+# sfdc-multicloud-blob) resolve to the local source tree, not PyPI/Nexus.
+# Without this, uv would try to pull the dep from the index and fail
+# because the packages aren't published yet at build time.
+[tool.uv.sources]
+sfdc-multicloud-common         = { workspace = true }
+sfdc-multicloud-aws-common     = { workspace = true }
+sfdc-multicloud-gcp-common     = { workspace = true }
+sfdc-multicloud-blob           = { workspace = true }
+sfdc-multicloud-blob-aws       = { workspace = true }
+sfdc-multicloud-blob-gcp       = { workspace = true }
+sfdc-multicloud-blob-alibaba   = { workspace = true }
+sfdc-multicloud-sts            = { workspace = true }
+sfdc-multicloud-sts-aws        = { workspace = true }
+sfdc-multicloud-sts-gcp        = { workspace = true }
+sfdc-multicloud-sts-alibaba    = { workspace = true }
+sfdc-multicloud-iam            = { workspace = true }
+sfdc-multicloud-iam-aws        = { workspace = true }
+sfdc-multicloud-iam-gcp        = { workspace = true }
+sfdc-multicloud-pubsub         = { workspace = true }
+sfdc-multicloud-pubsub-aws     = { workspace = true }
+sfdc-multicloud-pubsub-gcp     = { workspace = true }
+sfdc-multicloud-pubsub-alibaba = { workspace = true }
+sfdc-multicloud-docstore       = { workspace = true }
+sfdc-multicloud-docstore-aws   = { workspace = true }
+
+# Dev tools used by the workspace's `uv sync`. uv installs these alongside
+# the editable workspace members in the project venv.
+[dependency-groups]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "pytest-recording>=0.13.0,<1",
+    "vcrpy>=8.0.0,<9",
+    "black>=26.5.1",
+    "isort>=8.0.1",
+    "mypy>=1.0.0",
+    "pre-commit>=3.0.0",
+    "aiobotocore>=2.5.0",
+    "gcloud-aio-storage>=9.0.0",
+    "boto3-stubs~=1.43.0",
+]
+
+# Docs toolchain — mkdocs + Material theme + mkdocstrings for API pages
+# rendered from source docstrings. Not installed by default; enable with
+# ``uv sync --group docs`` or ``uv run --group docs mkdocs build``.
+docs = [
+    "mkdocs>=1.6.0",
+    "mkdocs-material>=9.5.0",
+    "mkdocstrings[python]>=0.26.0",
+]
+
+# ---------------------------------------------------------------------------
+# Repo-wide tool configuration
+# ---------------------------------------------------------------------------
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+include = "\\.pyi?$"
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+norecursedirs = ["tests/e2e"]
+# Repo root on sys.path so conformance conftests can ``from tests.<svc>.conformance.vcr_filters import …``.
+# Safe because the legacy ``multicloud/`` tree no longer exists at the root —
+# the only ``multicloud.*`` resolution is via the workspace editable installs.
+pythonpath = ["."]
+# ``importlib`` import mode keeps pytest collection from injecting test
+# directories onto sys.path as namespace packages, which would clobber our
+# real ``multicloud.*`` namespace.
+addopts = "-ra --import-mode=importlib"
+markers = [
+    "vcr: marks tests using VCR.py record/replay",
+    "conformance: marks tests as conformance tests (require cloud credentials to record)",
+]

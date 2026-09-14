@@ -1,0 +1,183 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        cGF5bG9hZA==
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '7'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/download-to-path/missing-parent.txt&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/download-to-path/missing-parent.txt/1787242112728976\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt?generation=1787242112728976&alt=media\",\n
+        \ \"name\": \"async-conformance-test/download-to-path/missing-parent.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787242112728976\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"7\",\n  \"md5Hash\": \"Mhw89IbtUJFk7eweGYH+yA==\",\n
+        \ \"crc32c\": \"9ONpcA==\",\n  \"etag\": \"CJD/htrLr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T16:08:32.799Z\",\n  \"updated\": \"2026-08-20T16:08:32.799Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T16:08:32.799Z\",\n  \"timeFinalized\":
+        \"2026-08-20T16:08:32.799Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '1033'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:08:32 GMT
+      Etag:
+      - CJD/htrLr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bXq2SenIyuLmY2oW2026KH8nm3zvT8OXWUshxSGZ3dMLxoYXeUYCDE_ickrbcfFtff
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt?alt=media
+  response:
+    body:
+      string: payload
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '7'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Thu, 20 Aug 2026 16:08:32 GMT
+      Etag:
+      - CJD/htrLr5YDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Thu, 20 Aug 2026 16:08:32 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Z8-7vzGPF8xsHtcwvly6zDE8TubcgY4-iH56cGeqEXj1UKpJJJkL9g-1HVNLPN-J44
+      X-Goog-Generation:
+      - '1787242112728976'
+      X-Goog-Hash:
+      - crc32c=9ONpcA==,md5=Mhw89IbtUJFk7eweGYH+yA==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '7'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/download-to-path/missing-parent.txt/1787242112728976\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt?generation=1787242112728976&alt=media\",\n
+        \ \"name\": \"async-conformance-test/download-to-path/missing-parent.txt\",\n
+        \ \"bucket\": \"python-async-test-bucket\",\n  \"generation\": \"1787242112728976\",\n
+        \ \"metageneration\": \"1\",\n  \"contentType\": \"application/octet-stream\",\n
+        \ \"storageClass\": \"STANDARD\",\n  \"size\": \"7\",\n  \"md5Hash\": \"Mhw89IbtUJFk7eweGYH+yA==\",\n
+        \ \"crc32c\": \"9ONpcA==\",\n  \"etag\": \"CJD/htrLr5YDEAE=\",\n  \"timeCreated\":
+        \"2026-08-20T16:08:32.799Z\",\n  \"updated\": \"2026-08-20T16:08:32.799Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-20T16:08:32.799Z\",\n  \"timeFinalized\":
+        \"2026-08-20T16:08:32.799Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '1033'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Thu, 20 Aug 2026 16:08:32 GMT
+      Etag:
+      - CJD/htrLr5YDEAE=
+      Expires:
+      - Thu, 20 Aug 2026 16:08:32 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9bRpvachQ9dP7XF_raOb-WQRxeBrSm3mu956ZMr1tEpwoaS4iGzNuxoTyKphDrRdfny
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-to-path%2Fmissing-parent.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Thu, 20 Aug 2026 16:08:33 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aQtFQjnXKyp3-NjU4aSosG-GSJaW_DTh9GheqEekcZxO5qTkeylbHg6eMeXp3v5IQy
+    status:
+      code: 204
+      message: No Content
+version: 1

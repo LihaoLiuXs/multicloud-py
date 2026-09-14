@@ -1,0 +1,274 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MTENCnJldGVudGlvbi11cGdyYWRlDQowDQp4LWFtei1jaGVja3N1bS1jcmMzMjp1dFc4NHc9PQ0K
+        DQo=
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTc=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YTVmNDg0OGYtZjJhMS00M2RkLWJhNGUtMmFhZDY0MGZlYjdj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-object-lock-mode:
+      - !!binary |
+        R09WRVJOQU5DRQ==
+      x-amz-object-lock-retain-until-date:
+      - !!binary |
+        MjAyNi0wOC0xM1QwMDowMDowMFo=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/upgrade-mode-20260813.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 11 Aug 2026 19:56:47 GMT
+      ETag:
+      - '"c2cf407bc5ce3bb530e29a94c70c5189"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - utW84w==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - qL63DAqbol7L9TvqfaIUOknIMxB7cFBuCMZqAJU6cSp0pyHbjyKNtHQOPq6EzYxTm5ZDknjuL/8=
+      x-amz-request-id:
+      - PXFC08623100PZ6P
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - G1_lK6d0WvP1pw_UOlX7j1EL9KNz0.0J
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDc0OTMzODItZjIxYi00OWE0LTg1MDktM2NmYzc2NjJjMjg4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/upgrade-mode-20260813.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>GOVERNANCE</Mode><RetainUntilDate>2026-08-13T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Tue, 11 Aug 2026 19:56:48 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - u+cxOpco6qHqZbEkFzbDritYS5DJ0eEHoUwpa3ZD/RUNlXMrM/LnawU+Sw5M37t54rXh/eoU9lA=
+      x-amz-request-id:
+      - P835G0ZE02D9RBJE
+    status:
+      code: 200
+      message: OK
+- request:
+    body: <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>COMPLIANCE</Mode><RetainUntilDate>2026-08-13T00:00:00Z</RetainUntilDate></Retention>
+    headers:
+      Content-Length:
+      - '149'
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDZhZmZlYzUtYzVkNC00NzUzLWFjODYtMTNkYjlmYzI5MThi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+      x-amz-checksum-crc32:
+      - !!binary |
+        K24wVVVnPT0=
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/upgrade-mode-20260813.txt?retention
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 11 Aug 2026 19:56:48 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - trmBD03vC9T/wmY32FwKghVR7HtNlOlRyVFn9q4an1/hZBkBnweLWFJYSEKWKPgXLsYorfd2qos=
+      x-amz-request-id:
+      - P83BW10FSVKNZCDY
+      x-amz-version-id:
+      - G1_lK6d0WvP1pw_UOlX7j1EL9KNz0.0J
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        NjA5YjM5NmYtNmY4Ny00ZWYyLTkzNTktMDgyNzdmMzJkMWNm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/upgrade-mode-20260813.txt?retention
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Retention xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Mode>COMPLIANCE</Mode><RetainUntilDate>2026-08-13T00:00:00.000Z</RetainUntilDate></Retention>'
+    headers:
+      Date:
+      - Tue, 11 Aug 2026 19:56:48 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - eYZPA4gZrl6q7SqaEvm8AAJ09RRo/KIa2SSe9I73qIWDNFgt3b442EZ7dZogUWyO19lMLBveP6U=
+      x-amz-request-id:
+      - P83E2CBEK1Z2WY02
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        MTU4NmEwZWQtNjU5ZC00NzQyLThkZTctNzQ4MTMzZjQ2MzQ3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/upgrade-mode-20260813.txt?legal-hold
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchObjectLockConfiguration</Code><Message>The specified object
+        does not have a ObjectLock configuration</Message><RequestId>M5AXWWBK9ET9JE02</RequestId><HostId>OuNb8NJhg6qTE8MhB6MJH+ma9G13NW4JDo0fUmdSC5PyALWA6iNTaGVmrGocpXTxjob3F8RhFQM=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 11 Aug 2026 19:56:47 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - OuNb8NJhg6qTE8MhB6MJH+ma9G13NW4JDo0fUmdSC5PyALWA6iNTaGVmrGocpXTxjob3F8RhFQM=
+      x-amz-request-id:
+      - M5AXWWBK9ET9JE02
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        ODYwN2VhODktZWZmMS00OWJhLWFkYTQtMmE2NDY1NTA2YTg3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: GET
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/?versions&prefix=conformance-test%2Fupdate-retention%2Fupgrade-mode-20260813.txt&encoding-type=url
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <ListVersionsResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>testcloud-python-sdk-object-lock</Name><Prefix>conformance-test/update-retention/upgrade-mode-20260813.txt</Prefix><KeyMarker></KeyMarker><VersionIdMarker></VersionIdMarker><MaxKeys>1000</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated><Version><Key>conformance-test/update-retention/upgrade-mode-20260813.txt</Key><VersionId>G1_lK6d0WvP1pw_UOlX7j1EL9KNz0.0J</VersionId><IsLatest>true</IsLatest><LastModified>2026-08-11T19:56:47.000Z</LastModified><ETag>&quot;c2cf407bc5ce3bb530e29a94c70c5189&quot;</ETag><ChecksumAlgorithm>CRC32</ChecksumAlgorithm><ChecksumType>FULL_OBJECT</ChecksumType><Size>17</Size><Owner><ID>REDACTED</ID></Owner><StorageClass>STANDARD</StorageClass></Version></ListVersionsResult>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 11 Aug 2026 19:56:49 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - RKP57nANMpPuhyTmJI03VMZ4RqRCVR+60L1FXyHN9BZ9m0aQGKXB1uzW+dfrkhBqSfpsv+HGHXE=
+      x-amz-request-id:
+      - M5AW6TP8VARQFKM1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MzU5YjQ0ZjUtYzJlZi00NWE0LWJiZWUtNDAwZWQyNzg0ODMw
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-bypass-governance-retention:
+      - !!binary |
+        dHJ1ZQ==
+    method: DELETE
+    uri: https://testcloud-python-sdk-object-lock.s3.us-west-2.amazonaws.com/conformance-test/update-retention/upgrade-mode-20260813.txt?versionId=G1_lK6d0WvP1pw_UOlX7j1EL9KNz0.0J
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>AccessDenied</Code><Message>Access Denied because object protected
+        by object lock.</Message><RequestId>9QK69B9BAZN651JS</RequestId><HostId>sy9O+UaDJClXjeAIPA5xPEb1xS6SNGHw/c1D4EPEQo8uJq2P8+k6wz+Wa1GLWJZsSDh1s8NCzhI=</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Tue, 11 Aug 2026 19:56:48 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - sy9O+UaDJClXjeAIPA5xPEb1xS6SNGHw/c1D4EPEQo8uJq2P8+k6wz+Wa1GLWJZsSDh1s8NCzhI=
+      x-amz-request-id:
+      - 9QK69B9BAZN651JS
+    status:
+      code: 403
+      message: Forbidden
+version: 1

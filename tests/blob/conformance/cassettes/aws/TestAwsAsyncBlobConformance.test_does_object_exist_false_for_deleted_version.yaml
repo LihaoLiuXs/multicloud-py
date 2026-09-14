@@ -1,0 +1,220 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '14'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 01963b1f-80ae-4e6f-8852-6b7ea7112384
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/async-conformance-test/exists/deleted-version.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 12 Aug 2026 18:00:12 GMT
+      Etag:
+      - '"0180b21c5297c58348f985d722f44bcf"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - QYgvrw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - N2kcJchLePlqYVOA4+eqynBCJbueFpPZGPXr/re7ipPd2W7aD6TK1+X4I2sVW6DL6oQzSSV6Fn7lcnuCXYQw2chEf4KrNAhB
+      x-amz-request-id:
+      - KNSWR4D7ZPXR6S8Z
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - I0rQF8N.WMb.xQVaqSPEs.qZxupLXIiT
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - application/octet-stream
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '17'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 05e0a468-b2db-446e-b93b-e0307ac8bdf6
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/async-conformance-test/exists/deleted-version.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 12 Aug 2026 18:00:13 GMT
+      Etag:
+      - '"6a554e53ce2c642a36f69080acfeaf32"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - oitz0Q==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - OLwEICawCWwSrybfP4ypbYa5f134J0RMX+USCOiDllgJykOWnQ2johP/y0OCOh2I4JJKk08CNFtNza1z2fpRutVuSLrKitq6
+      x-amz-request-id:
+      - SB8TBS1T3Z7HTKNA
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - uSU8UUUjXnJ7paHbOInLBtWPkVoFLsV9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 08374a68-1050-4e44-8457-f27e13b797ab
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/async-conformance-test/exists/deleted-version.txt?versionId=I0rQF8N.WMb.xQVaqSPEs.qZxupLXIiT
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 18:00:13 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 22kPyeWK0xFXf4KAj/Fr6g6N6DnHX1AucMnE/a5oxy+yesPpepHhvNF1HRPGcRdi0vVLK6z3FIzOLfrxZ8/FbtroF4GUSy2o
+      x-amz-request-id:
+      - SB8GA1SVCZ2TQTSJ
+      x-amz-version-id:
+      - I0rQF8N.WMb.xQVaqSPEs.qZxupLXIiT
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - bbf3bcd6-8604-40cd-8601-61b1c1ee6176
+      amz-sdk-request:
+      - attempt=1
+    method: HEAD
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/async-conformance-test/exists/deleted-version.txt?versionId=I0rQF8N.WMb.xQVaqSPEs.qZxupLXIiT
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 12 Aug 2026 18:00:12 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - bNHK8Xx152zDoRkSS2g3hx0lOT3NmzC33fEa7ArrImIGSXIFPdl5YWmvSDFFxjrG3R102LFGk88/2k+yx2zbtzeiaBgN3Vtp
+      x-amz-request-id:
+      - SB8R9ZC7XWX8N84E
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - f86caf4f-f82a-4060-8f29-5abe0d9dae7f
+      amz-sdk-request:
+      - attempt=1
+    method: HEAD
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/async-conformance-test/exists/deleted-version.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '17'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Wed, 12 Aug 2026 18:00:13 GMT
+      Etag:
+      - '"6a554e53ce2c642a36f69080acfeaf32"'
+      Last-Modified:
+      - Wed, 12 Aug 2026 18:00:13 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - idU74xWCl6n5YqOnzPl/urQnFo5niFU3KTMpX71H6oPGldgNicXHnTJGWjqsLUTaujKh4tftvAtWJX3ELv4yoBc/7lU0TWQN
+      x-amz-request-id:
+      - SB8HCDRRT6WD8FQK
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - uSU8UUUjXnJ7paHbOInLBtWPkVoFLsV9
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 7d1effe6-f4a5-480f-af8e-afadbc686a95
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-versioned.s3.us-west-2.amazonaws.com/async-conformance-test/exists/deleted-version.txt?versionId=uSU8UUUjXnJ7paHbOInLBtWPkVoFLsV9
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 18:00:13 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - 1S80DoUuZyN1OFEtdt63pB6t6o4KR0JKqbfZkT7IMvAR3fjKWHJyYgoRvaB1awsVQimQ5YQ8HshiirUkuwl0X+e0991tLScD
+      x-amz-request-id:
+      - SB8WZ4B3GMXMN3NK
+      x-amz-version-id:
+      - uSU8UUUjXnJ7paHbOInLBtWPkVoFLsV9
+    status:
+      code: 204
+      message: No Content
+version: 1

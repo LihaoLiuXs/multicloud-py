@@ -1,0 +1,407 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQt
+        c3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0t
+        aXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRp
+        b24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXls
+        b2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3Ry
+        ZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRl
+        cmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24t
+        cGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2Fk
+        LXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFt
+        LWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0
+        aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5
+        bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0
+        cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0
+        ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9u
+        LXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9h
+        ZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVh
+        bS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJh
+        dGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBh
+        eWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1z
+        dHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1p
+        dGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlv
+        bi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxv
+        YWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC1zdHJl
+        YW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1wYXlsb2FkLXN0cmVhbS1pdGVy
+        YXRpb24tcGF5bG9hZC1zdHJlYW0taXRlcmF0aW9uLXBheWxvYWQtc3RyZWFtLWl0ZXJhdGlvbi1w
+        YXlsb2FkLXN0cmVhbS1pdGVyYXRpb24tcGF5bG9hZC0=
+      - 0
+      - null
+    headers:
+      Content-Length:
+      - '12800'
+      Content-Type:
+      - application/octet-stream
+    method: POST
+    uri: https://www.googleapis.com/upload/storage/v1/b/python-async-test-bucket/o?name=async-conformance-test/download-stream/iter.bin&uploadType=media
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/download-stream/iter.bin/1787634014286587\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin?generation=1787634014286587&alt=media\",\n
+        \ \"name\": \"async-conformance-test/download-stream/iter.bin\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1787634014286587\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"12800\",\n  \"md5Hash\": \"RrmiIw22P4gMJWAtbekJkQ==\",\n
+        \ \"crc32c\": \"owTw3w==\",\n  \"etag\": \"CPvlo9P/upYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-25T05:00:14.357Z\",\n  \"updated\": \"2026-08-25T05:00:14.357Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-25T05:00:14.357Z\",\n  \"timeFinalized\":
+        \"2026-08-25T05:00:14.357Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '993'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Aug 2026 05:00:14 GMT
+      Etag:
+      - CPvlo9P/upYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9YM0cv-OlYyE6BWTEgaPGrGvwN6K5OI6BDYbfrgxYu-isOxTpwJ0crRgtyffhon27eAJ0BsLVk
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin?alt=json
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"python-async-test-bucket/async-conformance-test/download-stream/iter.bin/1787634014286587\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin\",\n
+        \ \"mediaLink\": \"https://www.googleapis.com/download/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin?generation=1787634014286587&alt=media\",\n
+        \ \"name\": \"async-conformance-test/download-stream/iter.bin\",\n  \"bucket\":
+        \"python-async-test-bucket\",\n  \"generation\": \"1787634014286587\",\n  \"metageneration\":
+        \"1\",\n  \"contentType\": \"application/octet-stream\",\n  \"storageClass\":
+        \"STANDARD\",\n  \"size\": \"12800\",\n  \"md5Hash\": \"RrmiIw22P4gMJWAtbekJkQ==\",\n
+        \ \"crc32c\": \"owTw3w==\",\n  \"etag\": \"CPvlo9P/upYDEAE=\",\n  \"timeCreated\":
+        \"2026-08-25T05:00:14.357Z\",\n  \"updated\": \"2026-08-25T05:00:14.357Z\",\n
+        \ \"timeStorageClassUpdated\": \"2026-08-25T05:00:14.357Z\",\n  \"timeFinalized\":
+        \"2026-08-25T05:00:14.357Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '993'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 25 Aug 2026 05:00:14 GMT
+      Etag:
+      - CPvlo9P/upYDEAE=
+      Expires:
+      - Tue, 25 Aug 2026 05:00:14 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9Znjer9Rs2We7Qy5CgiY4Q_GhXMtGaNnWHEZAiEN-_ALguojzLU3OjDAsjyisOiwX3TxTuyiyI
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin?alt=media&generation=1787634014286587
+  response:
+    body:
+      string: stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-stream-iteration-payload-
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Disposition:
+      - attachment
+      Content-Length:
+      - '12800'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Tue, 25 Aug 2026 05:00:14 GMT
+      Etag:
+      - CPvlo9P/upYDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Last-Modified:
+      - Tue, 25 Aug 2026 05:00:14 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9aoVxlJuCElH0NxgnQPmCCZCpUW_AoisdBOcm8lZXHtpv5DnYFjlOpUsiyaTUwydsjIFQ4D1GU
+      X-Goog-Generation:
+      - '1787634014286587'
+      X-Goog-Hash:
+      - crc32c=owTw3w==,md5=RrmiIw22P4gMJWAtbekJkQ==
+      X-Goog-Metageneration:
+      - '1'
+      X-Goog-Storage-Class:
+      - STANDARD
+      X-Goog-Stored-Content-Encoding:
+      - identity
+      X-Goog-Stored-Content-Length:
+      - '12800'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers: {}
+    method: DELETE
+    uri: https://www.googleapis.com/storage/v1/b/python-async-test-bucket/o/async-conformance-test%2Fdownload-stream%2Fiter.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 25 Aug 2026 05:00:14 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJjja9a1JFxd4iNKuIR0zeTyOMAVnUdkURLdhir3U9T68LxQejOYyz1pbdYaigZ0D2XR3yMx03Wglms
+    status:
+      code: 204
+      message: No Content
+version: 1

@@ -1,0 +1,228 @@
+interactions:
+- request:
+    body: "--===============2048374321014198617==\r\ncontent-type: application/json;
+      charset=UTF-8\r\n\r\n{\"name\": \"conformance-test/tags/multi.txt\", \"crc32c\":
+      \"Q44Ppw==\"}\r\n--===============2048374321014198617==\r\ncontent-type: application/octet-stream\r\n\r\nmulti-tag
+      payload\r\n--===============2048374321014198617==--"
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '297'
+      content-type:
+      - !!binary |
+        bXVsdGlwYXJ0L3JlbGF0ZWQ7IGJvdW5kYXJ5PSI9PT09PT09PT09PT09PT0yMDQ4Mzc0MzIxMDE0
+        MTk4NjE3PT0i
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+      x-upload-content-type:
+      - application/octet-stream
+    method: POST
+    uri: https://storage.googleapis.com/upload/storage/v1/b/testcloud-python-sdk-bucket/o?uploadType=multipart
+  response:
+    body:
+      string: "{\n  \"kind\": \"storage#object\",\n  \"id\": \"testcloud-python-sdk-bucket/conformance-test/tags/multi.txt/1784585877964854\",\n
+        \ \"selfLink\": \"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt\",\n
+        \ \"mediaLink\": \"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?generation=1784585877964854&alt=media\",\n
+        \ \"name\": \"conformance-test/tags/multi.txt\",\n  \"bucket\": \"testcloud-python-sdk-bucket\",\n
+        \ \"generation\": \"1784585877964854\",\n  \"metageneration\": \"1\",\n  \"contentType\":
+        \"application/octet-stream\",\n  \"storageClass\": \"STANDARD\",\n  \"size\":
+        \"17\",\n  \"md5Hash\": \"dFJoZaBnuD8UlRAXOQN3DQ==\",\n  \"crc32c\": \"Q44Ppw==\",\n
+        \ \"etag\": \"CLaQz7qk4pUDEAE=\",\n  \"timeCreated\": \"2026-07-20T22:17:58.020Z\",\n
+        \ \"updated\": \"2026-07-20T22:17:58.020Z\",\n  \"timeStorageClassUpdated\":
+        \"2026-07-20T22:17:58.020Z\",\n  \"timeFinalized\": \"2026-07-20T22:17:58.020Z\"\n}\n"
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '934'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jul 2026 22:17:58 GMT
+      ETag:
+      - CLaQz7qk4pUDEAE=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7Iu-K75hQaYojgdL3M3Ils8qjlCW6DdL_coT7K9LS7s6Y8JVIZ1Ps96e-szsca-QShT3b501lSKU5bC
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/tags/multi.txt/1784585877964854","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?generation=1784585877964854&alt=media","name":"conformance-test/tags/multi.txt","bucket":"testcloud-python-sdk-bucket","generation":"1784585877964854","metageneration":"1","contentType":"application/octet-stream","storageClass":"STANDARD","size":"17","md5Hash":"dFJoZaBnuD8UlRAXOQN3DQ==","crc32c":"Q44Ppw==","etag":"CLaQz7qk4pUDEAE=","timeCreated":"2026-07-20T22:17:58.020Z","updated":"2026-07-20T22:17:58.020Z","timeStorageClassUpdated":"2026-07-20T22:17:58.020Z","timeFinalized":"2026-07-20T22:17:58.020Z"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '860'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jul 2026 22:17:58 GMT
+      ETag:
+      - CLaQz7qk4pUDEAE=
+      Expires:
+      - Mon, 20 Jul 2026 22:17:58 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7J-15RH-smAtGWuPvu64h7dvh3TUrKTsHczgPQ7cjbp_AM3mmPctJjHHyQkxfgpKtKwxoZQziUCGSzg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"metadata": {"gcp-tag-env": "conformance", "gcp-tag-owner": "sdk", "gcp-tag-tier":
+      "gold"}}'
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '92'
+      Content-Type:
+      - application/json
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: PATCH
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?generation=1784585877964854&projection=full&ifMetagenerationMatch=1&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/tags/multi.txt/1784585877964854","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?generation=1784585877964854&alt=media","name":"conformance-test/tags/multi.txt","bucket":"testcloud-python-sdk-bucket","generation":"1784585877964854","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"17","md5Hash":"dFJoZaBnuD8UlRAXOQN3DQ==","crc32c":"Q44Ppw==","etag":"CLaQz7qk4pUDEAI=","timeCreated":"2026-07-20T22:17:58.020Z","updated":"2026-07-20T22:17:58.593Z","timeStorageClassUpdated":"2026-07-20T22:17:58.020Z","timeFinalized":"2026-07-20T22:17:58.020Z","metadata":{"gcp-tag-owner":"sdk","gcp-tag-env":"conformance","gcp-tag-tier":"gold"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '945'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jul 2026 22:17:58 GMT
+      ETag:
+      - CLaQz7qk4pUDEAI=
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LX_F7OUYOMKEfzKi-WvkA8XBiv952rixag-WUfhTeBVjohqJ0QmJDdt7dGe_k_bqYPJKr5ZWRnfZfU
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"kind":"storage#object","id":"testcloud-python-sdk-bucket/conformance-test/tags/multi.txt/1784585877964854","selfLink":"https://www.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt","mediaLink":"https://storage.googleapis.com/download/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?generation=1784585877964854&alt=media","name":"conformance-test/tags/multi.txt","bucket":"testcloud-python-sdk-bucket","generation":"1784585877964854","metageneration":"2","contentType":"application/octet-stream","storageClass":"STANDARD","size":"17","md5Hash":"dFJoZaBnuD8UlRAXOQN3DQ==","crc32c":"Q44Ppw==","etag":"CLaQz7qk4pUDEAI=","timeCreated":"2026-07-20T22:17:58.020Z","updated":"2026-07-20T22:17:58.593Z","timeStorageClassUpdated":"2026-07-20T22:17:58.020Z","timeFinalized":"2026-07-20T22:17:58.020Z","metadata":{"gcp-tag-owner":"sdk","gcp-tag-env":"conformance","gcp-tag-tier":"gold"}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - private, max-age=0, must-revalidate, no-transform
+      Content-Length:
+      - '945'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Mon, 20 Jul 2026 22:17:58 GMT
+      ETag:
+      - CLaQz7qk4pUDEAI=
+      Expires:
+      - Mon, 20 Jul 2026 22:17:58 GMT
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7KnUvL6CbgN5qYBlY5AaPfUl4hbo4Zu8Dbk7Rf5JNf3r4CaavXcge3MfOea5emSBJjxYhf2FGs
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      x-allowed-locations:
+      - '0x7ffffffffffffffe'
+    method: DELETE
+    uri: https://storage.googleapis.com/storage/v1/b/testcloud-python-sdk-bucket/o/conformance-test%2Ftags%2Fmulti.txt?prettyPrint=false
+  response:
+    body:
+      string: ''
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      Date:
+      - Mon, 20 Jul 2026 22:17:59 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AKhXX7LlfVqPGHjHgQwCalC2i9SRq6TLluy1s1_0RSUi6IzgitLobMMNjA_5cE8eQNVMIhushNCYpeyd-XHW
+    status:
+      code: 204
+      message: No Content
+version: 1

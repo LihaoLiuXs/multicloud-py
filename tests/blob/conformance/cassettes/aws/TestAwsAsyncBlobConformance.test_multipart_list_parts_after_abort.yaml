@@ -1,0 +1,133 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000002
+      amz-sdk-request:
+      - attempt=1
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/multipart-list-after-abort.bin?uploads
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <InitiateMultipartUploadResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Bucket>testcloud-python-sdk-bucket</Bucket><Key>async-conformance-test/multipart-list-after-abort.bin</Key><UploadId>a48bIgakHtw1GQzqNcllylD1A0pd_6h7McdDgzITNxaZYgHi59HxPvpHkye9bkBNTCsCDAcEL8wTYKm7DQcolKuxxjCXZlZWsvOV72hYrOWl3vu9mh9EiY52fZSi6ATZQTykYuSHnfXvQn6c4xII23FKo_hK1rv7UoXt8uiK43d03_FeIIgFP7sF0xZ4AssI</UploadId></InitiateMultipartUploadResult>'
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 20:36:26 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - A273LNZCS0NntIGBO0lFBf0Ej6vrlLmYkwV2HQFBj+I2NeKwtME2EoPgYcjSL0tLaNa6G9mwjOWN3NKGaarVSBwnWjVCedPA
+      x-amz-request-id:
+      - 5ZHWY7KGE82HD4Q5
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '24'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000004
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/multipart-list-after-abort.bin?uploadId=a48bIgakHtw1GQzqNcllylD1A0pd_6h7McdDgzITNxaZYgHi59HxPvpHkye9bkBNTCsCDAcEL8wTYKm7DQcolKuxxjCXZlZWsvOV72hYrOWl3vu9mh9EiY52fZSi6ATZQTykYuSHnfXvQn6c4xII23FKo_hK1rv7UoXt8uiK43d03_FeIIgFP7sF0xZ4AssI&partNumber=1
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 12 Aug 2026 20:36:26 GMT
+      Etag:
+      - '"78a3c5da3bef77cd26ad3c540d82de47"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - eHO8vA==
+      x-amz-id-2:
+      - jdVBO4M9iqZ09h6/shxNuUZ/L5tlQBwyAPw3nZNe1Ae4M3UB7bb4/mLXgBYO0vhm37JD7dVH9qKNm/PIUnzK8CaliVcEW5kX
+      x-amz-request-id:
+      - 5ZHKK0GR13CRZEDF
+      x-amz-server-side-encryption:
+      - AES256
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000006
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/multipart-list-after-abort.bin?uploadId=a48bIgakHtw1GQzqNcllylD1A0pd_6h7McdDgzITNxaZYgHi59HxPvpHkye9bkBNTCsCDAcEL8wTYKm7DQcolKuxxjCXZlZWsvOV72hYrOWl3vu9mh9EiY52fZSi6ATZQTykYuSHnfXvQn6c4xII23FKo_hK1rv7UoXt8uiK43d03_FeIIgFP7sF0xZ4AssI
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Wed, 12 Aug 2026 20:36:27 GMT
+      Server:
+      - AmazonS3
+      x-amz-id-2:
+      - vETrOr2ztWHo9rm4lfmlaj2UX8pj+FY0bM7fwMr+BU9S6gGWySFDYjKCiVHESA5loWWYz8anMLh6JHGfwO+tnDC0iIMNss4C
+      x-amz-request-id:
+      - 0B9P7ZWD394X53AE
+    status:
+      code: 204
+      message: No Content
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - 00000000-0000-0000-0000-000000000008
+      amz-sdk-request:
+      - attempt=1
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/multipart-list-after-abort.bin?uploadId=a48bIgakHtw1GQzqNcllylD1A0pd_6h7McdDgzITNxaZYgHi59HxPvpHkye9bkBNTCsCDAcEL8wTYKm7DQcolKuxxjCXZlZWsvOV72hYrOWl3vu9mh9EiY52fZSi6ATZQTykYuSHnfXvQn6c4xII23FKo_hK1rv7UoXt8uiK43d03_FeIIgFP7sF0xZ4AssI
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchUpload</Code><Message>The specified upload does not exist.
+        The upload ID may be invalid, or the upload may have been aborted or completed.</Message><UploadId>a48bIgakHtw1GQzqNcllylD1A0pd_6h7McdDgzITNxaZYgHi59HxPvpHkye9bkBNTCsCDAcEL8wTYKm7DQcolKuxxjCXZlZWsvOV72hYrOWl3vu9mh9EiY52fZSi6ATZQTykYuSHnfXvQn6c4xII23FKo_hK1rv7UoXt8uiK43d03_FeIIgFP7sF0xZ4AssI</UploadId><RequestId>0B9G5TPY8C3YSJFT</RequestId><HostId>6W1J4EEPeBGwGHCEyk9Nj3AST35yDcUwjIfp5Rno1EgpUkyyEVFr1ucJfgHTTEPp0LH1Sggt2Bmxr07SJUs3IYE0Uq7fefIa</HostId></Error>'
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 12 Aug 2026 20:36:25 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 6W1J4EEPeBGwGHCEyk9Nj3AST35yDcUwjIfp5Rno1EgpUkyyEVFr1ucJfgHTTEPp0LH1Sggt2Bmxr07SJUs3IYE0Uq7fefIa
+      x-amz-request-id:
+      - 0B9G5TPY8C3YSJFT
+    status:
+      code: 404
+      message: Not Found
+version: 1

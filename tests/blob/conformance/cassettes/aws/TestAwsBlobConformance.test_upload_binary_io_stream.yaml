@@ -1,0 +1,172 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        MzAwDQpzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJl
+        YW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2Fk
+        ZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9h
+        ZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0t
+        dXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQg
+        cGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBz
+        dHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBs
+        b2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5
+        bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJl
+        YW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2Fk
+        ZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9h
+        ZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0t
+        dXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQg
+        cGF5bG9hZCBzdHJlYW0tdXBsb2FkZWQgcGF5bG9hZCANCjANCngtYW16LWNoZWNrc3VtLWNyYzMy
+        Omd3WE5Hdz09DQoNCg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24vb2N0ZXQtc3RyZWFt
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        NzY4
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZTJkMmUxNGQtOGE3MS00OTYzLTk0YzUtYTcyY2ZmZmNmNTU0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/upload/from-stream.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 06 Jul 2026 07:42:25 GMT
+      ETag:
+      - '"89558e0916f547d577105181a7019299"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - gwXNGw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - LD20cO0erQpWPs6Weo2bMg0IT37S3dhyLfHf3Wvne1XmYzZTL6O7N/3KAQz7Yl2kMLzKMFy0Fe/R6DEj3pov3movIKDaouI+
+      x-amz-request-id:
+      - HY52HSGMRWQZHVKS
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Fhn9nfBihjRsd6lF21tXSXu7iXzs__5d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        N2NkY2I2NzctOThmZS00OTI2LTk1ZjktMTI0Yjk0OTYxNTkx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/upload/from-stream.bin
+  response:
+    body:
+      string: 'stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload stream-uploaded payload stream-uploaded payload stream-uploaded
+        payload stream-uploaded payload stream-uploaded payload stream-uploaded payload
+        stream-uploaded payload '
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '768'
+      Content-Type:
+      - application/octet-stream
+      Date:
+      - Mon, 06 Jul 2026 07:42:27 GMT
+      ETag:
+      - '"89558e0916f547d577105181a7019299"'
+      Last-Modified:
+      - Mon, 06 Jul 2026 07:42:25 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - gwXNGw==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - PmKOx3MNuVowK4jjMaeu3eCWoiAALUcqqfP7fBArJhMx5HE1AILiIJwa6p6WeQZJECyl5KOHtD7l3QaKgrh+h6/cKXD9sE5P
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-04T07:42:24.987Z'
+      x-amz-request-id:
+      - 3ZWS7A8X6VA01BZJ
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - Fhn9nfBihjRsd6lF21tXSXu7iXzs__5d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NDc0YjlkNzEtZDYwYy00YjE1LWIwZTQtYTJhOWMwZGM1NzI5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/upload/from-stream.bin
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 06 Jul 2026 07:42:28 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - W/GkzLfmrmDqOBC+2gwcwIB1Ut9CdxvOcXduJMshYWJYDo6gsL/yH7yqijv5aeIPuPfvTVPJ5XzGg2+KTvZdiglsZwv+/hub
+      x-amz-request-id:
+      - 7TXVKGT046XKQT7J
+      x-amz-version-id:
+      - wNvAzAz3sBk70lxo9Y16ha0rENQpYcgK
+    status:
+      code: 204
+      message: No Content
+version: 1

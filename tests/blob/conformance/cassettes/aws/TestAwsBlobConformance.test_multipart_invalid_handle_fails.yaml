@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: <CompleteMultipartUpload xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Part><PartNumber>1</PartNumber><ETag>00000000000000000000000000000000</ETag></Part></CompleteMultipartUpload>
+    headers:
+      Content-Length:
+      - '183'
+      amz-sdk-invocation-id:
+      - !!binary |
+        MDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/multipart/invalid-handle.bin?uploadId=deadbeefdeadbeefdeadbeefdeadbeef
+  response:
+    body:
+      string: <Error><Code>NoSuchUpload</Code><Message>The specified upload does not
+        exist. The upload ID may be invalid, or the upload may have been aborted or
+        completed.</Message><UploadId>deadbeefdeadbeefdeadbeefdeadbeef</UploadId><RequestId>G185XKHPD91DA8WY</RequestId><HostId>S1Z8XvJLwbinGe4LCvoZtEcKqLMapb3P3wpb2oGFbd/ONyplj+whRjBBqajjAYRyd7xzBo+f7xo=</HostId></Error>
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 22 Jul 2026 18:10:35 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - S1Z8XvJLwbinGe4LCvoZtEcKqLMapb3P3wpb2oGFbd/ONyplj+whRjBBqajjAYRyd7xzBo+f7xo=
+      x-amz-request-id:
+      - G185XKHPD91DA8WY
+    status:
+      code: 404
+      message: Not Found
+version: 1

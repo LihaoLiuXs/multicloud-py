@@ -1,0 +1,113 @@
+interactions:
+- request:
+    body: '<streaming body omitted: AioAwsChunkedWrapper>'
+    headers:
+      Content-Encoding:
+      - aws-chunked
+      Content-Type:
+      - text/plain
+      Expect:
+      - 100-continue
+      X-Amz-Decoded-Content-Length:
+      - '7'
+      X-Amz-Trailer:
+      - x-amz-checksum-crc32
+      amz-sdk-invocation-id:
+      - 30e09098-1c7f-4995-a3f7-86630717af6e
+      amz-sdk-request:
+      - attempt=1
+      x-amz-sdk-checksum-algorithm:
+      - CRC32
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/copy/src-bad-dest-bucket.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Thu, 20 Aug 2026 21:06:15 GMT
+      Etag:
+      - '"321c3cf486ed509164edec1e1981fec8"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - QixqFQ==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - zaPz6+F3K6kykcll8t386SdYxmhuwaEJoYaEkhqmHqk6IxiiYtZq2RZ4XX6xnaU4OClQ49uizCF7hz9qfU05unlAC+gv9h3a
+      x-amz-request-id:
+      - W0YCAYT3YW6CFKGE
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - TSJ7b64LeZ4t96BN6rx2XPNmycKmO3rg
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - 8df464f3-617c-408a-8306-4801594f424a
+      amz-sdk-request:
+      - attempt=1
+      x-amz-copy-source:
+      - testcloud-python-sdk-bucket/async-conformance-test/copy/src-bad-dest-bucket.txt
+    method: PUT
+    uri: https://multicloud-conformance-nonexistent-bucket-xyz-9f8e7d.s3.us-west-2.amazonaws.com/async-conformance-test/copy/dest-bad-bucket.txt
+  response:
+    body:
+      string: <Error><Code>NoSuchBucket</Code><Message>The specified bucket does not
+        exist</Message><BucketName>multicloud-conformance-nonexistent-bucket-xyz-9f8e7d</BucketName><RequestId>NTEG3S44BV6GF6XT</RequestId><HostId>0CzSsG4Vydx/YJ158Y6aDKvKPBbgmQXPSZT/dhcQV1OFJpO/+mYJ0yhBGQZz95NCYoHy+3ldDM1U+oNGqHtSiI2HmYm56ZF1</HostId></Error>
+    headers:
+      Content-Type:
+      - application/xml
+      Date:
+      - Thu, 20 Aug 2026 21:06:14 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - 0CzSsG4Vydx/YJ158Y6aDKvKPBbgmQXPSZT/dhcQV1OFJpO/+mYJ0yhBGQZz95NCYoHy+3ldDM1U+oNGqHtSiI2HmYm56ZF1
+      x-amz-request-id:
+      - NTEG3S44BV6GF6XT
+    status:
+      code: 404
+      message: Not Found
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - e3cfac4e-f91b-4843-9aa8-04724b5b1c23
+      amz-sdk-request:
+      - attempt=1
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/async-conformance-test/copy/src-bad-dest-bucket.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Thu, 20 Aug 2026 21:06:16 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - /95wA9h3e7/WHYmKlDgxvlRuYdI+BWkBezQWoNByyD/Tm3nw8cYKrv/Ezp5qxs7sVBPaW5+4+4Dj/SdAaUUfUzYf/IiKokA+
+      x-amz-request-id:
+      - NTEMW6A2T95E8JHG
+      x-amz-version-id:
+      - dy0sGne8W8GqRUZw6qBSR7U7MH4PnM4y
+    status:
+      code: 204
+      message: No Content
+version: 1

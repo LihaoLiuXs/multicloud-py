@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Connection:
+      - keep-alive
+      x-goog-user-project:
+      - example-project
+    method: GET
+    uri: https://storage.googleapis.com/storage/v1/b/multicloud-conformance-nonexistent-bucket-xyz-9f8e7d?projection=noAcl&prettyPrint=false
+  response:
+    body:
+      string: '{"error":{"code":404,"message":"The specified bucket does not exist.","errors":[{"message":"The
+        specified bucket does not exist.","domain":"global","reason":"notFound"}]}}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Content-Length:
+      - '171'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Tue, 07 Jul 2026 08:54:21 GMT
+      Expires:
+      - Mon, 01 Jan 1990 00:00:00 GMT
+      Pragma:
+      - no-cache
+      Server:
+      - UploadServer
+      Vary:
+      - Origin
+      - X-Origin
+      X-GUploader-UploadID:
+      - AJ5rDhERZDQl55YN6p9g-i0YRGqesNfzfvBMuLVohkorr18k482p3Bb51pF74RyjnrD7tf-1DYcoeTg
+    status:
+      code: 404
+      message: Not Found
+version: 1

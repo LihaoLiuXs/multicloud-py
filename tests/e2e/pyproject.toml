@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-multicloud-sdk-e2e"
+version = "0.1.0"
+description = "End-to-end live testing harness for the Python Multi-Cloud SDK"
+requires-python = ">=3.8"
+dependencies = [
+    "boto3",
+    "google-cloud-iam",
+    "google-cloud-resource-manager>=1.8.0",
+    "click>=8.3.3",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+# Use "local" extra to install SDK workspace packages from the repo checkout.
+# Run from this directory: pip install -e ".[local]"
+local = [
+    "sfdc-multicloud-common @ file:../../packages/common/multicloud-common",
+    "sfdc-multicloud-aws-common @ file:../../packages/common/multicloud-aws-common",
+    "sfdc-multicloud-gcp-common @ file:../../packages/common/multicloud-gcp-common",
+    "sfdc-multicloud-iam @ file:../../packages/iam/multicloud-iam",
+    "sfdc-multicloud-iam-aws @ file:../../packages/iam/multicloud-iam-aws",
+    "sfdc-multicloud-iam-gcp @ file:../../packages/iam/multicloud-iam-gcp",
+]
+
+[project.scripts]
+python-multicloud-sdk-e2e = "multicloud_e2e.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["src"]

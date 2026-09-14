@@ -1,0 +1,159 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        ZA0KbWV0YWRhdGEgdGVzdA0KMA0KeC1hbXotY2hlY2tzdW0tY3JjMzI6ZUQ5LzJ3PT0NCg0K
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Content-Type:
+      - !!binary |
+        dGV4dC9wbGFpbg==
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        MTM=
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZGU0ODk5YjMtMjg5MC00ZmVmLWIzOWMtZTQ1MDlhYTQwZDRj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-meta-author:
+      - !!binary |
+        Y29uZm9ybWFuY2UtdGVzdA==
+      x-amz-meta-version:
+      - !!binary |
+        MS4w
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/upload/with-metadata.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Content-Length:
+      - '0'
+      Date:
+      - Mon, 20 Jul 2026 07:19:18 GMT
+      ETag:
+      - '"61011c9117eed5236e77e9563c769252"'
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - eD9/2w==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - 53d1ozqKgsMybWlrnFYsmrqs7rEGNENMeZJQVmw5hMdD/USoHj34RFfhHmSa2Xl/IeF0CeY1K54=
+      x-amz-request-id:
+      - 45BSDKF3DT96VN1Q
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - yNq5iM.5Fif15wf0PSdX8sWHCVi2dUfA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      amz-sdk-invocation-id:
+      - !!binary |
+        N2QxOTEzNDgtY2ViOC00ZDU3LWEzZTctYTRkOGMxYmQwOGU1
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-checksum-mode:
+      - !!binary |
+        RU5BQkxFRA==
+    method: GET
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/upload/with-metadata.txt
+  response:
+    body:
+      string: metadata test
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '13'
+      Content-Type:
+      - text/plain
+      Date:
+      - Mon, 20 Jul 2026 07:19:19 GMT
+      ETag:
+      - '"61011c9117eed5236e77e9563c769252"'
+      Last-Modified:
+      - Mon, 20 Jul 2026 07:19:18 GMT
+      Server:
+      - AmazonS3
+      x-amz-checksum-crc32:
+      - eD9/2w==
+      x-amz-checksum-type:
+      - FULL_OBJECT
+      x-amz-id-2:
+      - KUIYDAYG6LoOWpCaTisk/CcJUadNF7xOkuRpPL66W3OjMEYo4kzWoDuZ+nl5Ql3PnCpUwj+hPzU=
+      x-amz-meta-author:
+      - conformance-test
+      x-amz-meta-version:
+      - '1.0'
+      x-amz-object-lock-mode:
+      - COMPLIANCE
+      x-amz-object-lock-retain-until-date:
+      - '2026-10-18T07:19:17.480Z'
+      x-amz-request-id:
+      - YCN5460Y96ER7HCD
+      x-amz-server-side-encryption:
+      - AES256
+      x-amz-version-id:
+      - yNq5iM.5Fif15wf0PSdX8sWHCVi2dUfA
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Content-Length:
+      - '0'
+      amz-sdk-invocation-id:
+      - !!binary |
+        NjQ5OGQwMzktZjU0Zi00ZDUxLWIwNmEtMTFlYzNlY2FhYjk2
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: DELETE
+    uri: https://testcloud-python-sdk-bucket.s3.us-west-2.amazonaws.com/conformance-test/upload/with-metadata.txt
+  response:
+    body:
+      string: ''
+    headers:
+      Date:
+      - Mon, 20 Jul 2026 07:19:20 GMT
+      Server:
+      - AmazonS3
+      x-amz-delete-marker:
+      - 'true'
+      x-amz-id-2:
+      - XMVHPXcVVJ0fSm+3hli2JYFq7V/7A5yPOI5MTg9y4cShVEKeHy68HAB0eXMbT6x5vZpaoYX3Auo=
+      x-amz-request-id:
+      - 7QMG9ESNVTNTPEK8
+      x-amz-version-id:
+      - unQ5aqqPsK0yAb81UhKVqGdsuNNkwcJ5
+    status:
+      code: 204
+      message: No Content
+version: 1

@@ -1,0 +1,59 @@
+interactions:
+- request:
+    body: !!python/object/new:_io.BytesIO
+      state: !!python/tuple
+      - !!binary |
+        NQ0KcHJvYmUNCjANCngtYW16LWNoZWNrc3VtLWNyYzMyOjExNXZLZz09DQoNCg==
+      - 0
+      - null
+    headers:
+      Content-Encoding:
+      - !!binary |
+        YXdzLWNodW5rZWQ=
+      Expect:
+      - !!binary |
+        MTAwLWNvbnRpbnVl
+      Transfer-Encoding:
+      - !!binary |
+        Y2h1bmtlZA==
+      X-Amz-Decoded-Content-Length:
+      - !!binary |
+        NQ==
+      X-Amz-Trailer:
+      - !!binary |
+        eC1hbXotY2hlY2tzdW0tY3JjMzI=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MmJhNWQ2MDAtYjRjZC00YzUyLTgwNDUtYzJmNzFmZDhlNmQ5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sdk-checksum-algorithm:
+      - !!binary |
+        Q1JDMzI=
+    method: PUT
+    uri: https://multicloud-conformance-nonexistent-bucket-aws-9f8e7d.s3.us-west-2.amazonaws.com/conformance-test/nonexistent-bucket-probe.txt
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <Error><Code>NoSuchBucket</Code><Message>The specified bucket does not exist</Message><BucketName>multicloud-conformance-nonexistent-bucket-aws-9f8e7d</BucketName><RequestId>DDXK2BR2HHNYA3M3</RequestId><HostId>utT/P5HP/5Oqeqqu+CqN61URII+lQhDjOWKa23FphIiLxEK1zj2yGxT+PEH+L7ykSfqk6YKfJhACV9z2iWm5A5YwI3szL73S</HostId></Error>'
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - application/xml
+      Date:
+      - Fri, 07 Aug 2026 01:40:40 GMT
+      Server:
+      - AmazonS3
+      Transfer-Encoding:
+      - chunked
+      x-amz-id-2:
+      - utT/P5HP/5Oqeqqu+CqN61URII+lQhDjOWKa23FphIiLxEK1zj2yGxT+PEH+L7ykSfqk6YKfJhACV9z2iWm5A5YwI3szL73S
+      x-amz-request-id:
+      - DDXK2BR2HHNYA3M3
+    status:
+      code: 404
+      message: Not Found
+version: 1
