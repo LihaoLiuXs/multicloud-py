@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.9](https://github.com/salesforce/multicloud-py/compare/multicloud-py-v0.1.8...multicloud-py-v0.1.9) (2026-09-25)
+
+
+### Bug Fixes
+
+* **ci:** publish directly from release workflow ([a4360ea](https://github.com/salesforce/multicloud-py/commit/a4360eaca87f221493d07131de1cd316517917bf))
+* **packaging:** publish ali provider packages ([5f1526c](https://github.com/salesforce/multicloud-py/commit/5f1526c95df8e926551eab16c034c83e4a1d2935))
+
 ## [0.1.8](https://github.com/salesforce/multicloud-py/compare/multicloud-py-v0.1.7...multicloud-py-v0.1.8) (2026-09-25)
 
 

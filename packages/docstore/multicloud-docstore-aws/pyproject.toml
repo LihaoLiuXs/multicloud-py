@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multicloud-py-docstore-aws"
-version = "0.1.8"
+version = "0.1.9"
 license = "Apache-2.0"
 description = "AWS DynamoDB provider for multicloud-docstore."
 readme = {text = "MultiCloud Python SDK package.", content-type = "text/markdown"}
@@ -14,8 +14,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "multicloud-py-docstore>=0.1.8",
-    "multicloud-py-aws-common>=0.1.8",
+    "multicloud-py-docstore>=0.1.9",
+    "multicloud-py-aws-common>=0.1.9",
     "boto3>=1.18.0",
     "botocore>=1.21.0",
 ]

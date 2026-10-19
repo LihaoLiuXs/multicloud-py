@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multicloud-py-common"
-version = "0.1.8"
+version = "0.1.9"
 license = "Apache-2.0"
 description = "Shared base for the python-multicloud SDK: exception hierarchy, provider registry, entry-point discovery."
 readme = {text = "MultiCloud Python SDK package.", content-type = "text/markdown"}

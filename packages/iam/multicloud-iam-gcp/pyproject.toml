@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multicloud-py-iam-gcp"
-version = "0.1.8"
+version = "0.1.9"
 license = "Apache-2.0"
 description = "Google Cloud IAM provider for multicloud-iam."
 readme = {text = "MultiCloud Python SDK package.", content-type = "text/markdown"}
@@ -14,8 +14,8 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "multicloud-py-iam>=0.1.8",
-    "multicloud-py-gcp-common>=0.1.8",
+    "multicloud-py-iam>=0.1.9",
+    "multicloud-py-gcp-common>=0.1.9",
     "google-cloud-iam>=2.0.0",
     "google-cloud-resource-manager>=1.8.0",
     "google-auth>=2.0.0",

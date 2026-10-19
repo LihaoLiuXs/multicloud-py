@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "multicloud-py-gcp-common"
-version = "0.1.8"
+version = "0.1.9"
 license = "Apache-2.0"
 description = "Shared GCP credential resolution utilities for multicloud-* providers."
 readme = {text = "MultiCloud Python SDK package.", content-type = "text/markdown"}
@@ -14,7 +14,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "multicloud-py-common>=0.1.8",
+    "multicloud-py-common>=0.1.9",
     "google-auth>=2.0.0",
 ]
 
