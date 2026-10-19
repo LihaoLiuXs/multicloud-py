@@ -37,10 +37,10 @@ skip_gcp_tests = pytest.mark.skipif(
     reason="GCP credentials not available",
 )
 
-skip_alibaba_tests = pytest.mark.skipif(
-    os.environ.get("ALIBABA_ACCESS_KEY_ID") is None
-    or os.environ.get("ALIBABA_ACCESS_KEY_SECRET") is None,
-    reason="Alibaba credentials not available",
+skip_ali_tests = pytest.mark.skipif(
+    os.environ.get("ALI_ACCESS_KEY_ID") is None
+    or os.environ.get("ALI_ACCESS_KEY_SECRET") is None,
+    reason="Ali credentials not available",
 )
 
 
@@ -69,12 +69,12 @@ def gcp_credentials() -> Dict[str, Any]:
 
 
 @pytest.fixture
-def alibaba_credentials() -> Dict[str, Any]:
-    """Get Alibaba credentials from environment variables."""
+def ali_credentials() -> Dict[str, Any]:
+    """Get Ali credentials from environment variables."""
     return {
-        "access_key_id": os.environ.get("ALIBABA_ACCESS_KEY_ID"),
-        "access_key_secret": os.environ.get("ALIBABA_ACCESS_KEY_SECRET"),
-        "region": os.environ.get("ALIBABA_REGION", "cn-hangzhou"),
+        "access_key_id": os.environ.get("ALI_ACCESS_KEY_ID"),
+        "access_key_secret": os.environ.get("ALI_ACCESS_KEY_SECRET"),
+        "region": os.environ.get("ALI_REGION", "cn-hangzhou"),
     }
 
 

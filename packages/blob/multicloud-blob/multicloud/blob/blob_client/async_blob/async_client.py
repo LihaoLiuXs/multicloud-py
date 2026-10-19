@@ -56,7 +56,7 @@ class AsyncBucketClient:
     ``async for info in client.list_blob_versions(key)``.
 
     Args:
-        provider: Provider id -- ``"aws"``, ``"gcp"``, or ``"alibaba"``.
+        provider: Provider id -- ``"aws"``, ``"gcp"``, or ``"ali"``.
         bucket: Bucket name.
         region: Region (interpreted per provider). Optional.
         endpoint: Endpoint override URL. Optional.

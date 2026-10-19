@@ -1,6 +1,6 @@
 # Pub/Sub Guide
 
-The Pub/Sub service provides cloud-agnostic publish-subscribe messaging — send messages to topics and receive them from subscriptions across AWS SNS/SQS, Google Cloud Pub/Sub, and Alibaba Cloud MNS.
+The Pub/Sub service provides cloud-agnostic publish-subscribe messaging — send messages to topics and receive them from subscriptions across AWS SNS/SQS, Google Cloud Pub/Sub, and Ali MNS.
 
 ## Creating Clients
 
@@ -42,7 +42,7 @@ with SubscriptionClient(provider="gcp", subscription_name="orders-processor", re
 
 | Parameter | Type | Required | Description |
 |-----------|------|:--------:|-------------|
-| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"alibaba"` |
+| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"ali"` |
 | `topic_name` | `str` | ✅ | Topic name |
 | `region` | `str` | | Region/location |
 | `endpoint` | `str` | | Endpoint URL override |
@@ -51,7 +51,7 @@ with SubscriptionClient(provider="gcp", subscription_name="orders-processor", re
 
 | Parameter | Type | Required | Description |
 |-----------|------|:--------:|-------------|
-| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"alibaba"` |
+| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"ali"` |
 | `subscription_name` | `str` | ✅ | Subscription name |
 | `region` | `str` | | Region/location |
 | `endpoint` | `str` | | Endpoint URL override |
@@ -224,8 +224,8 @@ with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as cli
 with TopicClient(provider="gcp", topic_name="orders", region="us-central1") as client:
     client.send(message)
 
-# Alibaba Cloud
-with TopicClient(provider="alibaba", topic_name="orders", region="cn-hangzhou") as client:
+# Ali
+with TopicClient(provider="ali", topic_name="orders", region="cn-hangzhou") as client:
     client.send(message)
 ```
 

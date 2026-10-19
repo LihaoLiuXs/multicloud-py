@@ -92,7 +92,7 @@ try:
 except ImportError as _exc:
     raise ImportError(
         "aiobotocore is required for async AWS blob operations. "
-        "Install it with: pip install 'sfdc-multicloud-blob-aws[async]'"
+        "Install it with: pip install 'multicloud-py-blob-aws[async]'"
     ) from _exc
 
 _STREAM_CHUNK_SIZE = 8192

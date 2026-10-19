@@ -23,7 +23,7 @@ def get_available_providers() -> List[str]:
 
     A provider id appears in the result if any installed distribution
     advertises an entry point for it under any service group. The id
-    itself (``"aws"``, ``"gcp"``, ``"alibaba"``) is the entry-point name.
+    itself (``"aws"``, ``"gcp"``, ``"ali"``) is the entry-point name.
     """
     seen: Set[str] = set()
     eps = importlib.metadata.entry_points()

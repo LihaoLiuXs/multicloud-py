@@ -1,0 +1,115 @@
+name: TestPyPI Rehearsal
+
+on:
+  workflow_dispatch:
+    inputs:
+      batch:
+        description: Bootstrap batch to publish (three packages per run)
+        required: true
+        default: "1"
+        type: choice
+        options: ["1", "2", "3", "4", "5", "6", "7"]
+
+permissions: {}
+
+jobs:
+  select-bootstrap-batch:
+    name: Select TestPyPI bootstrap batch
+    runs-on: ubuntu-latest
+    permissions: {}
+    outputs:
+      matrix: ${{ steps.select.outputs.matrix }}
+    steps:
+      - id: select
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "${{ inputs.batch }}" in
+            1)
+              matrix='{"include":[{"project":"multicloud-py-common"},{"project":"multicloud-py-aws-common"},{"project":"multicloud-py-gcp-common"}]}'
+              ;;
+            2)
+              matrix='{"include":[{"project":"multicloud-py-blob"},{"project":"multicloud-py-blob-aws"},{"project":"multicloud-py-blob-gcp"}]}'
+              ;;
+            3)
+              matrix='{"include":[{"project":"multicloud-py-blob-ali"},{"project":"multicloud-py-docstore"},{"project":"multicloud-py-docstore-aws"}]}'
+              ;;
+            4)
+              matrix='{"include":[{"project":"multicloud-py-docstore-gcp-firestore"},{"project":"multicloud-py-iam"},{"project":"multicloud-py-iam-aws"}]}'
+              ;;
+            5)
+              matrix='{"include":[{"project":"multicloud-py-iam-gcp"},{"project":"multicloud-py-pubsub"},{"project":"multicloud-py-pubsub-aws"}]}'
+              ;;
+            6)
+              matrix='{"include":[{"project":"multicloud-py-pubsub-gcp"},{"project":"multicloud-py-pubsub-ali"},{"project":"multicloud-py-sts"}]}'
+              ;;
+            7)
+              matrix='{"include":[{"project":"multicloud-py-sts-aws"},{"project":"multicloud-py-sts-gcp"},{"project":"multicloud-py-sts-ali"}]}'
+              ;;
+            *)
+              echo "Unsupported bootstrap batch: ${{ inputs.batch }}" >&2
+              exit 1
+              ;;
+          esac
+          echo "matrix=${matrix}" >> "$GITHUB_OUTPUT"
+
+  build-and-validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          enable-cache: true
+      - run: uv lock --check
+      - run: uv sync --frozen --all-groups --all-packages
+      - run: uv run --frozen python -m black --check packages tests scripts
+      - run: uv run --frozen python -m isort --check-only packages tests scripts
+      - run: uv run --frozen python scripts/sync_version.py --check
+      - run: uv run --frozen python -m pytest -m 'not conformance'
+      - run: uv run --frozen python -m pytest -m conformance --record-mode=none
+      - run: uv build --all-packages --no-sources --out-dir dist
+      - run: uv run --frozen python -m twine check dist/*
+      - run: uv run --frozen python -m scripts.validate_release_artifacts dist
+      - run: uv run --frozen python -m scripts.smoke_test_release_artifacts dist
+      - uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: testpypi-rehearsal-${{ github.sha }}
+          path: |
+            dist/*.whl
+            dist/*.tar.gz
+          if-no-files-found: error
+          retention-days: 14
+
+  publish-testpypi:
+    needs: [select-bootstrap-batch, build-and-validate]
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix: ${{ fromJSON(needs.select-bootstrap-batch.outputs.matrix) }}
+    environment: testpypi-${{ matrix.project }}
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: testpypi-rehearsal-${{ github.sha }}
+          path: dist
+      - name: Select this project's distributions
+        shell: bash
+        env:
+          PROJECT: ${{ matrix.project }}
+        run: |
+          set -euo pipefail
+          normalized_project="${PROJECT//-/_}"
+          mkdir package-dist
+          find dist -maxdepth 1 -type f -name "${normalized_project}-*" -exec cp {} package-dist/ \;
+          test "$(find package-dist -maxdepth 1 -type f | wc -l | tr -d ' ')" = 2
+      - uses: pypa/gh-action-pypi-publish@dc37677b2e1c63e2034f94d8a5b11f265b73ba33 # v1.14.2
+        with:
+          packages-dir: package-dist/
+          repository-url: https://test.pypi.org/legacy/
+          skip-existing: true
+          verbose: true

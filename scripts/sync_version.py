@@ -2,11 +2,11 @@
 """Propagate the root VERSION file to every distribution's pyproject.toml.
 
 The repo's source of truth for the SDK version is the top-level ``VERSION``
-file. Each of the 18 distributions in ``packages/*/*/pyproject.toml`` must
+file. Each of the 21 distributions in ``packages/*/*/pyproject.toml`` must
 declare that same version twice over:
 
   1. Its own ``project.version`` line.
-  2. Every ``sfdc-multicloud-*>=X.Y.Z`` inter-distribution dependency pin
+  2. Every ``multicloud-py-*>=X.Y.Z`` inter-distribution dependency pin
      in its ``project.dependencies`` list.
 
 Setuptools' ``[tool.setuptools.dynamic]`` cannot read files outside the
@@ -25,11 +25,13 @@ Modes
 ``--write``  Rewrite every pyproject in place so it matches VERSION.
              Run this after bumping VERSION.
 
+``--print``  Print the parsed version value for shell and CI consumers.
+
 Bumping a release
 -----------------
 ::
 
-    echo "0.2.0" > VERSION
+    printf '%s\n' '0.2.0 # x-release-please-version' > VERSION
     uv run python scripts/sync_version.py --write
     git add VERSION packages/*/*/pyproject.toml
     git commit -m "chore(release): bump to 0.2.0"
@@ -49,15 +51,18 @@ PACKAGES_GLOB = "packages/*/*/pyproject.toml"
 # Matches ``version = "0.1.0"`` on its own line under ``[project]``.
 PROJECT_VERSION_RE = re.compile(r'^version\s*=\s*"([^"]+)"\s*$', re.MULTILINE)
 
-# Matches ``"sfdc-multicloud-<name>>=0.1.0"`` (inter-distribution pin).
+# Matches ``"multicloud-py-<name>>=0.1.0"`` (inter-distribution pin).
 # Captures (prefix-up-to-and-including-``>=``, version, trailing-quote-and-comma-or-end).
-DEP_PIN_RE = re.compile(r'("sfdc-multicloud-[a-z-]+>=)([0-9][^"]*)(")')
+DEP_PIN_RE = re.compile(r'("multicloud-py-[a-z-]+>=)([0-9][^"]*)(")')
 
 
 def read_root_version() -> str:
     if not VERSION_FILE.exists():
         sys.exit(f"error: {VERSION_FILE} does not exist")
     version = VERSION_FILE.read_text().strip()
+    value, separator, annotation = version.partition("#")
+    if separator and annotation.strip() == "x-release-please-version":
+        version = value.strip()
     if not version:
         sys.exit(f"error: {VERSION_FILE} is empty")
     return version
@@ -104,9 +109,19 @@ def main() -> int:
         action="store_true",
         help="Rewrite pyprojects in place so they match VERSION.",
     )
+    mode.add_argument(
+        "--print",
+        dest="print_version",
+        action="store_true",
+        help="Print the parsed root version.",
+    )
     args = parser.parse_args()
 
     target = read_root_version()
+    if args.print_version:
+        print(target)
+        return 0
+
     pyprojects = sorted(REPO_ROOT.glob(PACKAGES_GLOB))
     if not pyprojects:
         sys.exit(f"error: no pyproject.toml matched {PACKAGES_GLOB}")

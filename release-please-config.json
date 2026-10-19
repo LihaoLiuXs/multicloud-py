@@ -1,0 +1,14 @@
+{
+  "release-type": "simple",
+  "include-component-in-tag": true,
+  "include-v-in-tag": true,
+  "component": "multicloud-py",
+  "extra-files": [{"type": "generic", "path": "VERSION"}],
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "component": "multicloud-py",
+      "extra-files": [{"type": "generic", "path": "VERSION"}]
+    }
+  }
+}

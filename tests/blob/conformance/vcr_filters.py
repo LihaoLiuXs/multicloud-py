@@ -40,7 +40,7 @@ SECURITY_HEADERS = [
     "X-Amz-Credential",
     # GCP
     "x-goog-api-key",
-    # Alibaba Cloud
+    # Ali
     "x-acs-security-token",
     "x-oss-security-token",
 ]
@@ -54,7 +54,7 @@ STABILITY_HEADERS = [
     # GCP (client metadata and routing params)
     "x-goog-api-client",
     "x-goog-request-params",
-    # Alibaba Cloud (timestamps, nonces, content hashes)
+    # Ali (timestamps, nonces, content hashes)
     "x-acs-date",
     "x-acs-signature-nonce",
     "x-acs-content-sha256",
@@ -72,7 +72,7 @@ DEFAULT_IGNORE_HOSTS: Set[str] = {
     "accounts.google.com",
     # AWS STS
     "sts.amazonaws.com",
-    # Alibaba STS
+    # Ali STS
     "sts.aliyuncs.com",
 }
 

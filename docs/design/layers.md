@@ -154,5 +154,5 @@ multicloud/<svc>/
 │   └── driver.py        # BaseFoo + registry + dataclasses
 ├── <svc>_aws/           # Layer 3: AWS provider
 ├── <svc>_gcp/           # Layer 3: GCP provider
-└── <svc>_ali/           # Layer 3: Alibaba provider
+└── <svc>_ali/           # Layer 3: Ali provider
 ```

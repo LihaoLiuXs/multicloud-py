@@ -50,7 +50,7 @@ python examples/sts/sts_example.py assume-role --provider aws --region us-west-2
 ```bash
 pip install python-multicloud-sdk[aws]       # AWS S3
 pip install python-multicloud-sdk[gcp]       # GCP Cloud Storage
-pip install python-multicloud-sdk[alibaba]   # Alibaba OSS (placeholder)
+pip install python-multicloud-sdk[ali]   # Ali OSS (placeholder)
 ```
 
 2. Configure credentials:
@@ -65,9 +65,9 @@ export AWS_SESSION_TOKEN=...           # optional, for assumed roles
 export GOOGLE_APPLICATION_CREDENTIALS=/path/to/key.json
 export GOOGLE_CLOUD_PROJECT=my-project
 
-# Alibaba (placeholder; not implemented)
-export ALIBABA_CLOUD_ACCESS_KEY_ID=...
-export ALIBABA_CLOUD_ACCESS_KEY_SECRET=...
+# Ali (placeholder; not implemented)
+export ALI_CLOUD_ACCESS_KEY_ID=...
+export ALI_CLOUD_ACCESS_KEY_SECRET=...
 ```
 
 ## Design

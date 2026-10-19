@@ -1,22 +1,24 @@
 # Root workspace for the python-multicloud SDK.
 #
-# This file is NOT itself a distribution. The SDK ships as 18 separate
-# distributions (all prefixed with ``sfdc-`` for Salesforce Nexus release),
+# This file is NOT itself a distribution. The SDK ships as 21 separate
+# distributions (all prefixed with ``multicloud-py-`` for public PyPI release),
 # one per directory under ``packages/``:
 #
-#   sfdc-multicloud-common, sfdc-multicloud-aws-common,
-#   sfdc-multicloud-gcp-common, sfdc-multicloud-blob,
-#   sfdc-multicloud-blob-aws, sfdc-multicloud-blob-gcp,
-#   sfdc-multicloud-blob-alibaba, sfdc-multicloud-sts,
-#   sfdc-multicloud-sts-aws, sfdc-multicloud-sts-gcp,
-#   sfdc-multicloud-sts-alibaba, sfdc-multicloud-iam,
-#   sfdc-multicloud-iam-aws, sfdc-multicloud-iam-gcp,
-#   sfdc-multicloud-pubsub, sfdc-multicloud-pubsub-aws,
-#   sfdc-multicloud-pubsub-gcp, sfdc-multicloud-pubsub-alibaba
+#   multicloud-py-common, multicloud-py-aws-common,
+#   multicloud-py-gcp-common, multicloud-py-blob,
+#   multicloud-py-blob-aws, multicloud-py-blob-gcp,
+#   multicloud-py-blob-ali, multicloud-py-sts,
+#   multicloud-py-sts-aws, multicloud-py-sts-gcp,
+#   multicloud-py-sts-ali, multicloud-py-iam,
+#   multicloud-py-iam-aws, multicloud-py-iam-gcp,
+#   multicloud-py-pubsub, multicloud-py-pubsub-aws,
+#   multicloud-py-pubsub-gcp, multicloud-py-pubsub-ali,
+#   multicloud-py-docstore, multicloud-py-docstore-aws,
+#   multicloud-py-docstore-gcp-firestore
 #
-# Note: distribution names carry the ``sfdc-`` prefix, but the Python
+# Note: distribution names carry the ``multicloud-py-`` prefix, but the Python
 # import namespace remains ``multicloud.*`` (unchanged). End users
-# ``pip install sfdc-multicloud-blob-aws`` then ``from multicloud.blob
+# ``pip install multicloud-py-blob-aws`` then ``from multicloud.blob
 # import BucketClient``.
 #
 # Each ``packages/<name>/`` has its own ``pyproject.toml``. This root
@@ -40,31 +42,31 @@
 [tool.uv.workspace]
 members = ["packages/*/*"]
 
-# Tell uv that intra-workspace deps (e.g. sfdc-multicloud-blob-aws →
-# sfdc-multicloud-blob) resolve to the local source tree, not PyPI/Nexus.
+# Tell uv that intra-workspace deps (e.g. multicloud-py-blob-aws →
+# multicloud-py-blob) resolve to the local source tree, not PyPI/Nexus.
 # Without this, uv would try to pull the dep from the index and fail
 # because the packages aren't published yet at build time.
 [tool.uv.sources]
-sfdc-multicloud-common         = { workspace = true }
-sfdc-multicloud-aws-common     = { workspace = true }
-sfdc-multicloud-gcp-common     = { workspace = true }
-sfdc-multicloud-blob           = { workspace = true }
-sfdc-multicloud-blob-aws       = { workspace = true }
-sfdc-multicloud-blob-gcp       = { workspace = true }
-sfdc-multicloud-blob-alibaba   = { workspace = true }
-sfdc-multicloud-sts            = { workspace = true }
-sfdc-multicloud-sts-aws        = { workspace = true }
-sfdc-multicloud-sts-gcp        = { workspace = true }
-sfdc-multicloud-sts-alibaba    = { workspace = true }
-sfdc-multicloud-iam            = { workspace = true }
-sfdc-multicloud-iam-aws        = { workspace = true }
-sfdc-multicloud-iam-gcp        = { workspace = true }
-sfdc-multicloud-pubsub         = { workspace = true }
-sfdc-multicloud-pubsub-aws     = { workspace = true }
-sfdc-multicloud-pubsub-gcp     = { workspace = true }
-sfdc-multicloud-pubsub-alibaba = { workspace = true }
-sfdc-multicloud-docstore       = { workspace = true }
-sfdc-multicloud-docstore-aws   = { workspace = true }
+multicloud-py-common         = { workspace = true }
+multicloud-py-aws-common     = { workspace = true }
+multicloud-py-gcp-common     = { workspace = true }
+multicloud-py-blob           = { workspace = true }
+multicloud-py-blob-aws       = { workspace = true }
+multicloud-py-blob-gcp       = { workspace = true }
+multicloud-py-blob-ali   = { workspace = true }
+multicloud-py-sts            = { workspace = true }
+multicloud-py-sts-aws        = { workspace = true }
+multicloud-py-sts-gcp        = { workspace = true }
+multicloud-py-sts-ali    = { workspace = true }
+multicloud-py-iam            = { workspace = true }
+multicloud-py-iam-aws        = { workspace = true }
+multicloud-py-iam-gcp        = { workspace = true }
+multicloud-py-pubsub         = { workspace = true }
+multicloud-py-pubsub-aws     = { workspace = true }
+multicloud-py-pubsub-gcp     = { workspace = true }
+multicloud-py-pubsub-ali = { workspace = true }
+multicloud-py-docstore       = { workspace = true }
+multicloud-py-docstore-aws   = { workspace = true }
 
 # Dev tools used by the workspace's `uv sync`. uv installs these alongside
 # the editable workspace members in the project venv.
@@ -82,6 +84,7 @@ dev = [
     "aiobotocore>=2.5.0",
     "gcloud-aio-storage>=9.0.0",
     "boto3-stubs~=1.43.0",
+    "twine>=6.0.0",
 ]
 
 # Docs toolchain — mkdocs + Material theme + mkdocstrings for API pages
@@ -129,3 +132,6 @@ markers = [
     "vcr: marks tests using VCR.py record/replay",
     "conformance: marks tests as conformance tests (require cloud credentials to record)",
 ]
+
+[tool.uv]
+required-version = "==0.11.2"

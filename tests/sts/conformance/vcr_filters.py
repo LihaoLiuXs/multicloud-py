@@ -32,7 +32,7 @@ SECURITY_HEADERS = [
     "X-Amz-Credential",
     # GCP
     "x-goog-api-key",
-    # Alibaba Cloud
+    # Ali
     "x-acs-security-token",
     "x-oss-security-token",
 ]
@@ -46,7 +46,7 @@ STABILITY_HEADERS = [
     # GCP (client metadata and routing params)
     "x-goog-api-client",
     "x-goog-request-params",
-    # Alibaba Cloud
+    # Ali
     "x-acs-date",
     "x-acs-signature-nonce",
     "x-acs-content-sha256",

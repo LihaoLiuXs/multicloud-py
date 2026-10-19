@@ -300,9 +300,7 @@ class TestGetTokenImportFailure:
                 credentials_type=CredentialsType.ASSUME_ROLE,
                 role="sa@proj.iam.gserviceaccount.com",
             )
-            with pytest.raises(
-                ImportError, match="sfdc-multicloud-blob-gcp\\[async\\]"
-            ):
+            with pytest.raises(ImportError, match="multicloud-py-blob-gcp\\[async\\]"):
                 get_token(overrider)
         finally:
             if original is not None:

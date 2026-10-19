@@ -20,12 +20,12 @@ dependencies = [
 # Use "local" extra to install SDK workspace packages from the repo checkout.
 # Run from this directory: pip install -e ".[local]"
 local = [
-    "sfdc-multicloud-common @ file:../../packages/common/multicloud-common",
-    "sfdc-multicloud-aws-common @ file:../../packages/common/multicloud-aws-common",
-    "sfdc-multicloud-gcp-common @ file:../../packages/common/multicloud-gcp-common",
-    "sfdc-multicloud-iam @ file:../../packages/iam/multicloud-iam",
-    "sfdc-multicloud-iam-aws @ file:../../packages/iam/multicloud-iam-aws",
-    "sfdc-multicloud-iam-gcp @ file:../../packages/iam/multicloud-iam-gcp",
+    "multicloud-py-common @ file:../../packages/common/multicloud-common",
+    "multicloud-py-aws-common @ file:../../packages/common/multicloud-aws-common",
+    "multicloud-py-gcp-common @ file:../../packages/common/multicloud-gcp-common",
+    "multicloud-py-iam @ file:../../packages/iam/multicloud-iam",
+    "multicloud-py-iam-aws @ file:../../packages/iam/multicloud-iam-aws",
+    "multicloud-py-iam-gcp @ file:../../packages/iam/multicloud-iam-gcp",
 ]
 
 [project.scripts]

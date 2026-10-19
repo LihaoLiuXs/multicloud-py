@@ -12,7 +12,7 @@ Public entry point — :class:`StsClient`::
         )
 
 Provider classes (``AwsSts``, ``GcpSts``, ...) live in sibling
-distributions (``multicloud-sts-aws``, ``-gcp``, ``-alibaba``) and are
+distributions (``multicloud-sts-aws``, ``-gcp``, ``-ali``) and are
 discovered at runtime via setuptools entry points. They are hidden
 behind the registry; users never reference them directly.
 """

@@ -135,7 +135,7 @@ class ProviderRegistry:
                 # the side-effect is what registers the provider.
                 importlib.import_module(ep.value.split(":")[0])
             except ImportError as exc:
-                # ep.name is the provider id ("aws", "gcp", "alibaba").
+                # ep.name is the provider id ("aws", "gcp", "ali").
                 self.record_import_error(ep.name, exc)
 
     def get(self, provider_id: str) -> Type[Provider]:

@@ -16,7 +16,7 @@ Switch clouds by changing the ``provider`` kwarg only::
     BucketClient(provider="gcp", bucket="my-bucket", region="us-central1")
 
 Provider classes (``AwsBlobStore``, ``GcpBlobStore``, ...) live in
-sibling distributions (``multicloud-blob-aws``, ``-gcp``, ``-alibaba``)
+sibling distributions (``multicloud-blob-aws``, ``-gcp``, ``-ali``)
 and are discovered at runtime via setuptools entry points. They are
 hidden behind the registry; users never reference them directly.
 """

@@ -161,7 +161,7 @@ def get_token(
             raise ImportError(
                 "gcloud-aio-storage is required for async GCP credential "
                 "resolution. Install it with: "
-                "pip install 'sfdc-multicloud-blob-gcp[async]'"
+                "pip install 'multicloud-py-blob-gcp[async]'"
             ) from exc
         token = Token(
             target_principal=overrider.role,

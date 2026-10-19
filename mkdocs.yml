@@ -81,18 +81,18 @@ plugins:
             - packages/blob/multicloud-blob
             - packages/blob/multicloud-blob-aws
             - packages/blob/multicloud-blob-gcp
-            - packages/blob/multicloud-blob-alibaba
+            - packages/blob/multicloud-blob-ali
             - packages/sts/multicloud-sts
             - packages/sts/multicloud-sts-aws
             - packages/sts/multicloud-sts-gcp
-            - packages/sts/multicloud-sts-alibaba
+            - packages/sts/multicloud-sts-ali
             - packages/iam/multicloud-iam
             - packages/iam/multicloud-iam-aws
             - packages/iam/multicloud-iam-gcp
             - packages/pubsub/multicloud-pubsub
             - packages/pubsub/multicloud-pubsub-aws
             - packages/pubsub/multicloud-pubsub-gcp
-            - packages/pubsub/multicloud-pubsub-alibaba
+            - packages/pubsub/multicloud-pubsub-ali
           options:
             docstring_style: google
             show_root_heading: true
@@ -128,6 +128,8 @@ nav:
       - multicloud.iam: api/iam.md
       - multicloud.pubsub: api/pubsub.md
       - multicloud.common: api/common.md
+  - Maintainers:
+      - Releasing: maintainers/releasing.md
 
 extra:
   generator: false

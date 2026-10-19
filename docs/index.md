@@ -62,7 +62,7 @@ with StsClient(provider="aws", region="us-west-2") as sts:
 ## Key Features
 
 - **Cloud-agnostic API** — One interface for all providers. Switch clouds by changing `provider="aws"` to `provider="gcp"`.
-- **Native SDK performance** — Uses boto3, google-cloud-storage, and alibaba SDKs directly. No intermediate HTTP layer.
+- **Native SDK performance** — Uses boto3, google-cloud-storage, and ali SDKs directly. No intermediate HTTP layer.
 - **Type-safe** — Full type annotations, frozen dataclasses, keyword-only arguments.
 - **Consistent error handling** — All provider exceptions are translated to a common hierarchy (`SubstrateSdkException`).
 - **Optional dependencies** — Install only the providers you need. Unused providers are never imported.

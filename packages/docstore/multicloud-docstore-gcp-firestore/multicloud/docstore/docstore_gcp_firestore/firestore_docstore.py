@@ -54,7 +54,7 @@ try:
 except ImportError as _exc:
     raise ImportError(
         "GCP Firestore dependencies not found. Install with: "
-        "pip install sfdc-multicloud-docstore-gcp-firestore"
+        "pip install multicloud-py-docstore-gcp-firestore"
     ) from _exc
 
 

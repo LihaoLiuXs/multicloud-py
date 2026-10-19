@@ -206,7 +206,7 @@ async def get_aio_session(
     except ImportError as exc:
         raise ImportError(
             "aiobotocore is required for async AWS credential resolution. "
-            "Install it with: pip install 'sfdc-multicloud-blob-aws[async]'"
+            "Install it with: pip install 'multicloud-py-blob-aws[async]'"
         ) from exc
 
     session = _get_aio_session()

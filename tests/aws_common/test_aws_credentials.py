@@ -346,9 +346,7 @@ class TestGetAioSessionImportFailure:
                 credentials_type=CredentialsType.SESSION,
                 session_credentials=StsCredentials(access_key_id="AK"),
             )
-            with pytest.raises(
-                ImportError, match="sfdc-multicloud-blob-aws\\[async\\]"
-            ):
+            with pytest.raises(ImportError, match="multicloud-py-blob-aws\\[async\\]"):
                 await get_aio_session(overrider)
         finally:
             if original is not None:

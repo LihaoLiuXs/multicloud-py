@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          enable-cache: true
+      - run: uv lock --check
+      - run: uv sync --frozen --all-groups --all-packages
+      - run: uv run --frozen python -m black --check packages tests scripts
+      - run: uv run --frozen python -m isort --check-only packages tests scripts
+      - run: uv run --frozen python scripts/sync_version.py --check
+      - run: uv run --frozen python -m pytest -m 'not conformance'
+      - run: uv run --frozen python -m pytest -m conformance --record-mode=none

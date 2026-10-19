@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multicloud-py-pubsub-ali"
+version = "0.1.8"
+license = "Apache-2.0"
+description = "Ali MNS provider for multicloud-pubsub (placeholder; implementation pending)."
+readme = {text = "MultiCloud Python SDK package.", content-type = "text/markdown"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "multicloud-py-pubsub>=0.1.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/salesforce/multicloud-py"
+Repository = "https://github.com/salesforce/multicloud-py"
+Issues = "https://github.com/salesforce/multicloud-py/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
+
+[project.entry-points."multicloud.pubsub.topic.providers"]
+ali = "multicloud.pubsub.pubsub_ali"
+
+[project.entry-points."multicloud.pubsub.subscription.providers"]
+ali = "multicloud.pubsub.pubsub_ali"
+
+[tool.setuptools]
+license-files = ["LICENSE.txt"]
+
+[tool.setuptools.packages.find]
+include = ["multicloud*"]

@@ -1,6 +1,6 @@
 # Python Multi-Cloud SDK
 
-A cloud-agnostic Python library providing unified interfaces for cloud services across AWS, GCP, and Alibaba Cloud. Write code once, run it on any supported cloud — only the `provider` keyword argument changes.
+A cloud-agnostic Python library providing unified interfaces for cloud services across AWS, GCP, and Ali. Write code once, run it on any supported cloud — only the `provider` keyword argument changes.
 
 ## Overview
 
@@ -8,7 +8,7 @@ The Python Multi-Cloud SDK follows a **three-layer architecture** (Client → Dr
 
 ### Design Principles
 
-- **Consistent API**: Single interface across AWS, GCP, and Alibaba Cloud
+- **Consistent API**: Single interface across AWS, GCP, and Ali
 - **Direct SDK Usage**: Uses official provider SDKs (boto3, google-cloud-storage, etc.) — no custom HTTP calls
 - **Provider Registry**: Decorator-based registration with lazy import and helpful error messages
 - **Unified Error Hierarchy**: Provider-specific exceptions translated to a common `SubstrateSdkException` tree
@@ -33,19 +33,19 @@ Three-layer pattern (per service):
 ```
 packages/                                  # uv workspace — one directory per publishable distribution
 ├── common/
-│   ├── multicloud-common/                 #   sfdc-multicloud-common: exceptions + ProviderRegistry + Provider ABC
-│   ├── multicloud-aws-common/             #   sfdc-multicloud-aws-common: shared AWS/boto3 helpers
-│   └── multicloud-gcp-common/             #   sfdc-multicloud-gcp-common: shared GCP helpers
+│   ├── multicloud-common/                 #   multicloud-py-common: exceptions + ProviderRegistry + Provider ABC
+│   ├── multicloud-aws-common/             #   multicloud-py-aws-common: shared AWS/boto3 helpers
+│   └── multicloud-gcp-common/             #   multicloud-py-gcp-common: shared GCP helpers
 ├── blob/                                  # Blob storage service
 │   ├── multicloud-blob/                   #   Cloud-agnostic API (BucketClient + BaseBlobStore, sync + async)
 │   ├── multicloud-blob-aws/               #   AWS S3 implementation
 │   ├── multicloud-blob-gcp/               #   GCP Cloud Storage implementation
-│   └── multicloud-blob-alibaba/           #   Alibaba OSS implementation (placeholder)
+│   └── multicloud-blob-ali/           #   Ali OSS implementation (placeholder)
 ├── sts/                                   # Security Token Service
 │   ├── multicloud-sts/                    #   Cloud-agnostic API (StsClient + BaseSts)
 │   ├── multicloud-sts-aws/                #   AWS STS implementation
 │   ├── multicloud-sts-gcp/                #   GCP implementation
-│   └── multicloud-sts-alibaba/            #   Alibaba STS implementation (placeholder)
+│   └── multicloud-sts-ali/            #   Ali STS implementation (placeholder)
 ├── iam/                                   # Identity and Access Management
 │   ├── multicloud-iam/                    #   Cloud-agnostic API (IamClient + BaseIam)
 │   ├── multicloud-iam-aws/                #   AWS IAM implementation
@@ -58,7 +58,7 @@ packages/                                  # uv workspace — one directory per 
     ├── multicloud-pubsub/                 #   Cloud-agnostic API
     ├── multicloud-pubsub-aws/             #   AWS SNS/SQS implementation
     ├── multicloud-pubsub-gcp/             #   GCP Pub/Sub implementation
-    └── multicloud-pubsub-alibaba/         #   Alibaba MNS implementation (placeholder)
+    └── multicloud-pubsub-ali/         #   Ali MNS implementation (placeholder)
 
 # Each distribution directory holds a PEP 420 namespace tree, e.g.
 #   packages/blob/multicloud-blob-aws/multicloud/blob/blob_aws/aws_blob_store.py
@@ -89,7 +89,7 @@ examples/
 
 ## Services
 
-| Service | AWS | GCP | Alibaba Cloud |
+| Service | AWS | GCP | Ali |
 |---------|-----|-----|---------------|
 | Blob Storage | ✓ S3 | ✓ Cloud Storage | ⌛ OSS |
 | Security Token Service | ✓ STS | ✓ IAM | ⌛ STS |
@@ -102,47 +102,47 @@ examples/
 ## Installation
 
 The SDK ships as multiple distributions sharing the `multicloud.*` namespace,
-modeled on the Azure SDK for Python. Distributions publish under the `sfdc-`
-prefix; the **import namespace stays `multicloud.*`**
+modeled on the Azure SDK for Python. Distributions publish under the
+`multicloud-py-` prefix; the **import namespace stays `multicloud.*`**
 regardless of which distribution you install. Install only the service +
 provider you need; transitive dependencies (the cloud-agnostic client +
-`sfdc-multicloud-common`, plus any shared provider-common package) are pulled
+`multicloud-py-common`, plus any shared provider-common package) are pulled
 in automatically.
 
 ### From PyPI (Not Available Yet)
 
 ```bash
-# Blob storage on AWS — installs sfdc-multicloud-blob-aws + sfdc-multicloud-blob + sfdc-multicloud-common + boto3
-pip install sfdc-multicloud-blob-aws
+# Blob storage on AWS — installs multicloud-py-blob-aws + multicloud-py-blob + multicloud-py-common + boto3
+pip install multicloud-py-blob-aws
 
 # Blob storage on GCP
-pip install sfdc-multicloud-blob-gcp
+pip install multicloud-py-blob-gcp
 
 # Mix and match: AWS for blob, GCP for the Firestore document store
-pip install sfdc-multicloud-blob-aws sfdc-multicloud-docstore-gcp-firestore
+pip install multicloud-py-blob-aws multicloud-py-docstore-gcp-firestore
 ```
 
 Available distributions:
 
 | Distribution | Pulls in |
 |---|---|
-| `sfdc-multicloud-blob-aws` / `-blob-gcp` | Blob storage backed by S3 / GCS |
-| `sfdc-multicloud-sts-aws` / `-sts-gcp` | Security Token Service (AWS STS / GCP) |
-| `sfdc-multicloud-iam-aws` / `-iam-gcp` | Identity (IAM) management |
-| `sfdc-multicloud-docstore-aws` / `-docstore-gcp-firestore` | Document store backed by DynamoDB / Firestore |
-| `sfdc-multicloud-pubsub-aws` / `-pubsub-gcp` | Publish/subscribe backed by SNS-SQS / Pub-Sub |
+| `multicloud-py-blob-aws` / `-blob-gcp` | Blob storage backed by S3 / GCS |
+| `multicloud-py-sts-aws` / `-sts-gcp` | Security Token Service (AWS STS / GCP) |
+| `multicloud-py-iam-aws` / `-iam-gcp` | Identity (IAM) management |
+| `multicloud-py-docstore-aws` / `-docstore-gcp-firestore` | Document store backed by DynamoDB / Firestore |
+| `multicloud-py-pubsub-aws` / `-pubsub-gcp` | Publish/subscribe backed by SNS-SQS / Pub-Sub |
 
-The Alibaba Cloud distributions — `sfdc-multicloud-blob-alibaba`,
-`sfdc-multicloud-sts-alibaba`, and `sfdc-multicloud-pubsub-alibaba` — are
+The Ali distributions — `multicloud-py-blob-ali`,
+`multicloud-py-sts-ali`, and `multicloud-py-pubsub-ali` — are
 **placeholder packages** (distribution name reserved, implementation pending).
 Installing one registers no provider yet, so the client raises
 `No provider registered`. See the Services table above (`⌛` = Planned) for
 per-provider status.
 
-The shared `sfdc-multicloud-aws-common` / `-gcp-common` packages are pulled in
+The shared `multicloud-py-aws-common` / `-gcp-common` packages are pulled in
 transitively by the provider distributions; you don't install them directly.
 
-A blob-only AWS deployment lands `boto3` only — no GCP or Alibaba SDKs on
+A blob-only AWS deployment lands `boto3` only — no GCP or Ali SDKs on
 disk. Strict isolation, no opt-in flags.
 
 ### For Local Development
@@ -235,7 +235,7 @@ with BucketClient(provider="aws", bucket="my-bucket", region="us-west-2") as cli
     try:
         client.download(key="nonexistent.txt")
     except ResourceNotFoundException:
-        print("Object not found — works the same on AWS, GCP, or Alibaba")
+        print("Object not found — works the same on AWS, GCP, or Ali")
     except UnAuthorizedException:
         print("Credentials missing or expired")
     except SubstrateSdkException as e:

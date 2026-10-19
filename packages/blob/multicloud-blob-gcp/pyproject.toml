@@ -1,23 +1,29 @@
 [build-system]
-requires = ["setuptools>=64", "wheel"]
+requires = ["setuptools==84.0.0", "wheel==0.48.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sfdc-multicloud-blob-gcp"
-version = "0.1.4"
+name = "multicloud-py-blob-gcp"
+version = "0.1.8"
+license = "Apache-2.0"
 description = "Google Cloud Storage provider for multicloud-blob."
+readme = {text = "MultiCloud Python SDK package.", content-type = "text/markdown"}
 requires-python = ">=3.10"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: Apache Software License",
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "sfdc-multicloud-blob>=0.1.4",
-    "sfdc-multicloud-gcp-common>=0.1.4",
+    "multicloud-py-blob>=0.1.8",
+    "multicloud-py-gcp-common>=0.1.8",
     "google-cloud-storage>=2.14.0",
     "google-auth>=2.0.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/salesforce/multicloud-py"
+Repository = "https://github.com/salesforce/multicloud-py"
+Issues = "https://github.com/salesforce/multicloud-py/issues"
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0.0", "pytest-cov>=4.0.0", "mypy>=1.0.0"]
@@ -28,6 +34,9 @@ gcp = "multicloud.blob.blob_gcp"
 
 [project.entry-points."multicloud.blob.async_providers"]
 gcp = "multicloud.blob.blob_gcp.async_blob"
+
+[tool.setuptools]
+license-files = ["LICENSE.txt"]
 
 [tool.setuptools.packages.find]
 include = ["multicloud*"]

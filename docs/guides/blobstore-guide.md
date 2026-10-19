@@ -1,6 +1,6 @@
 # Blob Storage Guide
 
-The Blob Storage service provides cloud-agnostic object storage operations — upload, download, and delete objects across AWS S3, Google Cloud Storage, and Alibaba OSS.
+The Blob Storage service provides cloud-agnostic object storage operations — upload, download, and delete objects across AWS S3, Google Cloud Storage, and Ali OSS.
 
 ## Creating a Client
 
@@ -22,7 +22,7 @@ with BucketClient(provider="gcp", bucket="my-bucket", region="us-central1") as c
 
 | Parameter | Type | Required | Description |
 |-----------|------|:--------:|-------------|
-| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"alibaba"` |
+| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"ali"` |
 | `bucket` | `str` | ✅ | Bucket name |
 | `region` | `str` | | Region (AWS region / GCS location) |
 | `endpoint` | `str` | | Endpoint URL override |
