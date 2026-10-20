@@ -1,14 +1,16 @@
-site_name: Python Multi-Cloud SDK
+site_name: MultiCloud-Py
 site_description: >-
   Cloud-agnostic Python SDK providing unified interfaces for object storage,
   identity, pub/sub, and IAM across AWS and GCP.
-site_url: https://salesforce.github.io/multicloud-py/
+site_url: https://opensource.salesforce.com/multicloud-py/
 repo_url: https://github.com/salesforce/multicloud-py
 repo_name: salesforce/multicloud-py
 edit_uri: edit/main/docs/
 
 docs_dir: docs
 site_dir: site
+exclude_docs: |
+  /superpowers/
 
 theme:
   name: material
@@ -110,7 +112,8 @@ plugins:
               - "!^_"
 
 nav:
-  - Home: index.md
+  - Overview: index.md
+  - Getting Started: getting-started.md
   - Roadmap: roadmap.md
   - Guides:
       - guides/index.md
@@ -130,6 +133,7 @@ nav:
       - multicloud.common: api/common.md
   - Maintainers:
       - Releasing: maintainers/releasing.md
+      - Website: maintainers/website.md
 
 extra:
   generator: false

@@ -1,85 +1,65 @@
-# Python Multi-Cloud SDK
+# MultiCloud-Py
 
-The Python Multi-Cloud SDK is a cloud-agnostic library providing unified interfaces for cloud services across **AWS** and **GCP**. Write your code once, deploy to any cloud — switch providers by changing a single keyword argument.
+## Write once, deploy to any supported cloud
 
-## Quick Start
+MultiCloud-Py is a cloud-agnostic Python SDK providing unified interfaces for
+cloud services. Build applications against a consistent API and select a cloud
+provider when you create a client.
 
-### Installation
+[Get started](getting-started.md){ .md-button .md-button--primary }
+[API reference](api/index.md){ .md-button }
 
-```bash
-# Install with all providers
-pip install 'python-multicloud-sdk[all]'
+## Key features
 
-# Install with specific providers only
-pip install 'python-multicloud-sdk[aws]'
-pip install 'python-multicloud-sdk[aws,gcp]'
-```
+- **Cloud-agnostic APIs:** use the same client interface across supported providers.
+- **Provider isolation:** install only the service and provider packages you need.
+- **Native cloud SDKs:** provider implementations use the underlying cloud SDKs.
+- **Consistent errors:** handle a shared exception hierarchy in application code.
+- **Conformance tests:** shared tests verify behavior across provider implementations.
 
-### Hello, Multi-Cloud
+## Supported services
+
+| Service | AWS | GCP | Documentation |
+| --- | --- | --- | --- |
+| Blob Storage | S3 | Cloud Storage | [Usage guide](guides/blobstore-guide.md) |
+| Security Token Service | STS | IAM credentials | [Usage guide](guides/sts-guide.md) |
+| Pub/Sub | SNS / SQS | Pub/Sub | [Usage guide](guides/pubsub-guide.md) |
+| IAM | IAM | IAM | [API reference](api/iam.md) |
+| Document Store | DynamoDB | Firestore | [Examples](https://github.com/salesforce/multicloud-py/tree/main/examples) |
+
+Ali Cloud distributions currently reserve package names; their provider
+implementations are planned. See the [roadmap](roadmap.md) for development plans.
+
+## One API across clouds
 
 ```python
-from multicloud.blob import BucketClient
+from multicloud.blob.blob_client import BucketClient
 
-# Upload and download — works on any cloud
 with BucketClient(provider="aws", bucket="my-bucket", region="us-west-2") as client:
-    client.upload("hello.txt", b"Hello, Multi-Cloud!")
-    resp = client.download("hello.txt")
-    print(resp.content)  # b"Hello, Multi-Cloud!"
-    client.delete("hello.txt")
-
-# Switch to GCP by changing only the provider kwarg
-with BucketClient(provider="gcp", bucket="my-bucket", region="us-central1") as client:
-    client.upload("hello.txt", b"Hello from GCP!")
+    client.upload(key="hello.txt", payload=b"Hello, MultiCloud-Py!")
+    response = client.download(key="hello.txt")
+    print(response.content)
 ```
 
-### STS Example
+Select `provider="gcp"` and use your Cloud Storage bucket and region to run
+the same operations on GCP. Configure credentials for the selected provider
+before running the example.
 
-```python
-from multicloud.sts import StsClient, AssumeRoleRequest
+## Explore the SDK
 
-with StsClient(provider="aws", region="us-west-2") as sts:
-    identity = sts.get_caller_identity()
-    print(f"Account: {identity.account}, ARN: {identity.arn}")
+- [Getting started](getting-started.md): install a provider and run your first example.
+- [Usage guides](guides/index.md): task-focused walkthroughs for cloud services.
+- [Design](design/index.md): client, driver, and provider architecture.
+- [API reference](api/index.md): signatures, types, and source docstrings.
+- [Examples](https://github.com/salesforce/multicloud-py/tree/main/examples): working SDK examples.
 
-    resp = sts.assume_role(AssumeRoleRequest(
-        role_arn="arn:aws:iam::123456789012:role/MyRole",
-        role_session_name="dev",
-    ))
-    print(f"Temporary credentials expire: {resp.credentials.expiration}")
-```
+## Community
 
-## Supported Services
-
-| Service | Description | AWS | GCP |
-|---------|-------------|:---:|:---:|
-| [Blob Storage](guides/blobstore-guide.md) | Object storage (upload, download, delete) | ✅ | ✅ |
-| [STS](guides/sts-guide.md) | Security Token Service (identity, assume role, credentials) | ✅ | ✅ |
-| PubSub | Messaging and event streaming | 🚧 | 🚧 |
-| IAM | Identity and Access Management | 🚧 | 🚧 |
-
-✅ = Available &nbsp; 🚧 = In Progress
-
-## Key Features
-
-- **Cloud-agnostic API** — One interface for all providers. Switch clouds by changing `provider="aws"` to `provider="gcp"`.
-- **Native SDK performance** — Uses boto3, google-cloud-storage, and ali SDKs directly. No intermediate HTTP layer.
-- **Type-safe** — Full type annotations, frozen dataclasses, keyword-only arguments.
-- **Consistent error handling** — All provider exceptions are translated to a common hierarchy (`SubstrateSdkException`).
-- **Optional dependencies** — Install only the providers you need. Unused providers are never imported.
-
-## Architecture
-
-The SDK follows a strict **three-layer architecture** for every service:
-
-1. **Client** — User-facing, cloud-agnostic API (`BucketClient`, `StsClient`)
-2. **Driver** — Abstract contract with validation and template-method hooks (`BaseBlobStore`, `BaseSts`)
-3. **Provider** — Concrete cloud-specific implementation (`AwsBlobStore`, `GcpBlobStore`, `AwsSts`)
-
-Learn more in the [Design](design/index.md) section.
-
-## Links
-
-- [Usage Guides](guides/index.md) — Task-focused guides per service
-- [Design Documentation](design/index.md) — SDK architecture and patterns
-- [GitHub Repository](https://github.com/salesforce/multicloud-py)
+- [GitHub repository](https://github.com/salesforce/multicloud-py)
+- [Issues and questions](https://github.com/salesforce/multicloud-py/issues)
 - [Contributing](https://github.com/salesforce/multicloud-py/blob/main/CONTRIBUTING.md)
+- [Releases](https://github.com/salesforce/multicloud-py/releases)
+- [MultiCloudJ](https://opensource.salesforce.com/multicloudj/): the Java SDK.
+
+MultiCloud-Py is maintained by Salesforce and released under the
+[Apache License 2.0](https://github.com/salesforce/multicloud-py/blob/main/LICENSE.txt).

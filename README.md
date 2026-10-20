@@ -2,6 +2,10 @@
 
 A cloud-agnostic Python library providing unified interfaces for cloud services across AWS, GCP, and Ali. Write code once, run it on any supported cloud — only the `provider` keyword argument changes.
 
+[Documentation](https://opensource.salesforce.com/multicloud-py/) ·
+[Getting started](https://opensource.salesforce.com/multicloud-py/getting-started/) ·
+[API reference](https://opensource.salesforce.com/multicloud-py/api/)
+
 ## Overview
 
 The Python Multi-Cloud SDK follows a **three-layer architecture** (Client → Driver → Provider) with an in-process provider registry. Provider-specific implementations register themselves at import time using decorators; user code stays cloud-agnostic.
