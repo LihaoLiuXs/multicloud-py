@@ -24,8 +24,8 @@ provider when you create a client.
 | Blob Storage | S3 | Cloud Storage | [Usage guide](guides/blobstore-guide.md) |
 | Security Token Service | STS | IAM credentials | [Usage guide](guides/sts-guide.md) |
 | Pub/Sub | SNS / SQS | Pub/Sub | [Usage guide](guides/pubsub-guide.md) |
-| IAM | IAM | IAM | [API reference](api/iam.md) |
-| Document Store | DynamoDB | Firestore | [Examples](https://github.com/salesforce/multicloud-py/tree/main/examples) |
+| IAM | IAM | IAM | [Usage guide](guides/iam-guide.md) |
+| Document Store | DynamoDB | Firestore | [API reference](api/docstore.md) |
 
 Ali Cloud distributions currently reserve package names; their provider
 implementations are planned. See the [roadmap](roadmap.md) for development plans.
@@ -54,6 +54,8 @@ before running the example.
 - [Examples](https://github.com/salesforce/multicloud-py/tree/main/examples): working SDK examples.
 
 ## Community
+
+[Meet the team](team.md) and reach out with questions about the SDK or contributing.
 
 - [GitHub repository](https://github.com/salesforce/multicloud-py)
 - [Issues and questions](https://github.com/salesforce/multicloud-py/issues)

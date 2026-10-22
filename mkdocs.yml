@@ -9,6 +9,8 @@ edit_uri: edit/main/docs/
 
 docs_dir: docs
 site_dir: site
+extra_css:
+  - stylesheets/site.css
 exclude_docs: |
   /superpowers/
 
@@ -91,6 +93,9 @@ plugins:
             - packages/iam/multicloud-iam
             - packages/iam/multicloud-iam-aws
             - packages/iam/multicloud-iam-gcp
+            - packages/docstore/multicloud-docstore
+            - packages/docstore/multicloud-docstore-aws
+            - packages/docstore/multicloud-docstore-gcp-firestore
             - packages/pubsub/multicloud-pubsub
             - packages/pubsub/multicloud-pubsub-aws
             - packages/pubsub/multicloud-pubsub-gcp
@@ -119,6 +124,7 @@ nav:
       - guides/index.md
       - Blob Storage: guides/blobstore-guide.md
       - STS: guides/sts-guide.md
+      - IAM: guides/iam-guide.md
       - Pub/Sub: guides/pubsub-guide.md
   - Design:
       - design/index.md
@@ -129,8 +135,10 @@ nav:
       - multicloud.blob: api/blob.md
       - multicloud.sts: api/sts.md
       - multicloud.iam: api/iam.md
+      - multicloud.docstore: api/docstore.md
       - multicloud.pubsub: api/pubsub.md
       - multicloud.common: api/common.md
+  - Team: team.md
   - Maintainers:
       - Releasing: maintainers/releasing.md
       - Website: maintainers/website.md

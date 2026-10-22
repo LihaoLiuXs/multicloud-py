@@ -1,0 +1,108 @@
+/* Service matrices and team portraits share the documentation theme. */
+.md-typeset .roadmap-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1rem 0;
+}
+.md-typeset .roadmap-nav a {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.65rem;
+  font-size: 0.75rem;
+}
+.md-typeset .roadmap-nav a:hover,
+.md-typeset .roadmap-nav a:focus-visible {
+  border-color: var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+}
+.md-typeset .support-legend {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+}
+.md-typeset .support-legend .api-support--no { margin-left: 0.7rem; }
+.md-typeset .api-support {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.md-typeset .api-support--yes { color: #166534; background: #dcfce7; }
+.md-typeset .api-support--no {
+  color: var(--md-default-fg-color--light);
+  background: var(--md-code-bg-color);
+}
+[data-md-color-scheme="slate"] .md-typeset .api-support--yes {
+  color: #86efac;
+  background: #163c2a;
+}
+.support-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.md-typeset .roadmap .md-typeset__table { display: block; }
+.md-typeset .roadmap table:not([class]) {
+  display: table;
+  width: 100%;
+  font-size: 0.7rem;
+}
+.md-typeset .roadmap table:not([class]) th {
+  color: var(--md-default-fg-color--light);
+  background: var(--md-code-bg-color);
+}
+.md-typeset .roadmap table:not([class]) :is(td, th) {
+  padding: 0.5rem 0.7rem;
+  vertical-align: middle;
+}
+.md-typeset .roadmap table:not([class]) :is(td, th):nth-last-child(-n+2) {
+  width: 3rem;
+  text-align: center;
+}
+.md-typeset .roadmap h4 { margin-top: 1.3rem; font-size: 0.8rem; }
+.md-typeset .team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem 1rem;
+  padding: 1.2rem 0 1.8rem;
+}
+.md-typeset .team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+}
+.md-typeset .team-member img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+.md-typeset .team-member strong { font-size: 0.8rem; }
+.md-typeset .team-member span {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.65rem;
+  overflow-wrap: anywhere;
+}
+.md-typeset .team-member:focus-visible {
+  outline: 2px solid var(--md-primary-fg-color);
+  outline-offset: 0.35rem;
+  border-radius: 0.3rem;
+}
+@media (max-width: 40rem) {
+  .md-typeset .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}

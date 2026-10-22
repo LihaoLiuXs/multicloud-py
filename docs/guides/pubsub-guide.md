@@ -1,278 +1,115 @@
-# Pub/Sub Guide
+# Pub/Sub guide
 
-The Pub/Sub service provides cloud-agnostic publish-subscribe messaging — send messages to topics and receive them from subscriptions across AWS SNS/SQS, Google Cloud Pub/Sub, and Ali MNS.
+`TopicClient` publishes messages; `SubscriptionClient` receives and acknowledges
+them. AWS SNS/SQS and GCP Pub/Sub implementations are present. Ali is a
+placeholder package and cannot yet provide these operations.
 
-## Creating Clients
+## Install and configure
 
-### Topic Client
-
-`TopicClient` is scoped to a single topic. All operations target that topic.
-
-```python
-from multicloud.pubsub import TopicClient
-
-# AWS SNS
-with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as client:
-    ...
-
-# Google Cloud Pub/Sub
-with TopicClient(provider="gcp", topic_name="orders", region="us-central1") as client:
-    ...
+```bash
+pip install multicloud-py-pubsub-aws
+# Or:
+pip install multicloud-py-pubsub-gcp
 ```
 
-### Subscription Client
+Create the topic, queue/subscription, and any routing between them before using
+the SDK. Configure the provider's standard credentials and permissions.
+The clients operate on existing resources; they do not provision them.
 
-`SubscriptionClient` is scoped to a single subscription. All operations target that subscription.
+| Client | Provider ID | Resource |
+| --- | --- | --- |
+| `TopicClient` for SNS | `awssns` | Topic ARN |
+| `TopicClient` for SQS | `awssqs` | Queue URL or name |
+| `SubscriptionClient` for SQS | `aws` | Queue URL or name |
+| GCP clients | `gcp` | Fully qualified topic or subscription name |
 
-```python
-from multicloud.pubsub import SubscriptionClient
+AWS topic IDs distinguish the two publishing backends. A bare `aws` selects
+neither topic implementation. GCP names take the form
+`projects/PROJECT/topics/TOPIC` or `projects/PROJECT/subscriptions/SUBSCRIPTION`.
 
-# AWS SQS
-with SubscriptionClient(provider="aws", subscription_name="orders-processor", region="us-west-2") as client:
-    ...
+## Publish a message
 
-# Google Cloud Pub/Sub
-with SubscriptionClient(provider="gcp", subscription_name="orders-processor", region="us-central1") as client:
-    ...
-```
-
-### Constructor Parameters
-
-**TopicClient:**
-
-| Parameter | Type | Required | Description |
-|-----------|------|:--------:|-------------|
-| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"ali"` |
-| `topic_name` | `str` | ✅ | Topic name |
-| `region` | `str` | | Region/location |
-| `endpoint` | `str` | | Endpoint URL override |
-
-**SubscriptionClient:**
-
-| Parameter | Type | Required | Description |
-|-----------|------|:--------:|-------------|
-| `provider` | `str` | ✅ | Provider id: `"aws"`, `"gcp"`, or `"ali"` |
-| `subscription_name` | `str` | ✅ | Subscription name |
-| `region` | `str` | | Region/location |
-| `endpoint` | `str` | | Endpoint URL override |
-| `nack_visibility_timeout` | `timedelta` | | Default visibility timeout for nacks |
-
-All parameters are **keyword-only** (enforced by `*` separator).
-
-!!! note
-    Credentials are discovered automatically from environment variables, config files, or IAM/ADC. The SDK never accepts explicit credential parameters.
-
-## Publishing Messages
+Replace `YOUR_TOPIC_ARN` with an existing SNS topic ARN. Use `awssqs` with
+an existing queue to publish directly to SQS, or `gcp` with a full topic name.
 
 ```python
-from multicloud.pubsub import TopicClient, Message
+from multicloud.pubsub.pubsub_client import Message, TopicClient
 
-with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as client:
-    # Build and send a message
+with TopicClient(
+    provider="awssns", topic_name="YOUR_TOPIC_ARN", region="us-west-2"
+) as publisher:
     message = (
         Message.builder()
-        .with_body(b'{"order_id": "12345", "amount": 99.99}')
-        .with_metadata("content-type", "application/json")
-        .with_metadata("priority", "high")
-        .build()
-    )
-
-    client.send(message)
-```
-
-### Building Messages
-
-Use the builder pattern to construct messages:
-
-```python
-message = (
-    Message.builder()
-    .with_body("Hello World")  # Accepts str or bytes
-    .with_metadata("key1", "value1")
-    .with_metadata("key2", "value2")
-    .build()
-)
-
-# Or provide metadata as a dict
-message = (
-    Message.builder()
-    .with_body(b"Binary data")
-    .with_metadata({
-        "content-type": "application/octet-stream",
-        "version": "1.0"
-    })
-    .build()
-)
-```
-
-## Receiving Messages
-
-```python
-from multicloud.pubsub import SubscriptionClient
-
-with SubscriptionClient(provider="aws", subscription_name="orders-processor", region="us-west-2") as client:
-    # Receive a message
-    message = client.receive()
-
-    try:
-        # Process the message
-        process_order(message.body)
-
-        # Acknowledge successful processing
-        client.send_ack(message.ack_id)
-    except Exception as e:
-        # Negative acknowledge on failure (returns to queue)
-        client.send_nack(message.ack_id)
-```
-
-### Batch Acknowledgments
-
-Process and acknowledge multiple messages efficiently:
-
-```python
-with SubscriptionClient(provider="aws", subscription_name="orders") as client:
-    messages = []
-
-    # Receive multiple messages
-    for _ in range(10):
-        msg = client.receive()
-        messages.append(msg)
-
-    # Process all messages
-    results = process_batch(messages)
-
-    # Batch acknowledge
-    successful_ids = [msg.ack_id for msg, success in zip(messages, results) if success]
-    failed_ids = [msg.ack_id for msg, success in zip(messages, results) if not success]
-
-    client.send_acks(successful_ids)
-    client.send_nacks(failed_ids)
-```
-
-### Negative Acknowledgment with Visibility Timeout
-
-Control when a failed message becomes visible again:
-
-```python
-from datetime import timedelta
-
-with SubscriptionClient(provider="aws", subscription_name="orders") as client:
-    message = client.receive()
-
-    try:
-        process_message(message.body)
-        client.send_ack(message.ack_id)
-    except RetryableError:
-        # Return to queue, invisible for 60 seconds
-        client.send_nack(
-            message.ack_id,
-            visibility_timeout=timedelta(seconds=60)
-        )
-```
-
-### Subscription Attributes
-
-```python
-with SubscriptionClient(provider="aws", subscription_name="orders") as client:
-    attrs = client.get_attributes()
-    print(f"Approximate messages: {attrs.approximate_number_of_messages}")
-```
-
-## Error Handling
-
-All pub/sub operations raise exceptions from the common `multicloud.common.exceptions` hierarchy:
-
-```python
-from multicloud.pubsub import TopicClient, Message
-from multicloud.common.exceptions import (
-    ResourceNotFoundException,
-    InvalidArgumentException,
-    UnAuthorizedException,
-    SubstrateSdkException,
-)
-
-with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as client:
-    try:
-        message = Message.builder().with_body(b"data").build()
-        client.send(message)
-    except ResourceNotFoundException as e:
-        print(f"Topic not found: {e}")
-    except UnAuthorizedException as e:
-        print(f"Access denied: {e}")
-    except SubstrateSdkException as e:
-        print(f"SDK error: {e}")
-```
-
-| Exception | When Raised |
-|-----------|-------------|
-| `ResourceNotFoundException` | Topic or subscription does not exist |
-| `InvalidArgumentException` | Empty body, invalid metadata, bad visibility timeout |
-| `UnAuthorizedException` | Credentials missing, expired, or insufficient |
-| `FailedPreconditionException` | Client shutdown, batch handler error |
-| `UnknownException` | Unmapped provider error |
-
-## Switching Providers
-
-Change providers by modifying only the `provider` parameter:
-
-```python
-# AWS
-with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as client:
-    client.send(message)
-
-# GCP
-with TopicClient(provider="gcp", topic_name="orders", region="us-central1") as client:
-    client.send(message)
-
-# Ali
-with TopicClient(provider="ali", topic_name="orders", region="cn-hangzhou") as client:
-    client.send(message)
-```
-
-The rest of your code remains identical — the SDK handles all provider-specific differences.
-
-## Complete Example
-
-A full round-trip: publish, receive, acknowledge.
-
-```python
-from multicloud.pubsub import TopicClient, SubscriptionClient, Message
-
-# Publish a message
-with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as publisher:
-    message = (
-        Message.builder()
-        .with_body(b'{"order_id": "12345", "amount": 99.99}')
+        .with_body(b'{"order_id": "example"}')
         .with_metadata("content-type", "application/json")
         .build()
     )
     publisher.send(message)
-    print("Message published")
-
-# Receive and process
-with SubscriptionClient(provider="aws", subscription_name="orders-processor", region="us-west-2") as subscriber:
-    message = subscriber.receive()
-    print(f"Received: {message.body.decode()}")
-
-    # Process and acknowledge
-    process_order(message.body)
-    subscriber.send_ack(message.ack_id)
-    print("Message acknowledged")
 ```
 
-## Client Lifecycle
+`send` is a synchronous operation: it waits for its internally batched send
+result. `Message` accepts bytes or strings through `with_body`, and metadata
+can be added as key/value pairs or a dictionary.
 
-Both `TopicClient` and `SubscriptionClient` support the context manager protocol:
+## Receive and acknowledge
+
+This example consumes one message from an existing SQS queue. Receiving is
+blocking; ensure a message is available. Acknowledgment removes it from the
+queue. For GCP, use `provider="gcp"` and a full subscription name.
 
 ```python
-# Preferred — automatic cleanup and batch flushing
-with TopicClient(provider="aws", topic_name="orders", region="us-west-2") as client:
-    client.send(message)
+from multicloud.pubsub.pubsub_client import SubscriptionClient
 
-# Manual cleanup
-client = TopicClient(provider="aws", topic_name="orders", region="us-west-2")
-try:
-    client.send(message)
-finally:
-    client.close()  # Flushes pending batches
+with SubscriptionClient(
+    provider="aws", subscription_name="YOUR_QUEUE_URL", region="us-west-2"
+) as subscriber:
+    message = subscriber.receive()
+    print(message.body.decode())
+    subscriber.send_ack(message.ack_id)
 ```
+
+In an application, acknowledge only after successful processing. Use
+`send_nack` on failure when `can_nack()` reports support, so the message can
+be delivered again. Both current subscription providers support negative
+acknowledgment; the delivery timing remains provider-dependent.
+
+## Batch acknowledgments and negative acknowledgments
+
+`send_acks` and `send_nacks` return `Future` objects. Wait on `.result()` to
+observe completion and errors. The following fragment assumes `subscriber`
+and successfully or unsuccessfully processed `Message` objects already exist:
+
+```python
+# Application fragment: successful and failed contain processed Messages.
+subscriber.send_acks([message.ack_id for message in successful]).result()
+subscriber.send_nacks([message.ack_id for message in failed]).result()
+```
+
+`send_nack` and `send_nacks` accept `visibility_timeout=timedelta(...)`.
+A per-call timeout overrides the subscription default; the implementation
+clamps to SQS's 43,200-second or Pub/Sub's 600-second limit. Lazy nack mode
+waits for the existing visibility/deadline rather than making a native update.
+These operations request redelivery; they do not guarantee exactly-once
+processing or a precise delivery time.
+
+## Attributes and retry classification
+
+`get_attributes()` returns subscription metadata. The current providers do
+not populate `approximate_number_of_messages`, so it can be `None`. Do not
+treat it as a guaranteed queue-depth metric.
+
+`is_retryable(error)` is a classification helper, not a promise to retry every
+failed API call. Currently the AWS subscription implementation returns
+`False`; GCP recognizes `DeadlineExceeded`. Use the [API reference](../api/pubsub.md)
+for exact signatures and the [roadmap](../roadmap.md#pubsub)
+for the complete operation inventory.
+
+## Errors and cleanup
+
+Public operations map provider failures to `multicloud.common.exceptions`
+such as `ResourceNotFoundException`, `InvalidArgumentException`, and
+`UnAuthorizedException`. For batch acknowledgments, observe errors through
+the returned Future as well as errors raised before enqueueing.
+
+Both clients support `with`. Closing flushes pending sends or acknowledgments
+and releases resources; it does not delete the topic, queue, or subscription.

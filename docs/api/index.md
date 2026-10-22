@@ -15,4 +15,5 @@ the next build.
 | [`multicloud.sts`](sts.md) | Security Token Service — identity, assume role, access tokens |
 | [`multicloud.pubsub`](pubsub.md) | Pub/Sub messaging — topics and subscriptions |
 | [`multicloud.iam`](iam.md) | Identity & Access Management — identities and policies |
+| [`multicloud.docstore`](docstore.md) | Document actions — create, read, replace, upsert, delete, and batches |
 | [`multicloud.common`](common.md) | Cross-service exception hierarchy and provider base |

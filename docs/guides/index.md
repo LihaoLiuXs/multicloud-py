@@ -10,6 +10,12 @@ Get caller identity, assume roles, and retrieve access tokens across cloud provi
 
 [Read the STS Guide](sts-guide.md)
 
+### Identity and Access Management (IAM)
+
+Manage identities and permissions, with explicit provider policy mappings.
+
+[Read the IAM Guide](iam-guide.md)
+
 ### Blob Storage
 
 Upload, download, and delete objects in cloud storage buckets.
