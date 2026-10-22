@@ -164,9 +164,11 @@ cython_debug/
 # JetBrains IDEs (PyCharm, IntelliJ, GoLand, ...)
 .idea/
 
-# Developer-specific AI tool settings
-.claude/
-.agents/
+# Share repository skills; keep other agent settings local.
+.claude/*
+!.claude/skills
+.agents/*
+!.agents/skills/
 
 # AI tool artifacts (review notes, specs, etc.)
 .ai/

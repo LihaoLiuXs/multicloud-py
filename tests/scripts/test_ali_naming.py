@@ -41,7 +41,12 @@ def test_retired_provider_token_is_absent() -> None:
         if RETIRED_PROVIDER_TOKEN in relative_path.as_posix().lower():
             violations.append(f"path:{relative_path}")
 
-        content = (REPO_ROOT / relative_path).read_bytes()
+        tracked_path = REPO_ROOT / relative_path
+        content = (
+            tracked_path.readlink().as_posix().encode()
+            if tracked_path.is_symlink()
+            else tracked_path.read_bytes()
+        )
         if b"\0" not in content and token in content.lower():
             violations.append(f"content:{relative_path}")
 
