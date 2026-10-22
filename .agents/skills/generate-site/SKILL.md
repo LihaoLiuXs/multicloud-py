@@ -1,6 +1,6 @@
 ---
 name: generate-site
-description: Use when previewing, validating, publishing, or diagnosing the MultiCloud-Py documentation website and its branch-based GitHub Pages deployment.
+description: Use when previewing, validating, or diagnosing automatic publishing of the MultiCloud-Py documentation website and its branch-based GitHub Pages deployment.
 ---
 
 # Build and publish the documentation website
@@ -26,10 +26,32 @@ Python imports. Do not commit generated output to `main`: its `docs/` tree
 contains Markdown sources, and `site/` is ignored. Content changes use
 `multi-cloudpy-docs-guides` and a source PR against `main` first.
 
-## Prepare a publishing PR
+## Automatic publishing after merge
 
-The Documentation Actions workflow validates source builds but does not
-publish. Merging a source PR into `main` alone does not update the website.
+The Documentation workflow validates source PRs and publishes successful builds
+after a merge into `main`. It transfers the strict build to a separate job with
+`contents: write` and `pages: write`, commits generated output to `site:/docs`,
+updates `SOURCE_COMMIT`, and explicitly requests a Pages build. PR validation
+has no publishing permissions. A source PR is sufficient during normal
+operation; do not create an extra generated-site PR by default.
+
+Check the Documentation run's build, publish job, and Pages build request,
+then the GitHub-provided pages build and deployment run. Check the Pages source
+and `github-pages` environment rules if the publishing job fails. A normal
+`GITHUB_TOKEN` push cannot trigger Pages automatically, so keep the explicit
+`POST /repos/{owner}/{repo}/pages/builds` request. No personal token is needed.
+
+To retry, run Documentation on current `main` using `workflow_dispatch`.
+Another branch only validates. An older `main` commit is skipped when the
+branch has advanced; retry current `main` instead. The workflow does not
+force-push, bypass branch protection, or change repository settings.
+
+## Manual publishing fallback
+
+If automatic publishing is unavailable, follow the manual publishing commands
+in `docs/maintainers/website.md` after the source PR has merged. Preserve local
+work, build the exact merged commit, and keep the fallback separate from source
+PRs. Resolve any configuration error before claiming the site has deployed.
 
 Follow the publishing commands in `docs/maintainers/website.md`:
 
@@ -53,7 +75,8 @@ setup; do not silently change the destination to `gh-pages` or `main`.
 
 ## Verify publication
 
-After the publishing PR merges, Pages builds `site:/docs`. Confirm with:
+After the automatic publishing job or a fallback publishing PR, Pages builds
+`site:/docs`. Confirm with:
 
 ```bash
 gh api repos/salesforce/multicloud-py/pages
@@ -62,14 +85,17 @@ gh api repos/salesforce/multicloud-py/pages/builds/latest
 
 The configuration should have `build_type: legacy`, source branch `site`,
 and path `/docs`. A GitHub-provided Pages build can appear in Actions even
-though the publication source is a branch. Rerunning the Documentation
-workflow only validates source; it does not publish the site.
+though the publication source is a branch. Rerunning Documentation on current
+`main` publishes and requests a new Pages build, even when no files changed.
 
-For initial migration, first merge the change that removes Actions artifact
-deployment and let older deployments finish. Once a validated `site:/docs`
-snapshot exists, an authorized administrator selects Settings → Pages →
+For initial migration, let older artifact deployments finish. Once a validated
+`site:/docs` snapshot exists, an authorized administrator selects Settings → Pages →
 **Deploy from a branch**, **site**, **/docs**. Do not change repository settings
 or merge PRs without authorization for those actions.
+
+The source setting is permanent. If the `github-pages` environment restricts
+deployment branches, allow `main` for the Documentation publishing job and
+`site` for GitHub's Pages build.
 
 A Pages API 404 may indicate missing setup or insufficient access. Confirm
 permissions and report the exact blocker rather than claiming deployment.
