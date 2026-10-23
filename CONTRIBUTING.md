@@ -29,6 +29,21 @@ uv run black --check packages tests
 uv run isort --check-only packages tests
 ```
 
+CI tests Python 3.10 through 3.14. The required `test` check succeeds only when
+every runtime and the formatting/version checks pass. On Python 3.12, CI also
+enforces **90% total SDK line coverage** across unit and replay tests:
+
+```bash
+uv run --frozen python -m pytest --record-mode=none \
+  --cov=packages --cov-report=term-missing --cov-report=xml --cov-fail-under=90
+```
+
+Coverage includes the SDK source under `packages/`, including unimported
+namespace modules. Do not omit provider code or add exclusions to meet the
+threshold. Codecov project and changed-line targets are also 90%; its upload is
+best-effort and does not replace the local CI coverage gate. Maintainers must
+confirm Codecov repository access and reporting before requiring its statuses.
+
 Conformance tests validate consistent behavior across supported providers. Recording new cassettes requires credentials for the relevant cloud provider; never commit credentials or unsanitized recordings.
 
 ## Issues and Feature Requests
@@ -49,6 +64,29 @@ Conformance tests validate consistent behavior across supported providers. Recor
 7. Sign the Salesforce Contributor License Agreement when prompted.
 
 Keep pull requests focused and avoid unrelated formatting or refactoring changes. All changes require peer review before merge.
+
+Use a conventional PR title such as `fix(blob): preserve metadata` or
+`docs: clarify onboarding`. Allowed types are `feat`, `fix`, `perf`, `refactor`,
+`revert`, `docs`, `style`, `test`, `build`, `ci`, and `chore`. A scope is optional;
+add `!` for a breaking change. The title becomes the squash commit subject used
+by Release Please. Existing dependency-update PRs may need a maintainer to
+retitle them before merging.
+
+The `main` ruleset requires one eligible review, resolved review threads, and
+successful CI, documentation, security, and CLA checks. New changes dismiss old
+approvals. Maintainers add `conventional-title` to the required checks after
+the new workflow has produced a successful check on its implementing PR; do not
+require a check that cannot run yet. Code-owner review is a separate policy and is not
+enabled merely by adding a CODEOWNERS file. The title workflow uses the same
+read-only `pull_request` execution model as CI; it has no publishing credentials
+or write permissions.
+
+Release PRs follow the same review and check requirements. GitHub may require a
+maintainer to approve workflow runs created by automation. Validate the final
+generated-version commit before approving and squash-merging; never bypass the
+ruleset to work around missing checks. Publishing remains in the existing
+release workflow; this change does not add extra PyPI approval prompts or alter
+the package Trusted Publishers.
 
 ## Contributor License Agreement
 

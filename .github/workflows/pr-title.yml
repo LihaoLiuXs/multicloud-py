@@ -1,0 +1,23 @@
+name: PR Title
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+jobs:
+  conventional-title:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          sparse-checkout: scripts/check_pr_title.py
+          sparse-checkout-cone-mode: false
+      - name: Validate the squash commit subject
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+        run: python3 scripts/check_pr_title.py "$TITLE"

@@ -3,10 +3,14 @@
 from __future__ import annotations
 
 import re
-import tomllib
 from pathlib import Path
 
 import yaml
+
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python 3.10 is part of the SDK support floor.
+    import tomli as tomllib
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 WORKFLOWS = REPO_ROOT / ".github" / "workflows"

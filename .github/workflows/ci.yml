@@ -9,18 +9,102 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
 jobs:
-  test:
+  quality:
+    name: Formatting and version consistency
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
         with:
           enable-cache: true
+          python-version: '3.12'
       - run: uv lock --check
-      - run: uv sync --frozen --all-groups --all-packages
+      - run: uv sync --frozen --all-packages
       - run: uv run --frozen python -m black --check packages tests scripts
       - run: uv run --frozen python -m isort --check-only packages tests scripts
       - run: uv run --frozen python scripts/sync_version.py --check
-      - run: uv run --frozen python -m pytest -m 'not conformance'
-      - run: uv run --frozen python -m pytest -m conformance --record-mode=none
+
+  python-tests:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.11', '3.12', '3.13', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          enable-cache: true
+          python-version: ${{ matrix.python-version }}
+      - run: uv sync --frozen --all-packages
+      # Both suites are credential-free; do not record live traffic in PR CI.
+      - name: Unit and conformance-replay tests
+        if: matrix.python-version != '3.12'
+        run: uv run --frozen python -m pytest --record-mode=none
+      - name: Unit and replay tests with 90% SDK coverage
+        if: matrix.python-version == '3.12'
+        run: >-
+          uv run --frozen python -m pytest --record-mode=none
+          --cov=packages --cov-report=term-missing --cov-report=xml:coverage.xml
+          --cov-fail-under=90
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always() && matrix.python-version == '3.12' && hashFiles('coverage.xml') != ''
+        with:
+          name: sdk-coverage
+          path: coverage.xml
+          if-no-files-found: error
+          retention-days: 14
+
+  test:
+    name: test
+    if: always()
+    needs: [quality, python-tests]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Require every validation job to pass
+        env:
+          QUALITY_RESULT: ${{ needs.quality.result }}
+          TEST_RESULT: ${{ needs.python-tests.result }}
+        run: test "$QUALITY_RESULT" = success && test "$TEST_RESULT" = success
+
+  coverage-upload:
+    name: Upload coverage to Codecov
+    if: always() && !cancelled()
+    needs: python-tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        continue-on-error: true
+        with:
+          name: sdk-coverage
+      # The local 90% test gate is authoritative. Reporting availability must
+      # not bypass it or make public fork contributions require a secret.
+      - uses: codecov/codecov-action@0fb7174895f61a3b6b78fc075e0cd60383518dac # v5
+        if: hashFiles('coverage.xml') != ''
+        continue-on-error: true
+        with:
+          files: coverage.xml
+          disable_search: true
+          use_oidc: true
+          fail_ci_if_error: false
+          flags: sdk
