@@ -97,7 +97,36 @@ uv run --frozen python -m pytest -m conformance --record-mode=none
 Consult `Makefile` for coverage targets and `pyproject.toml` for typing settings;
 do not invent a coverage threshold or claim an advisory check is a CI gate.
 Update Google-style docstrings, relevant examples, and guides. Verify example
-imports against the real `SERVICE_client` exports. Open a conventional `feat:`
-PR against `salesforce/multicloud-py:main` describing the contract, supported
-providers, tests, and any unresolved limits. No internal ticket or CI access
-is required for public contribution.
+imports against the real `SERVICE_client` exports.
+
+## Open the PR
+
+The only PR target is `main` of `https://github.com/salesforce/multicloud-py`.
+This holds regardless of what `origin` points to, which remotes exist, or where
+earlier PRs in the checkout went. Never open the PR against an internal mirror,
+another host, or a fork's own default branch. Do not add internal work-item
+prefixes to the branch, commit, or title.
+
+1. Run `git remote -v` and `gh auth status --hostname github.com`. If no
+   remote's push URL is a github.com fork of `salesforce/multicloud-py` (or
+   upstream itself, with write access), stop and ask the user which GitHub
+   fork to push to.
+2. Branch from an up-to-date `salesforce/multicloud-py:main`, commit with a
+   conventional `feat:` title, and push the branch to that GitHub fork.
+3. Create the PR with an explicit upstream target:
+
+   ```bash
+   gh pr create --repo salesforce/multicloud-py --base main \
+     --head FORK_OWNER:BRANCH --title "feat(SERVICE): ..." --body-file BODY.md
+   ```
+
+   The body describes the contract, supported providers, tests run with their
+   results, and any unresolved limits.
+4. Confirm the target with
+   `gh pr view URL --json url,baseRefName,headRepositoryOwner` and check that
+   the URL starts with `https://github.com/salesforce/multicloud-py/pull/`.
+
+Finish by giving the user the PR URL printed by `gh pr create`, as a full
+link, in the final message. If the PR could not be created, say so and report
+the pushed branch and the exact failing step instead. No internal ticket or CI
+access is required for public contribution.
