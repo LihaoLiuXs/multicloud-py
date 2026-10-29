@@ -59,9 +59,13 @@ git diff --check
 ```
 
 Preview changed pages with `uv run --frozen --group docs mkdocs serve`.
-Open a PR against `salesforce/multicloud-py:main`, using a conventional
-`docs:` title and describing what is documented and how it was validated.
-Do not require internal work items. Generated `site/` stays out of Git;
+Open a PR against `main` of `https://github.com/salesforce/multicloud-py`,
+whatever `origin` points to; never target an internal mirror or another host.
+Push the branch to the user's GitHub fork (ask which fork if no remote is one)
+and run `gh pr create --repo salesforce/multicloud-py --base main --head
+FORK_OWNER:BRANCH`, using a conventional `docs:` title and describing what is
+documented and how it was validated. Give the user the full PR URL from
+`gh pr create` in the final message. Do not require internal work items. Generated `site/` stays out of Git;
 the Documentation workflow validates source PRs. After the source PR merges
 into `main`, it automatically commits the validated build to `site:/docs` and
 requests a Pages deployment. No separate publishing PR is needed. Use
